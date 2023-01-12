@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Play Store</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<style type="text/css">
+/* Created by Satyam Mishra UI [Less active] */
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+body {font-family:"Product Sans";margin:0px;padding:0px;background-color:#000;color:#eee;}
+#headDiv1{height:45px;padding:10px 20px 10px 20px;}
+.hamBar{margin:3px 0px 3px 8px;border-style:solid;width:20px;border-color:rgb(150,150,150);}
+#searchDiv{background-color:white;width:100%;height:45px;border-radius:3px;box-shadow:0px 0px 2px 0.5px rgba(0,0,0,0.2);background-color:rgba(255, 255, 255, 0.2);}
+#searchBox{height:100%;width:100%;border-style:none;font-family:"Product Sans";font-size:17px;padding-left:5px;background-color:inherit;color:rgb(150,150,150);}
+::placeholder{text-align:center;color:rgb(150,150,150);}
+#profileTd{text-align:center;vertical-align:middle ;}
+#voiceImg{filter:invert(58%);}
+.searchBoxImg{border-radius:19px;margin-left:4px;margin-right:4px;height:30px;vertical-align:middle;}
+#tabBand{overflow:scroll;border-width:0px 0px 1.5px 0px;border-style:solid;border-color:rgb(200,200,200);padding-bottom:0px;background-color:#202020;}
+.tab{padding:10px 25px;white-space:nowrap ;text-align:center;color:rgb(150,150,150);margin-bottom:0px;}
+#tabTable{margin-bottom:0px;padding-bottom:0px;}
+.current{border-style:solid;border-width:0px 0px 4px 0px;border-color:rgb(54,143, 37);color:rgb(54,143, 37);}
+.title1{padding:15px 25px 15px 25px;}
+.titleHead{font-size:20px;text-align:left;}
+.arrowDiv{vertical-align:middle;text-align:right;}
+.arrowDiv>img{
+filter:invert(58%);}
+.right{height:20px;vertical-align:middle;text-align:right;}
+.wideShow{padding-left:20px;overflow:scroll;}
+.widePic{height:140px;width:250px;border-radius:5px;}
+.smallest{height:55px;border-radius:5px;box-shadow:0px 1px 1px 0px rgba(0,0,0,0.5);}
+.smallestName{font-size:18px;padding:0px;}
+.appCategory{color:gray;font-size:13px;}
+.mediumTd{width:112px;padding:0px;}
+.mediumImg{width:112px;border-radius:15px;box-shadow:0px 1px 1px 0px rgba(0,0,0,0.5);}
+.appName{vertical-align:top;}
+.normalBtn{padding:3px 10px;border-style:solid;border-color:rgb(150,150,150);border-width:1px;background-color:rgba(0,0,0,0);color:rgb(54,143, 37);font-family:"Product Sans";border-radius:3px;font-size:15px;}
+.filledBtn{padding:3px 10px;border-style:none;background-color:rgb(54,143, 37);color:rgb(255,255,255);font-family:"Product Sans";border-radius:3px;font-size:15px;}
+#foryouDiv{display:block;}
+#categoriesTabBand{padding:15px;overflow:scroll;}
+.categoriesTab{padding:5px 10px;border-style:solid;border-color:rgb(150,150,150);font-size:16px;border-radius:22px;color:rgb(150,150,150);white-space:nowrap;text-align:center;}
+.currentCategoriesTab{color:rgb(54,143, 37);border-color:rgba(0,255,0,0.1);background-color:rgba(0,255,0,0.1);}
+#topchartsDiv{display:none;}
+#eventsDiv{height:100vh;padding:20px 0px;display:none;vertical-align:middle;text-align:center;width:100vw;}
+#premiumDiv{display:none;}
+.noneDiv{display:none;}
+.superSmallest{height:35px;border-radius:5px;box-shadow:0px 1px 1px 0px rgba(0,0,0,0.5);}
+#categoriesDiv{display:none;}
+#kidsDiv{display:none;}
+#editorsDiv{display:none;}
+#storeTabs{box-shadow:0px 0px 0px 1px rgb(150,150,150);position:fixed;bottom:0px;width:100%;background-color:inherit;z-index:80;}
+.stickTabs{position:fixed;top:0px;width:100%;z-index:100;}
+#under{height:47px;display:none;}
+#loadPage{position:fixed;height:100%;width:100%;top:0px;background-color:white;z-index:1000;display:table-cell;vertical-align:middle;text-align:center;}
+#bar{margin: 0 auto;width: 240px;height: 4px;border: 0px solid #444;border-radius: 10px;overflow: hidden;z-index:100000000;background-color:blue;position:fixed;top:50%;margin-top:-2px;margin-left:-120px;left:50%;background-color:#c4f5b5;}
+#fill{z-index:10000000000;position: relative;margin: 0 auto;width: 240px;height: 4px;background: rgb(54,143, 37);left:-240px;}
+#loadPerc{position:fixed;top:55%;left:50%;width:200px;margin-left:-100px;margin-top:-4px;text-align:center;}
+#continue{padding:5px 10px;height:45px;width:150px;position:fixed;top:40%;left:50%;margin-left:-75px;margin-top:-27.5px;display:none;}
+#dialogScreen{height:50%;background-color:rgba(0,0,0,0.7);}
+</style>
+<script type="text/javascript">
+// Created by Satyam Mishra UI [Less active]
+function wrap(){
+    var ht=document.getElementById("storeTabs").offsetHeight;
+    document.getElementById("wrapper").style.height=""+ht+"px";
+}
+function switchTab(i){
+var allTabs=document.getElementsByClassName("tab");
+for(j=0;j<allTabs.length;j++){
+    try{
+        allTabs[j].classList.remove("current");
+    }catch(err){
+        console.log("");
+    }
+}
+allTabs[i].classList.add("current");
+var switchTo;
+for(k=0;k<7;k++){
+    switch(k){
+        case 0:
+            switchTo="foryouDiv";
+            break;
+        case 1:
+            switchTo="topchartsDiv";
+            break;
+        case 2:
+            switchTo="premiumDiv";
+            break;
+        case 3:
+            switchTo="categoriesDiv";
+            break;
+        }
+    document.getElementById(switchTo).style.display="none";
+    document.getElementById("timeSaver").style.display="none";
+}
+    switch(i){
+        case 0:switchTo="foryouDiv";
+                break;
+        case 1:switchTo="topchartsDiv";
+                break;
+        case 2:switchTo="premiumDiv";
+                break;
+        case 3:switchTo="categoriesDiv";
+                break;
+        }
+    if(switchTo==="eventsDiv"){
+        document.getElementById(switchTo).style.display="table-cell";
+    }else{
+        document.getElementById(switchTo).style.display="block";
+        document.getElementById("timeSaver").style.display="block";
+    }
+}
+function switchMode(){
+    var modeTxt=document.getElementById("modeBtn").innerText;
+    if(modeTxt==="Dark Mode"){
+        document.body.style.color="white";
+        document.body.style.backgroundColor="rgb(32,33,37)";
+        document.getElementById("tabBand").style.color="white";
+        document.getElementById("tabBand").style.backgroundColor="rgb(32, 33, 37)";
+        document.getElementById("modeBtn").innerText="Light Mode";
+    }else{
+        document.body.style.color="black";
+        document.body.style.backgroundColor="white";
+        document.getElementById("modeBtn").innerText="Dark Mode";  
+        document.getElementById("tabBand").style.color="black";
+        document.getElementById("tabBand").style.backgroundColor="white";
+    }
+}
+function continueWithoutScreen(){
+    clearInterval(load); document.getElementById("loadPage").style.display="none";
+               alert("Dark Mode is at the bottom end of the page");
+}
+</script>
+</head>
+<body onload="wrap()" id="bodyArea">
+<div id="under"></div>
+<center><div id="headDiv1"><div id="searchDiv"><table height="100%"><tr>
+<td><div class="hamBar">
+</div><div class="hamBar">
+</div><div class="hamBar">
+</div></td>
+<td><input id="searchBox" type="text" placeholder="Buscar apps & games"></td>
+<td><img src="https://dl.dropbox.com/s/25bx1925sqefvo7/mic.png" class="searchBoxImg" id="voiceImg"></td>
+<td id="profileTd"><img src="https://dl.dropbox.com/s/zmju6mfdxls6x48/profile-pic.png" id="profileImg" class="searchBoxImg"></td></center><center>
+</tr></table></div></div>
+<div id="tabBand">
+<table id="tabTable" cellspacing="0px"><tr>
+<td class="tab current" onclick="switchTab(0)">Para ti</td>
+<td class="tab" onclick="switchTab(1)">Top Apps</td>
+<td class="tab" onclick="switchTab(2)">Premium</td>
+<td class="tab" onclick="switchTab(3)">Categorías</td>
+</tr></table></div></center>
+<div class="main" id="foryouDiv">
+<div class="title1">
+<table width="100%">
+<tr><td class="titleHead">
+Discover recommended games
+</td><td class="arrowDiv"><img src="https://dl.dropbox.com/s/l3ciqe2a4wkynuc/arrow-right.png" id="right1" class="right"></td>
+</tr></table></div>
+<div class="wideShow">
+<table style="border-spacing:8px 0px;">
+<tr><td><a href="hh"><img src="https://dl.dropbox.com/s/cfsdo5i9mh7iuvu/beach-buggy-wide.jpg" class="widePic"></a></td>
+<td><img src="https://dl.dropbox.com/s/0x5g0dui6f12ip7/simcity-wide.jpg" class="widePic"></td>
+<td><img src="https://dl.dropbox.com/s/pw46tzq58xwiv4b/standoff-wide.jpg" class="widePic"></td>
+<td><img src="https://dl.dropbox.com/s/a2li3xu4xfovld4/pool-wide.jpg" class="widePic"></td>
+<td><img src="https://dl.dropbox.com/s/qvdqt1tkknpjn7x/score-wide.jpg" class="widePic"></td>
+<td><img src="https://dl.dropbox.com/s/tnto0mdudzrpi41/drive-wide.jpg" class="widePic"></td>
+<td><img src="https://dl.dropbox.com/s/1x5yr88vkhitgy6/garena-wide.jpg" class="widePic"></td></tr>
+</table>
+<table cellspacing="8px">
+<tr><td><table width="250px" style="border-spacing:8px 0px"><tr><td rowspan="3" width="60px"><img class="smallest" src="https://dl.dropbox.com/s/fmfopuhhkwb2ups/beach.webp"></td><td class="smallestName">Beach Buggy...</td></tr><td class="appCategory">Racing</td><tr><td class="appCategory">4.4<span class="fa fa-star"></span></td></tr></tr></table></td>
+<td><table width="250px"><tr><td rowspan="3" width="60px"><img class="smallest" src="https://dl.dropbox.com/s/kdt088f13tuzfeh/simcity.webp"></td><td class="smallestName">SimCity BuildIt</td></tr><td class="appCategory">Simulation</td><tr><td class="appCategory">4.4<span class="fa fa-star"></span></td></tr></tr></table></td>
+<td><table width="250px"><tr><td rowspan="3" width="60px"><img class="smallest" src="https://dl.dropbox.com/s/kpo9xe8hyw6izfu/standoff.jpeg"></td><td class="smallestName">Standoff 2</td></tr><td class="appCategory">Action</td><tr><td class="appCategory">4.7<span class="fa fa-star"></span></td></tr></tr></table></td>
+<td><table width="250px"><tr><td rowspan="3" width="60px"><img class="smallest" src="https://dl.dropbox.com/s/678hx162jdkdq0v/pool.webp"></td><td class="smallestName">8 Ball Pool</td></tr><td class="appCategory">Sports</td><tr><td class="appCategory">4.4<span class="fa fa-star"></span></td></tr></tr></table></td>
+<td><table width="250px"><tr><td rowspan="3" width="60px"><img class="smallest" src="https://dl.dropbox.com/s/3oktfbbmv7bh7ev/score.webp"></td><td class="smallestName">Score! Hero</td></tr><td class="appCategory">Sports</td><tr><td class="appCategory">4.2<span class="fa fa-star"></span></td></tr></tr></table></td>
+<td><table width="250px"><tr><td rowspan="3" width="60px"><img class="smallest" src="https://dl.dropbox.com/s/ou71a8eszomzmvd/drive.webp"></td><td class="smallestName">#DRIVE</td></tr><td class="appCategory">Racing</td><tr><td class="appCategory">4.5<span class="fa fa-star"></span></td></tr></tr></table></td>
+<td><table width="250px"><tr><td rowspan="3" width="60px"><img class="smallest" src="https://dl.dropbox.com/s/118ujltjex9c1vx/garena.webp"></td><td class="smallestName">Garena Free Fire...</td></tr><td class="appCategory">Action</td><tr><td class="appCategory">4.1<span class="fa fa-star"></span></td></tr></tr></table></td></tr></table></div>
+<div class="title1">
+<table width="100%">
+<tr><td class="titleHead">Suggested for you</td>
+<td class="arrowDiv"></td></tr></table></div>
+<div class="wideShow">
+<table cellspacing="10px"><tr>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/809rcphde9sf1tm/among-us.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/d07mkenaza5eb9d/cod.jpeg"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/66jfmiu5dwrhp4q/reaction.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/118ujltjex9c1vx/garena.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/8xhh9nu2vok347r/nfs.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/ut1xkkpkwd458lm/mini-militia.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/5d3vyz0xg1y5744/coc.webp"></td></tr>
+<tr><td class="appName">Among Us<br /><span class="appCategory">72 MB</span></td>
+<td class="appName">Call of Duty&reg;: Mobile<br /><span class="appCategory">1.5 GB</span></td>
+<td class="appName">Reaction training<br /><span class="appCategory">5.4 MB</span></td>
+<td class="appName">Garena Free Fire: BOOYAH Day<br /><span class="appCategory">618 MB</span></td>
+<td class="appName">Need for Speed&trade; No Limits<br /><span class="appCategory">55 MB</span></td>
+<td class="appName">Mini Militia - Doodle Army 2<br /><span class="appCategory">40 MB</span></td>
+<td class="appName">Clash of Clans<br /><span class="appCategory">151 MB</span></td>
+</tr></table></div>
+<div class="title1">
+<table width="100%"><tr>
+<td class="titleHead">Venture into a world beyond</td></tr></table></div>
+<div class="wideShow">
+<table cellspacing="8px"><tr>
+<td><img src="https://dl.dropbox.com/s/bb2zknazxvn3vsz/genshin-1-wide.jpg" class="widePic"></td>
+<td><img src="https://dl.dropbox.com/s/v67rvtl3gbqxe8n/genshin-2-wide.jpg" class="widePic"></td>
+<td><img src="https://dl.dropbox.com/s/y9qnwt53k24y5mj/genshin-3-wide.jpg" class="widePic"></td>
+<td><img src="https://dl.dropbox.com/s/ys3e4ousk54nfvp/genshin-4-wide.jpg" class="widePic"></td>
+<td><img src="https://dl.dropbox.com/s/8vnaguwfuebrc0b/genshin-5-wide.jpg" class="widePic"></td>
+<td><img src="https://dl.dropbox.com/s/2becvgp3i32di0b/genshin-6-wide.jpg" class="widePic"></td>
+<td><img src="https://dl.dropbox.com/s/npntb4nd65vj0aw/genshin-7-wide.jpg" class="widePic"></td>
+</tr></table></div><div>
+<center><table id="wideScreenInfo2" width="90%">
+<tr><td rowspan="4"><img src="https://dl.dropbox.com/s/uro5ebmt7wz7jo6/genshin.webp" class="smallest"></td><td>Genshin Impact</td><td rowspan="4" align="right"><button class="normalBtn">Install</button></td></tr>
+<tr><td class="appCategory">miHoYo Limited</td></tr>
+<tr><td class="appCategory">4.6<i class="fa fa-star"></i></td></tr>
+<tr><td class="appCategory">In-app purchases</td></tr>
+</table></center></div>
+<div class="title1">
+<table width="100%">
+<tr><td class="titleHead">New & updated games</td>
+<td class="arrowDiv"></td></tr></table></div>
+<div class="wideShow">
+<table cellspacing="10px"><tr>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/knzyv28tbgv5xun/police.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/5w4mo0n4ao4ak7e/magic-tiles.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/f9srmnyfzzbe1jx/cooking.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/8hz8wgkrlrr4jcj/murder.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/ou71a8eszomzmvd/drive.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/s45djilqv1kwkj6/scrabble.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/4lhtno5cwnszob5/bistro.webp"></td></tr>
+<tr><td class="appName">Idle Police Tycoons<br /><span class="appCategory">108 MB</span></td>
+<td class="appName">Magic Tiles 3<br /><span class="appCategory">89 MB</span></td>
+<td class="appName">Cooking Madness<br /><span class="appCategory">108 MB</span></td>
+<td class="appName">Murder in the Alps<br /><span class="appCategory">95 MB</span></td>
+<td class="appName">#DRIVE<br /><span class="appCategory">100 MB</span></td>
+<td class="appName">Scrabble&reg; Go<br /><span class="appCategory">81 MB</span></td>
+<td class="appName">Bistro Heroes<br /><span class="appCategory">113 MB</span></td>
+</tr></table></div></div>
+<div class="main" id="topchartsDiv">
+<div id="categoriesTabBand">
+<table cellspacing="5px"><tr><td>
+<span class="categoriesTab currentCategoriesTab">Top free</span></td><td>
+<span class="categoriesTab">Top grossing</span></td><td>
+<span class="categoriesTab">Trending</span></td><td>
+<span class="categoriesTab">Top Paid</span></td></tr></table>
+</div>
+<table width="100%" id="topTable">
+<tr height="80px">
+<td width="25px" align="right" style="color:rgb(150,150,150)">1</td>
+<td width="90px" align="center"><img src="https://dl.dropbox.com/s/809rcphde9sf1tm/among-us.webp" class="smallest"></td>
+<td>Among Us<br><span class="appCategory">Action&nbsp;&nbsp<i class="fa fa-circle fa-xs"></i>&nbsp;&nbsp;Multiplayer</span><br><span class="appCategory">4.5<span class="fa fa-star"></span> &nbsp;72MB</span></td></tr>
+<tr height="80px">
+<td width="25px" align="right" style="color:rgb(150,150,150)">2</td>
+<td width="90px" align="center"><img src="https://dl.dropbox.com/s/4lgfzlpj893sgz5/ludo-king.webp" class="smallest"></td>
+<td>Ludo King&trade;<br><span class="appCategory">Board&nbsp;&nbsp<i class="fa fa-circle fa-xs"></i>&nbsp;&nbsp;Offline</span><br><span class="appCategory">4.3<span class="fa fa-star"></span> &nbsp;50MB</span></td></tr>
+<tr height="80px">
+<td width="25px" align="right" style="color:rgb(150,150,150)">3</td>
+<td width="90px" align="center"><img src="https://dl.dropbox.com/s/yazzf9j6y2lq8vn/carrom.webp" class="smallest"></td>
+<td>Carrom Pool<br><span class="appCategory">Sports&nbsp;&nbsp<i class="fa fa-circle fa-xs"></i>&nbsp;&nbsp;Billiards</span><br><span class="appCategory">4.5<span class="fa fa-star"></span> &nbsp;72MB</span></td></tr>
+<tr height="80px">
+<td width="25px" align="right" style="color:rgb(150,150,150)">4</td>
+<td width="90px" align="center"><img src="https://dl.dropbox.com/s/11p3vi6d7u1dh0t/sand-excavator.webp" class="smallest"></td>
+<td>Sand Excavator Truck Dr...<br><span class="appCategory">Simulation&nbsp;&nbsp<i class="fa fa-circle fa-xs"></i>&nbsp;&nbsp;Vehicle</span><br><span class="appCategory">3.9<span class="fa fa-star"></span> &nbsp;62MB</span></td></tr>
+<tr height="80px">
+<td width="25px" align="right" style="color:rgb(150,150,150)">5</td>
+<td width="90px" align="center"><img src="https://dl.dropbox.com/s/pzvcg3t15rwoqdc/subway-princess.webp" class="smallest"></td>
+<td>Subway Princess Runner<br><span class="appCategory">Arcade&nbsp;&nbsp<i class="fa fa-circle fa-xs"></i>&nbsp;&nbsp;Runner</span><br><span class="appCategory">4.1<span class="fa fa-star"></span> &nbsp;63MB</span></td></tr>
+<tr height="80px">
+<td width="25px" align="right" style="color:rgb(150,150,150)">10</td>
+<td width="90px" align="center"><img src="https://dl.dropbox.com/s/9u9cb3husr5t6lr/hunter-assassin.webp" class="smallest"></td>
+<td>Hunter Assassin<br><span class="appCategory">Action&nbsp;&nbsp<i class="fa fa-circle fa-xs"></i>&nbsp;&nbsp;Single player</span><br><span class="appCategory">4.2<span class="fa fa-star"></span> &nbsp;42MB</span></td>
+</tr></table></div>
+<div id="eventsDiv">Events tab not designed because this<br>page is meant to show live info.<br> Sorry!</div>
+<div id="premiumDiv">
+<div class="title1">
+<table width="100%">
+<tr><td class="titleHead">Tactical Shooters</td>
+<td class="arrowDiv"><img src="https://www.kindpng.com/picc/b/151-1519502_arrow-marks-png.png" id="right1" class="right"></td>
+</tr></table></div>
+<div class="wideShow">
+<table cellspacing="10px"><tr>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/2u5he32o40p2qsw/door-kickers.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/zzx3mlyqihikfwb/modern-combat.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/kgc0whfowjb9z4c/hitman.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/k1qraosiqzgbmt7/space-marshals.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/odbrdj3k3hn7oh0/bug-heroes.webp"></td></tr>
+<tr><td class="appName">Door Kickers<br /><span class="appCategory">477 MB&nbsp;&nbsp; $4.34</span></td>
+<td class="appName">Modern Combat 4<br /><span class="appCategory">2.1 GB&nbsp;&nbsp; $7.69</span></td>
+<td class="appName">Hitman Sniper<br /><span class="appCategory">637 MB&nbsp;&nbsp; $0.42</span></td>
+<td class="appName">Space Marshals<br /><span class="appCategory">305 MB&nbsp;&nbsp; $1.39</span></td>
+<td class="appName">Bug Heroes 2<br /><span class="appCategory">200 MB&nbsp;&nbsp; $2.24</span></td></tr></table></div>
+<div class="title1">
+<table width="100%">
+<tr><td class="titleHead">Get started</td>
+<td class="arrowDiv"><img src="https://www.kindpng.com/picc/b/151-1519502_arrow-marks-png.png" id="right1" class="right"></td>
+</tr></table></div>
+<div class="wideShow">
+<table style="border-spacing:8px 0px;"><tr>
+<td><img src="https://dl.dropbox.com/s/ds2hoeet30kx829/thimbleweed-wide.webp" class="widePic"></td>
+<td><img src="https://dl.dropbox.com/s/0u6n4nax8mhpyiu/minecraft-wide.webp" class="widePic"></td>
+<td><img src="https://dl.dropbox.com/s/4tl4uc0ormqrx0e/farming-sim-wide.webp" class="widePic"></td>
+<td><img src="https://dl.dropbox.com/s/pjefpvllotjst8d/five-nights-wide.jpg" class="widePic"></td>
+<td><img src="https://dl.dropbox.com/s/5byxp1j2psgeewb/monument-wide.jpg" class="widePic"></td>
+<td><img src="https://dl.dropbox.com/s/wl4uyh6y4gcp9ed/the-room-wide.webp" class="widePic"></td>
+<td><img src="https://dl.dropbox.com/s/73gpn5dnaouhdtd/terraria-wide.webp" class="widePic">
+</td></tr></table>
+<table cellspacing="8px">
+<tr><td><table width="250px" style="border-spacing:8px 0px"><tr><td rowspan="2" width="40px"><img class="superSmallest" src="https://dl.dropbox.com/s/ho57enn64xinea1/thimbleweed.webp"></td><td class="smallestName" colspan="2">Thimbleweed Park</td></tr><tr><td class="appCategory">4.7<span class="fa fa-star"></span></td><td class="appCategory" align="right">$9.1</td></tr></table></td>
+<td><table width="250px" style="border-spacing:8px 0px"><tr><td rowspan="2" width="40px"><img class="superSmallest" src="https://dl.dropbox.com/s/3x0l8gelrksoxln/minecraft.webp"></td><td class="smallestName" colspan="2">Minecraft</td></tr><tr><td class="appCategory">4.6<span class="fa fa-star"></span></td><td class="appCategory" align="right">$7.91</td></tr></table></td>
+<td><table width="250px" style="border-spacing:8px 0px"><tr><td rowspan="2" width="40px"><img class="superSmallest" src="https://dl.dropbox.com/s/ggdue021yc5ptxy/farming-sim.webp"></td><td class="smallestName" colspan="2">Farming Simulat...</td></tr><tr><td class="appCategory">4.4<span class="fa fa-star"></span></td><td class="appCategory" align="right">$4.76</td></tr></table></td>
+<td><table width="250px" style="border-spacing:8px 0px"><tr><td rowspan="2" width="40px"><img class="superSmallest" src="https://dl.dropbox.com/s/vpam8jjklu8vde3/five-nights.webp"></td><td class="smallestName" colspan="2">Five Nights at Fr...</td></tr><tr><td class="appCategory">4.6<span class="fa fa-star"></span></td><td class="appCategory" align="right">$3.5</td></tr></table></td>
+<td><table width="250px" style="border-spacing:8px 0px"><tr><td rowspan="2" width="40px"><img class="superSmallest" src="https://dl.dropbox.com/s/yrod56c5h205xuk/monument.webp"></td><td class="smallestName" colspan="2">Monument Valley</td></tr><tr><td class="appCategory">4.8<span class="fa fa-star"></span></td><td class="appCategory" align="right">$3.64</td></tr></table></td>
+<td><table width="250px" style="border-spacing:8px 0px"><tr><td rowspan="2" width="40px"><img class="superSmallest" src="https://dl.dropbox.com/s/i57fkyeteupepeq/the-room.webp"></td><td class="smallestName" colspan="2">The Room</td></tr><tr><td class="appCategory">4.8<span class="fa fa-star"></span></td><td class="appCategory" align="right">$0.91</td></tr></table></td>
+<td><table width="250px" style="border-spacing:8px 0px"><tr><td rowspan="2" width="40px"><img class="superSmallest" src="https://dl.dropbox.com/s/gzvlzrldtqk6hut/terraria.webp"></td><td class="smallestName" colspan="2">Terraria</td></tr><tr><td class="appCategory">4.5<span class="fa fa-star"></span></td><td class="appCategory" align="right">$5.7</td></tr>
+</table></td></tr></table></div>
+<div class="title1">
+<table width="100%">
+<tr><td class="titleHead">Recommended for you</td>
+<td class="arrowDiv"><img src="https://www.kindpng.com/picc/b/151-1519502_arrow-marks-png.png" id="right1" class="right"></td>
+</tr></table></div>
+<div class="wideShow">
+<table cellspacing="10px"><tr>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/sl3xjitm419g5jr/empire-warriors.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/iw00dd7ncapfzz4/assassin-creed.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/uc1rl5hcqz9gz0x/shadow-of-death.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/zm2408fcx9m97jb/mini-metro.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/kgc0whfowjb9z4c/hitman.webp"></td></tr>
+<tr><td class="appName">Empire Warriors ...<br /><span class="appCategory">89 MB&nbsp;&nbsp; $0.14</span></td>
+<td class="appName">Assassin's Creed ...<br /><span class="appCategory">70 MB&nbsp;&nbsp; $2.22</span></td>
+<td class="appName">Shadow of Death<br /><span class="appCategory">149 MB&nbsp;&nbsp; $0.39</span></td>
+<td class="appName">Mini Metro<br /><span class="appCategory">69 MB&nbsp;&nbsp; $0.42</span></td>
+<td class="appName">Hitman Sniper<br /><span class="appCategory">637 MB&nbsp;&nbsp; $0.42</span></td>
+</tr></table></div>
+<div class="title1">
+<table width="100%">
+<tr><td class="titleHead">Games We're Playing</td>
+<td class="arrowDiv"><img src="https://www.kindpng.com/picc/b/151-1519502_arrow-marks-png.png" id="right1" class="right"></td>
+</tr></table></div>
+<div class="wideShow">
+<table cellspacing="10px"><tr>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/9w5xjuru4is4bvo/true-skate.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/io5hj9suy323qmb/gta-sad.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/pn1im1oyia6u918/iron-marines.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/h8t7msaf6s9lolc/trivia-crack.webp"></td>
+<td class="mediumTd"><img class="mediumImg" src="https://dl.dropbox.com/s/nwp8iea5fuks7cn/scribblenauts.webp"></td></tr>
+<tr><td class="appName">True Skate<br /><span class="appCategory">96 MB&nbsp;&nbsp; $1.82</span></td>
+<td class="appName">Grand Theft Auto ...<br /><span class="appCategory">2.6 GB&nbsp;&nbsp; $2.55</span></td>
+<td class="appName">Iron Marines<br /><span class="appCategory">571 MB&nbsp;&nbsp; $2.35</span></td>
+<td class="appName">Trivia Crack<br /><span class="appCategory">42 MB&nbsp;&nbsp; $2.24</span></td>
+<td class="appName">Scribblenauts Remix<br /><span class="appCategory">173 MB&nbsp;&nbsp; $0.91</span></td>
+</tr></table></div></div>
+<div id="categoriesDiv">
+<table cellspacing="12px">
+<tr><td align="center" width="80px"><img src="https://img.icons8.com/ultraviolet/40/000000/action.png"/></td>
+<td style="color:rgb(150,150,150)">Action</td></tr>
+<tr><td align="center" width="80px"><img src="https://img.icons8.com/ultraviolet/50/000000/bungee-jumping.png"/></td>
+<td style="color:rgb(150,150,150)">Adventure</td></tr>
+<tr><td align="center" width="80px"><img src="https://img.icons8.com/ultraviolet/40/000000/pinball.png"/></td>
+<td style="color:rgb(150,150,150)">Arcade</td></tr>
+<tr><td align="center" width="80px"><img src="https://img.icons8.com/ultraviolet/40/000000/rook.png"/></td>
+<td style="color:rgb(150,150,150)">Board</td></tr>
+<tr><td align="center" width="80px"><img src="https://img.icons8.com/ultraviolet/40/000000/cards.png"/></td>
+<td style="color:rgb(150,150,150)">Card</td></tr>
+<tr><td align="center" width="80px"><img src="https://img.icons8.com/ultraviolet/40/000000/chip.png"/></td>
+<td style="color:rgb(150,150,150)">Casino</td></tr>
+<tr><td align="center" width="80px"><img src="https://img.icons8.com/ultraviolet/40/000000/cloth.png"/></td>
+<td style="color:rgb(150,150,150)">Casual</td></tr>
+<tr><td align="center" width="80px"><img src="https://img.icons8.com/ultraviolet/40/000000/university.png"/></td>
+<td style="color:rgb(150,150,150)">Education</td></tr>
+<tr><td align="center" width="80px"><img src="https://img.icons8.com/ultraviolet/40/000000/music.png"/></td>
+<td style="color:rgb(150,150,150)">Music</td></tr>
+<tr><td align="center" width="80px"><img src="https://img.icons8.com/ultraviolet/40/000000/puzzle.png"/></td>
+<td style="color:rgb(150,150,150)">Puzzle</td></tr>
+<tr><td align="center" width="80px"><img src="https://img.icons8.com/ultraviolet/40/000000/car.png"/></td>
+<td style="color:rgb(150,150,150)">Racing</td></tr>
+<tr><td align="center" width="80px"><img src="https://img.icons8.com/ultraviolet/40/000000/sword.png"/></td>
+<td style="color:rgb(150,150,150)">Role Playing</td></tr></table></div>
+
+<div style="text-align:center;padding:20px" id="timeSaver">No more apps added to prevent extra time in loading.</div>
+<div style="padding:20px 0px;"><center>
+</center></div>
+<div id="wrapper"></div>
+<div id="storeTabs">
+<table width="100%"><tr>
+<td align="center" style="font-size:13px;color:green;width:1fr;"><img src="https://dl.dropbox.com/s/qrnug7l5010g3uz/gameTab.png" height="30px"><br>Games</td>
+<td align="center" style="font-size:13px;width:1fr;"><img src="https://img.icons8.com/ios/50/000000/circled-menu.png" height="30px" style="filter:invert(50%);"/><br>Apps</td>
+<td align="center" style="font-size:13px;width:1fr;"><img src="https://img.icons8.com/windows/50/000000/movies-folder.png" height="30px" style="filter:invert(50%);"/><br>Movies</td>
+<td align="center" style="font-size:13px;width:1fr;"><img src="https://img.icons8.com/material-outlined/50/000000/book-stack.png" height="30px" style="filter:invert(50%);"/><br>Books</td>
+</tr></table></div>
+<script>
+// console.log("Please wait for loading...");
+window.onscroll=function(){stickWhenTop()};
+var tabsOffset = document.getElementById("tabBand").offsetTop;
+function stickWhenTop(){
+if(window.pageYOffset>tabsOffset){
+document.getElementById("under").style.height=""+document.getElementById("tabBand").offsetHeight+"px";
+document.getElementById("tabBand").classList.add("stickTabs");
+document.getElementById("under").style.display="block";}
+else{
+document.getElementById("tabBand").classList.remove("stickTabs");
+document.getElementById("under").style.display="none";}}
+</script>
+</body>
+</html>
