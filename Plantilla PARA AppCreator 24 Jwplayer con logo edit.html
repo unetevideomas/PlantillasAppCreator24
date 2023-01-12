@@ -1,0 +1,54 @@
+<!-- JwPlayer -->
+<script src="https://ssl.p.jwpcdn.com/player/v/8.18.4/jwplayer.js"> </script>
+<script type="text/javascript">jwplayer.key = "W7zSm81+mmIsg7F+fyHRKhF3ggLkTqtGMhvI92kbqf/ysE99";</script>
+<style type="text/css" media="screen">html,body{padding:0;margin:0;height:100%}#megaplay{width:100%!important;height:100%!important;overflow:hidden;background-color:#000}</style>
+<div id="megaplay"></div>
+<script type="text/javascript">
+var player = jwplayer("megaplay");
+player.setup({
+sources: [{
+"file": "url de tu video mp4",
+"type": "video\/mp4",
+"label": "1080p"},{
+"file": "url de tu video mp4",
+"type": "video\/mp4",
+"label": "720p"}], 
+aspectratio: "16:9",
+startparam: "start",
+primary: "html5",
+autostart: false,
+preload: "auto",
+image: "",
+advertising: {
+client: "vast",
+tag: ""},
+skin: {
+name: "megaplay"},
+logo: {
+file: "Aqui va la url tu logo"},
+captions: {
+color: "#f3f368",
+fontSize: 16,
+backgroundOpacity: 0,
+fontfamily: "Helvetica",
+edgeStyle: "raised"},
+tracks: [{
+file: "",
+label: "Español",
+kind: "captions"
+}, ]
+});
+setTimeout(function() {
+        $("#loader").delay(1000).fadeOut("slow");
+        $("#loader-wrapper").delay(1500).fadeOut("slow")
+    }, 2000);
+player.on("setupError", function() {
+swal("Server Error!", "Please contact us to fix it asap. Thank you!", "error")
+});
+player.on("error", function() {
+swal("Server Error!", "Please contact us to fix it asap. Thank you!", "error")
+});
+</script>
+<script src='https://cdn.jsdelivr.net/gh/da2l/host@1/dist/js/wgd-core.min.js'></script>
+</body>
+</html>

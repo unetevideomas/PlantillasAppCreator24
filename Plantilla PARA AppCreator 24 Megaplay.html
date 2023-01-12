@@ -1,0 +1,94 @@
+<link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+<style type="text/css">
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Raleway';}
+body {
+    font-family: arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background:#000;
+}
+#header {
+    background-color: black;
+    /*Opacity start*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    /*Opacity end*/
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+}
+#header #header-content {
+    margin: 10px;
+}
+O bien, puede usar rgba() en lugar de opacity:
+#header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+}
+#header #header-content {
+    margin: 0px;
+}
+
+#header {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 90;
+    background: url("../images/bg-header.png") repeat-x scroll 0 0 transparent;
+    height: 247px;
+}
+play{
+  left:0;
+  right:0;
+  height:3.5em;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+}
+h3 {color:#fff;}
+a{color:transparent;}
+</style>
+<div id="header">
+<div id="header-content">
+<center><h1 style="color:#fff;font-size:40px;">XS<strong style="color:#008cf7;">PLUS</strong></h1></center>
+</div>
+</div><br><br>
+<play>
+<i></i><a href="#"><h3>Inicio</h3></a>
+<a href="#"><h3>Peliculas</h3></a>
+<a href="#"><h3>Series</h3></a>
+<a href="#"><h3>Anime</h3></a><i></i>
+</play>
+<center>
+<a href="#">
+<img class="portada" style="border-radius: 8px;" src="https://www.themoviedb.org/t/p/w440_and_h660_face/rjkmN1dniUHVYAtwuV3Tji7FsDO.jpg" width="100%" height="400vh" max-width:720px; min-width:120px;></a>
+</center>
+<center>
+<play>
+<i></i><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M12 20v-8m0 0V4m0 8h8m-8 0H4" stroke="#fff" stroke-width="2" stroke-linecap="round"/></g></svg></a>
+<a href="#"><button style="background-color: white; border-radius: 10px; color:#111; height: 35px; width: 160px;">
+<b><font size="4" color= "black">
+<i class="fas fa-play"> Ver Ahora</i></font></b></button></a>
+<a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448s448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372s372 166.6 372 372s-166.6 372-372 372z" fill="#fff"/><path d="M464 336a48 48 0 1 0 96 0a48 48 0 1 0-96 0zm72 112h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V456c0-4.4-3.6-8-8-8z" fill="#fff"/></svg></a>
+<i></i></play>

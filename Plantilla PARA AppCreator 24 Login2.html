@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login App creator24 Xsplus</title>
+
+    <!-- Bootstrap CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-success">
+    <div class="container">
+        <h1 class="text-center">Login</h1>
+
+        <div class="col-md-8 col-md-offset-2">
+            <br />
+            Enter Email:
+            <input type="text" class="form-control" name="" id="email"><br />
+            Enter Pass:
+            <input type="text" class="form-control" name="" id="pass"><br />
+            <br />
+            <button type="button" onclick="login()" class="form-control btn btn-primary"> Login </button>
+        </div>
+</div>
+<script>
+var a=localStorage.getItem("abc");
+if(a=="save password"){
+window.location.href="go:Home";}
+function login(){
+var email=document.getElementById("email").value;
+var pass=document.getElementById("pass").value;
+var email1=localStorage.getItem("email1");
+var pass1=localStorage.getItem("pass1");
+if(email == "xsplus" && pass == "1234"){
+localStorage.setItem("code","secret");
+window.location.href="go:Home";}
+else{alert("Error en la contraseña o nombre de usuario")}}
+</script>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

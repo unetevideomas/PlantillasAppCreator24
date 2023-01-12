@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+<title>Youtube Modal + Informacion</title>
+<link rel='stylesheet' href='https://cdn.rawgit.com/JacobLett/bootstrap4-latest/master/bootstrap-4-latest.min.css'>
+  </head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+  <script src="https://cdn.rawgit.com/JacobLett/bootstrap4-latest/master/bootstrap-4-latest.min.js"></script>
+  <body>
+    
+    <style type="text/css">
+.carouselOfImages
+{
+  max-width:960px;
+  margin:auto;
+  overflow:visible;
+}
+.carouselImage {
+  width: 200px;
+  height: 200px;
+  margin-top:65px;
+  margin-bottom:100px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  transition: transform 0.5s;
+  transform: scale(1);
+}
+.carouselImage img {
+  height:235px;
+}
+.carouselImage.is-selected {
+  z-index:10;
+  transform: scale(1.5);
+}
+.carouselImage.nextToSelected {
+  transform: scale(1.25);
+  z-index:5;
+}
+
+/*! Flickity v2.0.5
+https://flickity.metafizzy.co
+---------------------------------------------- */
+
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+          tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  background: hsla(0, 0%, 100%, 0.75);
+  cursor: pointer;
+  /* vertically center */
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.flickity-prev-next-button:hover { background: white; }
+
+.flickity-prev-next-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #09F;
+}
+
+.flickity-prev-next-button:active {
+  opacity: 0.6;
+}
+
+.flickity-prev-next-button.previous { left: 10px; }
+.flickity-prev-next-button.next { right: 10px; }
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+.flickity-prev-next-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+}
+
+.flickity-prev-next-button svg {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+.flickity-prev-next-button .arrow {
+  fill: #333;
+}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots { direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+.product-detail-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size:21px;
+    font-weight:700;
+}
+
+#lightbox {
+	display: none;
+	position: fixed;
+	top:0;
+	left:0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width:90vw;
+	height:90vh;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#dark {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background:rgba(0,0,0,.9);
+	width:100vw;
+	height:100vh;
+}
+
+.product-detail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.product-detail-inner {
+  display: flex;  
+  background-color: white;
+  width: 75vw;
+  height: 75vh;
+  position: relative;
+  padding: 1rem;
+  overflow-y: auto; }
+
+.product-detail-image {
+  flex: 0 1 30%;
+  padding:15px;
+}
+  
+.product-detail-image  img {
+    width: 100%;
+} 
+
+.hide {
+  display: none; }
+
+.modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.modal-header {
+  padding:0;
+}
+
+a.btn.btn-primary {
+  color:#fff;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top: 0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+    </style>
+    
+<section class="items">
+<div class="carouselOfImages">
+  <div class="carouselImage" style="background-size:cover;">
+    <img data-tab="bright" src="http://www.thebrandage.com/assets/image/uploads/haberler/Bright_TUR.jpg"/>
+  </div>
+  <div class="carouselImage" style="background-size:cover;">
+    <img data-tab="avatar" src="https://i.pinimg.com/736x/a4/23/f8/a423f86593029b7d2a6d9f1e1fd1e406---movies-movies-to-watch-online.jpg"/>
+  </div>
+ <div class="carouselImage" style="background-size:cover;">
+    <img data-tab="nuh" src="http://a69.g.akamai.net/n/69/10688/v1/img5.allocine.fr/acmedia/medias/nmedia/19/02/17/31/20658158.jpg"/>
+  </div>
+   <div class="carouselImage" style="background-size:cover;">
+    <img data-tab="lord" src="https://cdn.empireonline.com/jpg/70/0/0/1280/960/aspectfit/0/0/0/0/0/0/c/features/59e8d795405a5c6805947751/47%20Lord%20of%20War.jpg"/>
+  </div>
+  <div class="carouselImage" style="background-size:cover;">
+    <img data-tab="thor" src="https://mikeantjones.files.wordpress.com/2012/04/thor-film-poster.jpg"/>
+  </div>
+   <div class="carouselImage" style="background-size:cover;">
+    <img data-tab="john" src="https://images-na.ssl-images-amazon.com/images/I/91H06HPhX%2BL._SY717_.jpg"/>
+  </div>
+  <div class="carouselImage" style="background-size:cover;">
+    <img data-tab="bond" src="http://www.the007dossier.com/007Dossier/james-bond-007-movie-posters/skyfall/skyfall-bond-poster.jpg"/>
+  </div>
+   <div class="carouselImage" style="background-size:cover;">
+    <img data-tab="deadpool2" src="https://icdn3.digitaltrends.com/image/deadpool-2-thanksgiving-poster-1294x2048.jpg"/>
+  </div>
+   <div class="carouselImage" style="background-size:cover;">
+    <img data-tab="inception" src="http://netdna.webdesignerdepot.com/uploads/2011/02/inception.jpg"/>
+  </div>
+   <div class="carouselImage" style="background-size:cover;">
+    <img data-tab="fight" src="https://i.pinimg.com/736x/fd/5e/66/fd5e662dce1a3a8cd192a5952fa64f02--classic-poster-classic-movies-posters.jpg"/>
+  </div>
+   <div class="carouselImage" style="background-size:cover;">
+    <img data-tab="dunkirk" src="http://www.gmhslasso.org/wp-content/uploads/2018/01/Stegenga_BestMoviesof2017_Photo2.jpg"/>
+  </div>
+</div>
+</section>
+
+<section class="product-detail bright hide">
+  <div class="product-detail-inner"><a class="product-detail-close">X</a>
+    <div class="product-detail-image">
+      <img src=""/></div>
+    <div class="product-detail-text">
+      <h3>Bright</h3>
+      <p>The Abundant Life Bible offers readers insights about living the abundant life through a relationship with Jesus Christ. Topics such as joy, peace, dealing with life's tough issues, and more offer practical guidance for daily life. The Abundant Life Bible is value priced—perfect for gift giving.</p>
+      <div class="price">
+        <div class="price-binding">
+          <h4>İmdb:</h4>
+        </div>
+        <div class="price-price">
+          <h5>Date:</h5>
+        </div>
+<a data-target=".modal-1" data-toggle="modal" data-the-video="https://www.youtube.com/embed/M47Z3I7vG3w?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1" class="btn btn-primary">Fragman</a>
+  </div>
+</section>
+<section class="product-detail avatar hide">
+  <div class="product-detail-inner"><a class="product-detail-close">X</a>
+    <div class="product-detail-image"><img src=""/></div>
+    <div class="product-detail-text">
+      <h3>Avatar</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, animi deserunt? Deleniti, in. Rem nihil quam officia cumque molestiae, a mollitia consectetur perspiciatis optio repudiandae fuga quia? Voluptatibus, accusantium sapiente?</p>
+      <div class="price">
+        <div class="price-binding">
+          <h4>İmbdb:</h4>
+        </div>
+        <div class="price-price">
+          <h5>Date:</h5>
+        </div>
+      </div>
+        <a data-target=".modal-1" data-toggle="modal" data-the-video="https://www.youtube.com/embed/XtEcU3tkZBc?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1" class="btn btn-primary">Fragman</a>
+    </div>
+  </div>
+</section>
+<section class="product-detail nuh hide">
+  <div class="product-detail-inner"><a class="product-detail-close">X</a>
+    <div class="product-detail-image"><img src=""/></div>
+    <div class="product-detail-text">
+      <h3>Nuh</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, animi deserunt? Deleniti, in. Rem nihil quam officia cumque molestiae, a mollitia consectetur perspiciatis optio repudiandae fuga quia? Voluptatibus, accusantium sapiente?</p>
+      <div class="price">
+        <div class="price-binding">
+          <h4>İmbdb:</h4>
+        </div>
+        <div class="price-price">
+          <h5>Date:</h5>
+        </div>
+      </div>
+        <a data-target=".modal-1" data-toggle="modal" data-the-video="https://www.youtube.com/embed/fdu10cX3pWA?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1" class="btn btn-primary">Fragman</a>
+    </div>
+</section>
+<section class="product-detail lord hide">
+  <div class="product-detail-inner"><a class="product-detail-close">X</a>
+    <div class="product-detail-image"><img src=""/></div>
+    <div class="product-detail-text">
+      <h3>Lord</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ducimus iure atque praesentium? Consequatur perferendis qui eligendi laborum explicabo animi sapiente. Quae asperiores doloribus magni praesentium. Totam, omnis. Unde, fugit.</p>
+       <div class="price">
+        <div class="price-binding">
+          <h4>İmbdb:</h4>
+        </div>
+        <div class="price-price">
+          <h5>Date:</h5>
+        </div>
+      </div>
+        <a data-target=".modal-1" data-toggle="modal" data-the-video="https://www.youtube.com/embed/ke79K4bO4P8?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1" class="btn btn-primary">Fragman</a>
+    </div>
+  </div>
+</section>
+<section class="product-detail thor hide">
+  <div class="product-detail-inner"><a class="product-detail-close">X</a>
+    <div class="product-detail-image"><img src=""/></div>
+    <div class="product-detail-text">
+      <h3>Thor</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, exercitationem vero? Asperiores cumque corrupti expedita? Veniam dignissimos, sit rem iusto natus at rerum sunt ipsum eius? Doloremque aut maiores iure.</p>
+        <a data-target=".modal-1" data-toggle="modal" data-the-video="https://www.youtube.com/embed/ke79K4bO4P8?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1" class="btn btn-primary">Fragman</a>
+    </div>
+  </div>
+</section>
+<section class="product-detail john hide">
+  <div class="product-detail-inner"><a class="product-detail-close">X</a>
+    <div class="product-detail-image"><img src=""/></div>
+    <div class="product-detail-text">
+      <h3>John Wick 2</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, possimus necessitatibus. Quaerat est tenetur quidem provident perspiciatis illo labore eaque, voluptatum fugit voluptatem facere sapiente. Officia porro deleniti inventore ipsum?</p>
+        <a data-target=".modal-1" data-toggle="modal" data-the-video="https://www.youtube.com/embed/XGk2EfbD_Ps?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1" class="btn btn-primary">Fragman</a>
+    </div>
+  </div>
+</section>
+<section class="product-detail bond hide">
+  <div class="product-detail-inner"><a class="product-detail-close">X</a>
+    <div class="product-detail-image"><img src=""/></div>
+    <div class="product-detail-text">
+      <h3>James Bond</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis hic praesentium dicta consequuntur dolorem recusandae error quibusdam aspernatur! Itaque quisquam, perspiciatis quo facere eius pariatur suscipit! Ducimus repudiandae nihil minima?</p>
+        <a data-target=".modal-1" data-toggle="modal" data-the-video="https://www.youtube.com/embed/7GqClqvlObY?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1" class="btn btn-primary">Fragman</a>
+    </div>
+  </div>
+</section>
+<section class="product-detail deadpool2 hide">
+  <div class="product-detail-inner"><a class="product-detail-close">X</a>
+    <div class="product-detail-image"><img src=""/></div>
+    <div class="product-detail-text">
+      <h3>Deadpool 2</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla libero debitis sit fugit explicabo dolor, mollitia unde perferendis sunt molestiae perspiciatis nesciunt odio quo minus culpa cum dignissimos eveniet totam?</p>
+        <a data-target=".modal-1" data-toggle="modal" data-the-video="https://www.youtube.com/embed/PWsXQKv6UiA?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1" class="btn btn-primary">Fragman</a>
+    </div>
+  </div>
+</section>
+<section class="product-detail inception hide">
+  <div class="product-detail-inner"><a class="product-detail-close">X</a>
+    <div class="product-detail-image"><img src=""/></div>
+    <div class="product-detail-text">
+      <h3>İnception</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas eius necessitatibus natus iure aperiam voluptates magni, saepe fuga iusto asperiores mollitia eligendi unde exercitationem itaque tempora veniam delectus est maxime?</p>
+        <a data-target=".modal-1" data-toggle="modal" data-the-video="https://www.youtube.com/embed/66TuSJo4dZM?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1" class="btn btn-primary">Fragman</a>
+    </div>
+  </div>
+</section>
+<section class="product-detail fight hide">
+  <div class="product-detail-inner"><a class="product-detail-close">X</a>
+    <div class="product-detail-image"><img src=""/></div>
+    <div class="product-detail-text">
+      <h3>Fight Club</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a fugiat laboriosam omnis expedita repellendus animi optio maiores amet recusandae quasi, blanditiis consequatur nisi. Ad recusandae ipsa at voluptas ipsam!</p>
+        <a data-target=".modal-1" data-toggle="modal" data-the-video="https://www.youtube.com/embed/SUXWAEX2jlg?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1" class="btn btn-primary">Fragman</a>
+    </div>
+  </div>
+</section>
+<section class="product-detail dunkirk hide">
+  <div class="product-detail-inner"><a class="product-detail-close">X</a>
+    <div class="product-detail-image"><img src=""/></div>
+    <div class="product-detail-text">
+      <h3>Dunkirk</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam amet beatae, laudantium, suscipit veniam odio minima id non incidunt hic velit, reiciendis harum omnis voluptatibus distinctio impedit animi recusandae! Odit.</p>
+        <a data-target=".modal-1" data-toggle="modal" data-the-video="https://www.youtube.com/embed/F-eMt3SrfFU?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;html5=1" class="btn btn-primary">Fragman</a>
+    </div>
+  </div>
+</section>
+<div id="dark"></div>
+<div id="lightbox"></div>
+    <div aria-labelledby="modal-1-label" class="modal fade modal-media modal-video modal-slim modal-1" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">X</span></button></div>
+
+<div class="modal-body">
+<div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="" frameborder="0" src="" width="100%"></iframe></div>
+</div>
+</div>
+</div>
+</div>
+    
+    
+    <script>
+$(document).ready(function() {
+var $imagesCarousel = $('.carouselOfImages').flickity({
+  contain: true,
+  autoPlay: true,
+  wrapAround: true,
+  friction: 0.3
+});
+function resizeCells() {
+  var flkty = $imagesCarousel.data('flickity');
+  var $current = flkty.selectedIndex
+  var $length = flkty.cells.length
+  if ($length <='5') {
+    $imagesCarousel.flickity('destroy');
+  }
+  $('.carouselOfImages .carouselImage').removeClass("nextToSelected");
+  $('.carouselOfImages .carouselImage').eq($current-1).addClass("nextToSelected");
+  if ($current+1 == $length) {
+    var $endCell = "0"
+  } else {
+    var $endCell = $current+1
+  }
+   $('.carouselOfImages .carouselImage').eq($endCell).addClass("nextToSelected");
+  };
+resizeCells();
+
+$imagesCarousel.on('scroll.flickity', function() {
+    resizeCells();
+  });
+  
+  
+  
+  
+  
+$(".carouselImage img").click(function() { 
+  var $this = $(this);
+  var imageID = $this.attr('data-tab');
+  var imageSrc = $this.attr('src');
+  
+  $('.' + imageID).removeClass('hide');
+  $('.' + imageID + ' .product-detail-image img').attr('src', imageSrc);
+});
+
+$('.product-detail-close,.product-detail').on('click', function() {
+  $('.product-detail').addClass('hide');
+});
+
+  $('.modal-video').on('hidden.bs.modal', function (e) {
+    $('.modal-video iframe').attr('src', $('.modal-video iframe').attr('src'));
+  });
+
+autoPlayYouTubeModal();
+
+  function autoPlayYouTubeModal() {
+      var trigger = $("body").find('[data-the-video]');
+      trigger.click(function () {
+          var theModal = $(this).data("target"),
+              videoSRC = $(this).attr("data-the-video"),
+              videoSRCauto = videoSRC + "&autoplay=1";
+          $(theModal + ' iframe').attr('src', videoSRCauto);
+          $(theModal + ' button.close').click(function () {
+              $(theModal + ' iframe').attr('src', videoSRC);
+          });
+          $('.modal-video').click(function () {
+              $(theModal + ' iframe').attr('src', videoSRC);
+          });
+      });
+  }
+
+$(window).on('load resize', function(){
+  var $window = $(window);
+  $('.modal-fill-vert .modal-body > *').height(function(){
+      return $window.height()-60;
+    });
+  }); 
+});
+
+
+
+  
+
+
+    </script>
+    
+    
+  </body>
+</html>

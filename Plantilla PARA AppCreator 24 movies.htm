@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutorial - Galería de imágenes</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('#myInput').on('input', function() {
+var value = $(this).val().toLowerCase();
+$('.gallery >.poster').filter(function() {
+$(this).toggle($(this).find('a').attr('title').toLowerCase().indexOf(value) > -1)});});});
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{user-select:none;margin:0;padding:0;box-sizing:border-box;outline:none;user-select:none;}
+body{background:#151515;}
+#xs-header{background:#000;left: 0;position: fixed;top: 0;width: 100%;z-index: 90;height: 8%;}
+.xsposter{margin:0px;position:relative;display:inline-block;overflow-x:scroll;overflow-y:hidden;}
+play{background:#000;color:#fff;padding:5px;left:0;right:0;height:2.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;}
+.wrapper{margin:0px;max-width:1100px;}
+.wrapper nav{display:flex;justify-content:center;}
+.wrapper .items{display:flex;max-width:720px;width:100%;justify-content:space-between;overflow:auto;}
+.items span{background:#000;color:#fff;padding:7px 25px;font-size:14px;cursor:pointer;border:0px solid #ddd;transition: all 0.3s ease;}
+.items span.active{color:#fff;background:#ff0014;}
+.gallery{display: flex;flex-wrap: wrap;margin-top: 3px;}
+.gallery .poster{width: calc(100% / 3);padding:5px;}
+.gallery .poster span{display: flex;width: 100%;overflow: hidden;}
+.gallery .poster img{background:#fff;border-radius:7px;vertical-align: middle;transition: all 0.3s ease;cursor: pointer;}
+.gallery .poster.hide{display: none;}
+@keyframes animate {
+0%{transform: scale(0.5);}
+100%{transform: scale(1);}}
+@media (max-width: 1000px) {
+.gallery .poster{width: calc(100% / 6);}}
+@media (min-width: 1360px) {
+.gallery {margin-left: -10%;margin-right: -10%;}}
+@media (max-width: 800px) {
+.gallery .poster{width: calc(100% / 5);}}
+@media (max-width: 700px) {
+.wrapper nav .items{max-width: 1000px;}nav .items span{padding: 7px 15px}}
+@media (max-width: 600px) {
+.wrapper{margin: 0px auto;}
+.wrapper nav .items{overflow: auto;}
+nav .items span{margin:0px;}
+.gallery .poster{width: calc(100% / 3);}}
+
+.xaviec{background:#000;position:fixed;top:-5px;width:100%;}
+
+nav {
+margin-top:10px;
+}
+</style>
+</head>
+<body>
+		
+<div class="xaviec">
+<div class="wrapper">
+<nav><div class="items">
+<span class="item active" data-name="all">Todos</span>
+<span class="item" data-name="Acción">Acción</span>
+<span class="item" data-name="Aventuras">Aventura</span>
+<span class="item" data-name="Animacion">Animación</span>
+<span class="item" data-name="Comedia">Comedia</span>
+<span class="item" data-name="Drama">Drama</span>
+<span class="item" data-name="Familiar">Familiar</span>
+<span class="item" data-name="Marvel">Marvel</span>
+<span class="item" data-name="Romance">Romance</span>
+<span class="item" data-name="terror">Terror</span>
+
+
+</div></nav></div></div><br><br>
+<div class="gallery">
+<a href="go:122" title="1">
+<div class="poster" data-name="Acción"><span><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/bOFaAXmWWXC3Rbv4u4uM9ZSzRXP.jpg" width="110px" height="140px"></span></a></div>
+<a href="go:122" title="2">
+<div class="poster" data-name="Aventuras"><span><img src="https://www.themoviedb.org/t/p/original/6OWa9RLguzJdVqERKEA3AEPh2lt.jpg" width="110px" height="140px"></span></a></div>
+<a href="go:122" title="3">
+<div class="poster" data-name="Acción"><span><img src="https://www.themoviedb.org/t/p/original/3qsgNh8vvg6cSldUHb0L76X3rR6.jpg" width="110px" height="140px"></span></a></div>
+<a href="go:122" title="1">
+<div class="poster" data-name="Acción"><span><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/bOFaAXmWWXC3Rbv4u4uM9ZSzRXP.jpg" width="110px" height="140px"></span></a></div>
+<a href="go:122" title="2">
+<div class="poster" data-name="Aventuras"><span><img src="https://www.themoviedb.org/t/p/original/6OWa9RLguzJdVqERKEA3AEPh2lt.jpg" width="110px" height="140px"></span></a></div>
+<a href="go:122" title="3">
+<div class="poster" data-name="Acción"><span><img src="https://www.themoviedb.org/t/p/original/3qsgNh8vvg6cSldUHb0L76X3rR6.jpg" width="110px" height="140px"></span></a></div>
+<a href="go:122" title="1">
+<div class="poster" data-name="Acción"><span><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/bOFaAXmWWXC3Rbv4u4uM9ZSzRXP.jpg" width="110px" height="140px"></span></a></div>
+<a href="go:122" title="2">
+<div class="poster" data-name="Aventuras"><span><img src="https://www.themoviedb.org/t/p/original/6OWa9RLguzJdVqERKEA3AEPh2lt.jpg" width="110px" height="140px"></span></a></div>
+<a href="go:122" title="3">
+<div class="poster" data-name="Acción"><span><img src="https://www.themoviedb.org/t/p/original/3qsgNh8vvg6cSldUHb0L76X3rR6.jpg" width="110px" height="140px"></span></a></div>
+<a href="go:122" title="1">
+<div class="poster" data-name="Acción"><span><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/bOFaAXmWWXC3Rbv4u4uM9ZSzRXP.jpg" width="110px" height="140px"></span></a></div>
+<a href="go:122" title="2">
+<div class="poster" data-name="Aventuras"><span><img src="https://www.themoviedb.org/t/p/original/6OWa9RLguzJdVqERKEA3AEPh2lt.jpg" width="110px" height="140px"></span></a></div>
+<a href="go:122" title="3">
+<div class="poster" data-name="Acción"><span><img src="https://www.themoviedb.org/t/p/original/3qsgNh8vvg6cSldUHb0L76X3rR6.jpg" width="110px" height="140px"></span></a></div>
+
+
+</div><br>
+<script>
+const filterItem = document.querySelector(".items");
+const filterImg = document.querySelectorAll(".gallery .poster");
+window.onload = ()=>{ 
+filterItem.onclick = (selectedItem)=>{ 
+if(selectedItem.target.classList.contains("item")){ 
+filterItem.querySelector(".active").classList.remove("active"); 
+selectedItem.target.classList.add("active"); 
+let filterName = selectedItem.target.getAttribute("data-name"); 
+filterImg.forEach((image) => {
+let filterImges = image.getAttribute("data-name"); 
+if((filterImges == filterName) || (filterName == "all")){
+image.classList.remove("hide"); 
+image.classList.add("show"); }
+else{image.classList.add("hide"); image.classList.remove("show"); }});}}
+for (let i = 0; i < filterImg.length; i++) {
+filterImg[i].setAttribute("onclick", "preview(this)"); }}
+</script>
+</body>
+</html>

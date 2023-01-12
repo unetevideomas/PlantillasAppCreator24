@@ -1,0 +1,57 @@
+
+
+       <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+            <script>
+                setInterval(blink,500);
+
+function blink() {
+    $("#blink").toggleClass("changeColor");
+}
+            </script>
+<h2 style ='color:green;'>ENIKOP </h2>
+
+
+<style>
+body {
+    background-color:black;
+}
+
+
+
+.changeColor  { width: 50px; height: 50px; -webkit-animation: Heart 1s infinite; /* Safari 4+ */ -moz-animation: Heart 1s infinite; /* Fx 5+ */ -o-animation: Heart 1s infinite; /* Opera 12+ */ animation: Heart 1s infinite; /* IE 10+, Fx 29+ */ } @-webkit-keyframes Heart  { 0%, 49% { color: rgb(117, 29, 253); } }
+
+
+#blink
+{
+    margin-left:22%;
+    margin-top:25px;
+    font-size:17px;
+}
+section { margin-left:30%;margin-top:20%;color:#ff2222;}
+</style>
+<section id='blink'>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Jordan es</p>
+<?php
+echo "<pre>";
+$b = 0; $f = 0; $num = 10;
+for($b=$num/2; $b<=$num; $b+=2){
+   for($f=1; $f<$num-$b; $f+=2){
+      echo "&#160;";}
+for($f=1; $f<=$b; $f++){
+      echo "¤";}
+for($f=1; $f<=$num-$b; $f++){
+      echo "&#160;";}
+for($f=1; $f<=$b; $f++){
+      echo "¤";}
+          echo "<br/>";}
+for($b=$num; $b>=1; $b--){
+   for($f=$b; $f<$num; $f++){
+      echo "&#160;";}
+for($f=1; $f<=($b*2)-1; $f++){
+      echo "¤";}
+      echo "<br/>";}
+      echo "</pre>";
+?>
+<pre></pre><p>  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; JORDAN</p>
+</section><br>
+<footer style='color:yellow;font-size:.50em;'>©ENIKOP</footer>

@@ -1,0 +1,123 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+<title>XSPLUS EDIT</title>
+<link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/video.js@6.7.1/dist/video-js.css" rel="stylesheet">
+<link href="http://tv.tvcluboficial.com///assets/css/jquery.toast.min.css" rel="stylesheet">
+<link href="https://nicebots.herokuapp.com/17b4f/xavitv-style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+</header>
+<div class="container" id="main">
+<div class="row g-0">
+<div class="col-md-12">
+<div id="current-logo" style="background-image: url()"></div>
+<video-js id="video-player" class="vjs-default-skin" controls autoplay="true" preload="auto">
+<source src="http://user.tvcluboficial.com/stream/free_XavierSuarez/275/1.m3u8" type="application/x-mpegURL">
+</video-js></div></div>
+<div class="row mt-2">
+<div class="col-md-8" id="stream-current-epg">
+<b>Estas viendo:</b>
+<span id="stream-current-program"></span>
+<span id="stream-current-info"></span>
+</div>
+<div class="col-md-4">
+<input type="text" class="form-control" id="search" placeholder="Buscar..." />
+</div></div>
+<nav class="row" id="streams">
+<a href="#" data-id="31" class="col-md-3 col-12 stream" data-category="entretenimiento" data-title="a&e">
+<div class="row">
+<div class="col-md-4 col-3">
+<div class="stream-logo" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/8/80/SexMex_logo.png)"></div></div>
+<div class="col-md-8 col-8 stream-info">
+<div class="stream-title">Angie Miller</div>
+<span class="stream-epg">Adultos</span>
+<div class="stream-text">Prima Enfiestada</div>
+</div></div></a>
+
+<a href="#" data-id="287" class="col-md-3 col-12 stream" data-category="deportes" data-title="gol tv">
+<div class="row">
+<div class="col-md-4 col-3">
+<div class="stream-logo" style="background-image:url(http://img.tvcluboficial.com/goltv.png)"></div></div>
+<div class="col-md-8 col-8 stream-info">
+<div class="stream-title"></div>
+<span class="stream-epg">Deportes</span>
+<div class="stream-text">No tenemos información disponible sobre este programa</div>
+</div></div></a>
+
+<a href="#" data-id="514" class="col-md-3 col-12 stream" data-category="deportes" data-title="gol tv hd">
+<div class="row">
+<div class="col-md-4 col-3">
+<div class="stream-logo" style="background-image:url(http://img.tvcluboficial.com/goltv.png)"></div>
+</div>
+<div class="col-md-8 col-8 stream-info">
+<div class="stream-title">Gol TV HD</div>
+<span class="stream-epg">Deportes</span>
+<div class="stream-text">No tenemos información disponible sobre este programa</div>
+</div></div></a>
+
+<a href="#" data-id="780" class="col-md-3 col-12 stream" data-category="peru" data-title="america">
+<div class="row">
+<div class="col-md-4 col-3">
+<div class="stream-logo" style="background-image:url(http://img.tvcluboficial.com/americaperu.png)"></div>
+</div>
+<div class="col-md-8 col-8 stream-info">
+<div class="stream-title">America</div>
+<span class="stream-epg">America Peru</span>
+<div class="stream-text">No tenemos información disponible sobre este programa</div>
+</div></div></a>
+
+</nav></div>
+<script src="https://unpkg.com/video.js@6.7.1/dist/video.js"></script>
+<script src="https://unpkg.com/@videojs/http-streaming@2.13.0/dist/videojs-http-streaming.min.js"></script>
+<script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="http://tv.tvcluboficial.com///assets/js/jquery.toast.min.js"></script>
+<script>
+//$iso = 
+$(function() {
+$('#streams > a:first').focus();});
+var player = videojs('video-player', {
+autoplay: true
+});
+player.ready(function() {
+var promise = player.play();
+if (promise !== undefined) {
+promise.then(function() {
+console.log('Autoplay started!');
+}).catch(function(error) {
+console.log('Autoplay was prevented.');
+});}});
+$('#search').keyup(function(e) {
+var search = $(this).val().toLowerCase();
+console.log(search);
+$('.stream').each(function(item) {
+if($(this).data('title').indexOf(search) > -1) {
+if($(this).is(":hidden")) {
+$(this).show();}}
+else {
+if($(this).is(":visible")) {
+$(this).hide();}}});});
+$('a').click(function(e) {
+e.preventDefault();
+var id = $(this).data('id');
+var title = $(this).find('.stream-title').text()
+var program = $(this).find('.stream-epg').text()
+var info = $(this).find('.stream-text').text()
+player.pause();
+player.src({
+src: 'https://user.tvcluboficial.com/stream/web/play/' + id + '.m3u8',
+type: 'application/x-mpegURL'});
+$('#stream-current-program').html(program);
+$('#stream-current-info').html(info);
+$("html, body").animate({
+scrollTop: 0
+}, "slow");});
+</script>
+</body>
+</html>

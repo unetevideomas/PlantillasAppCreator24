@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>PLANTILLA MODIFICADA POR XAVIER SUAREZ</title>
+<title>Únete a nuestro canal de Telegram - https://t.me/xsplustemplates</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- Iconos -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+<style>
+*{user-select:none;margin:0;padding:0;box-sizing:border-box;outline:none;user-select:none;}
+::-webkit-scrollbar{width: 0px;}
+body{background:#222222;height:100vh;}
+.container{background:transparent;width:100%;height:100%;position:relative;overflow-Y:scroll;margin-top:0.5em;}
+play{background:transparent;color:#fff;left:0;right:0;height:2.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;margin-top:10px;padding:10px;}
+.single-item img{height:200px;border-radius:7px;}
+.single-item{position:relative;}
+.slick-dots li button:before{color:white;opacity:1;text-shadow:0px 3px 6px #404;}
+.slick-dots li.slick-active button:before{color:red;opacity:1;}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+<style>
+.alignleft{ float:left; margin-left:5px; color:#fff; font-weight:bold; font-size:16px;} 
+.alignright{ float:right; margin-right:10px; color:#fff; font-size:14px; font-weight:bold ;} 
+h4{ margin-left:5px; color:#fff; font-weight:bold; font-size:15px;}
+.poster{position:relative;overflow:hidden;} 
+div.scrollmenu{background:#000000;overflow:auto;white-space:nowrap;position:relative;overflow-y:hidden;} 
+div.scrollmenu a { display: inline-block; color: #000; text-align:center; padding: 4px; text-decoration: none;}
+div.scrollmenu a:hover{ background:transparent;}
+.card{ position:relative ; text-align:center; color:white;}
+/*.centered{ font-size:12px; font-weight:bold; position:absolute; top:80%; left: 50%; transform:translate(-50%,-50%)} 
+.cent{ font-size:auto; position:absolute ; top:95%; left: 50%; transform:translate(-50%,-50%)} */
+.imgcard{ width:110px;border-radius:7px;height:150px;z-index:1;}
+.mnt{width:100px; border-radius:100px;height:100px;}
+#xs-header{background:transparent;left:0;position:fixed;top:-10px;width:100%;z-index:90;height:8%;}
+</style>
+</head>
+<body>
+<div id="xs-header">
+<play>
+<a href="#" style="color:red;"><span class=""></span></a>
+<center><h1 style="color:#ffffff;font-size:25px;"><strong style="color:#ffffff;">MOVIX</strong></h1></center>
+<a href="http://action_search" style="color:red;"><span class=""></span></a>
+</play></div>
+<!-- creado por jordan -->
+
+<br>
+   <br>
+   
+<!DOCTYPE html><html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<title>PELISGRATIS ⋆ Películas Gratis y Estrenos Online HD</title>
+<meta name="description" content="PelisGratis.nu tiene las mejores películas y estrenos 2021 en calidad HD gratis, sin cortes y en español, latino y subtitulado, somos la MEJOR página.">
+<link rel="canonical" href="https://pelisgratis.nu/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:type" content="website">
+<meta property="og:description" content="PelisGratis.nu tiene las mejores películas y estrenos 2021 en calidad HD gratis, sin cortes y en español, latino y subtitulado, somos la MEJOR página.">
+<meta property="og:url" content="https://pelisgratis.nu/">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://pelisgratis.nu/#organization","name":"PelisGratis","url":"https://pelisgratis.nu/","sameAs":[],"logo":{"@type":"ImageObject","@id":"https://pelisgratis.nu/#logo","inLanguage":"es","url":"","contentUrl":"","caption":"PelisGratis"},"image":{"@id":"https://pelisgratis.nu/#logo"}},{"@type":"WebSite","@id":"https://pelisgratis.nu/#website","url":"https://pelisgratis.nu/","name":"","description":"","publisher":{"@id":"https://pelisgratis.nu/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://pelisgratis.nu/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"CollectionPage","@id":"https://pelisgratis.nu/#webpage","url":"https://pelisgratis.nu/","name":"PELISGRATIS ⋆ Películas Gratis y Estrenos Online HD","isPartOf":{"@id":"https://pelisgratis.nu/#website"},"about":{"@id":"https://pelisgratis.nu/#organization"},"description":"PelisGratis.nu tiene las mejores películas y estrenos 2021 en calidad HD gratis, sin cortes y en español, latino y subtitulado, somos la MEJOR página.","breadcrumb":{"@id":"https://pelisgratis.nu/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://pelisgratis.nu/"]}]},{"@type":"BreadcrumbList","@id":"https://pelisgratis.nu/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio"}]}]}</script>
+
+<link rel="dns-prefetch" href="//s.w.org">
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel="stylesheet" id="kk-star-ratings-css" href="https://pelisgratis.nu/wp-content/plugins/kk-star-ratings/src/core/public/css/kk-star-ratings.min.css?ver=5.2.9" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="https://pelisgratis.nu/wp-content/themes/pelisgratis/template/librerias/bootstrap/css/bootstrap.min.css?ver=1.0.0" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-css" href="https://pelisgratis.nu/wp-content/themes/pelisgratis/template/librerias/fontawesome/css/all.min.css?ver=1.0.0" type="text/css" media="all">
+<link rel="stylesheet" id="style-css" href="https://pelisgratis.nu/wp-content/themes/pelisgratis/style.css?ver=1.0.0" type="text/css" media="all">
+<script type="text/javascript" src="https://pelisgratis.nu/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script><style type="text/css">* {user-select: auto !important; -webkit-user-select: auto !important;}</style><input type="hidden" id="inject_idm_text_selection">
+<script type="text/javascript" src="https://pelisgratis.nu/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://pelisgratis.nu/wp-content/themes/pelisgratis/template/librerias/jquery/jquery-3.4.1.min.js?ver=1.0.0" id="jquery-3.4.1-js"></script>
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-69075921-1"></script>
+<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'UA-69075921-1');
+		</script>
+<link rel="icon" href="https://pelisgratis.nu/wp-content/uploads/2019/07/favicon.ico">
+</head>
+<body class="portafolio">
+
+<header class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+<div class="row">
+<div class="header">
+
+<div id="slide-home" class="carousel slide carousel-fade pointer-event" data-ride="carousel">
+<div class="carousel-inner">
+<article class="carousel-item">
+<div class="carousel-opacity home"></div>
+<div class="carousel-gradient home"></div>
+<img class="slide home" src="https://image.tmdb.org/t/p/w1280/a6ibWUB8MFdciN6K3fPbP5R6LQi.jpg" alt="Batman">
+<div class="carousel-caption">
+<div class="header"><a class="title" href="https://pelisgratis.nu/batman-2022/" title="Batman">Batman</a></div>
+<time datetime="2022"><i class="fas fa-star"></i> 2022</time> <div class="generos"><i class="fas fa-film"></i> TS-Screener</div> <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: 100%; height: 90px;"><p class="p-slide-slimScroll" style="overflow: hidden; width: 100%; height: 90px;">Cuando Riddler un asesino se dirige a la élite de Gotham con una serie de maquinaciones sádicas, un rastro de pistas crípticas envía Batman a una investigación en los bajos fondos. A medida que las pruebas comienzan a acercarse a su casa y se hace evidente la magnitud de los planes del autor, Batman debe forjar nuevas relaciones, desenmascarar al culpable y hacer justicia al abuso de poder y la corrupción que durante mucho tiempo han asolado Gotham City.</p><div class="slimScrollBarY" style="background: rgb(0, 176, 255); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 33.75px;"></div><div class="slimScrollRailY" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+<a href="https://pelisgratis.nu/batman-2022/" class="btn btn-primary btn-lg" title="Batman"><i class=""></i> Ver Película</a>
+</div>
+
+<ol class="carousel-indicators">
+<li data-target="#slide-home" data-slide-to="0" class=""></li><li data-target="#slide-home" data-slide-to="1" class=""></li><li data-target="#slide-home" data-slide-to="2" class=""></li><li data-target="#slide-home" data-slide-to="3" class="active"></li><li data-target="#slide-home" data-slide-to="4" class=""></li><li data-target="#slide-home" data-slide-to="5" class=""></li><li data-target="#slide-home" data-slide-to="6" class=""></li><li data-target="#slide-home" data-slide-to="7" class=""></li><li data-target="#slide-home" data-slide-to="8" class=""></li><li data-target="#slide-home" data-slide-to="9" class=""></li>
+</ol>
+</div>
+
+
+
+</form>
+
+</div>
+<div class="navegation-movil">
+<div class="ico-movil" id="ico-movil"><i class=""></i></div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="opacity"></div>
+</div>
+</div>
+</header>
+ 
+<main class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 " id="main">
+<div class="row">
+<div class="cnt-default row-d">
+
+<div class="contenido">
+<section class="contenido-item">
+<div class="header-title">
+
+<div class="contenido">
+<section class="contenido-item">
+<div class="header-title">
+<h3>Últimas Agregadas</h3>
+</div>
+
+</hr>
+</div>
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli1" title="Batman">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class=""></div><div class="latino"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/5y8nlHZ1z2tBRQ4kOiWmNmRLYlm.jpg" alt="Batman" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Batman</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli2" title="Cangrejo Negro (Black Crab)">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class=""></div><div class="latino"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/kJ2dSWn2dJmQhDZftoeSvoy7khm.jpg" alt="Cangrejo Negro (Black Crab)" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Cangrejo Negro (Black Crab)</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli3" title="Aguas Profundas (Deep Water)">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class=""></div><div class="latino"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/aarAi6bp8Cl3RYXy2lpeLc1hGS7.jpg" alt="Aguas Profundas (Deep Water)" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Aguas Profundas (Deep Water)</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli4" title="La Abuela">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class="espanol"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/kwW0Dl0pl50Uq1MHuWuIwTehjsm.jpg" alt="La Abuela" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>La Abuela</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli5" title="El Proyecto Adam">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class=""></div><div class="latino"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/3M2MPJkUlCDrHR3vvAqDb5HHqwd.jpg" alt="El Proyecto Adam" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>El Proyecto Adam</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli6" title="Red (Volviendose Rojo)">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class=""></div><div class="latino"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/Ae3sp4yPWxKYJ2ZuhZn11AMCefI.jpg" alt="Red (Volviendose Rojo)" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Red (Volviendose Rojo)</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli7" title="Uncharted">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class=""></div><div class="latino"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/dVWMYRO0xUZ4X64YJYu5FwbeLNf.jpg" alt="Aguas Profundas (Deep Water)" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Uncharted</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli8" title="Muerte en el Nilo (Death on the Nile)">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class="latino"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/wrp7PL0j4tC2WGWF3RCiTmwkWzU.jpg" alt="Ash and Dust" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Muerte en el Nilo (Death on the Nile)</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli9" title="No me mates (Non mi uccidere)">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class=""></div><div class="latino"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/t6pqtU5mTsgzTCplw3O4zyHn9wK.jpg" alt="No me mates (Non mi uccidere)" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>No me mates (Non mi uccidere)</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli10" title="Dos contra el hielo (Against the Ice)">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class=""></div><div class="latino"></div> </div>
+ <div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/zExS8JJujMolkZPg784Hr4W5oOs.jpg" alt="Dos contra el hielo (Against the Ice)" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Dos contra el hielo (Against the Ice)</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli11" title="Special Delivery">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class="latino"></div><div class=""></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/vfS10F7cJb1mMNbD6dbY7CYHCVl.jpg" alt="CODA: Señales Del Corazón" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>CODA: Señales Del Corazón</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli12" title="Licorice Pizza">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class=""></div><div class="latino"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/aqE1147IBD1hddJb9zDyVkLNp5X.jpg" alt="Sin salida (No Exit)" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Sin salida (No Exit)</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli13" title="Suicide Forest Village">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class="latino"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/7arpOTIATZAcSzTLWhYyyGPGf5v.jpg" alt="Rabbids: La invasión - Misión a Marte" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Rabbids: La invasión - Misión a Marte</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli14" title="Margrete Queen of the North">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class="latino"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/5ilMS1lASIIbDxn8Sytoh6CLEhE.jpg" alt="La Masacre de Texas" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>La Masacre de Texas</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli15" title="El Proyecto Adam">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class=""></div><div class="latino"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/1pOdSYjmnX61Nh9sMyztwnPJe98.jpg" alt="Venganza a Golpes (Fistful of Vengeance)" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Venganza a Golpes (Fistful of Vengeance)</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli16" title="Fresh">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class="latino"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/ovIqmaGXDFgtBIJEj34a01Xo8Z1.jpg" alt="Eiffel" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Eiffel</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli17" title="Un diario para Jordan">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class="latino"></div><div class="subtitulado"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/3v27nmjzT65kd3z6paiRRbqa9mF.jpg" alt="Blacklight (Luz Negra)" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Blacklight (Luz Negra)</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli18" title="Lansky">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class=""></div><div class="latino"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/xsl3HPZ7GtndvQGI4CCTYd6Ttby.jpg" alt="Kimi: Alguien está escuchando" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Kimi: Alguien está escuchando</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli19" title="Red (Volviendose Rojo)">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class=""></div><div class="latino"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/jw6Zr2ytfvx2TX4Iu4RgMNM6XMX.jpg" alt="Jackass 4: Por Siempre" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Jackass 4: Por Siempre</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli20" title="Una Sombra en mi Ojo">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class="latino"></div><div class=""></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/mkpAedLp2CfSGXTLbfqg1ib0BmF.jpg" alt="Moonfall" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Moonfall</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli21" title="Batman">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class=""></div><div class="latino"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/8tjQ20uaIAkNDXAOUumkT2qQnGR.jpg" alt="La Era de Hielo: Las Aventuras de Buck" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>La Era de Hielo: Las Aventuras de Buck</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli22" title="Dog">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class="espanol"></div><div class=""></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/nDF3Ryi3W8PIR1b5eXDWBMRzgTS.jpg" alt="Gold" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Gold</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli23" title="Dos contra el hielo (Against the Ice)">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class=""></div><div class="latino"></div> </div>
+ <div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/7CfVolLMmv4T885H2ysl158t04e.jpg" alt="Agentes 355" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Agentes 355</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli24" title="A House on the Bayou">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class="latino"></div><div class=""></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/bRf7nXTmyVxBShCyQhtKAlbWjwV.jpg" alt="One Shot: Misión de rescate" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>One Shot: Misión de rescate</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli25" title="Piratas: El último tesoro de la corona">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class="latino"></div><div class=""></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/lTkIDrPnuVq3Y2uLQ4p5aKcdCui.jpg" alt="Scream 5 (Grita)" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Scream 5 (Grita)</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go.peli26" title="Shepherd">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class="latino"></div><div class=""></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/teCy1egGQa0y8ULJvlrDHQKnxBL.jpg" alt="Hotel Transilvania 4: Transformanía" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Hotel Transilvania 4: Transformanía</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli27" title="Sin Respiro (Sans répit)">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class="espanol"></div><div class=""></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/bzJwyDeckOu6ojzHmwTJBkNn6Co.jpg" alt="Benedetta" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Benedetta</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go.peli28" title="The Desperate Hour">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class="latino"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/gdz1C7rVl4oWq17AWthWtVeNkDo.jpg" alt="King's Man: El Origen" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>King's Man: El Origen</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go:peli29" title="Clean">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class="latino"></div><div class="subtitulado"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/hQa3XMuWOM3H2y1eBS2lvUM8j72.jpg" alt="Don’t Look Up (No Miren Arriba)" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Don’t Look Up (No Miren Arriba)</h3>
+</div>
+</a>
+</div>
+
+</article>
+<article class="item-article">
+<div class="item-content">
+<a href="go.peli30" title="Infierno en la tormenta (Crawl)">
+<figure>
+<div class="float-element">
+<div class="audio">
+<div class=""></div><div class="latino"></div> </div>
+<div class="calidad">HDRip</div> </div>
+<img src="https://image.tmdb.org/t/p/w185/xLNtaLaHudIzOqdEZ7R3lcDLrQQ.jpg" alt="Matrix 4: Resurrecciones" style="height: 251.887px;">
+</figure>
+<div class="title">
+<h3>Matrix 4: Resurrecciones</h3>
+</div>
+</a>
+</div>
+
+
+
+
+</section>
+</div>
+<aside class="sidebar">
+<div class="scroll-sidebar">
+<section class="sidebar-item" id="sidebar-2">
+
+<div class="sidebar-header">
+<h5>Películas por Idioma</h5>
+</div>
+<div class="sidebar-container">
+<ul class="list-idioma">
+<li class="right"><a href="go:latino" title="Latino"><img src="https://pelisgratis.nu/wp-content/themes/pelisgratis/template/src/img/latino.svg" alt="Latino"></a></li> <li><a href="go:espanol" title="Castellano"><img src="https://pelisgratis.nu/wp-content/themes/pelisgratis/template/src/img/castellano.svg" alt="Castellano"></a></li> <li class="left"><a href="go:subtitulada" title="Subtitulado"><img src="https://pelisgratis.nu/wp-content/themes/pelisgratis/template/src/img/subtitulo.svg" alt="Subtitulado"></a></li> </ul>
+</div>
+</section>
+<section class="sidebar-item" id="sidebar-1">
+<div class="sidebar-header">
+<h5>Películas populares</h5>
+</div>
+<div class="sidebar-container">
+<ul class="list-poster">
+<li><a href="go:peli1" title="Batman"><figure><img src="https://image.tmdb.org/t/p/w185/qBSKqZqecjP8aUNjLDKLBscGeug.jpg" alt="Batman" style="height: 175.524px;"></figure></a></li>
+<li><a href="go:peli7" title="Uncharted"><figure><img src="https://image.tmdb.org/t/p/w154/7F4ji3bowguRGR6bRgrPZAKlpyU.jpg" alt="Uncharted" style="height: 175.524px;"></figure></a></li>
+<li><a href="go:peli8" title="Muerte en el Nilo (Death on the Nile)"><figure><img src="https://image.tmdb.org/t/p/w154/wrp7PL0j4tC2WGWF3RCiTmwkWzU.jpg" alt="Muerte en el Nilo (Death on the Nile)" style="height: 175.524px;"></figure></a></li>
+<li><a href="go:peli" title="Eternals (Eternos)"><figure><img src="https://image.tmdb.org/t/p/w154/1PsdEoFm33vHdVlSR96aGf3qwVj.jpg" alt="Eternals (Eternos)" style="height: 175.524px;"></figure></a></li>
+<li><a href="go:peli" title="Sing 2: ¡Ven y Canta de Nuevo!"><figure><img src="https://image.tmdb.org/t/p/w154/mC0zoSvnmGw4nFBGVfkeFp7lcAU.jpg" alt="Sing 2: ¡Ven y Canta de Nuevo!" style="height: 175.524px;"></figure></a></li>
+<li><a href="go:peli" title="Ghostbusters: El Legado"><figure><img src="https://image.tmdb.org/t/p/w154/pOhTggxg3gYI9Ucd1BcGq8glIPz.jpg" alt="Ghostbusters: El Legado" style="height: 175.524px;"></figure></a></li>
+<li><a href="go:peli" title="Spider-Man: Sin Camino a Casa"><figure><img src="https://image.tmdb.org/t/p/w154/rkLhaNa37IwzWis8rzWMAYTCdIK.jpg" alt="Spider-Man: Sin Camino a Casa" style="height: 175.524px;"></figure></a></li>
+<li><a href="go:peli" title="Scream 5 (Grita)"><figure><img src="https://image.tmdb.org/t/p/w154/ufikmZJj9tudoLCpv9I1s0K2u60.jpg" alt="Scream 5 (Grita)" style="height: 175.524px;"></figure></a></li>
+<li><a href="go:peli" title="Venom: Carnage Liberado"><figure><img src="https://image.tmdb.org/t/p/w154/4KDsSHkpVeEAzL0FaHHV3wFRohU.jpg" alt="Venom: Carnage Liberado" style="height: 175.524px;"></figure></a></li>
+<li><a href="go:peli" title="Encanto"><figure><img src="https://image.tmdb.org/t/p/w154/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg" alt="Encanto" style="height: 175.524px;"></figure></a></li>
+<li><a href="go:peli" title="Resident Evil: Welcome to Raccoon City"><figure><img src="https://image.tmdb.org/t/p/w154/gIELpX14PEU94ClrexFetVojO35.jpg" alt="Resident Evil: Welcome to Raccoon City" style="height: 175.524px;"></figure></a></li>
+<li><a href="go:peli" title="Venom: Carnage Liberado"><figure><img src="https://image.tmdb.org/t/p/w154/4KDsSHkpVeEAzL0FaHHV3wFRohU.jpg" alt="Venom: Carnage Liberado" style="height: 175.524px;"></figure></a></li>
+<li><a href="go:peli" title="Encanto"><figure><img src="https://image.tmdb.org/t/p/w154/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg" alt="Encanto" style="height: 175.524px;"></figure></a></li>
+<li><a href="go:peli" title="Resident Evil: Welcome to Raccoon City"><figure><img src="https://image.tmdb.org/t/p/w154/gIELpX14PEU94ClrexFetVojO35.jpg" alt="Resident Evil: Welcome to Raccoon City" style="height: 175.524px;"></figure></a></li>
+<li><a href="go:peli" title="Venom: Carnage Liberado"><figure><img src="https://image.tmdb.org/t/p/w154/4KDsSHkpVeEAzL0FaHHV3wFRohU.jpg" alt="Venom: Carnage Liberado" style="height: 175.524px;"></figure></a></li>
+</ul>
+</div>
+</section>
+<section class="sidebar-item" id="sidebar-4">
+<div class="sidebar-header">
+<h5>Géneros</h5>
+</div>
+<div class="sidebar-container">
+<ul class="list-genero">
+<li><a href="go:accion">Acción</a></li><li><a href="go:animacion">Animación</a></li><li><a href="go:aventura">Aventura</a></li><li><a href="go:belica">Bélica</a></li><li><a href="go:ficcion">Ciencia ficción</a></li><li><a href="go:comedia">Comedia</a></li><li><a href="go:crimen">Crimen</a></li><li><a href="go:documental">Documental</a></li><li><a href="go:drama">Drama</a></li><li><a href="go:estrenos">Estrenos</a></li><li><a href="go:familia">Familia</a></li><li><a href="go:fantasia">Fantasía</a></li><li><a href="go:misterio">Misterio</a></li><li><a href="go:musica">Música</a></li><li><a href="go:romance">Romance</a></li><li><a href="go:suspense">Suspense</a></li><li><a href="go:terror">Terror</a></li><li><a href="go:western">Western</a></li>
+</ul>
+</div>
+</section>
+<section class="sidebar-item" id="sidebar-5">
+
+
+</div>
+</aside> </div>
+</div>
+</main>
+
+
+
+
+</script>
+
+</div>
+
+  <br>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+
+
+
+<style type="text/css">
+body {
+    margin: 0 0 55px 0;
+}
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: rgba(34,34,34,0.75);
+    display: flex;
+    overflow-x: auto;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: #444444;
+}
+
+.nav__link--active {
+    color: #bf9b9b;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+
+</style>
+
+<br>
+
+<br>
+
+</body>
+</html>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<nav class="nav">
+   
+  <a href="go:home" class="nav__link nav__link--active">
+ <span class='material-icons'>home</span>
+ <span class="nav__text"></span>
+ 
+  </a>
+  <a href="go:movies" class="nav__link">
+ <span class='material-icons'>local_movies</span>
+ <span class="nav__text"></span>
+  </a>
+  
+  
+  <a href="http://action_exit" class="nav__link nav__link">
+  
+    <span class="material-icons">exit_to_app</span>
+    <span class="nav__text"></span>
+  </a>
+  
+  <a href="http://action_search" class="nav__link nav__link">
+  
+    <span class='material-icons'>search</span>
+    <span class="nav__text"></span>
+  </a>
+
+ 
+  
+
+  
+</nav>
+
+<style type="text/css">
+body {
+ margin: auto;
+ width:auto;
+ height:auto;
+ padding: 10px 0;
+ background-color:black;
+}
+
+.container{
+ width:100%;
+ height:100px;
+}
+.nav {
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ height: 10%;
+ box-shadow: 0 0 2px #131419;
+ background-color: black;
+ display: flex;
+ overflow-x: auto;
+}
+
+.nav__link {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ flex-grow: 1;
+ min-width: 50px;
+ overflow: hidden;
+ white-space: nowrap;
+ font-family: sans-serif;
+ font-size: 13px;
+ color: #cccccc;
+ text-decoration: none;
+ -webkit-tap-highlight-color: transparent;
+ transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+ background-color: #121212;
+}
+
+.nav__link--active {
+ color: #fff;
+}
+
+.nav__icon {
+ font-size: 32px;
+ 
+}
+
+	#imageID{
+	 max-width:100%;
+	 height: 100%;
+	 z-index: 9999;
+	 position:fixed; 
+	 top:0; 
+	 left:0;
+	}
+
+
+</style>
+
+
+
+
+
+
+</body>
+</html>

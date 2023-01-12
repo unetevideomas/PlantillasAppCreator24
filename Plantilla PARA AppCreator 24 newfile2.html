@@ -1,0 +1,214 @@
+<!--DOCTYPE html-->
+<html lang="es">
+<head>
+<meta charset="UTF-10">
+<meta name="viewport" content="width=device-width, initial-scale=1.25">
+<title>Star Anime</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('#myInput').on('input', function() {
+var value = $(this).val().toLowerCase();
+$('.gallery >.poster').filter(function() {
+$(this).toggle($(this).find('a').attr('title').toLowerCase().indexOf(value) > -1)});});});
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{user-select:none;margin:0;padding:0;box-sizing:border-box;outline:none;user-select:none;}
+body{background:#000;}
+#xs-header{background:#000;left: 0;position: fixed;top: 0;width: 100%;z-index: 90;height: 8%;}
+.xsposter{margin:0px;position:relative;display:inline-block;overflow-x:scroll;overflow-y:hidden;}
+play{background:#000;color:#fff;padding:5px;left:0;right:0;height:2.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;}
+.wrapper{margin:0px;max-width:1100px;}
+.wrapper nav{display:flex;justify-content:center;}
+.wrapper .items{display:flex;max-width:720px;width:100%;justify-content:space-between;overflow:auto;}
+.items span{background:#000;color:#989898;padding:7px 25px;font-size:14px;cursor:pointer;border:0px solid #ddd;transition: all 0.3s ease;}
+.items span.active{color:#fff;background:#ff000;}
+.gallery{display: flex;flex-wrap: wrap;margin-top: 3px;}
+.gallery .poster{width: calc(100% / 3);padding:5px;}
+.gallery .poster span{display: flex;width: 100%;overflow: hidden;}
+.gallery .poster img{background:#fff;border-radius:7px;vertical-align: middle;transition: all 0.3s ease;cursor: pointer;}
+.gallery .poster.hide{display: none;}
+@keyframes animate {
+0%{transform: scale(0.5);}
+100%{transform: scale(1);}}
+@media (max-width: 1000px) {
+.gallery .poster{width: calc(100% / 6);}}
+@media (min-width: 1360px) {
+.gallery {margin-left: -10%;margin-right: -10%;}}
+@media (max-width: 800px) {
+.gallery .poster{width: calc(100% / 5);}}
+@media (max-width: 700px) {
+.wrapper nav .items{max-width: 1000px;}nav .items span{padding: 7px 15px}}
+@media (max-width: 500px) {
+.wrapper{margin: 0px auto;}
+.wrapper nav .items{overflow: auto;}
+nav .items span{margin:0px;}
+.gallery .poster{width: calc(100% / 3);}}
+
+.xaviec{background:#000;position:fixed;top:-5px;width:100%;}
+</style>
+</head>
+<body>
+<div class="xaviec">
+<play>
+<h1 style="color:Red;font-size:30px;">Cinex<strong style="color:#fff;">_plus</strong></h1>
+
+</play>
+<div class="wrapper">
+<nav><div class="items">
+<span class="item active" data-name="all">TODAS</span>
+<span class="item" data-name="Accion">ACCION</span>
+<span class="item" data-name="Infantiles">INFANTILES</span>
+<span class="item" data-name="Terror">TERROR</span>
+<span class="item" data-name="series">SERIES</span>
+
+
+</div></nav></div></div><br><br><br><br>
+<div class="gallery">
+
+
+
+
+<a href="go:Doctor"title="Doctor Strange en el multiverso de la locura">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://static.esplay.io/movie/cover/original/umwbK9ljx2cKyB9UqHXOoHMBeNr.webp" width="0100px"></span></a></div>
+<a href="go:Yakuza"title="La Princesa da Yakuza">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/suBKrr8Vt782Poht7R5TUr9cYBu.jpg" width="0100px"></span></a></div>
+<a href="go:Ciudad."title="La Ciudad Perdida">
+<div class="poster" data-name="ACCION"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/jvBEq1ncn0zxwfaBQTpDnoog8jb.jpg" width="0100px"></span></a></div>
+<a href="go:Ft"title="Cronicas de la Tribu Fantasma (2015">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://i.ebayimg.com/images/g/AAwAAOSwXeJXe875/s-l400.jpg" width="0100px"></span></a></div>
+<a href="go:World"title="Jurassic world el reino caido">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://ww3.cuevana.pro/resize/200/storage/24467/4oDkIyaXTcJn7e9UElKJ5o0iZNynMjKGwJDDaVDs.jpg" width="0100px"></span></a></div>
+<a href="go:Asedio"title="El asedio de Silverton">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://static.esplay.io/movie/cover/original/lNfiU8VrSXyp2hhZNlJyk4dm04R.webp" width="0100px"></span></a></div>
+<a href="go:Bullets"title="9 Bullets">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/4WjW6H3s4yS5QriZ5T5c9zvYGaP.jpg" width="0100px"></span></a></div>
+<a href="go:Furie"title="Furie">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/8AQevrLrjMMg7BCyR19J6uWdtEV.jpg" width="0100px"></span></a></div>
+<a href="go:Asesino"title="Jaque al asesino">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/7nUd6rZ9Nmv8USawYaCOzVEkgfs.jpg" width="0100px"></span></a></div>
+<a href="go:Charted"title="Uncharted">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/8FiWi61YRbkN95xmH668iq5sCo1.jpg" width="0100px"></span></a></div>
+<a href="go:Letal"title="Rehén letal">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/g6N5w3I2uxMntHJ4kNWdonFPqIj.jpg" width="0100px"></span></a></div>
+  <a href=" go:Spider "title="Spider-Man: Sin Camino a Casa">
+ <div class="poster" data-name="Accion"><span><img height="150px" src=" https://static.esplay.io/movie/cover/original/osYbtvqjMUhEXgkuFJOsRYVpq6N.webp " width="0100px"></span></a></div>     
+  <a href=" go:Furi9 "title="Rapidos y Furiosos 9">
+ <div class="poster" data-name="Accion"><span><img height="150px" src=" https://static.esplay.io/movie/cover/original/bOFaAXmWWXC3Rbv4u4uM9ZSzRXP.webp " width="0100px"></span></a></div>     
+  <a href=" go:Kong "title="Godzilla vs. Kong">
+ <div class="poster" data-name="Accion"><span><img height="150px" src=" https://image.tmdb.org/t/p/w185/qlV9UTp9BSOkHCHvBnabiGt8loq.jpg " width="0100px"></span></a></div>     
+  <a href="go:Moana"title="Moana: Un Mar de Aventuras">
+ <div class="poster" data-name="Infantiles"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/4JeejGugONWpJkbnvL12hVoYEDa.jpg" width="0100px"></span></a></div>     
+   <a href="go:Hielo3""title="La Era de Hielo 3">
+ <div class="poster" data-name="Infantiles"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/5OiDvlOXSyXB90pl4c3Qcl2w5yR.jpg" width="0100px"></span></a></div>     
+    <a href="go:Poter"title="Harry Potter y La Piedra Filosofal">
+ <div class="poster" data-name="Infantiles"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/7xXJ15VEf7G9GdAuV1dO769yC73.jpg" width="0100px"></span></a></div>     
+   <a href="go:Ball"title="Dragon ball Z: La resurreccion de freezer">
+ <div class="poster" data-name="Anime"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/mbgpEDDQFFFQz2Q7T8bXpbeUkY9.jpg" width="0100px"></span></a></div>     
+    <a href="go:Susurro"title="Susurros del Corazón">
+ <div class="poster" data-name="Anime"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/q5ucEqlNH6ypr6KF8UILssqdasU.jpg" width="0100px"></span></a></div>     
+     <a href="go:Acero"title="Gigantes de Acero">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/gqjKG4Z24pjYxcOfCd9p6WAnYlG.jpg" width="0100px"></span></a></div>
+<a href="go:Chin"title="Shang-Chi y la Leyenda de los Diez Anillos">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/9VqajJXm29uprSaxOcEh7O0d6E9.jpg" width="0100px"></span></a></div>
+<a href="go:Viuda"title="Viuda Negra">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/oggEsESyLjVGD7jbIdBfa2hFUrx.jpg" width="0100px"></span></a></div>
+<a href="go:Liga"title="La Liga de la Justicia de Zack">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/yWmbO5tQNlIpIEt6nNKD72TpXtM.jpg" width="0100px"></span></a></div>
+<a href="go:Bat1"title="Batman">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/zFTLPipninMF4THDbdkQUZLWMEw.jpg" width="0100px"></span></a></div>
+<a href="go:Eternals"title="Eternals">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/p9PV024vG2I55Rk7tFR3wOdRWaF.jpg" width="0100px"></span></a></div>
+<a href="go:Cuicida"title="El Escuadrón Suicida">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/lSEr1nphZuCqXli3VziIgCI8Ivf.jpg" width="0100px"></span></a></div>
+<a href="go:Mortal"title="Mortal Kombat">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/nkayOAUBUu4mMvyNf9iHSUiPjF1.jpg" width="0100px"></span></a></div>
+<a href="go:Deadpool 2"title="Deadpool 2">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/jx3URmImNMCZuXcfdLM7S5Pivzy.jpg" width="0100px"></span></a></div>
+<a href="go:Infinity"title="Vengadores: Infinity War">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://www.themoviedb.org/t/p/w130_and_h195_bestv2/ksBQ4oHQDdJwND8H90ay8CbMihU.jpg" width="0100px"></span></a></div>
+<a href="go:Endgame"title="Vengadores: Endgame">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://www.themoviedb.org/t/p/w130_and_h195_bestv2/br6krBFpaYmCSglLBWRuhui7tPc.jpg" width="0100px"></span></a></div>
+<a href="go:Free"title="Free Guy">
+<div class="poster" data-name="Accion"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/suaooqn1Mnv60V19MoGxneMupJs.jpg" width="0100px"></span></a></div>
+<a href="go:Cars"title="Cars">
+<div class="poster" data-name="Infantiles"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/nCg0QukAwOJ6BFnitO3fVJrA3TT.jpg" width="0100px"></span></a></div>
+<a href="go:Mulan"title="Mulan">
+<div class="poster" data-name="Infantiles"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/towmTJ0k29quKI9IDnOZKAAtQx.jpg" width="0100px"></span></a></div>
+<a href="go:Ole"title="Ole:El Viaje de Ferdinand">
+<div class="poster" data-name="Infantiles"><span><img height="150px" src="https://img.repelis.id/cover/ole-el-viaje-de-ferdinand.jpg" width="0100px"></span></a></div>
+<a href="go:Sing"title="Sing: Ven y Canta">
+<div class="poster" data-name="Infantiles"><span><img height="150px" src="https://static.esplay.io/movie/cover/original/0c067e13010406936b060cc2454ecc82.webp" width="0100px"></span></a></div>
+<a href="go:Hielo5"title="La Era de hielo 5: Choque de Mundos">
+<div class="poster" data-name="Infantiles"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/q7w12oBelhOPSLIjcPZaYzBuQx7.jpg" width="0100px"></span></a></div>
+<a href="go:Cenicienta"title="La Cenicienta">
+<div class="poster" data-name="Infantiles"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/vqzeSm5Agvio7DahhKXaySUbUUW.jpg" width="0100px"></span></a></div>
+<a href="go:Sapo"title="La Princesa y el Sapo">
+<div class="poster" data-name="Infantiles"><span><img height="150px" src="https://static.esplay.io/movie/cover/original/5980f6d8ef2e06f1ac6d1b1d0e326a8d.webp" width="0100px"></span></a></div>
+<a href="go:Shrek"title="Shrek 2">
+<div class="poster" data-name="Infantiles"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/kra8EvGDUgntRVjkTcENYzaBIH1.jpg" width="0100px"></span></a></div>
+<a href="go:Locura"title="Las Locuras Del Emperador">
+<div class="poster" data-name="Infantiles"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/dAjdFaYWYHMBNuOTJvtZf00eCV4.jpg" width="0100px"></span></a></div>
+<a href="go:Dinosaurio"title="Dinosaurios">
+<div class="poster" data-name="Infantiles"><span><img height="150px" src="https://www.themoviedb.org/t/p/w130_and_h195_bestv2/ilwycGvqymMw16Z9AOPWh5ihteZ.jpg" width="0100px"></span></a></div>
+<a href="go:Futuro"title="La Familia del Futuro">
+<div class="poster" data-name="Infantiles"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/qIoHO9lAZlqasvwDLeMLc3nlReR.jpg" width="0100px"></span></a></div>
+<a href="go:Oso"title="Tierra de Osos">
+<div class="poster" data-name="Infantiles"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/uUAsEgeeJjZk01kmQazbJmYhORx.jpg" width="0100px"></span></a></div>
+<a href="fo:Cielo"title="The Seven Deadly Sins: Prisioneros del Cielo">
+<div class="poster" data-name="Anime"><span><img height="150px" src="https://img.repelis.id/cover/the-seven-deadly-sins-prisioneros-del-cielo.jpg" width="0100px"></span></a></div>
+<a href="go:One"title="One Piece Film: Gold">
+<div class="poster" data-name="Anime"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/whQELpxRLk2VyluC5XRjsXQh4DL.jpg" width="0100px"></span></a></div>
+<a href="go:Pokemon"title="Pokémon: Volcanion y la maravilla Mecánica">
+<div class="poster" data-name="Anime"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/nEy7xWwWf9ADxojMjywD0pbPfGL.jpg" width="0100px"></span></a></div>
+<a href="https://player.esplay.io/?1651766838006&sbx=1&ref=pelisplus2#/https://uqload.com/embed-ud3e4u4ntp83.html"title="El Ciempiés Humano">
+<div class="poster" data-name="Terror"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/gMtjxIkEi0hnTV5lPHbgeZ4ZpUZ.jpg" width="0100px"></span></a></div>
+<a href="https://player.esplay.io/?1651766995470&sbx=1&ref=pelisplus2#/https://uqload.com/embed-lbgcovgvmja4.html"title="El Conjuro">
+<div class="poster" data-name="Terror"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/sKuHxkCogdk6YWzTyXYPoo9qd9n.jpg" width="0100px"></span></a></div>
+<a href="https://player.esplay.io/?1651767105138&sbx=1&ref=pelisplus2#/https://uqload.com/embed-w2r9gnsz2k57.html"title="Viejos">
+<div class="poster" data-name="Terror"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/ggXWPAIPz0LciOc4hwKIctP4xV2.jpg" width="0100px"></span></a></div>
+<a href="https://player.esplay.io/?1651767353933&sbx=1&ref=pelisplus2#/https://uqload.com/embed-ogn15749k2ik.html"title="Un Lugar en Silencio: Parte 2">
+<div class="poster" data-name="Terror"><span><img height="150px" src="https://image.tmdb.org/t/p/w185/AvqwUYdZv6p23rXRKvoMcQ66WrY.jpg" width="0100px"></span></a></div>
+<a href=""title="batalla naval">
+<div class="poster" data-name="Terror"><span><img height="150px" src="https://tgfiletolink.herokuapp.com/8818295197307220/2022-05-15_03:21:45.jpg" width="0100px"></span></a></div>
+<a href=""title="batalla naval">
+<div class="poster" data-name="Terror"><span><img height="150px" src="https://tgfiletolink.herokuapp.com/8818295197307220/2022-05-15_03:21:45.jpg" width="0100px"></span></a></div>
+<a href=""title="batalla naval">
+<div class="poster" data-name="Terror"><span><img height="150px" src="https://tgfiletolink.herokuapp.com/8818295197307220/2022-05-15_03:21:45.jpg" width="0100px"></span></a></div>
+<a href=""title="batalla naval">
+<div class="poster" data-name="Terror"><span><img height="150px" src="https://tgfiletolink.herokuapp.com/8818295197307220/2022-05-15_03:21:45.jpg" width="0100px"></span></a></div>
+<a href=""title="batalla naval">
+<div class="poster" data-name="Terror"><span><img height="150px" src="https://tgfiletolink.herokuapp.com/8818295197307220/2022-05-15_03:21:45.jpg" width="0100px"></span></a></div>
+<a href=""title="batalla naval">
+<div class="poster" data-name="Terror"><span><img height="150px" src="https://tgfiletolink.herokuapp.com/8818295197307220/2022-05-15_03:21:45.jpg" width="0100px"></span></a></div>
+<a href=""title="batalla naval">
+<div class="poster" data-name="Terror"><span><img height="150px" src="https://tgfiletolink.herokuapp.com/8818295197307220/2022-05-15_03:21:45.jpg" width="0100px"></span></a></div>
+<a href=""title="batalla naval">
+<div class="poster" data-name="Terror"><span><img height="150px" src="https://tgfiletolink.herokuapp.com/8818295197307220/2022-05-15_03:21:45.jpg" width="0100px"></span></a></div>
+
+
+
+
+
+</div><br>
+<script>
+const filterItem = document.querySelector(".items");
+const filterImg = document.querySelectorAll(".gallery .poster");
+window.onload = ()=>{ 
+filterItem.onclick = (selectedItem)=>{ 
+if(selectedItem.target.classList.contains("item")){ 
+filterItem.querySelector(".active").classList.remove("active"); 
+selectedItem.target.classList.add("active"); 
+let filterName = selectedItem.target.getAttribute("data-name"); 
+filterImg.forEach((image) => {
+let filterImges = image.getAttribute("data-name"); 
+if((filterImges == filterName) || (filterName == "all")){
+image.classList.remove("hide"); 
+image.classList.add("show"); }
+else{image.classList.add("hide"); image.classList.remove("show"); }});}}
+for (let i = 0; i < filterImg.length; i++) {
+filterImg[i].setAttribute("onclick", "preview(this)"); }}
+</script>
+</body>
+</html>

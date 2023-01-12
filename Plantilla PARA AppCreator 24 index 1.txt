@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<script>var contr = 'VE';</script>
+<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=yes">
+<link rel="stylesheet" href="https://dl.dropbox.com/s/vnpcrjfdiyqase6/style.css"/>
+</head>
+<body>
+<header>
+<div class="lofdj">
+<a aria-label="Megaplay" href="#">
+<h1>MEGAPLAY</h1></a></div>
+<nav><div class="vakz jzga">
+<div class="vkzt"><p>Navegar</p></div>
+<ul class="hekzhu">
+<li><a href="#">Inicio</a></li>
+<li><a href="#">Películas</a></li>
+<li><a href="#">Series</a></li>
+<li class="jhak"><a href="#">Animes</a></li>
+</ul></div>
+</nav></header>
+<script>var ahtyg = {ur:'',urp:'',ura:'',urb:'',urg:''};</script>
+<div class="dhfa cplzb">
+<div class="shms huead">
+<button class="iahba msja" aria-label="Menu"><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button></div>
+<div class="huead">
+<button class="iahba sefg" aria-label="Buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+</div></div></div>
+<div class="buzk">
+<div class="ioaj cplzb"><ul>
+<li class="jhak"><a href="#">Nuevos EPS</a></li>
+<li><a href="#">Popular</a></li>
+<li><a href="#">Acción</a></li>
+<li><a href="#">Aventura</a></li>
+<li><a href="#">Ciencia Ficción</a></li>
+<li><a href="#">Comedia</a></li>
+<li><a href="#">Crimen</a></li>
+<li><a href="#">Drama</a></li>
+<li><a href="#">Musical</a></li>
+<li><a href="#">Terror</a></li></ul></div>
+<div class="alhanh">
+<div class="kljk kljkz cplz">
+<div class="ksaj">
+<a href="#">
+<div class="kai">
+<div class="kahs">
+<div class="hfrv"></div>
+<img src="https://tmdbcdn.fun/sys/poster/v4zlsj8dbfo53egxyyn4s093bouimx77rwj9-m.jpg"></div></div>
+<div class="kaiz">
+<h4>Fullmetal Alchemist</h4></div></a></div><div class="ksaj">
+<a href="#">
+<div class="kai">
+<div class="kahs">
+<div class="hfrv"></div>
+<img src="https://www.themoviedb.org/t/p/w130_and_h195_bestv2/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg"></div></div>
+<div class="kaiz">
+<h4>Fullmetal Alchemist</h4></div></a></div><div class="ksaj">
+<a href="#">
+<div class="kai">
+<div class="kahs">
+<div class="hfrv"></div>
+<img src="https://www.themoviedb.org/t/p/w440_and_h660_face/4z155sfQ7BfgvGphUaFfuvVubr6.jpg"></div></div>
+<div class="kaiz">
+<h4>Fullmetal Alchemist</h4></div></a></div><div class="ksaj">
+<a href="#">
+<div class="kai">
+<div class="kahs">
+<div class="hfrv"></div>
+<img src="https://www.themoviedb.org/t/p/w260_and_h390_bestv2/4Bph0hhnDH6dpc0SZIV522bLm4P.jpg"></div></div>
+<div class="kaiz">
+<h4>Fullmetal Alchemist</h4></div></a></div><div class="ksaj">
+<a href="#">
+<div class="kai">
+<div class="kahs">
+<div class="hfrv"></div>
+<img src="https://www.themoviedb.org/t/p/w260_and_h390_bestv2/3NTAbAiao4JLzFQw6YxP1YZppM8.jpg"></div></div>
+<div class="kaiz">
+<h4>Fullmetal Alchemist</h4></div></a></div><div class="ksaj">
+<a href="#">
+<div class="kai">
+<div class="kahs">
+<div class="hfrv"></div>
+<img src="https://www.themoviedb.org/t/p/w130_and_h195_bestv2/vlv1gn98GqMnKHLSh0dNciqGfBl.jpg"></div></div>
+<div class="kaiz">
+<h4>Fullmetal Alchemist</h4></div></a></div>
+
+
+
+<div class="pajhzb">
+<a class="jahba">1</a>
+<a href="#">2</a>
+<a href="#">3</a></div></div>
+
+</div>
+</div>
+
+<script type="text/javascript" src="https://dl.dropbox.com/s/4plhtm4c6dsa00s/snisen.js"></script>
+
+
