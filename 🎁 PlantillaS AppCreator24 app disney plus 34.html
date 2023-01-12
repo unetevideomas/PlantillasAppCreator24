@@ -1,0 +1,907 @@
+
+	
+		
+			
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=stylesheet" href="style.css"/>
+
+
+<body>
+
+
+
+	<div class="firstfield" >
+	  
+   </div>
+ 
+
+
+ 
+
+
+</div>
+
+<!DOCTYPE html>
+<center>
+<html>
+	<head>
+		<title>JavaScript image slider</title>
+	</head>
+	<body>
+	
+		
+		<div class = "slider">
+			
+				<a href="go:libros" >
+			<div class ="slide" id = "slide1"></div>
+			
+				<a href="go:libros" >
+			<div class ="slide" id = "slide2"></div>
+
+	<a href="go:libros" >
+			<div class ="slide" id = "slide3"></div>
+	<a href="go:libros" >
+			<div class ="slide" id = "slide4"></div>
+
+	<a href="go:libros" >
+
+			<div class ="slide" id = "slide5"></div>
+
+
+		
+		</div>
+		
+		
+	</body>
+</html>
+
+ </center>
+ 
+ 	<a class="prev" onclick="thisImage(-1)">&#10094;</a>
+			<a class="next" onclick="thisImage(1)">&#10095;</a>
+	
+ 
+<script>
+
+
+
+
+
+
+
+let autoSlide;
+window.onload = function(){
+	autoSlide= setInterval(function(){
+		thisImage(1);
+	},4000);
+
+	thisImage(0);
+};
+
+var currentImage=0;
+
+
+function thisImage(val){
+
+	clearInterval(autoSlide);
+	
+	
+	currentImage+=val;
+
+	if(currentImage > document.getElementsByClassName("slide").length - 1 && val == "1") currentImage=0;
+
+	if(currentImage < 0 && val == "-1") currentImage=document.getElementsByClassName("slide").length - 1;
+
+
+	for(leftImg = 0; leftImg <= currentImage; leftImg++){
+
+		document.getElementsByClassName("slide")[leftImg].style.left="-100vw";
+		document.getElementsByClassName("slide")[leftImg].style.transform = "scale(0)";
+	}
+
+	for(rightImg = currentImage+1; rightImg < document.getElementsByClassName("slide").length; rightImg++){
+	
+		document.getElementsByClassName("slide")[rightImg].style.left="100vw";
+		document.getElementsByClassName("slide")[rightImg].style.transform = "scale(0)";
+	}
+
+	document.getElementsByClassName("slide")[currentImage].style.left="0";
+	document.getElementsByClassName("slide")[currentImage].style.transform = "scale(1)";
+
+	autoSlide= setInterval(function(){
+		thisImage(1);
+	},4000);
+}
+
+		setTimeout(function() {
+		  document.getElementById('imageID').style.display='none'
+		}, 3*1000);
+
+
+</script>
+
+
+
+
+	<style type="text/css">
+	 
+	
+
+
+.slider {
+	width: 91vw; height: 35vh;
+	overflow:hidden;
+	position:relative;
+	margin:2%;
+	top:10.5vh;
+	left:0;
+}
+
+
+.slide {
+	width: 100%; height: 100%;
+	transition:left 0.75s, transform 0.75s;
+	position:absolute;
+	left:0; top:0;
+	transition-timing-function:ease-out;
+	border-radius:2vmin;
+	text-align:center;
+	color: black;
+	font-weight:bold;
+	font-style:italic;
+	text-shadow:-1px -1px 1px black, -1px 1px 1px black, 1px -1px 1px black, 1px 1px 1px black;
+}
+
+#slide1{
+	background:url("https://1.bp.blogspot.com/-HK3GuuDMUsg/YL8EGkGNPbI/AAAAAAAADow/PoQ2dYNnZSI0S2ySHfD0aFsfMf7GHv-sQCLcBGAsYHQ/s0/3F703FAA-1095-4CA0-9C92-3EB7F345A8E2.jpeg");
+	background-size:cover;
+	background-position:center;
+}
+#slide2{
+	background:url("https://1.bp.blogspot.com/-hyUjPQUr-CY/YL8EHGxvtZI/AAAAAAAADo0/HhdquncLZIcCD-t1kryGCGG3BjTgNRFfgCLcBGAsYHQ/s0/4D17CB52-9BD0-47F0-A9D8-E82EABC6DEA7.jpeg");
+	background-size:cover;
+	background-position:center;
+}
+#slide3{
+	background:url("https://1.bp.blogspot.com/-9P2P-V95630/YL8EHazKRaI/AAAAAAAADo4/ntp84d4EVkc0jG7OjB015jp8vdBQzh8tQCLcBGAsYHQ/s0/9CEC1EEB-D7AD-4790-AA08-08F0FBFFC5ED.jpeg");
+	background-size:cover;
+	background-position:center;
+
+
+}
+#slide4{
+	background:url("https://1.bp.blogspot.com/-hyUjPQUr-CY/YL8EHGxvtZI/AAAAAAAADo0/HhdquncLZIcCD-t1kryGCGG3BjTgNRFfgCLcBGAsYHQ/s0/4D17CB52-9BD0-47F0-A9D8-E82EABC6DEA7.jpeg");
+	background-size:cover;
+	background-position:center;
+}
+
+
+#slide5{
+	background:url("https://1.bp.blogspot.com/-HK3GuuDMUsg/YL8EGkGNPbI/AAAAAAAADow/PoQ2dYNnZSI0S2ySHfD0aFsfMf7GHv-sQCLcBGAsYHQ/s0/3F703FAA-1095-4CA0-9C92-3EB7F345A8E2.jpeg");
+	background-size:cover;
+	background-position:center;
+}
+
+/*Buttons*/
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 30%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	z-index:2;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+</style>
+
+
+
+<style> h2{ color: #000; font-family: Arial, Helvetica, sans-serif; border-radius: 5px; margin:0px; } 
+
+div .jordan{ margin:4px; border-radius: 20px; 
+ 
+display:adsolute;
+position:responsive; 
+
+
+
+{
+</style>
+<style> h2{ color: #000; font-family: Arial, Helvetica, sans-serif; border-radius: 5px; margin:10px; } 
+
+div .jordan2{ margin:2px; border-radius: 20px; 
+ 
+display:adsolute;
+position:responsive; 
+
+
+
+{
+</style>
+
+  <img style="border-radius: 20px 5px;"  src="https://1.bp.blogspot.com/-tgvGlDqVxyM/X69lBaINE2I/AAAAAAAAAAg/CAuNxDKqjpY-xbJdTgRCFMNcm5eITrdxACLcBGAsYHQ/s1220/20201114_010240.png" width="25" height="100" ></a>
+
+<div>
+
+
+
+
+
+
+
+	<style type="text/css">
+	 
+		}
+		button{
+			background-color: white;
+			color: black;
+			border: none;
+			border-radius: 5px;
+			size: 20px;
+			width: 70px;
+			padding: 10px;
+		}
+		div .jordan2 {
+		  overflow-x: scroll;
+		  overflow-y: hidden;
+		  white-space: nowrap;}
+		}
+  
+	</style>
+</head>
+
+<div>
+	<div class="firstfield" >
+	  
+   </div>
+ 
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+
+
+
+
+	</script>
+	<style type="text/css">
+	 
+		}
+		button{
+			background-color: white;
+			color: black;
+			border: none;
+			border-radius: 5px;
+			size: 20px;
+			width: 70px;
+			padding: 10px;
+		}
+		div .jordan{
+		  overflow-x: scroll;
+		  overflow-y: hidden;
+		  white-space: nowrap;}
+		}
+  
+	</style>
+</head>
+
+<div>
+	<div class="firstfield" >
+	  
+   </div>
+ 
+
+
+
+
+
+<title>Boton Flotante con Css | SLee Dw</title>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+<div class="container">
+<input type="checkbox" id="btn-mas">
+<div class="redes">
+<a href="#" class="fab fa-facebook-f"></a>
+<a href="#" class="fab fa-instagram"></a>
+<a href="#" class="fab fa-twitter"></a>
+<a href="#" class="fab fa-pinterest"></a>
+</div>
+<div class="btn-mas">
+<label for="btn-mas" class="icon-mas2"><b>+</b></label>
+</div>
+</div>
+</body>
+</html>
+
+	<div align="center" class="jordan2">
+			
+			
+
+
+			
+			<a href="go:musica">
+			<img class=jordan2
+			 
+			   <img style="border-radius: 8px;"  src="https://1.bp.blogspot.com/-T5QwvrOJvls/YPM4t1Ou3rI/AAAAAAAAEGc/6yxGQdXyutUcZRZuIX9mE9PIw_vs_q51gCLcBGAsYHQ/s0/7E8BF345-443E-41D4-ABF2-BD7239704DBB.png" width="63px" height="60px" ></a>
+			
+			
+			
+			
+			
+			
+			<a href="go:moda">
+			<img class=jordan2
+			 
+			   <img style="border-radius: 8px;"  src="https://1.bp.blogspot.com/-vWyk2_djS4M/YPM4uHB4wVI/AAAAAAAAEGg/ecs1q0pOjeM-339UtYDU8DAp-YaFUATkwCLcBGAsYHQ/s0/527EC54A-A5FC-4E5D-AFB2-A402CAB55D24.png" width="63px" height="60px" ></a>
+			
+			
+			
+					<a href="go:anime">
+			<img class=jordan2
+			 
+			   <img style="border-radius: 8px;"  src="https://1.bp.blogspot.com/-8xxQagiX9Xc/YPM4uZ3wiEI/AAAAAAAAEGk/EHi3jBUbvWc2nY8prQmk9N4cNcG1vqp4gCLcBGAsYHQ/s0/D0199BCF-C2FE-4B9B-A39B-B9BCECEEFB0F.png" width="63px" height="60px" ></a>
+			
+	
+			
+			<a href="go:mascotas">
+		<img class=jordan2
+			 
+			   <img style="border-radius: 8px"  src="https://1.bp.blogspot.com/-wUIxYa80rNk/YPM4vKIQSTI/AAAAAAAAEGo/Efk5V3ZiajcN4-H7UIT9tgCxqzPBEBLewCLcBGAsYHQ/s0/ED951826-166B-4CD1-9856-B75113F5D59E.png" width="63px" height="60px" ></a>
+			
+			
+			
+			
+			
+			
+			<a href="go:alien">
+			
+			<img class=jordan2
+			 <img style="border-radius: 8px"  src="https://1.bp.blogspot.com/-xgtHVD82RSk/YPM6OzJ4tBI/AAAAAAAAEG4/cTyNiJia_wA8VNJVWdw5i9qit5x1mXMcwCLcBGAsYHQ/s0/023A9F16-F89B-43F3-A3B2-7A0D7B1DBC8E.png" width="63px" height="60px" ></a>
+			
+			
+			
+			
+			
+		
+
+
+</div>
+
+
+
+ 
+<h2> <font size="4" color= "#fff" face= "arial">Recomendado para ti</font> </h2>
+   
+	</script>
+
+
+<div>
+	<div class="firstfield" >
+	  
+   </div>
+ 
+	
+	
+	<div align="center" class="jordan">
+			
+			
+			
+	
+			
+			 
+	
+	
+	<a href="go:peliculas" > <img class=jordan  
+	
+	  <img style="border-radius: 5px;"
+	box-shadow: 0 0 1px #fff;
+	src="https://1.bp.blogspot.com/--tb7VVuYZyA/YL8EGjYYlRI/AAAAAAAADoo/RSIjgYig0VA3VB_lfuzakxNEcMUFqlOPQCLcBGAsYHQ/s0/144F3EED-5233-4763-83C4-0F43D0026F69.jpeg" width="138px" height="195px"></a>
+
+
+
+
+	<a href="go:hoy" > <img class=jordan  
+		  <img style="border-radius: 5px ;"
+	
+	src="https://1.bp.blogspot.com/-7s7HQkE0k98/YL8EGvC_oTI/AAAAAAAADos/l130ThH6aDwg4xcawmXiaeEq9S-mu6s_gCLcBGAsYHQ/s0/165FA1F7-86D7-455C-A582-B559F33290A7.jpeg" width="138px" height="195px"></a>
+
+
+
+
+ 
+	
+	
+	
+	<a href="go:libros" > <img class=jordan 
+	
+		  <img style="border-radius: 5px ;"
+	
+	src="https://1.bp.blogspot.com/-p_WDkAmHKvE/YL8EHv6t5qI/AAAAAAAADpA/BtyAqdAkAZkX_5BU2YT9OoygrkaljTXjACLcBGAsYHQ/s0/ABB14662-F773-4CA8-9C2A-F7B17C7B62F0.jpeg" width="138px" height="195px"></a>  
+   
+
+   <a href="go:amistad" > <img class=jordan 
+   
+   	  <img style="border-radius: 5px;"
+   
+   src="https://1.bp.blogspot.com/-QAZoKPd4tyU/YL8EHqPEiII/AAAAAAAADo8/dcUdl6Qsq-0JBZhCWy05xbChyASZAmKWgCLcBGAsYHQ/s0/F4A52FF4-4A79-4489-960C-020325A9E556.jpeg" width="138px" height="195px"></a>
+   
+			 	  <img style="border-radius: 5px 5px;"  src="https://1.bp.blogspot.com/-tgvGlDqVxyM/X69lBaINE2I/AAAAAAAAAAg/CAuNxDKqjpY-xbJdTgRCFMNcm5eITrdxACLcBGAsYHQ/s1220/20201114_010240.png" width="138px" height="195px"></a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div>
+
+ 
+<h2> <font size="4" color= "#fff" face= "arial">Novedades</font> </h2>
+   
+	</script>
+
+
+<div>
+	<div class="firstfield" >
+	  
+   </div>
+ 
+	
+	
+	<div align="center" class="jordan">
+			
+			
+			
+	
+			
+			 
+	
+	
+	<a href="go:peliculas" > <img class=jordan  
+	
+	  <img style="border-radius: 5px;"
+	
+	src="https://1.bp.blogspot.com/--tb7VVuYZyA/YL8EGjYYlRI/AAAAAAAADoo/RSIjgYig0VA3VB_lfuzakxNEcMUFqlOPQCLcBGAsYHQ/s0/144F3EED-5233-4763-83C4-0F43D0026F69.jpeg" width="138px" height="195px"></a>
+
+
+
+
+	<a href="go:hoy" > <img class=jordan  
+		  <img style="border-radius: 5px ;"
+	
+	src="https://1.bp.blogspot.com/-7s7HQkE0k98/YL8EGvC_oTI/AAAAAAAADos/l130ThH6aDwg4xcawmXiaeEq9S-mu6s_gCLcBGAsYHQ/s0/165FA1F7-86D7-455C-A582-B559F33290A7.jpeg" width="138px" height="195px"></a>
+
+
+
+
+ 
+	
+	
+	
+	<a href="go:libros" > <img class=jordan 
+	
+		  <img style="border-radius: 5px ;"
+	
+	src="https://1.bp.blogspot.com/-p_WDkAmHKvE/YL8EHv6t5qI/AAAAAAAADpA/BtyAqdAkAZkX_5BU2YT9OoygrkaljTXjACLcBGAsYHQ/s0/ABB14662-F773-4CA8-9C2A-F7B17C7B62F0.jpeg" width="138px" height="195px"></a> 
+   
+
+   <a href="go:amistad" > <img class=jordan 
+   
+   	  <img style="border-radius: 5px;"
+   
+   src="https://1.bp.blogspot.com/-QAZoKPd4tyU/YL8EHqPEiII/AAAAAAAADo8/dcUdl6Qsq-0JBZhCWy05xbChyASZAmKWgCLcBGAsYHQ/s0/F4A52FF4-4A79-4489-960C-020325A9E556.jpeg" width="138px" height="195px"></a>
+   
+			 	  <img style="border-radius: 20px 5px;"  src="https://1.bp.blogspot.com/-tgvGlDqVxyM/X69lBaINE2I/AAAAAAAAAAg/CAuNxDKqjpY-xbJdTgRCFMNcm5eITrdxACLcBGAsYHQ/s1220/20201114_010240.png" width="138px" height="195px"></a>
+
+
+
+</div>
+
+
+
+
+<div>
+
+ 
+<h2> <font size="4" color= "#fff" face= "arial">Tendencia</font> </h2>
+   
+	</script>
+
+
+<div>
+	<div class="firstfield" >
+	  
+   </div>
+ 
+	
+	
+	<div align="center" class="jordan">
+			
+			
+			
+	
+			
+			 
+	
+	
+	<a href="go:peliculas" > <img class=jordan  
+	
+	  <img style="border-radius: 5px;"
+	
+	src="https://1.bp.blogspot.com/--tb7VVuYZyA/YL8EGjYYlRI/AAAAAAAADoo/RSIjgYig0VA3VB_lfuzakxNEcMUFqlOPQCLcBGAsYHQ/s0/144F3EED-5233-4763-83C4-0F43D0026F69.jpeg" width="138px" height="195px"></a>
+
+
+
+
+	<a href="go:hoy" > <img class=jordan  
+		  <img style="border-radius: 5px ;"
+	
+	src="https://1.bp.blogspot.com/-7s7HQkE0k98/YL8EGvC_oTI/AAAAAAAADos/l130ThH6aDwg4xcawmXiaeEq9S-mu6s_gCLcBGAsYHQ/s0/165FA1F7-86D7-455C-A582-B559F33290A7.jpeg" width="138px" height="195px"></a>
+
+
+
+
+ 
+	
+	
+	
+	<a href="go:libros" > <img class=jordan 
+	
+		  <img style="border-radius: 5px ;"
+	
+	src="https://1.bp.blogspot.com/-p_WDkAmHKvE/YL8EHv6t5qI/AAAAAAAADpA/BtyAqdAkAZkX_5BU2YT9OoygrkaljTXjACLcBGAsYHQ/s0/ABB14662-F773-4CA8-9C2A-F7B17C7B62F0.jpeg" width="138px" height="195px"></a>
+   
+
+   <a href="go:amistad" > <img class=jordan 
+   
+   	  <img style="border-radius: 5px;"
+   
+   src="https://1.bp.blogspot.com/-QAZoKPd4tyU/YL8EHqPEiII/AAAAAAAADo8/dcUdl6Qsq-0JBZhCWy05xbChyASZAmKWgCLcBGAsYHQ/s0/F4A52FF4-4A79-4489-960C-020325A9E556.jpeg" width="138px" height="195px"></a>
+   
+			 	  <img style="border-radius: 20px 5px;"  src="https://1.bp.blogspot.com/-tgvGlDqVxyM/X69lBaINE2I/AAAAAAAAAAg/CAuNxDKqjpY-xbJdTgRCFMNcm5eITrdxACLcBGAsYHQ/s1220/20201114_010240.png" width="138px" height="195px"></a>
+
+
+
+</div>
+
+
+
+<div>
+
+ 
+<h2> <font size="4" color= "#fff" face= "arial">Series animadas</font> </h2>
+   
+	</script>
+
+
+<div>
+	<div class="firstfield" >
+	  
+   </div>
+ 
+	
+	
+	<div align="center" class="jordan">
+			
+			
+			
+	
+			
+			 
+	
+	
+	<a href="go:peliculas" > <img class=jordan  
+	
+	  <img style="border-radius: 5px;"
+	
+	src="https://1.bp.blogspot.com/--tb7VVuYZyA/YL8EGjYYlRI/AAAAAAAADoo/RSIjgYig0VA3VB_lfuzakxNEcMUFqlOPQCLcBGAsYHQ/s0/144F3EED-5233-4763-83C4-0F43D0026F69.jpeg" width="138px" height="195px"></a>
+
+
+
+
+	<a href="go:hoy" > <img class=jordan  
+		  <img style="border-radius: 5px ;"
+	
+	src="https://1.bp.blogspot.com/-7s7HQkE0k98/YL8EGvC_oTI/AAAAAAAADos/l130ThH6aDwg4xcawmXiaeEq9S-mu6s_gCLcBGAsYHQ/s0/165FA1F7-86D7-455C-A582-B559F33290A7.jpeg" width="138px" height="195px"></a>
+
+
+
+
+ 
+	
+	
+	
+	<a href="go:libros" > <img class=jordan 
+	
+		  <img style="border-radius: 5px ;"
+	
+	src="https://1.bp.blogspot.com/-p_WDkAmHKvE/YL8EHv6t5qI/AAAAAAAADpA/BtyAqdAkAZkX_5BU2YT9OoygrkaljTXjACLcBGAsYHQ/s0/ABB14662-F773-4CA8-9C2A-F7B17C7B62F0.jpeg" width="138px" height="195px"></a>  
+   
+
+   <a href="go:amistad" > <img class=jordan 
+   
+   	  <img style="border-radius: 5px;"
+   
+   src="https://1.bp.blogspot.com/-QAZoKPd4tyU/YL8EHqPEiII/AAAAAAAADo8/dcUdl6Qsq-0JBZhCWy05xbChyASZAmKWgCLcBGAsYHQ/s0/F4A52FF4-4A79-4489-960C-020325A9E556.jpeg" width="138px" height="195px"></a>
+   
+			 	  <img style="border-radius: 20px 5px;"  src="https://1.bp.blogspot.com/-tgvGlDqVxyM/X69lBaINE2I/AAAAAAAAAAg/CAuNxDKqjpY-xbJdTgRCFMNcm5eITrdxACLcBGAsYHQ/s1220/20201114_010240.png" width="138px" height="195px"></a>
+
+
+
+</div>
+
+
+
+
+<div>
+
+ 
+<h2> <font size="4" color= "#fff" face= "arial">Peliculas animadas</font> </h2>
+   
+	</script>
+
+<div>
+	<div class="firstfield" >
+	  
+   </div>
+ 
+	
+	
+	<div align="center" class="jordan">
+			
+			
+			
+	
+			
+			 
+	
+	
+	<a href="go:peliculas" > <img class=jordan  
+	
+	  <img style="border-radius: 5px;"
+	
+	src="https://1.bp.blogspot.com/--tb7VVuYZyA/YL8EGjYYlRI/AAAAAAAADoo/RSIjgYig0VA3VB_lfuzakxNEcMUFqlOPQCLcBGAsYHQ/s0/144F3EED-5233-4763-83C4-0F43D0026F69.jpeg" width="138px" height="195px"></a>
+
+
+
+
+	<a href="go:hoy" > <img class=jordan  
+		  <img style="border-radius: 5px ;"
+	
+	src="https://1.bp.blogspot.com/-7s7HQkE0k98/YL8EGvC_oTI/AAAAAAAADos/l130ThH6aDwg4xcawmXiaeEq9S-mu6s_gCLcBGAsYHQ/s0/165FA1F7-86D7-455C-A582-B559F33290A7.jpeg" width="138px" height="195px"></a>
+
+
+
+
+ 
+	
+	
+	
+	<a href="go:libros" > <img class=jordan 
+	
+		  <img style="border-radius: 5px ;"
+	
+	src="https://1.bp.blogspot.com/-p_WDkAmHKvE/YL8EHv6t5qI/AAAAAAAADpA/BtyAqdAkAZkX_5BU2YT9OoygrkaljTXjACLcBGAsYHQ/s0/ABB14662-F773-4CA8-9C2A-F7B17C7B62F0.jpeg" width="138px" height="195px"></a>  
+   
+
+   <a href="go:amistad" > <img class=jordan 
+   
+   	  <img style="border-radius: 5px;"
+   
+   src="https://1.bp.blogspot.com/-QAZoKPd4tyU/YL8EHqPEiII/AAAAAAAADo8/dcUdl6Qsq-0JBZhCWy05xbChyASZAmKWgCLcBGAsYHQ/s0/F4A52FF4-4A79-4489-960C-020325A9E556.jpeg" width="138px" height="195px"></a>
+   
+			 	  <img style="border-radius: 20px 5px;"  src="https://1.bp.blogspot.com/-tgvGlDqVxyM/X69lBaINE2I/AAAAAAAAAAg/CAuNxDKqjpY-xbJdTgRCFMNcm5eITrdxACLcBGAsYHQ/s1220/20201114_010240.png" width="138px" height="195px"></a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+		<img class=jordan
+			   <img style="border-radius: 15px;"  src="https://1.bp.blogspot.com/-tgvGlDqVxyM/X69lBaINE2I/AAAAAAAAAAg/CAuNxDKqjpY-xbJdTgRCFMNcm5eITrdxACLcBGAsYHQ/s1220/20201114_010240.png" width="25" height="100" ></a>
+
+	
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<nav class="nav">
+   
+  <a href="#" class="nav__link nav__link--active">
+	<i class="material-icons nav__icon">home</i>
+	<span class="nav__text"></span>
+	
+  </a>
+  <a href="#" class="nav__link">
+	<i class="material-icons nav__icon">search</i>
+	<span class="nav__text"></span>
+  </a>
+  
+  
+  <a href="#" class="nav__link">
+  
+  <i class="material-icons nav__icon">download</i>
+	<span class="nav__text"></span>
+  </a>
+
+  </a>
+  <a href="#" class="nav__link">
+	<i class="material-icons nav__icon">account_circle</i>
+	<span class="nav__text"></span>
+  </a>
+</nav>
+
+<style type="text/css">
+body {
+	margin: auto;
+	width:auto;
+	height:auto;
+	padding: 10px 0;
+	background-color:#111217;
+}
+
+.container{
+	width:100%;
+	height:100px;
+}
+.nav {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 10%;
+	box-shadow: 0 0 2px #131419;
+	background-color: black;
+	display: flex;
+	overflow-x: auto;
+}
+
+.nav__link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+	min-width: 50px;
+	overflow: hidden;
+	white-space: nowrap;
+	font-family: sans-serif;
+	font-size: 13px;
+	color: #cccccc;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+	transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+	background-color: #121212;
+}
+
+.nav__link--active {
+	color: #fff;
+}
+
+.nav__icon {
+	font-size: 32px;
+	height: 50px;
+	
+}
+
+		  #imageID{
+			  max-width:100%;
+			  height: 100%;
+			  z-index: 9999;
+			  position:fixed; 
+			  top:0; 
+			  left:0;
+		  }
+
+
+</style>
+
+
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	#btn-mas{
+		display: none;
+	}
+	.container{
+		position: fixed;
+		z-index: 99999
+		bottom: 1px;
+	   
+		top: 300px;
+		left: 20px; 
+	}
+	.redes a, .icon-mas2{
+		display: block;
+		text-decoration: none;
+		background: #cc2b2b;
+		color: #fff;
+		width: 55px;
+		height: 55px;
+		line-height: 55px;
+		text-align: center;
+		border-radius: 50%;
+		box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+		transition: all 500ms ease;
+	}
+	.redes a:hover{
+		background: #fff;
+		color: #cc2b2b;
+	}
+	.redes a{
+		margin-bottom: -15px;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-mas:checked~ .redes a{
+		margin-bottom: 10px;
+		opacity: 1;
+		visibility: visible;
+	}
+	.icon-mas2{
+		cursor: pointer;
+		background: #f44141;
+		font-size: 23px;
+	}
+	#btn-mas:checked ~ .btn-mas .icon-mas2{
+		transform: rotate(137deg);
+		font-size: 25px;
+	}
+	</style>
+
+
+
+<html>
+
+<div>
+	<img id="imageID" src="https://1.bp.blogspot.com/-dxeSoKYdH8U/YPhSK5VDezI/AAAAAAAAEIA/msZMT-8wsGgzC_LEp84bd5kE3J2MkOQagCLcBGAsYHQ/s0/6BAC20EA-326A-4142-ABD0-FFAF996A6BA6.jpeg">
+</div>

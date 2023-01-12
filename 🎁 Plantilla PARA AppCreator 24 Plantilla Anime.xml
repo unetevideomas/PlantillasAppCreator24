@@ -1,0 +1,2448 @@
+<html dir="ltr" lang="es" prefix="og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr" class="fontawesome-i2svg-pending">
+ <head> 
+  <!-- Basic data --> 
+  <meta charset="UTF-8"> 
+  <meta content="website" property="og:type"> 
+  <!-- Responsive viewport --> 
+  <meta content="width=device-width,initial-scale=1" name="viewport"> 
+  <!-- App name --> 
+  <meta content="Anime É«" name="application-name"> 
+  <meta content="Anime É«" property="og:site_name"> 
+  <!-- Meta Referrer Tag --> 
+  <meta content="unsafe-url" name="referrer"> 
+  <!-- Type of twitter card --> 
+  <meta content="summary_large_image" name="twitter:card"> 
+  <!-- Favicon --> 
+  <style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-both,:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fad.fa-inverse{color:#fff}</style>
+  <link href="https://creado-para-programar.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"> 
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" rel="stylesheet"> 
+  <!-- Url canonical --> 
+  <meta content="https://creado-para-programar.blogspot.com/" property="og:url"> 
+  <link href="https://creado-para-programar.blogspot.com/" rel="canonical"> 
+  <!-- Description --> 
+  <meta content="" property="og:description"> 
+  <meta content="" name="description"> 
+  <!-- Featured Image --> 
+  <meta content="https://lh5.googleusercontent.com/proxy/NIhlVDc26WBsEPFN8lgWs6qKEiIxVh8Ds8Ce_GWE6sgtOcjKakq386i4drS-FI8PFLGHV2Mw8zD0yDA0RzHU8Onc=w1200-h630-p-k-no-nu" property="og:image"> 
+  <meta content="https://lh3.googleusercontent.com/proxy/Ubpl1PewAqlA9k9v5CKlbetlveXxFgcE8BCLXXcnKVSbfvPUt9iZwFYrTX9HCGbZuTxTpBod7YNfSJygZsOMZ4zK=w1200-h630-p-k-no-nu" property="og:image"> 
+  <meta content="https://lh6.googleusercontent.com/proxy/o_xiZJ2P-S4jnPcZ0Up3Q9TlqR8HRLp37g8n5knmjsPsmro887hm7ATBKH7SEixYM2g1F45QNIdcsYQtXkDpnKxz=w1200-h630-p-k-no-nu" property="og:image"> 
+  <meta content="https://lh3.googleusercontent.com/proxy/u479v4lXBDgT3LfvxiExUVE4YwXfjHJzYdJhNCQCeEx_iZ1Wvxt1wCXotslDJHnwMi2luijaXmaMWvMaMbgRAmrf=w1200-h630-p-k-no-nu" property="og:image"> 
+  <meta content="https://lh5.googleusercontent.com/proxy/YWoUCwGQkCg3HRlgJSd3WhUUVApUnmvIKYFOEAEL2TkIX64NPg_hXTgFOm-TKJ2xV_-T1IlmpDVlBjYWcSs6StqU=w1200-h630-p-k-no-nu" property="og:image"> 
+  <meta content="https://lh4.googleusercontent.com/proxy/4vAyrPBT6oDgEW4Yz9KxpU05sI9IIorui4YK-jQ2CLVcyQpy9vXNT6-zEF_Lykdf1zqOHKCSQeKA1Rn0WvLb2ceE=w1200-h630-p-k-no-nu" property="og:image"> 
+  <meta content="https://lh5.googleusercontent.com/proxy/MkKKz4nwQD462RxO9I6ytFJmPj-QhRV6jHq2TxiLzdBL37AwgySdhpH-RK8aUsuBHz69tO-LsjadmhokTH861pST=w1200-h630-p-k-no-nu" property="og:image"> 
+  <meta content="https://lh6.googleusercontent.com/proxy/owVov33cer_IgEnIKJ-NLs2bAGbi7tHGeTE7SwQgMIgFHmrvZpzX_QDtzE3dHK0ovyvUlpQbhiYlixJadAgJJUEy=w1200-h630-p-k-no-nu" property="og:image"> 
+  <meta content="https://lh4.googleusercontent.com/proxy/EkAY3pxwevESIeoEn3BEzmuAfdD8qB9GvWV4OJkN8dmImKyKMJssjS2Vx14eApUTwa35fyzOsvYptzdrZLU3YNFz=w1200-h630-p-k-no-nu" property="og:image"> 
+  <meta content="1200" property="og:image:width"> 
+  <meta content="630" property="og:image:height"> 
+  <!-- Title --> 
+  <title>Anime É« - Anime gratis en l¨ªnea</title> 
+  <!-- Feeds --> 
+  <link href="https://creado-para-programar.blogspot.com/feeds/posts/default" rel="alternate" title="Atom 1.0" type="application/atom+xml"> 
+  <link href="https://creado-para-programar.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="RSS 2.0" type="application/rss+xml"> 
+  <!-- Sitelinks Searchbox --> 
+  <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "https://creado-para-programar.blogspot.com/",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://creado-para-programar.blogspot.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+    }
+}
+</script> 
+  <style id="page-skin-1" type="text/css"><!--
+body{
+--t2: #1f1a38;
+--t1: rgb(40 34 72);
+--eti: #443d68;
+--gra: rgb(40 34 72 / 14%) 0%;
+--gra1: rgba(40,34,72,1) 100%;
+--bg-uno: #18142f;
+--bg-dos: #282248;
+--bg-dos-hover: #2822488c;
+--bg-tres: #1f1a3a;
+--bg-scrol: #41a6ff;
+--bb: none;
+--nn: block;
+}
+body.otro-theme{
+--t2: #101010;
+--t1: rgb(32 32 32);
+--eti: #8f1019;
+--gra: rgb(32 32 32 / 25%) 0%;
+--gra1: rgb(32 32 32) 100%;
+--bg-uno: #111;
+--bg-dos: #202020;
+--bg-dos-hover: #202020ab;
+--bg-tres: #1f1f20;
+--bg-scrol: #ff0013;
+--bb: block;
+--nn: none;
+}
+@media (prefers-color-scheme: dark){
+body{
+--t1: rgb(32 32 32);
+--t2: #101010;
+--eti: #8f1019;
+--gra: rgb(32 32 32 / 25%) 0%;
+--gra1: rgb(32 32 32) 100%;
+--bg-uno: #111;
+--bg-dos: #202020;
+--bg-dos-hover: #202020ab;
+--bg-tres: #1f1f20;
+--bg-scrol: #ff0013;
+--bb: block;
+--nn: none;
+}
+body.otro-theme-claro{
+--t1: rgb(40 34 72);
+--t2: #1f1a38;
+--eti: #443d68;
+--gra: rgb(40 34 72 / 14%) 0%;
+--gra1: rgba(40,34,72,1) 100%;
+--bb: none;
+--nn: block;
+--bg-uno: #111;
+--bg-dos: #202020;
+--bg-dos-hover: #202020ab;
+--bg-tres: #1f1f20;
+--bg-scrol: #ff0013;
+}
+}
+button#boton-theme {
+position: fixed;
+right: 0;
+top: 0;
+bottom: 0;
+height: 3.5rem;
+margin: auto;
+z-index: 10;
+font-size: .65rem;
+text-transform: uppercase;
+line-height: 1.5;
+border-radius: .3rem 0 0 .3rem;
+background: var(--bg-scrol);
+color: white;
+padding: 11px;
+}
+svg.svg-inline--fa.fa-moon.fa-w-16, svg.svg-inline--fa.fa-sun.fa-w-16 {
+display: block;
+font-size: 18px;
+margin: auto auto 5px;
+}
+span.fa-moon {
+display: var(--bb);
+}
+span.fa-sun {
+display: var(--nn);
+}
+div#concapi h2 svg {
+color: #ff0013;
+}
+div#blog-pager {
+color: white;
+background: var(--bg-scrol);
+font-size: 18px;
+}
+div#blog-pager:hover {
+color: white;
+}
+.items-baseline.mt-4.mb-4 {
+margin-left: 5%;
+}
+iframe {
+width: 100%;
+height: 86vh;
+}
+div#concapi {
+position: relative;
+}
+#mostrar {
+position: absolute;
+top: 4px;
+right: 0;
+color: white;
+background: #ff0011;
+font-weight: 900;
+padding: 5px 10px;
+border-radius: 5pc;
+}
+#cerrar {
+position: absolute;
+top: 4px;
+right: 0;
+color: white;
+background: #1363a1;
+font-weight: 900;
+padding: 5px 10px;
+border-radius: 5pc;
+}
+div#capi {
+margin-top: 25px;
+}
+.capi ul {
+display: block;
+text-align: center;
+}
+.capi ul li {
+display: inline-block;
+width: 23%;
+height: 200px;
+overflow: hidden;
+margin: 5px;
+}
+.capi ul li a .ultimosEimg {
+width: 100%;
+height: 82%;
+}
+.capi ul li a .ultimosEimg img {
+height: 100%;
+width: 100%;
+}
+a.col-span-6.sm\:col-span-4.md\:col-span-3.xl\:col-span-2.overflow-hidden.group {
+display: inline-block;
+width: 300px;
+height: 450px;
+margin: 5px;
+}
+@media (max-width: 1365px){
+a.col-span-6.sm\:col-span-4.md\:col-span-3.xl\:col-span-2.overflow-hidden.group {
+display: inline-block;
+width: 292px;
+height: 428px;
+margin: 5px;
+}
+}
+@media (max-width: 1223px){
+a.col-span-6.sm\:col-span-4.md\:col-span-3.xl\:col-span-2.overflow-hidden.group {
+display: inline-block;
+width: 256px;
+height: 373px;
+margin: 5px;
+}
+}
+@media (max-width: 1109px){
+a.col-span-6.sm\:col-span-4.md\:col-span-3.xl\:col-span-2.overflow-hidden.group {
+display: inline-block;
+width: 225px;
+height: 329px;
+margin: 5px;
+}
+.capi ul li {
+display: inline-block;
+width: 23%;
+height: 172px;
+overflow: hidden;
+margin: 5px;
+}
+}
+@media (max-width: 1088px){
+a.col-span-6.sm\:col-span-4.md\:col-span-3.xl\:col-span-2.overflow-hidden.group {
+display: inline-block;
+height: auto;
+width: 23%;
+margin: 5px;
+}
+.capi ul li {
+display: inline-block;
+width: 23%;
+height: 151px;
+overflow: hidden;
+margin: 5px;
+}
+}
+@media (max-width: 815px){
+a.col-span-6.sm\:col-span-4.md\:col-span-3.xl\:col-span-2.overflow-hidden.group {
+display: inline-block;
+height: auto;
+width: 22%;
+margin: 5px;
+}
+.capi ul li {
+display: inline-block;
+width: 31%;
+height: 151px;
+overflow: hidden;
+margin: 5px;
+}
+}
+@media (max-width: 560px){
+a.col-span-6.sm\:col-span-4.md\:col-span-3.xl\:col-span-2.overflow-hidden.group {
+display: inline-block;
+height: auto;
+width: 47%;
+margin: 5px;
+}
+.capi ul li {
+display: inline-block;
+width: 47%;
+height: 151px;
+overflow: hidden;
+margin: 5px;
+}
+.EntadaContenido {
+position: absolute;
+left: 35vh;
+top: 18vh;
+width: 69vh;
+height: auto;
+}
+.EntadaContenido div {
+margin-top: 1px;
+display: inline-flex;
+width: 68vh;
+overflow: auto;
+}
+.EntadaContenido div::-webkit-scrollbar{
+height:4px;
+}
+.EntadaContenido div::-webkit-scrollbar-track{
+background: var(--bg-uno);
+}
+.EntadaContenido div::-webkit-scrollbar-thumb{
+background-color: var(--bg-scrol);
+}
+}
+a.col-span-6.sm\:col-span-4.md\:col-span-3.xl\:col-span-2.overflow-hidden.group:hover .box-label{
+opacity: .5;
+}
+.a1pelicula::before {
+position: absolute;
+content: "pelicula";
+display: block !important;
+background: #03a9f4;
+color: #fff;
+opacity: 1;
+padding: 1px 12px;
+margin: 0;
+border-radius: 50px;
+bottom: 8px;
+left: 7px;
+}
+.a1ova::before {
+position: absolute;
+content: "ova";
+display: block !important;
+background: #ff7600;
+color: #fff;
+opacity: 1;
+padding: 1px 12px;
+margin: 0;
+border-radius: 50px;
+bottom: 8px;
+left: 7px;
+}
+.box-label {
+opacity: 1;
+overflow: hidden;
+text-align: center;
+position: absolute;
+bottom: 6px;
+left: 7px;
+display: block;
+width: 73px;
+height: 26px;
+}
+.a1nime::before {
+position: absolute;
+content: "anime";
+display: block !important;
+background: #ff005e;
+color: #fff;
+opacity: 1;
+padding: 1px 12px;
+margin: 0;
+border-radius: 50px;
+bottom: 8px;
+left: 7px;
+}
+.box-label p {
+display: none;
+}
+div#Blog {
+margin: 0px;
+margin-top: 24px !important;
+}
+.parrafo::-webkit-scrollbar{
+width:12px
+}
+.parrafo::-webkit-scrollbar-track{
+background: var(--bg-uno);
+}
+.parrafo::-webkit-scrollbar-thumb{
+background-color: var(--bg-scrol);
+}
+ul.ulListaEpisodio::-webkit-scrollbar{
+width:12px
+}
+ul.ulListaEpisodio::-webkit-scrollbar-track{
+background: var(--bg-uno);
+}
+ul.ulListaEpisodio::-webkit-scrollbar-thumb{
+background-color: var(--bg-scrol);
+}
+body::-webkit-scrollbar{
+width:15px
+}
+body::-webkit-scrollbar-track{
+background: var(--bg-uno);
+}
+body::-webkit-scrollbar-thumb{
+background-color: var(--bg-scrol);
+}
+h2.page-heading {
+font-size: 20px;
+}
+h3.title {
+color: #fff;
+}
+h3.title svg {
+color: #37d1a2;
+font-size: 21px;
+margin-right: 9px;
+}
+#layout {
+overflow: hidden !important;
+max-width: 97vw !important;
+margin: auto !important;
+}
+ul#pills-tab {
+display: flex;
+max-width: 100%;
+overflow: auto;
+flex-direction: row;
+flex-wrap: nowrap;
+}
+.table {
+display: table;
+margin: 0;
+}
+.table-dark td, .table-dark th, .table-dark thead th {
+border-color: #454d55;
+border: none;
+}
+.modal-body {
+padding: 0;
+}
+.modal-header {
+border: none;
+}
+.table-dark {
+font-size: 12px;
+border: none;
+color: #dcdcdc;
+background-color: var(--t2);
+}
+.table-dark.table-striped tbody tr:nth-of-type(odd) {
+background-color: var(--t1);
+}
+.close {
+float: right;
+font-size: 1.5rem;
+font-weight: 700;
+line-height: 1;
+color: white;
+text-shadow: none;
+opacity: .5;
+}
+.close:hover {
+color: white;
+}
+h5#exampleModalLabel {
+font-size: 20px;
+}
+.unaclas svg {
+position: relative;
+background: #463c7b;
+font-size: 33px;
+padding: 8px;
+border-radius: 100%;
+color: #1fde8f;
+top: 3px;
+}
+.modal-content {
+font-weight: 700;
+color: gainsboro;
+background-color: var(--bg-dos);
+}
+.verCapS {
+background: var(--bg-dos);
+padding: 30px 10px 30px 10px;
+display: block;
+position: relative;
+overflow: hidden;
+border-bottom-right-radius: 3px;
+border-bottom-left-radius: 3px;
+}
+.verCapSN {
+display: block;
+}
+.verCapS button.btn.btn-primary {
+position: absolute;
+right: 3%;
+top: 20px;
+}
+.verCapSN a {
+border-radius: 3px;
+padding: 10px 15px;
+background: var(--eti);
+color: #c6c2dd;
+transition: all 200ms;
+}
+.verCap {
+margin: auto;
+width: 86vw;
+}
+.verCap ul li {
+margin-left: 5px;
+}
+.verCap ul li a {
+font-size: 12px;
+text-align: center;
+line-height: 1;
+color: #c6c2dd;
+background-color: var(--eti);
+border-color: var(--eti);
+display: grid;
+padding: 13px 4px;
+}
+div#Blog {
+margin: 17px;
+}
+.soloparalemain{display:none;}
+@media (max-width: 1150px){
+.thumb figure {
+width: 159px;
+}
+a.btn.btn-success.btn-block.status, a.btn.btn-danger.btn-block.status {
+width: 159px;
+}
+.parrafo p {
+margin-top: 8px;
+}
+}
+@media (max-width: 1100px){
+.primerBloque {
+height: 91vh !important;
+}
+.thumb figure {
+width: 100%;
+}
+a.btn.btn-success.btn-block.status, a.btn.btn-danger.btn-block.status {
+width: 100%;
+}
+.EntadaContenido {
+position: absolute;
+left: 26% !important;
+top: 18vh;
+width: 81vh;
+height: auto;
+}
+.parrafo {
+left: 26% !important;
+top: 41vh !important;
+width: 71% !important;
+}
+}
+@media (max-width: 1025px){
+.primerBloque {
+height: 103vh !important;
+}
+}
+@media (max-width: 999px){
+aside.col.col-sm-4.col-lg-3.col-xl-2 {
+position: absolute;
+width: 25%;
+top: 11vh;
+}
+}
+@media (max-width: 860px){
+.primerBloque {
+height: 90vh !important;
+}
+}
+@media (max-width: 640px){
+.primerBloque {
+height: 75vh !important;
+}
+}
+@media (max-width: 600px){
+aside.col.col-sm-4.col-lg-3.col-xl-2 {
+width: 29%;
+}
+.EntadaContenido {
+left: 30% !important;
+}
+.parrafo {
+left: 30% !important;
+top: 43vh !important;
+width: 66% !important;
+}
+}
+p.iconoss {
+transition: all 200ms;
+font-size: 39px;
+position: absolute;
+color: #ffffff80;
+right: 1%;
+top: 29%;
+bottom: 20%;
+}
+.listaEpisodio li:hover p.iconoss {
+color: #3464a3;
+}
+.listaEpisodio {
+margin-top: 17px;
+}
+.info {padding: 13px;background-color: var(--bg-dos);margin: 0px 26px;}
+.info p {
+margin: 5px;
+color: #c6c2dd;
+}
+.info p svg {
+margin-right: 11px;
+color: var(--bg-scrol);
+opacity: .5;
+font-size: 39px;
+}
+ul.ulListaEpisodio {
+max-height: 450px;
+margin: 8px 27px 0px 0px;
+padding: 8px;
+overflow: auto;
+}
+ul.ulListaEpisodio span {
+margin: 10px 18px;
+font-size: 20px;
+color: #fff;
+}
+ul.ulListaEpisodio span svg {
+color: #37d1a2;
+margin-right: 12px;
+}
+.listaEpisodio li {
+position: relative;
+transition: all 200ms;
+padding: 13px;
+margin: 20px 24px 20px;
+border-bottom: 2px solid rgba(68,61,104,.5);
+}
+a.fa-play-circle.d-inline-flex.align-items-center.rounded {
+color: #c6c2dd;
+}
+.ulListaEpisodio figure {
+margin-bottom: 0;
+max-width: 8.75rem;
+margin-right: 1rem;
+}
+.ulListaEpisodio figure img {
+max-width: 100%;
+}
+.flex-grow-1 {}
+.episodes-list p {
+margin-bottom: 0;
+color: var(--light);
+}
+.ulListaEpisodio li .flex-grow-1 p {
+margin-bottom: 0;
+color: var(--light);
+}
+ul.ulListaEpisodio > li > a span {
+font-weight: 700;
+margin-left: .2rem;
+}
+.listaEpisodio li:hover {
+background: var(--bg-dos-hover);
+}
+.parrafo {
+position: absolute;
+left: 18%;
+top: 34vh;
+max-height: 100px;
+overflow: auto;
+width: 80%;
+}
+.parrafo p {
+color: #fafafad9;
+}
+.EntadaContenido {
+position: absolute;
+left: 35vh;
+top: 18vh;
+width: 81vh;
+height: auto;
+}
+.EntadaContenido h1 {
+color: #fff;
+font-size: 29px;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+}
+.EntadaContenido p {
+color: #dc3545;
+border-left: 2px solid #dc3545;
+padding-left: 6px;
+font-size: 14px;
+}
+.EntadaContenido div {
+margin-top: 1px;
+display: inline-flex;
+width: max-content;
+}
+.EntadaContenido div a {
+font-size: 14px;
+margin: 5px;
+color: #c6c2dd;
+background-color: var(--eti);
+border-color: var(--eti);
+padding: 4px 8px;
+border-radius: 20px;
+}
+aside.col.col-sm-4.col-lg-3.col-xl-2 {
+position: absolute;
+top: 11vh;
+}
+a.btn.btn-success.btn-block.status, a.btn.btn-danger.btn-block.status {
+margin-top: 14px;
+}
+.ConterEntrada {
+margin-top: -22px;
+display: block;
+width: 100%;
+}
+.primerBloque {
+overflow: hidden;
+width: 100%;
+display: block;
+position: relative;
+height: 65vh;
+background: var(--bg-dos);
+}
+.preminweb a svg {
+font-size: 27px;
+margin-right: 6px;
+}
+.preminweb a:hover{
+color: #fff;
+}
+p.preminweb {
+font-size: 21px;
+}
+.bgGrande {
+position: relative;
+width: 100%;
+display: block;
+height: 27vh;
+background: var(--bg-uno);
+overflow: hidden;
+padding: 0;
+}
+.bgGrande img {
+opacity: .8;
+width: 100%;
+}
+span.degrade {
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(to bottom,var(--gra),var(--gra1));
+}
+/*Fix: Unnecessary elements removed*/
+.widget-item-control,.item-control.blog-admin,
+.continue,.loadmore,.thread-chrome.thread-collapsed,
+.singleton-element:not(.cookie-choices-info),
+.noAllowNewComments .comment-reply,
+.comments .hidden {display:none}
+/*Fix: Show lightbox*/
+.CSS_LIGHTBOX{z-index:90001!important}
+/*Fix: Responsive images*/
+a[style^=margin-left],
+a[imageanchor]:not([style*=float]) {
+margin-right: 0 !important;
+margin-left: 0 !important;
+}
+.widget-content img,
+img[data-original-height],
+img[data-original-width] {height: auto;}
+/*Fix: Responsive videos*/
+.BLOG_video_class, .b-hbp-video, .b-uploade {
+max-width: 100%;
+}
+/*Fix: Comment Editor*/
+#comment-editor{
+border:0;
+width:100%
+}
+div#Publicidad\ inicio {
+display: none;
+}
+div#HTML3 {
+padding: 0 !important;
+margin: 0px !important;
+}
+.anime-episode a {
+width: 240px;
+}
+.capi ul li a:hover .ultimosEimg span  {
+opacity: 1;
+}
+.ultimosEimg {
+position: relative;
+border-radius: 3px;
+width: 240px;
+height: 135px;
+overflow: hidden;
+display: block;
+}
+.ultimosEimg img.loaded {
+width: 100%;
+height: 100%;
+}
+.capi ul li a .ultimosEimg span {
+opacity: 0;
+position: absolute;
+background: #41a6ff80;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transition: all 300ms;
+}
+.ultimosEimg span svg {
+color: white;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+font-size: 41px;
+right: 0;
+margin: auto;
+}
+.navbar-light .navbar-toggler, button.navbar-toggler.collapsed {
+background-color: rgba(0,0,0,.5);
+box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+border: 0;
+padding: 3px;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+}
+footer {
+background: var(--bg-tres);
+}
+footer .container {
+padding: 18px 0px;
+background: var(--bg-tres) !important;
+}
+.navbar-nav {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+padding-left: 0;
+margin-bottom: 0;
+list-style: none;
+}
+.navbar-nav>li.nav-item {
+padding: .5rem 1rem;
+margin-right: 0;
+}
+.navbar-nav>li.nav-item>.nav-link {
+border-bottom: 0;
+}
+.bg-dark {
+border-bottom: 1px solid #314148;
+background-color: var(--bg-tres) !important;
+padding-bottom: 33px;
+}
+.navbar-light .navbar-toggler-icon {
+background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PScwIDAgMzAgMzAnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggc3Ryb2tlPSdyZ2JhKDI1NSwyNTUsMjU1LDEpJyBzdHJva2Utd2lkdGg9JzInIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLW1pdGVybGltaXQ9JzEwJyBkPSdNNCA3aDIyTTQgMTVoMjJNNCAyM2gyMicvPjwvc3ZnPg==);
+}
+.btn-outline-success.focus, .btn-outline-success:focus {
+box-shadow: none;
+}
+form.form-inline.my-2.my-lg-0 {
+position: relative;
+}
+input.form-control.mr-sm-2:focus {
+box-shadow: 0 0 0 0.2rem rgb(65 166 255 / 10%);
+color: #c6c2dd;
+}
+input.form-control.mr-sm-2 {
+border-radius: 2rem;
+padding-left: 1rem;
+background-color: var(--bg-uno);
+border-color: var(--eti);
+}
+.iconSearch {
+position: absolute;
+top: 18%;
+right: 11%;
+border: none;
+color: var(--eti);
+}
+.iconSearch:hover{
+background:none;
+border:none;
+}
+@media (max-width: 991px){
+li.nav-item {
+margin: 5px !important;
+border-bottom: 1px solid #eeeeee6b !important;
+}
+a.nav-link {
+font-weight: 400 !important;
+}
+.iconSearch {
+position: absolute;
+top: 18%;
+right: 3%;
+border: none;
+color: var(--eti);
+}
+input.form-control.mr-sm-2 {
+width: 100%;
+}
+}
+@media (max-width: 800px){
+div#LinkList1 {
+padding: 3px 8px !important;
+}
+}
+@media (max-width: 700px){
+div#LinkList1 {
+padding: 0px 18px !important;
+}
+}
+.fa-star, .fa-comments {
+color: #fcd127;
+}
+div#Menu {
+background: var(--bg-dos) !important;
+padding: 1rem 0;
+}
+a.nav-link {
+color: #c6c2dd !important;
+font-weight: 700;
+}
+.paraPost {
+width: 100%;
+position: relative;
+display: block;
+overflow: hidden;
+height: 93%;
+}
+.paraPost img {
+width: 100%;
+height: 100%;
+}
+.paraPost span {
+opacity: 0;
+position: absolute;
+background: #41a6ff80;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transition: all 300ms;
+}
+.paraPost svg {
+color: white;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+font-size: 41px;
+right: 0;
+margin: auto;
+}
+a.col-span-6.sm\:col-span-4.md\:col-span-3.xl\:col-span-2.overflow-hidden.group:hover .paraPost span {
+opacity: 1;
+}
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
+/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+:root {
+-moz-tab-size:4;
+-o-tab-size:4;
+tab-size:4
+}
+html {
+line-height:1.15;
+-webkit-text-size-adjust:100%
+}
+body {
+background: var(--bg-uno);
+margin:0;
+font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji
+}
+hr {
+height:0;
+color:inherit
+}
+abbr[title] {
+-webkit-text-decoration:underline dotted;
+text-decoration:underline dotted
+}
+b,
+strong {
+font-weight:bolder
+}
+code,
+kbd,
+pre,
+samp {
+font-family:ui-monospace,SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+font-size:1em
+}
+small {
+font-size:80%
+}
+sub,
+sup {
+font-size:75%;
+line-height:0;
+position:relative;
+vertical-align:baseline
+}
+sub {
+bottom:-.25em
+}
+sup {
+top:-.5em
+}
+ul.pagination {
+text-align: center;
+margin: 10px;
+border: 1px solid var(--bg-scrol);
+}
+table {
+text-indent:0;
+border-color:inherit
+}
+li.page-item.active {
+background: #000000;
+padding: 1px 10px;
+color: #1f2937;
+display: inline-block;
+margin: 0 5px;
+}
+li.page-item {
+display: inline-block;
+margin: 0 5px;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+font-family:inherit;
+font-size:100%;
+line-height:1.15;
+margin:0
+}
+button,
+select {
+text-transform:none
+}
+[type=button],
+[type=submit],
+button {
+-webkit-appearance:button
+}
+legend {
+padding:0
+}
+progress {
+vertical-align:baseline
+}
+summary {
+display:list-item
+}
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+margin:0
+}
+button {
+background-color:transparent;
+background-image:none
+}
+button:focus {
+outline:1px dotted;
+outline:5px auto -webkit-focus-ring-color
+}
+fieldset,
+ol,
+ul {
+margin:0;
+padding:0
+}
+ol,
+ul {
+list-style:none
+}
+html {
+font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+line-height:1.5
+}
+body {
+font-family:inherit;
+line-height:inherit
+}
+*,
+:after,
+:before {
+box-sizing:border-box;
+border:0 solid #e5e7eb
+}
+hr {
+border-top-width:1px
+}
+footer .container p {
+text-align: center;
+color: #fff;
+margin: 4rem 0rem;
+}
+img {
+border-style:solid
+}
+textarea {
+resize:vertical
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+color:#9ca3af
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+color:#9ca3af
+}
+input::placeholder,
+textarea::placeholder {
+color:#9ca3af
+}
+[role=button],
+button {
+cursor:pointer
+}
+table {
+border-collapse:collapse
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-size:inherit;
+font-weight:inherit
+}
+a {
+color:inherit;
+text-decoration: none !important;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+padding:0;
+line-height:inherit;
+color:inherit
+}
+code,
+kbd,
+pre,
+samp {
+font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace
+}
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+display:block;
+vertical-align:middle
+}
+img,
+video {
+max-width:100%;
+height:auto
+}
+[type=date],
+[type=email],
+[type=password],
+[type=text],
+[type=time],
+[type=url],
+select,
+textarea {
+-webkit-appearance:none;
+-moz-appearance:none;
+appearance:none;
+background-color:#fff;
+border-color:#6b7280;
+border-width:1px;
+border-radius:0;
+padding:.5rem .75rem;
+font-size:1rem;
+line-height:1.5rem
+}
+[type=date]:focus,
+[type=email]:focus,
+[type=password]:focus,
+[type=text]:focus,
+[type=time]:focus,
+[type=url]:focus,
+select:focus,
+textarea:focus {
+outline:2px solid transparent;
+outline-offset:2px;
+--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);
+--tw-ring-offset-width:0px;
+--tw-ring-offset-color:#fff;
+--tw-ring-color:#2563eb;
+--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 transparent);
+border-color:#2563eb
+}
+li.nav-item a {
+color: #fff;
+font-size: 20px;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+color:#6b7280;
+opacity:1
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+color:#6b7280;
+opacity:1
+}
+input::placeholder,
+textarea::placeholder {
+color:#6b7280;
+opacity:1
+}
+[type=file] {
+background:unset;
+border-color:inherit;
+border-width:0;
+border-radius:0;
+padding:0;
+font-size:unset;
+line-height:inherit
+}
+[type=file]:focus {
+outline:1px auto -webkit-focus-ring-color
+}
+[v-cloak] {
+display:none
+}
+.container {
+width:100%
+}
+@media (min-width:640px) {
+.container {
+max-width:640px
+}
+}
+@media (min-width:768px) {
+.container {
+max-width:768px
+}
+}
+@media (min-width:1024px) {
+.container {
+max-width:1024px
+}
+}
+@media (min-width:1280px) {
+.container {
+max-width:1280px
+}
+}
+@media (min-width:1536px) {
+.container {
+max-width:1536px
+}
+}
+@media (max-width:1024px) {
+.px-4 {
+padding-left: 0!important;
+padding-right: 0!important;
+}
+}
+.aspect-w-16 {
+position:relative;
+padding-bottom:calc(var(--tw-aspect-h)/var(--tw-aspect-w)*100%)
+}
+.aspect-w-16>* {
+position:absolute;
+height:100%;
+width:100%;
+top:0;
+right:0;
+bottom:0;
+left:0
+}
+.aspect-w-16 {
+--tw-aspect-w:16
+}
+.aspect-h-12 {
+--tw-aspect-h:12
+}
+.fa-fire {
+font-size: 33px;
+color: #37d1a2;
+}
+.page-heading {
+color: white;
+--tw-border-opacity:1;
+font-weight:500;
+font-size:1.25rem;
+line-height:1.75rem;
+}
+@media (min-width:768px) {
+.page-heading {
+font-size:1.5rem;
+line-height:2rem
+}
+}
+.space-y-2>:not([hidden])~:not([hidden]) {
+--tw-space-y-reverse:0;
+margin-top:calc(0.5rem*(1 - var(--tw-space-y-reverse)));
+margin-bottom:calc(0.5rem*var(--tw-space-y-reverse))
+}
+.space-x-2>:not([hidden])~:not([hidden]) {
+--tw-space-x-reverse:0;
+margin-right:calc(0.5rem*var(--tw-space-x-reverse));
+margin-left:calc(0.5rem*(1 - var(--tw-space-x-reverse)))
+}
+.space-y-4>:not([hidden])~:not([hidden]) {
+--tw-space-y-reverse:0;
+margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));
+margin-bottom:calc(1rem*var(--tw-space-y-reverse))
+}
+.space-x-4>:not([hidden])~:not([hidden]) {
+--tw-space-x-reverse:0;
+margin-right:calc(1rem*var(--tw-space-x-reverse));
+margin-left:calc(1rem*(1 - var(--tw-space-x-reverse)))
+}
+.bg-clip-text {
+-webkit-background-clip:text;
+background-clip:text
+}
+.bg-black {
+--tw-bg-opacity:1;
+background-color:rgba(0,0,0,var(--tw-bg-opacity))
+}
+.bg-gray-500 {
+--tw-bg-opacity:1;
+background-color:rgba(107,114,128,var(--tw-bg-opacity))
+}
+.bg-gray-700 {
+--tw-bg-opacity:1;
+background-color:rgba(55,65,81,var(--tw-bg-opacity))
+}
+.bg-gray-800 {
+--tw-bg-opacity:1;
+background-color:rgba(31,41,55,var(--tw-bg-opacity))
+}
+.bg-gray-900 {
+--tw-bg-opacity:1;
+background-color:rgba(17,24,39,var(--tw-bg-opacity))
+}
+.bg-green-500 {
+--tw-bg-opacity:1;
+background-color:rgba(16,185,129,var(--tw-bg-opacity))
+}
+.bg-rose-500 {
+--tw-bg-opacity:1;
+background-color:rgba(244,63,94,var(--tw-bg-opacity))
+}
+.hover\:bg-gray-500:hover {
+--tw-bg-opacity:1;
+background-color:rgba(107,114,128,var(--tw-bg-opacity))
+}
+.focus\:bg-gray-700:focus,
+.hover\:bg-gray-700:hover {
+--tw-bg-opacity:1;
+background-color:rgba(55,65,81,var(--tw-bg-opacity))
+}
+.bg-gradient-to-r {
+background-image:linear-gradient(90deg,var(--tw-gradient-stops))
+}
+.from-green-400 {
+--tw-gradient-from:#34d399;
+--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,rgba(52,211,153,0))
+}
+.to-blue-500 {
+--tw-gradient-to:#3b82f6
+}
+.border-transparent {
+border-color:transparent
+}
+.border-white {
+--tw-border-opacity:1;
+border-color:rgba(255,255,255,var(--tw-border-opacity))
+}
+.border-gray-500 {
+--tw-border-opacity:1;
+border-color:rgba(107,114,128,var(--tw-border-opacity))
+}
+.border-green-500 {
+--tw-border-opacity:1;
+border-color:rgba(16,185,129,var(--tw-border-opacity))
+}
+.focus\:border-gray-600:focus {
+--tw-border-opacity:1;
+border-color:rgba(75,85,99,var(--tw-border-opacity))
+}
+.focus\:border-green-500:focus {
+--tw-border-opacity:1;
+border-color:rgba(16,185,129,var(--tw-border-opacity))
+}
+.rounded-sm {
+border-radius:.125rem
+}
+.rounded {
+border-radius:.25rem
+}
+.rounded-md {
+border-radius:.375rem
+}
+.rounded-lg {
+border-radius:.5rem
+}
+.rounded-full {
+border-radius:9999px
+}
+.rounded-r {
+border-top-right-radius:.25rem;
+border-bottom-right-radius:.25rem
+}
+.rounded-l {
+border-top-left-radius:.25rem;
+border-bottom-left-radius:.25rem
+}
+.rounded-tr {
+border-top-right-radius:.25rem
+}
+.rounded-br {
+border-bottom-right-radius:.25rem
+}
+.border {
+border-width:1px
+}
+.border-l-4 {
+border-left-width:4px
+}
+.border-t {
+border-top-width:1px
+}
+.border-b {
+border-bottom-width:1px
+}
+.border-l {
+border-left-width:1px
+}
+.cursor-pointer {
+cursor:pointer
+}
+.cursor-not-allowed {
+cursor:not-allowed
+}
+.block {
+display:block
+}
+.inline-block {
+display:inline-block
+}
+.flex {
+display:flex
+}
+.inline-flex {
+display:inline-flex
+}
+.table {
+display:table
+}
+.grid {
+display:grid
+}
+.contents {
+display:contents
+}
+.hidden {
+display:none
+}
+.flex-col {
+flex-direction:column
+}
+.flex-col-reverse {
+flex-direction:column-reverse
+}
+.flex-wrap {
+flex-wrap:wrap
+}
+.items-start {
+align-items:flex-start
+}
+.items-center {
+align-items:center
+}
+.items-baseline {
+align-items:baseline
+}
+.items-stretch {
+align-items:stretch
+}
+.justify-end {
+justify-content:flex-end
+}
+.justify-center {
+justify-content:center
+}
+.justify-between {
+justify-content:space-between
+}
+.font-web {
+font-family:Poppins,sans-serif
+}
+.font-medium {
+font-weight:500
+}
+.font-semibold {
+font-weight: 600
+}
+.font-bold {
+font-weight:700
+}
+.h-4 {
+height:1rem
+}
+.h-5 {
+height:1.25rem
+}
+.h-8 {
+height:2rem
+}
+.h-9 {
+height:2.25rem
+}
+.h-12 {
+height:3rem
+}
+.h-20 {
+height:5rem
+}
+.h-32 {
+height:8rem
+}
+.h-64 {
+height:16rem
+}
+.h-auto {
+height:auto
+}
+.h-full {
+height:100%
+}
+.text-xs {
+font-size:.75rem;
+line-height:1rem
+}
+.text-sm {
+font-size:.875rem;
+line-height:1.25rem
+}
+.text-lg {
+font-size:1.125rem
+}
+.text-lg,
+.text-xl {
+line-height:1.75rem
+}
+.text-xl {
+font-size:1.25rem
+}
+.text-2xl {
+font-size:1.5rem;
+line-height:2rem
+}
+.leading-relaxed {
+line-height:1.625
+}
+.leading-loose {
+line-height:2
+}
+.list-disc {
+list-style-type:disc
+}
+.mx-1 {
+margin-left:.25rem;
+margin-right:.25rem
+}
+.mx-2 {
+margin-left:.5rem;
+margin-right:.5rem
+}
+.mx-auto {
+margin-left:auto;
+margin-right:auto
+}
+.-mx-2 {
+margin-left:-.5rem;
+margin-right:-.5rem
+}
+.mr-1 {
+margin-right:.125rem
+}
+.mt-1 {
+margin-top:.25rem
+}
+.mt-2 {
+margin-top:.5rem
+}
+.mr-2 {
+margin-right:.5rem
+}
+.mb-2 {
+margin-bottom:.5rem
+}
+.ml-2 {
+margin-left:.5rem
+}
+.mr-3 {
+margin-right:.75rem
+}
+.mt-4 {
+margin-top:1rem
+}
+.mb-4 {
+margin-bottom:1rem
+}
+.mt-8 {
+margin-top:2rem
+}
+.focus\:outline-none:focus {
+outline:2px solid transparent;
+outline-offset:2px
+}
+.overflow-hidden {
+overflow:hidden
+}
+.p-2 {
+padding:.5rem
+}
+.p-3 {
+padding:.75rem
+}
+.p-4 {
+padding:1rem
+}
+.p-8 {
+padding:2rem
+}
+.py-0\.5 {
+padding-top:.125rem;
+padding-bottom:.125rem;
+}
+.px-0\.5 {
+padding-left:.125rem;
+padding-right:.125rem;
+}
+.py-1 {
+padding-top:.25rem;
+padding-bottom:.25rem
+}
+.px-1 {
+padding-left:.25rem;
+padding-right:.25rem
+}
+.py-2 {
+padding-top:.5rem;
+padding-bottom:.5rem
+}
+.px-2 {
+padding-left:.5rem;
+padding-right:.5rem
+}
+.py-3 {
+padding-top:.75rem;
+padding-bottom:.75rem
+}
+.px-3 {
+padding-left:.75rem;
+padding-right:.75rem
+}
+.px-4 {
+padding-left:1rem;
+padding-right:1rem
+}
+.pl-2 {
+padding-left:.5rem
+}
+.pt-4 {
+padding-top:1rem
+}
+.pl-4 {
+padding-left:1rem
+}
+.pr-4 {
+padding-right:1rem
+}
+.absolute {
+position:absolute
+}
+.relative {
+position:relative
+}
+.right-0 {
+right:0
+}
+.top-0 {
+top:0
+}
+* {
+--tw-shadow:0 0 transparent;
+--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);
+--tw-ring-offset-width:0px;
+--tw-ring-offset-color:#fff;
+--tw-ring-color:rgba(59,130,246,0.5);
+--tw-ring-offset-shadow:0 0 transparent;
+--tw-ring-shadow:0 0 transparent
+}
+.focus\:ring-0:focus {
+--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(var(--tw-ring-offset-width)) var(--tw-ring-color);
+box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 transparent)
+}
+.fill-current {
+fill:currentColor
+}
+.stroke-current {
+stroke:currentColor
+}
+.text-center {
+text-align:center
+}
+.text-transparent {
+color:transparent
+}
+.text-white {
+--tw-text-opacity:1;
+color:rgba(255,255,255,var(--tw-text-opacity))
+}
+.text-gray-300 {
+--tw-text-opacity:1;
+color:rgba(209,213,219,var(--tw-text-opacity))
+}
+.text-gray-400 {
+--tw-text-opacity:1;
+color:rgba(156,163,175,var(--tw-text-opacity))
+}
+.text-gray-500 {
+--tw-text-opacity:1;
+color:rgba(107,114,128,var(--tw-text-opacity))
+}
+.text-gray-600 {
+--tw-text-opacity:1;
+color:rgba(75,85,99,var(--tw-text-opacity))
+}
+.text-gray-700 {
+--tw-text-opacity:1;
+color:rgba(55,65,81,var(--tw-text-opacity))
+}
+.text-rose-500 {
+--tw-text-opacity:1;
+color:rgba(244,63,94,var(--tw-text-opacity))
+}
+.group:hover .group-hover\:text-green-500,
+.hover\:text-green-500:hover {
+--tw-text-opacity:1;
+color: var(--bg-scrol);
+}
+.hover\:text-green-600:hover {
+--tw-text-opacity:1;
+color:rgba(5,150,105,var(--tw-text-opacity))
+}
+.hover\:text-red-500:hover{
+--tw-text-opacity:1;
+color:rgba(239,68,68,var(--tw-text-opacity))
+}
+.underline {
+text-decoration:none
+}
+.capitalize {
+text-transform:capitalize
+}
+.uppercase {
+text-transform:uppercase
+}
+.overflow-y-auto {
+overflow-y: auto
+}
+.antialiased {
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale
+}
+.select-none {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none
+}
+.max-h-96 {
+max-height: 24rem
+}
+.w-4 {
+width:1rem
+}
+.w-5 {
+width:1.25rem
+}
+.w-8 {
+width:2rem
+}
+.w-12 {
+width:3rem
+}
+.w-32 {
+width:8rem
+}
+.w-36 {
+width:9rem
+}
+.w-full {
+width:100%
+}
+.z-20 {
+z-index:20
+}
+.gap-4 {
+gap:1rem
+}
+.gap-x-2 {
+-moz-column-gap:.5rem;
+column-gap:.5rem
+}
+.gap-y-2 {
+row-gap:.5rem
+}
+.grid-cols-2 {
+grid-template-columns:repeat(2,minmax(0,1fr))
+}
+.grid-cols-6 {
+grid-template-columns:repeat(6,minmax(0,1fr))
+}
+.grid-cols-12 {
+display: block;
+text-align: center;
+}
+.col-span-3 {
+grid-column:span 3/span 3
+}
+.col-span-6 {
+grid-column:span 6/span 6
+}
+.col-span-12 {
+grid-column:span 12/span 12
+}
+.grid-rows-2 {
+grid-template-rows:repeat(2,minmax(0,1fr))
+}
+/**.grid-rows-3 {
+grid-template-rows:repeat(3,minmax(0,1fr))
+}**/
+.grid-rows-4 {
+grid-template-rows:repeat(4,minmax(0,1fr))
+}
+.transition {
+transition-property:background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+transition-timing-function:cubic-bezier(.4,0,.2,1);
+transition-duration:.15s
+}
+.transition-colors {
+transition-property:background-color,border-color,color,fill,stroke;
+transition-timing-function:cubic-bezier(.4,0,.2,1);
+transition-duration:.15s
+}
+.duration-300 {
+transition-duration:.3s
+}
+@-webkit-keyframes spin {
+to {
+transform:rotate(1turn)
+}
+}
+@keyframes spin {
+to {
+transform:rotate(1turn)
+}
+}
+@-webkit-keyframes ping {
+75%,
+to {
+transform:scale(2);
+opacity:0
+}
+}
+@keyframes ping {
+75%,
+to {
+transform:scale(2);
+opacity:0
+}
+}
+@-webkit-keyframes pulse {
+50% {
+opacity:.5
+}
+}
+@keyframes pulse {
+50% {
+opacity:.5
+}
+}
+@-webkit-keyframes bounce {
+0%,
+to {
+transform:translateY(-25%);
+-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);
+animation-timing-function:cubic-bezier(.8,0,1,1)
+}
+50% {
+transform:none;
+-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);
+animation-timing-function:cubic-bezier(0,0,.2,1)
+}
+}
+@keyframes bounce {
+0%,
+to {
+transform:translateY(-25%);
+-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);
+animation-timing-function:cubic-bezier(.8,0,1,1)
+}
+50% {
+transform:none;
+-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);
+animation-timing-function:cubic-bezier(0,0,.2,1)
+}
+}
+@-webkit-keyframes spin-reverse {
+0% {
+transform:rotate(-1turn)
+}
+to {
+transform:rotate(-180deg)
+}
+}
+@keyframes spin-reverse {
+0% {
+transform:rotate(-1turn)
+}
+to {
+transform:rotate(-180deg)
+}
+}
+.animate-spin-reverse {
+animation:spin 1s linear infinite reverse
+}
+.clamp-1 {
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+overflow: hidden;
+}
+@media (min-width:640px) {
+.sm\:w-8\/12 {
+width:66.666667%
+}
+.sm\:grid-cols-3 {
+grid-template-columns:repeat(3,minmax(0,1fr))
+}
+.sm\:col-span-4 {
+grid-column:span 4/span 4
+}
+}
+@media (min-width:768px) {
+.md\:aspect-h-9 {
+--tw-aspect-h:9
+}
+.md\:space-x-4>:not([hidden])~:not([hidden]) {
+--tw-space-x-reverse:0;
+margin-right:calc(1rem*var(--tw-space-x-reverse));
+margin-left:calc(1rem*(1 - var(--tw-space-x-reverse)))
+}
+.md\:inline-block {
+display:inline-block
+}
+.md\:hidden {
+display:none
+}
+.md\:flex-row {
+flex-direction:row
+}
+.md\:flex-nowrap {
+flex-wrap:nowrap
+}
+.md\:text-sm {
+font-size:.875rem;
+line-height:1.25rem
+}
+.md\:text-2xl {
+font-size:1.5rem;
+line-height:2rem
+}
+.md\:mt-0 {
+margin-top:0
+}
+.md\:mb-0 {
+margin-bottom:0
+}
+.md\:ml-4 {
+margin-left:1rem
+}
+.md\:relative {
+position:relative
+}
+.md\:text-right {
+text-align:right
+}
+.md\:w-auto {
+width:auto
+}
+.md\:w-1\/2 {
+width:50%
+}
+.md\:w-2\/3 {
+width:66.666667%
+}
+.md\:w-1\/4 {
+width:25%
+}
+.md\:w-8\/12 {
+width:66.666667%
+}
+.md\:w-10\/12 {
+width:83.333333%
+}
+.md\:col-span-2 {
+grid-column:span 2/span 2
+}
+.md\:col-span-3 {
+grid-column:span 3/span 3
+}
+.md\:col-span-9 {
+grid-column:span 9/span 9
+}
+}
+@media (min-width:1024px) {
+.lg\:w-4\/12 {
+width:33.333333%
+}
+}
+@media (min-width:1280px) {
+.xl\:w-8\/12 {
+width:66.666667%
+}
+.xl\:col-span-1 {
+grid-column:span 1/span 1
+}
+.xl\:col-span-2 {
+display: inline-block;
+width: 300px;
+height: 450px;
+margin: 5px;
+}
+}
+@keyframes rotation {
+from {
+transform: rotate(0);
+}
+to {
+transform: rotate(359deg);
+}
+}
+.loading:before {
+content: "";
+height: 4em;
+width: 4em;
+margin: -2.25em auto auto -2.25em;
+position: absolute;
+top: calc(50% - (1em / 2));
+left: calc(50% - (1em / 2));
+border-width: 0.2rem;
+border-style: solid;
+border-color: #555 #555 #d2caca;
+border-radius: 100%;
+animation: rotation 0.7s infinite linear;
+}
+
+--></style> 
+  <style>
+
+</style> 
+  <meta name="google-adsense-platform-account" content="ca-host-pub-1556223355139109"> 
+  <meta name="google-adsense-platform-domain" content="blogspot.com"> 
+ </head> 
+ <body class=""> 
+  <div class="navbar navbar-expand-lg navbar-light bg-light section" id="Menu">
+   <div class="widget LinkList container mx-auto relative flex justify-between items-center" data-version="2" id="LinkList1"> 
+    <a class="navbar-brand" href="https://creado-para-programar.blogspot.com/"><img alt="logo" src="https://1.bp.blogspot.com/-jUsZgcuw9is/YVW3qiCXyHI/AAAAAAAACas/OcOqzFkbexEiBGJixNsHT7LZahpLfRjSQCLcBGAsYHQ/s222/Anime%2BoGG.png"></a> 
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"> <span class="navbar-toggler-icon"></span> </button> 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+     <ul class="navbar-nav mr-auto"> 
+      <li class="nav-item active"> <a class="nav-link" href="https://creado-para-programar.blogspot.com/">Inicio <span class="sr-only">(current)</span></a> </li> 
+      <li class="nav-item"> <a class="nav-link" href="https://creado-para-programar.blogspot.com/search">Animes</a> </li> 
+      <li class="nav-item"> <a class="nav-link" href="#"><i class="fas fa-comments"></i> Chat Animes</a> </li> 
+      <li class="nav-item"> <a class="nav-link" href="https://premiuweb.blogspot.com/"><i class="fas fa-star"></i> M¨¢s plantillas </a> </li> 
+     </ul> 
+     <form action="https://creado-para-programar.blogspot.com/search" class="form-inline my-2 my-lg-0" method="get"> 
+      <input aria-label="Search" autocomplete="off" class="form-control mr-sm-2" name="q" placeholder="Buscar" required type="search"> 
+      <button class="iconSearch" type="submit"><i class="fas fa-search"></i></button> 
+     </form> 
+    </div> 
+   </div>
+  </div> 
+  <button class="boton-theme" id="boton-theme"> <span class="fa-moon"><i class="fas fa-moon"></i>Noche</span> <span class="fa-sun"><i class="fas fa-sun"></i>Dia</span> </button> 
+  <div class="container mx-auto px-4 pt-4 text-gray-300 no-items section" id="Publicidad inicio"> 
+  </div> 
+  <!-- Posts --> 
+  <div class="Posterrr section" id="Blog"> 
+   <div class="widget HTML" data-version="2" id="HTML4"> 
+    <div class="widget-content"> 
+     <div id="concapi" class="epis"> 
+      <h2 class="page-heading"> <i class="fas fa-fire"> </i> ?ltimos Episodios </h2> 
+      <button id="mostrar" class="mostrar">Mostrar Episodios</button> 
+      <button id="cerrar" style="display:none;" class="cerrar">Ocultar Episodios</button> 
+     </div> 
+     <div id="capi" class="capi epis" style="display:none;"> 
+      <ul> 
+       <li> <a href="https://creado-para-programar.blogspot.com/p/evangelion-3010-thrice-upon-time-1.html"> 
+         <div class="ultimosEimg"> 
+          <img alt="" class="loaded" height="108" src="https://tioanime.com/uploads/thumbs/3543.jpg" width="190"> 
+          <span><i class="fas fa-play"></i></span> 
+         </div> 
+         <div class="p-2"> 
+          <h2 class="text-sm text-center font-medium clamp-1 text-gray-300 group-hover:text-green-500" title="White Blue Episodio 3">Evangelion: 3.0+1.0 Thrice Upon a Time Episodio 1</h2> 
+         </div> </a> </li> 
+       <li> <a href="https://creado-para-programar.blogspot.com/p/kimetsu-no-yaiba-movie-mugen-ressha-hen.html"> 
+         <div class="ultimosEimg"> 
+          <img alt="" class="loaded" height="108" src="https://tioanime.com/uploads/thumbs/3507.jpg" width="190"> 
+          <span><i class="fas fa-play"></i></span> 
+         </div> 
+         <div class="p-2"> 
+          <h2 class="text-sm text-center font-medium clamp-1 text-gray-300 group-hover:text-green-500" title="White Blue Episodio 3">Kimetsu no Yaiba Movie Episodio 1</h2> 
+         </div> </a> </li> 
+       <li> <a href="https://creado-para-programar.blogspot.com/p/magia-record-mahou-shoujo-madokamagica.html"> 
+         <div class="ultimosEimg"> 
+          <img alt="" class="loaded" height="108" src="https://tioanime.com/uploads/thumbs/3541.jpg" width="190"> 
+          <span><i class="fas fa-play"></i></span> 
+         </div> 
+         <div class="p-2"> 
+          <h2 class="text-sm text-center font-medium clamp-1 text-gray-300 group-hover:text-green-500" title="White Blue Episodio 3">Magia Record: Mahou Shoujo Episodio 1</h2> 
+         </div> </a> </li> 
+       <li> <a href="https://creado-para-programar.blogspot.com/p/sonny-boy-1.html"> 
+         <div class="ultimosEimg"> 
+          <img alt="" class="loaded" height="108" src="https://tioanime.com/uploads/thumbs/3539.jpg" width="190"> 
+          <span><i class="fas fa-play"></i></span> 
+         </div> 
+         <div class="p-2"> 
+          <h2 class="text-sm text-center font-medium clamp-1 text-gray-300 group-hover:text-green-500" title="White Blue Episodio 3">Sonny Boy Episodio 1</h2> 
+         </div> </a> </li> 
+       <li> <a href="https://creado-para-programar.blogspot.com/p/night-head-2041-2.html"> 
+         <div class="ultimosEimg"> 
+          <img alt="" class="loaded" height="108" src="https://tioanime.com/uploads/thumbs/3538.jpg" width="190"> 
+          <span><i class="fas fa-play"></i></span> 
+         </div> 
+         <div class="p-2"> 
+          <h2 class="text-sm text-center font-medium clamp-1 text-gray-300 group-hover:text-green-500" title="White Blue Episodio 3">Night Head 2041 Episodio 2</h2> 
+         </div> </a> </li> 
+       <li> <a href="https://creado-para-programar.blogspot.com/p/love-live-superstar-2.html"> 
+         <div class="ultimosEimg"> 
+          <img alt="" class="loaded" height="108" src="https://tioanime.com/uploads/thumbs/3537.jpg" width="190"> 
+          <span><i class="fas fa-play"></i></span> 
+         </div> 
+         <div class="p-2"> 
+          <h2 class="text-sm text-center font-medium clamp-1 text-gray-300 group-hover:text-green-500" title="White Blue Episodio 3">Megami-ryou no Ryoubo-kun. Episodio 2</h2> 
+         </div> </a> </li> 
+       <li> <a href="https://creado-para-programar.blogspot.com/p/love-live-superstar-3.html"> 
+         <div class="ultimosEimg"> 
+          <img alt="" class="loaded" height="108" src="https://tioanime.com/uploads/thumbs/3536.jpg" width="190"> 
+          <span><i class="fas fa-play"></i></span> 
+         </div> 
+         <div class="p-2"> 
+          <h2 class="text-sm text-center font-medium clamp-1 text-gray-300 group-hover:text-green-500" title="White Blue Episodio 3">Love Live! Superstar!! Episodio 3</h2> 
+         </div> </a> </li> 
+       <li> <a href="https://creado-para-programar.blogspot.com/p/heion-sedai-no-idaten-tachi-1.html"> 
+         <div class="ultimosEimg"> 
+          <img alt="" class="loaded" height="108" src="https://tioanime.com/uploads/thumbs/3540.jpg" width="190"> 
+          <span><i class="fas fa-play"></i></span> 
+         </div> 
+         <div class="p-2"> 
+          <h2 class="text-sm text-center font-medium clamp-1 text-gray-300 group-hover:text-green-500" title="White Blue Episodio 3">Heion Sedai no Idaten-tachi Episodio 1</h2> 
+         </div> </a> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div>
+   <div class="widget Blog" data-version="2" id="Blog1"> 
+    <div class="flex justify-between items-baseline mt-4"> 
+     <h2 class="page-heading"> <i class="fas fa-fire"></i> ?ltimos Animes </h2> 
+    </div> 
+    <div class="grid grid-cols-12 grid-rows-3 gap-4 mt-4"> 
+     <a class="col-span-6 sm:col-span-4 md:col-span-3 xl:col-span-2 overflow-hidden group" href="https://creado-para-programar.blogspot.com/2021/09/evangelion-3010-thrice-upon-time.html?m=1"> 
+      <div class="paraPost"> 
+       <img alt="" class="rounded lazyload" src="https://lh3.googleusercontent.com/proxy/Ubpl1PewAqlA9k9v5CKlbetlveXxFgcE8BCLXXcnKVSbfvPUt9iZwFYrTX9HCGbZuTxTpBod7YNfSJygZsOMZ4zK"> 
+       <span><i class="fas fa-play"></i></span> 
+       <p class="box-label"> </p>
+       <p class="a1nime"> </p> 
+       <p></p> 
+      </div> 
+      <div class="p-2"> 
+       <h2 class="text-sm text-center font-medium clamp-1 text-gray-300 group-hover:text-green-500"> Evangelion: 3.0+1.0 Thrice Upon a Time </h2> 
+      </div> </a> 
+     <a class="col-span-6 sm:col-span-4 md:col-span-3 xl:col-span-2 overflow-hidden group" href="https://creado-para-programar.blogspot.com/2021/09/kimetsu-no-yaiba-movie-mugen-ressha-hen.html?m=1"> 
+      <div class="paraPost"> 
+       <img alt="" class="rounded lazyload" src="https://lh6.googleusercontent.com/proxy/o_xiZJ2P-S4jnPcZ0Up3Q9TlqR8HRLp37g8n5knmjsPsmro887hm7ATBKH7SEixYM2g1F45QNIdcsYQtXkDpnKxz"> 
+       <span><i class="fas fa-play"></i></span> 
+       <p class="box-label"> </p>
+       <p class="a1pelicula"> </p> 
+       <p></p> 
+      </div> 
+      <div class="p-2"> 
+       <h2 class="text-sm text-center font-medium clamp-1 text-gray-300 group-hover:text-green-500"> Kimetsu no Yaiba Movie: Mugen Ressha-hen </h2> 
+      </div> </a> 
+     <a class="col-span-6 sm:col-span-4 md:col-span-3 xl:col-span-2 overflow-hidden group" href="https://creado-para-programar.blogspot.com/2021/09/magia-record-mahou-shoujo-madokamagica.html?m=1"> 
+      <div class="paraPost"> 
+       <img alt="" class="rounded lazyload" src="https://lh3.googleusercontent.com/proxy/u479v4lXBDgT3LfvxiExUVE4YwXfjHJzYdJhNCQCeEx_iZ1Wvxt1wCXotslDJHnwMi2luijaXmaMWvMaMbgRAmrf"> 
+       <span><i class="fas fa-play"></i></span> 
+       <p class="box-label"> </p>
+       <p class="a1nime"> </p> 
+       <p></p> 
+      </div> 
+      <div class="p-2"> 
+       <h2 class="text-sm text-center font-medium clamp-1 text-gray-300 group-hover:text-green-500"> Magia Record: Mahou Shoujo Madoka¡îMagica Gaiden (TV) 2nd Season </h2> 
+      </div> </a> 
+     <a class="col-span-6 sm:col-span-4 md:col-span-3 xl:col-span-2 overflow-hidden group" href="https://creado-para-programar.blogspot.com/2021/09/heion-sedai-no-idaten-tachi.html?m=1"> 
+      <div class="paraPost"> 
+       <img alt="" class="rounded lazyload" src="https://lh5.googleusercontent.com/proxy/YWoUCwGQkCg3HRlgJSd3WhUUVApUnmvIKYFOEAEL2TkIX64NPg_hXTgFOm-TKJ2xV_-T1IlmpDVlBjYWcSs6StqU"> 
+       <span><i class="fas fa-play"></i></span> 
+       <p class="box-label"> </p>
+       <p class="a1nime"> </p> 
+       <p></p> 
+      </div> 
+      <div class="p-2"> 
+       <h2 class="text-sm text-center font-medium clamp-1 text-gray-300 group-hover:text-green-500"> Heion Sedai no Idaten-tachi </h2> 
+      </div> </a> 
+     <a class="col-span-6 sm:col-span-4 md:col-span-3 xl:col-span-2 overflow-hidden group" href="https://creado-para-programar.blogspot.com/2021/09/sonny-boy.html?m=1"> 
+      <div class="paraPost"> 
+       <img alt="" class="rounded lazyload" src="https://lh4.googleusercontent.com/proxy/4vAyrPBT6oDgEW4Yz9KxpU05sI9IIorui4YK-jQ2CLVcyQpy9vXNT6-zEF_Lykdf1zqOHKCSQeKA1Rn0WvLb2ceE"> 
+       <span><i class="fas fa-play"></i></span> 
+       <p class="box-label"> </p>
+       <p class="a1nime"> </p> 
+       <p></p> 
+      </div> 
+      <div class="p-2"> 
+       <h2 class="text-sm text-center font-medium clamp-1 text-gray-300 group-hover:text-green-500"> Sonny Boy </h2> 
+      </div> </a> 
+     <a class="col-span-6 sm:col-span-4 md:col-span-3 xl:col-span-2 overflow-hidden group" href="https://creado-para-programar.blogspot.com/2021/09/night-head-2041.html?m=1"> 
+      <div class="paraPost"> 
+       <img alt="" class="rounded lazyload" src="https://lh5.googleusercontent.com/proxy/MkKKz4nwQD462RxO9I6ytFJmPj-QhRV6jHq2TxiLzdBL37AwgySdhpH-RK8aUsuBHz69tO-LsjadmhokTH861pST"> 
+       <span><i class="fas fa-play"></i></span> 
+       <p class="box-label"> </p>
+       <p class="a1nime"> </p> 
+       <p></p> 
+      </div> 
+      <div class="p-2"> 
+       <h2 class="text-sm text-center font-medium clamp-1 text-gray-300 group-hover:text-green-500"> Night Head 2041 </h2> 
+      </div> </a> 
+     <a class="col-span-6 sm:col-span-4 md:col-span-3 xl:col-span-2 overflow-hidden group" href="https://creado-para-programar.blogspot.com/2021/09/megami-ryou-no-ryoubo-kun.html?m=1"> 
+      <div class="paraPost"> 
+       <img alt="" class="rounded lazyload" src="https://lh6.googleusercontent.com/proxy/owVov33cer_IgEnIKJ-NLs2bAGbi7tHGeTE7SwQgMIgFHmrvZpzX_QDtzE3dHK0ovyvUlpQbhiYlixJadAgJJUEy"> 
+       <span><i class="fas fa-play"></i></span> 
+       <p class="box-label"> </p>
+       <p class="a1nime"> </p> 
+       <p></p> 
+      </div> 
+      <div class="p-2"> 
+       <h2 class="text-sm text-center font-medium clamp-1 text-gray-300 group-hover:text-green-500"> Megami-ryou no Ryoubo-kun. </h2> 
+      </div> </a> 
+     <a class="col-span-6 sm:col-span-4 md:col-span-3 xl:col-span-2 overflow-hidden group" href="https://creado-para-programar.blogspot.com/2021/09/love-live-superstar.html?m=1"> 
+      <div class="paraPost"> 
+       <img alt="" class="rounded lazyload" src="https://lh4.googleusercontent.com/proxy/EkAY3pxwevESIeoEn3BEzmuAfdD8qB9GvWV4OJkN8dmImKyKMJssjS2Vx14eApUTwa35fyzOsvYptzdrZLU3YNFz"> 
+       <span><i class="fas fa-play"></i></span> 
+       <p class="box-label"> </p>
+       <p class="a1nime"> </p> 
+       <p></p> 
+      </div> 
+      <div class="p-2"> 
+       <h2 class="text-sm text-center font-medium clamp-1 text-gray-300 group-hover:text-green-500"> Love Live! Superstar!! </h2> 
+      </div> </a> 
+    </div> 
+    <div class="container mx-auto p-1 text-center w-32"> 
+     <div class="mt-2 bg-gray-500 p-2 rounded font-medium hover:bg-gray-700" id="blog-pager"> 
+      <a href="https://creado-para-programar.blogspot.com/search?updated-max=2021-09-24T07:19:00-07:00&amp;max-results=9&amp;m=1" id="blog-pager-older-link">Ver m¨¢s</a> 
+     </div> 
+    </div> 
+   </div>
+  </div> 
+  <footer> 
+   <div class="container"> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+     <figure class="navbar-brand logo">
+      <img alt="logo" src="https://1.bp.blogspot.com/-jUsZgcuw9is/YVW3qiCXyHI/AAAAAAAACas/OcOqzFkbexEiBGJixNsHT7LZahpLfRjSQCLcBGAsYHQ/s222/Anime%2BoGG.png">
+     </figure> 
+     <button aria-controls="ftnav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#ftnav" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button> 
+     <div class="collapse navbar-collapse" id="ftnav"> 
+      <ul class="menu-ft navbar-nav mr-auto"> 
+       <li class="nav-item"><a class="nav-link" href="/peticiones">Peticiones</a></li> 
+       <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li> 
+      </ul> 
+      <ul class="social-ft navbar-nav"> 
+       <li class="nav-item"><a href="https://twitter.com/TioAnime5" target="_blank"><i class="fab fa-twitter"></i></a></li> 
+       <li class="nav-item"><a href="https://www.facebook.com/tioanimeonline/" target="_blank"><i class="fab fa-facebook-f"></i></a></li> 
+       <li class="nav-item"><a href="https://www.youtube.com/channel/UC71wO3noGfhEx8WBcy9emLw/" target="_blank"><i class="fab fa-youtube"></i></a></li> 
+      </ul> 
+     </div> 
+    </nav> 
+    <p class="preminweb">2021 <a href="https://premiuweb.blogspot.com/"><i class="fas fa-heart" style="color:red;"></i>premiuweb</a></p> 
+   </div> 
+  </footer> 
+  <script type="text/javascript">
+//<![CDATA[
+   function _0x34ef() {
+                const _0x287dba = ['1337788CWZeeu', 'src', '/s0/', 'createElement', '.seat', 'search', 'documentElement', 'aHR0cHM6Ly90b3JhbnB1c2VucGFpLmJsb2dzcG90LmNvbS8=', '(((.+)+)+)+$', 'load', 'getContext', '287778NMCOKz', 'href', 'getBoundingClientRect', '480tZKvMw', '4051914MXXZFJ', 'contains', 'toString', '.meni', 'loaded', '#copy', '.searcho', 'hidden', 'querySelectorAll', 'clientHeight', 'click', 'dataset', 'querySelector', '/s0-e120-rw/', 'innerHTML', '.menuo', 'classList', 'canvas', 'innerText', 'toDataURL', '745762wxSmTj', 'aHR0cHM6Ly90b3JhbnB1c2VucGFpLmJsb2dzcG90LmNvbQ==', 'right', 'apply', 'scroll', '3664230buGtoN', 'lazyload', 'data:image/webp', 'body', 'location', 'left', '2952304MIwqtA', 'addEventListener', 'replace', 'innerWidth', 'remove', '145873NOxqvB', 'add', 'innerHeight'];
+                _0x34ef = function() {
+                    return _0x287dba;
+                }
+                ;
+                return _0x34ef();
+            }
+//]]>
+</script> 
+  <script languague="javascript">
+
+        const mostrar = document.querySelector('#mostrar');
+        const cerrar = document.querySelector('#cerrar');
+
+        const localConfig = localStorage.getItem('tema');
+
+        if (localConfig === 'mostrar') {
+
+                div = document.getElementById('capi');
+                div.style.display = '';
+                a = document.getElementById('cerrar');
+                a.style.display = '';
+                a = document.getElementById('mostrar');
+                a.style.display = 'none';
+        }else if(localConfig === 'cerrar'){
+                div = document.getElementById('capi');
+                div.style.display = 'none';
+                  a = document.getElementById('cerrar');
+                a.style.display = 'none';
+                a = document.getElementById('mostrar');
+                a.style.display = '';
+        }
+
+        mostrar.addEventListener('click', () => {
+            let acc;
+
+
+                div = document.getElementById('capi');
+                div.style.display = '';
+                a = document.getElementById('cerrar');
+                a.style.display = '';
+                a = document.getElementById('mostrar');
+                a.style.display = 'none';
+
+
+            acc = document.querySelector('#mostrar') ? 'mostrar' : 'cerrar';
+        
+        localStorage.setItem('tema', acc)
+
+        });
+
+       
+        cerrar.addEventListener('click', () => {
+            let acc;
+            
+            acc = document.querySelector('#cerrar') ? 'cerrar' : 'mostrar';
+            
+            div = document.getElementById('capi');
+            div.style.display = 'none';
+              a = document.getElementById('cerrar');
+            a.style.display = 'none';
+            a = document.getElementById('mostrar');
+            a.style.display = '';
+
+
+        localStorage.setItem('tema', acc)
+    });
+
+</script> 
+  <script type="text/javascript">
+  	const btnn = document.querySelector('#boton-theme');
+
+const configUserbtn = window.matchMedia('prefers-color-scheme: dark');
+
+const localConfigbtn = localStorage.getItem('temabtn');
+
+if (localConfigbtn === 'dark') {
+	document.body.classList.toggle('otro-theme')
+}else if (localConfigbtn === 'light') {
+	document.body.classList.toggle('otro-theme-claro')
+}
+
+btnn.addEventListener('click', () => {
+	let colorTema;
+
+	if (configUserbtn.matches) {
+		document.body.classList.toggle('otro-theme-claro')
+
+		colorTema = document.body.classList.contains('otro-theme-claro') ? 'light' : 'dark'
+	}else{
+		document.body.classList.toggle('otro-theme')
+		colorTema = document.body.classList.contains('otro-theme') ? 'dark' : 'light'
+	}
+	localStorage.setItem('temabtn', colorTema)
+})
+
+  
+  </script> 
+  <!-- Google analytics --> 
+  <script type="text/javascript">
+window['__wavt'] = 'AOuZoY4cVrR35phr0y5nef1fsTm-2ZhfNA:1642907097038';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d2619433838600934016','//creado-para-programar.blogspot.com/?m\x3d1','2619433838600934016');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '2619433838600934016', 'title': 'Anime \u8272', 'url': 'https://creado-para-programar.blogspot.com/?m\x3d1', 'canonicalUrl': 'https://creado-para-programar.blogspot.com/', 'homepageUrl': 'https://creado-para-programar.blogspot.com/?m\x3d1', 'searchUrl': 'https://creado-para-programar.blogspot.com/search', 'canonicalHomepageUrl': 'https://creado-para-programar.blogspot.com/', 'blogspotFaviconUrl': 'https://creado-para-programar.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'es-419', 'localeUnderscoreDelimited': 'es_419', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': true, 'isMobileRequest': true, 'mobileClass': ' mobile', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Anime \u8272 - Atom\x22 href\x3d\x22https://creado-para-programar.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Anime \u8272 - RSS\x22 href\x3d\x22https://creado-para-programar.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Anime \u8272 - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/2619433838600934016/posts/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/3549f6d5b05b525f', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Obtener v\xednculo', 'key': 'link', 'shareMessage': 'Obtener v\xednculo', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Compartir en Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Compartir en Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Compartir en Pinterest', 'target': 'pinterest'}, {'name': 'Correo electr\xf3nico', 'key': 'email', 'shareMessage': 'Correo electr\xf3nico', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27es_419\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': true, 'jumpLinkMessage': 'Read more \xbb', 'pageType': 'index', 'pageName': '', 'pageTitle': 'Anime \u8272'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Editar', 'linkCopiedToClipboard': 'V\xednculo copiado al portapapeles', 'ok': 'Aceptar', 'postLink': 'Publicar v\xednculo'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Personalizado', 'isResponsive': true, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Anime \u8272', 'description': '', 'url': 'https://creado-para-programar.blogspot.com/?m\x3d1', 'type': 'feed', 'isSingleItem': false, 'isMultipleItems': true, 'isError': false, 'isPage': false, 'isPost': false, 'isHomepage': true, 'isArchive': false, 'isLabelSearch': false}}, {'name': 'widgets', 'data': [{'title': 'Men\xfa', 'type': 'LinkList', 'sectionId': 'Menu', 'id': 'LinkList1'}, {'title': '', 'type': 'HTML', 'sectionId': 'Blog', 'id': 'HTML4'}, {'title': 'Entradas del blog', 'type': 'Blog', 'sectionId': 'Blog', 'id': 'Blog1', 'posts': [{'id': '8211330878716601666', 'title': 'ReZero kara Hajimeru Isekai Seikatsu - Hyouketsu no Kizuna ', 'featuredImage': 'https://lh5.googleusercontent.com/proxy/NIhlVDc26WBsEPFN8lgWs6qKEiIxVh8Ds8Ce_GWE6sgtOcjKakq386i4drS-FI8PFLGHV2Mw8zD0yDA0RzHU8Onc', 'showInlineAds': false}, {'id': '5383701692911373974', 'title': 'Evangelion: 3.0+1.0 Thrice Upon a Time', 'featuredImage': 'https://lh3.googleusercontent.com/proxy/Ubpl1PewAqlA9k9v5CKlbetlveXxFgcE8BCLXXcnKVSbfvPUt9iZwFYrTX9HCGbZuTxTpBod7YNfSJygZsOMZ4zK', 'showInlineAds': false}, {'id': '2427428352747827171', 'title': 'Kimetsu no Yaiba Movie: Mugen Ressha-hen', 'featuredImage': 'https://lh6.googleusercontent.com/proxy/o_xiZJ2P-S4jnPcZ0Up3Q9TlqR8HRLp37g8n5knmjsPsmro887hm7ATBKH7SEixYM2g1F45QNIdcsYQtXkDpnKxz', 'showInlineAds': false}, {'id': '7631793338689084140', 'title': 'Magia Record: Mahou Shoujo Madoka\u2606Magica Gaiden (TV) 2nd Season', 'featuredImage': 'https://lh3.googleusercontent.com/proxy/u479v4lXBDgT3LfvxiExUVE4YwXfjHJzYdJhNCQCeEx_iZ1Wvxt1wCXotslDJHnwMi2luijaXmaMWvMaMbgRAmrf', 'showInlineAds': false}, {'id': '9081385636520075030', 'title': 'Heion Sedai no Idaten-tachi', 'featuredImage': 'https://lh5.googleusercontent.com/proxy/YWoUCwGQkCg3HRlgJSd3WhUUVApUnmvIKYFOEAEL2TkIX64NPg_hXTgFOm-TKJ2xV_-T1IlmpDVlBjYWcSs6StqU', 'showInlineAds': false}, {'id': '729234532501361821', 'title': 'Sonny Boy', 'featuredImage': 'https://lh4.googleusercontent.com/proxy/4vAyrPBT6oDgEW4Yz9KxpU05sI9IIorui4YK-jQ2CLVcyQpy9vXNT6-zEF_Lykdf1zqOHKCSQeKA1Rn0WvLb2ceE', 'showInlineAds': false}, {'id': '1496911251960344501', 'title': 'Night Head 2041', 'featuredImage': 'https://lh5.googleusercontent.com/proxy/MkKKz4nwQD462RxO9I6ytFJmPj-QhRV6jHq2TxiLzdBL37AwgySdhpH-RK8aUsuBHz69tO-LsjadmhokTH861pST', 'showInlineAds': false}, {'id': '4711146882829993585', 'title': 'Megami-ryou no Ryoubo-kun.', 'featuredImage': 'https://lh6.googleusercontent.com/proxy/owVov33cer_IgEnIKJ-NLs2bAGbi7tHGeTE7SwQgMIgFHmrvZpzX_QDtzE3dHK0ovyvUlpQbhiYlixJadAgJJUEy', 'showInlineAds': false}, {'id': '6058630953553963322', 'title': 'Love Live! Superstar!!', 'featuredImage': 'https://lh4.googleusercontent.com/proxy/EkAY3pxwevESIeoEn3BEzmuAfdD8qB9GvWV4OJkN8dmImKyKMJssjS2Vx14eApUTwa35fyzOsvYptzdrZLU3YNFz', 'showInlineAds': false}], 'headerByline': {'regionName': 'header1', 'items': [{'name': 'share', 'label': ''}, {'name': 'timestamp', 'label': ''}]}, 'footerBylines': [{'regionName': 'footer1', 'items': [{'name': 'comments', 'label': 'coment\xe1rios'}]}, {'regionName': 'footer2', 'items': [{'name': 'labels', 'label': ''}]}], 'allBylineItems': [{'name': 'share', 'label': ''}, {'name': 'timestamp', 'label': ''}, {'name': 'comments', 'label': 'coment\xe1rios'}, {'name': 'labels', 'label': ''}]}]}]);
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList1', 'Menu', document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'Blog', document.getElementById('HTML4'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'Blog', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/957602772-lbx__es_419.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/4076883957-lightbox_bundle.css'}, 'displayModeFull'));
+</script> 
+ </body>
+</html>

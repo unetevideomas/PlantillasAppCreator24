@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<!--<b:include data='blog' name='all-head-content'/>
+<b:if cond='data:blog.pageType == "item"'>
+<title><data:blog.pageName/> | <data:blog.title/></title><b:else/><title><data:blog.pageTitle/></title>
+</b:if>-->
+<b:skin>
+<![CDATA[
+body {background:black;color:white;}
+
+#contenedor-general {
+width:100%; /*Ancho del blog*/
+height:100%; /*Largo del blog*/
+margin:0 auto 0; /*Centramos el contenido*/
+padding:0; /*Evitamos espaciados internos*/
+}
+
+#cabecera {display:none;}
+
+#cuerpo-entradas {
+width:100%; /*Ancho de las entradas*/
+height:100%; /*Largo de las entradas*/
+padding:0; /*Espaciados internos*/}
+
+#pie-de-pagina {
+visibility:hidden;
+display:none;}
+
+.feed-links {
+visibility:hidden;
+display:none;
+}
+/*
+.post-outer {
+visibility:hidden;
+display:none;
+}
+.post-title {
+visibility:hidden;
+display:none;
+}
+.post-title a {
+visibility:hidden;
+display:none;
+}
+*/
+.post-header {
+visibility:hidden;
+display:none;
+}
+.post-author {
+visibility:hidden;
+display:none;
+}
+.post-published {
+visibility:hidden;
+display:none;
+}
+.post-tags {
+visibility:hidden;
+display:none;
+}
+
+/*
+.post-body {
+visibility:hidden;
+display:none;
+}
+.post-footer {
+visibility:hidden;
+display:none;
+}
+*/
+.post-numero-0 {
+display:none;}
+.post-numero-1 {
+display:none;}
+.home-link {
+display:none;}
+.post-title.entry-title {
+display: none;}
+.blog-pager-older-link {display:none;}
+.blog-pager-newer-link {display:none;}
+.content {
+margin-top:-30px !important;
+}
+
+. container {
+   width: 500 px;
+   height: 500 px;
+   margin: 50 px auto;
+   fill: 20 px;
+   background: # fff;
+   overflow: auto;
+   font family: 'Open Sans';
+   border radius: 4 px;
+}
+
+. container h1 {
+   font size: 38 px;
+   font weight: 600;
+   color: # 000;
+}
+
+. container hr {
+   background: # ff9d00;
+   width: 20%;
+   height: 5 px;
+   edge: none;
+   margin: 20 px 0;
+   border radius: 50 px;
+}
+
+p {
+   bottom margin: 20 px;
+   line height: 28 px;
+   font size: 16 px;
+   color: # 414141;
+}
+
+/ * Custom Scroll * /
+
+. container :: webkit-scrollbar {
+   width: 7 px;
+}
+
+. container :: webkit-scroll-thumb {
+   background: # ff9d00;
+   border radius: 5 px;
+]]></b:skin>
+<script type='text/javascript'> document.oncontextmenu = function(){return false;}</script>
+</head>
+<body oncontextmenu="return false" onkeydown="return false">
+<div id="contenedor-general">
+<div id="cabecera">
+<b:section id="header" class="header" showaddelement="yes">
+<b:widget id="Header1" locked="true" title="Cabecera del blog" type="Header"/> 
+</b:section>
+</div>
+<div id="cuerpo-entradas">
+<b:section id="main" class="main" showaddelement="yes">
+<b:widget id="Blog1" locked="true" title="Entradas del blog" type="Blog"/>
+</b:section>
+</div>
+<div id="columna-lateral">
+<b:section id="sidebar" class="sidebar" showaddelement="yes">
+<b:widget id="Label1" locked="false" title="Categorías" type="Label"/>
+</b:section>
+</div>
+<div style="clear:both" />
+<div id="pie-de-pagina">
+<b:section id="footer" class="footer" showaddelement="yes">
+</b:section>
+</div>
+</div>
+</body>
+</html>

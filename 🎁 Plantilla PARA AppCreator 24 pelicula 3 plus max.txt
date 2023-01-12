@@ -1,0 +1,658 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+  <title>Movie website</title>
+<body>
+
+
+
+<style> h2{ color: #000; font-family: Arial, Helvetica, sans-serif; border-radius: 0px; margin:0px;  
+} 
+
+div .jordan2{ margin:0px; border-radius: 0px; 
+
+display:adsolute;
+position:responsive; 
+
+
+
+{
+</style>
+
+
+  
+
+
+</div>
+
+
+ <center>
+ 
+
+<div class="jordan2" > 
+
+  <a href="go:juego" >
+  
+   
+	 <img class=jordan2 src="https://1.bp.blogspot.com/-hyUjPQUr-CY/YL8EHGxvtZI/AAAAAAAADo0/HhdquncLZIcCD-t1kryGCGG3BjTgNRFfgCLcBGAsYHQ/s0/4D17CB52-9BD0-47F0-A9D8-E82EABC6DEA7.jpeg" width="100%" height="auto"
+max-width:720px;
+min-width:120px;></a>
+
+</center>
+  
+
+
+
+<center>
+
+<a href="#"><button class="bt1"><h2 class="fas fa-play"> Ver ahora</h2></button></a>
+</center>
+
+
+
+
+</script>
+	<style type="text/css">
+	 
+		}
+		button{
+			background-color: white;
+			color: black;
+			border: none;
+			border-radius: 5px;
+			size: 20px;
+			width: 70px;
+			padding: 10px;
+		}
+		div .jordan {
+		  overflow-x: scroll;
+		  overflow-y: hidden;
+		  white-space: nowrap;}
+		}
+  
+	</style>
+</head>
+
+<div>
+	<div class="firstfield" >
+	  
+   </div>
+ 
+	
+	
+
+
+
+
+
+
+
+
+<style> h2{ color: #000; font-family: Arial, Helvetica, sans-serif; border-radius: 5px; margin:3px; } 
+
+div .jordan{ margin:2px; border-radius: 5px; 
+
+display:adsolute;
+position:responsive; 
+
+
+
+{
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+
+
+
+
+	</script>
+	<style type="text/css">
+	 
+		}
+		button{
+			background-color: white;
+			color: black;
+			border: none;
+			border-radius: 5px;
+			size: 20px;
+			width: 70px;
+			padding: 10px;
+		}
+		div .jordan {
+		  overflow-x: scroll;
+		  overflow-y: hidden;
+		  white-space: nowrap;}
+		}
+  
+	</style>
+</head>
+
+<div>
+	<div class="firstfield" >
+	  
+   </div>
+ 
+
+
+	<h2> <font size="4" color= "#fff" face= "arial">Populares</font> </h2>
+
+
+
+
+	<div align="center" class="jordan">
+			
+			
+			
+			<a href="go:musica">
+			<img class=jordan
+			 
+			   <img style="border-radius: 5px ;"  src="https://1.bp.blogspot.com/-KNuoRbMn83w/YPzVfvkuHlI/AAAAAAAAEKA/iyONJkwMHl0LHymfaYgVqZOx158YzSgFQCLcBGAsYHQ/s0/84A2F1F6-D8F0-4740-B2E8-A7A45DB96F05.jpeg" width="115px" height="155px" ></a>
+			
+			
+			
+			
+			
+			
+			<a href="go:moda">
+			<img class=jordan
+			 
+			   <img style="border-radius:  5px;"  src="https://1.bp.blogspot.com/-6d5d2Erbcm4/YPzVf0OmgtI/AAAAAAAAEKI/Mu0JsXr99TcL8M_rV46IRm8EORgXbFSmQCLcBGAsYHQ/s0/84E98DCF-30D5-42BF-AFC6-B1EC0633950E.jpeg" width="115" height="155px" ></a>
+			
+			
+			
+					<a href="go:anime">
+			<img class=jordan
+			 
+			   <img style="border-radius: 5px;"  src="https://1.bp.blogspot.com/-4Y5bxV8MgyI/YPzVfuiIN9I/AAAAAAAAEKE/xLhAkax09JknwllAM5PgfkbTEShwlhGPQCLcBGAsYHQ/s0/4884D258-9E08-44A9-A97A-0686DC096C86.jpeg" width="115px" height="155px" ></a>
+	
+	<a href="go:moda">
+			<img class=jordan
+			 
+			   <img style="border-radius:  5px;"  src="https://1.bp.blogspot.com/-6d5d2Erbcm4/YPzVf0OmgtI/AAAAAAAAEKI/Mu0JsXr99TcL8M_rV46IRm8EORgXbFSmQCLcBGAsYHQ/s0/84E98DCF-30D5-42BF-AFC6-B1EC0633950E.jpeg" width="115" height="155px" ></a>
+			
+			
+			
+			<a href="#"> 
+			
+		<img class=jordan2
+			   <img style="border-radius: 15px;"  src="https://1.bp.blogspot.com/-tgvGlDqVxyM/X69lBaINE2I/AAAAAAAAAAg/CAuNxDKqjpY-xbJdTgRCFMNcm5eITrdxACLcBGAsYHQ/s1220/20201114_010240.png" width="25" height="12" ></a>
+
+
+
+</div>
+
+
+
+
+
+
+<div>
+
+ 
+<h2> <font size="4" color= "#fff" face= "arial">Recomendado</font> </h2>
+   
+	</script>
+	<style type="text/css">
+	 
+		}
+		button{
+			background-color: white;
+			color: black;
+			border: none;
+			border-radius: 5px;
+			size: 20px;
+			width: 70px;
+			padding: 10px;
+		}
+		div .jordan {
+		  overflow-x: scroll;
+		  overflow-y: hidden;
+		  white-space: nowrap;}
+		}
+  
+	</style>
+</head>
+
+<div>
+	<div class="firstfield" >
+	  
+   </div>
+ 
+	
+	
+	<div align="center" class="jordan">
+			
+			
+			
+	
+			
+			 
+	
+	
+	<a href="go:peliculas" > <img class=jordan  
+	
+	  <img style="border-radius: 5px;"
+	
+	src="https://1.bp.blogspot.com/-v24aRSwuj_Y/YPzVgE_kaPI/AAAAAAAAEKM/k4jS7-dFpqodstPTa04GkyQv1zbWPToaACLcBGAsYHQ/s0/AD9DA9EE-CAA9-47A6-A4EB-602B2389DA1D.jpeg" width="115px" height="155px"></a>
+
+
+	<a href="go:moda">
+			<img class=jordan
+			 
+			   <img style="border-radius:  5px;"  src="https://1.bp.blogspot.com/-6d5d2Erbcm4/YPzVf0OmgtI/AAAAAAAAEKI/Mu0JsXr99TcL8M_rV46IRm8EORgXbFSmQCLcBGAsYHQ/s0/84E98DCF-30D5-42BF-AFC6-B1EC0633950E.jpeg" width="115" height="155px" ></a>
+			
+
+	<a href="go:hoy" > <img class=jordan  
+		  <img style="border-radius: 5px;"
+	
+	src="https://1.bp.blogspot.com/-O_BJFTyZIRE/YPzVgtyNS6I/AAAAAAAAEKQ/HCSbHC9hvTcJxeKAzEl1pURNw6F304adACLcBGAsYHQ/s0/BB07D6B9-16F0-4DB2-95C9-C7C14DAA21E3.jpeg" width="115px" height="155px"></a>
+
+
+
+
+   <a href="go:amor" > <img class=jordan 
+   
+   	  <img style="border-radius:  5px;"
+   
+   src="https://1.bp.blogspot.com/-K27JKgxn6Mo/YPzVhMbPoQI/AAAAAAAAEKU/tNVhtog5M18vA8JbHnC6Ds8QjTGVvjytQCLcBGAsYHQ/s0/C607B130-4BB0-42F8-8AF3-0CD7DD1FF73C.jpeg" width="115px" height="155px"></a>
+   
+	
+	
+	
+
+   
+			 	  <img style="border-radius: 5px;"  src="https://1.bp.blogspot.com/-tgvGlDqVxyM/X69lBaINE2I/AAAAAAAAAAg/CAuNxDKqjpY-xbJdTgRCFMNcm5eITrdxACLcBGAsYHQ/s1220/20201114_010240.png" width="25" height="12" ></a>
+
+
+
+</div>
+
+
+
+
+<style type="text/css">
+	 
+		}
+		button{
+			background-color: white;
+			color: black;
+			border: none;
+			border-radius: 5px;
+			size: 20px;
+			width: 70px;
+			padding: 10px;
+		}
+		div .jordan {
+		  overflow-x: scroll;
+		  overflow-y: hidden;
+		  white-space: nowrap;}
+		}
+  
+	</style>
+</head>
+
+<div>
+	<div class="firstfield" >
+	  
+   </div>
+ 
+	
+	
+
+
+
+
+
+
+
+
+
+
+<div>
+
+
+
+
+	</script>
+	<style type="text/css">
+	 
+		}
+		button{
+			background-color: white;
+			color: black;
+			border: none;
+			border-radius: 5px;
+			size: 20px;
+			width: 70px;
+			padding: 10px;
+		}
+		div .jordan {
+		  overflow-x: scroll;
+		  overflow-y: hidden;
+		  white-space: nowrap;}
+		}
+  
+	</style>
+</head>
+
+<div>
+	<div class="firstfield" >
+	  
+   </div>
+ 
+
+
+	<h2> <font size="4" color= "#fff" face= "arial">Series</font> </h2>
+
+
+
+
+	<div align="center" class="jordan">
+			
+			
+			
+			<a href="go:musica">
+			<img class=jordan
+			 
+			   <img style="border-radius: 5px ;"  src="https://1.bp.blogspot.com/-KNuoRbMn83w/YPzVfvkuHlI/AAAAAAAAEKA/iyONJkwMHl0LHymfaYgVqZOx158YzSgFQCLcBGAsYHQ/s0/84A2F1F6-D8F0-4740-B2E8-A7A45DB96F05.jpeg" width="115px" height="155px" ></a>
+			
+			
+			
+				<a href="go:moda">
+			<img class=jordan
+			 
+			   <img style="border-radius:  5px;"  src="https://1.bp.blogspot.com/-6d5d2Erbcm4/YPzVf0OmgtI/AAAAAAAAEKI/Mu0JsXr99TcL8M_rV46IRm8EORgXbFSmQCLcBGAsYHQ/s0/84E98DCF-30D5-42BF-AFC6-B1EC0633950E.jpeg" width="115" height="155px" ></a>
+			
+			
+			
+			<a href="go:moda">
+			<img class=jordan
+			 
+			   <img style="border-radius: 5px;"  src="https://1.bp.blogspot.com/-6d5d2Erbcm4/YPzVf0OmgtI/AAAAAAAAEKI/Mu0JsXr99TcL8M_rV46IRm8EORgXbFSmQCLcBGAsYHQ/s0/84E98DCF-30D5-42BF-AFC6-B1EC0633950E.jpeg" width="115" height="155px" ></a>
+			
+			
+			
+					<a href="go:anime">
+			<img class=jordan
+			 
+			   <img style="border-radius: 5px;"  src="https://1.bp.blogspot.com/-4Y5bxV8MgyI/YPzVfuiIN9I/AAAAAAAAEKE/xLhAkax09JknwllAM5PgfkbTEShwlhGPQCLcBGAsYHQ/s0/4884D258-9E08-44A9-A97A-0686DC096C86.jpeg" width="115px" height="155px" ></a>
+	
+
+			
+			
+			<a href="#"> 
+			
+		<img class=jordan2
+			   <img style="border-radius: 15px;"  src="https://1.bp.blogspot.com/-tgvGlDqVxyM/X69lBaINE2I/AAAAAAAAAAg/CAuNxDKqjpY-xbJdTgRCFMNcm5eITrdxACLcBGAsYHQ/s1220/20201114_010240.png" width="25" height="12" ></a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div>
+
+ 
+<h2> <font size="4" color= "#fff" face= "arial">Tv show</font> </h2>
+   
+	</script>
+	<style type="text/css">
+	 
+		}
+		button{
+			background-color: white;
+			color: black;
+			border: none;
+			border-radius: 5px;
+			size: 20px;
+			width: 70px;
+			padding: 10px;
+		}
+		div .jordan {
+		  overflow-x: scroll;
+		  overflow-y: hidden;
+		  white-space: nowrap;}
+		}
+  
+	</style>
+</head>
+
+<div>
+	<div class="firstfield" >
+	  
+   </div>
+ 
+	
+	
+	<div align="center" class="jordan">
+			
+			
+			
+	
+			
+			 
+	
+	
+	<a href="go:peliculas" > <img class=jordan  
+	
+	  <img style="border-radius: 5px;"
+	
+	src="https://1.bp.blogspot.com/-v24aRSwuj_Y/YPzVgE_kaPI/AAAAAAAAEKM/k4jS7-dFpqodstPTa04GkyQv1zbWPToaACLcBGAsYHQ/s0/AD9DA9EE-CAA9-47A6-A4EB-602B2389DA1D.jpeg" width="115px" height="155px"></a>
+
+
+	<a href="go:moda">
+			<img class=jordan
+			 
+			   <img style="border-radius:  5px;"  src="https://1.bp.blogspot.com/-6d5d2Erbcm4/YPzVf0OmgtI/AAAAAAAAEKI/Mu0JsXr99TcL8M_rV46IRm8EORgXbFSmQCLcBGAsYHQ/s0/84E98DCF-30D5-42BF-AFC6-B1EC0633950E.jpeg" width="115" height="155px" ></a>
+			
+
+	<a href="go:hoy" > <img class=jordan  
+		  <img style="border-radius:  5px;"
+	
+	src="https://1.bp.blogspot.com/-O_BJFTyZIRE/YPzVgtyNS6I/AAAAAAAAEKQ/HCSbHC9hvTcJxeKAzEl1pURNw6F304adACLcBGAsYHQ/s0/BB07D6B9-16F0-4DB2-95C9-C7C14DAA21E3.jpeg" width="115px" height="155px"></a>
+
+
+
+
+   <a href="go:amor" > <img class=jordan
+   
+   	  <img style="border-radius:  5px ;"
+   
+   src="https://1.bp.blogspot.com/-K27JKgxn6Mo/YPzVhMbPoQI/AAAAAAAAEKU/tNVhtog5M18vA8JbHnC6Ds8QjTGVvjytQCLcBGAsYHQ/s0/C607B130-4BB0-42F8-8AF3-0CD7DD1FF73C.jpeg" width="115px" height="155px"></a>
+   
+	
+	
+	
+
+   
+			 	  <img style="border-radius: 5px;"  src="https://1.bp.blogspot.com/-tgvGlDqVxyM/X69lBaINE2I/AAAAAAAAAAg/CAuNxDKqjpY-xbJdTgRCFMNcm5eITrdxACLcBGAsYHQ/s1220/20201114_010240.png" width="25" height="12" ></a>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+   
+	
+
+
+
+  
+
+
+</div>
+
+
+
+
+
+
+
+			
+			<a href="#"> 
+			
+		
+			   <img style="border-radius: 15px;"  src="https://1.bp.blogspot.com/-tgvGlDqVxyM/X69lBaINE2I/AAAAAAAAAAg/CAuNxDKqjpY-xbJdTgRCFMNcm5eITrdxACLcBGAsYHQ/s1220/20201114_010240.png" width="25" height="300" ></a>
+
+
+
+</div>
+
+
+
+
+
+</body>
+
+</html>
+
+  
+
+
+	
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<nav class="nav">
+   
+  <a href="#" class="nav__link nav__link--active">
+ <i class="material-icons nav__icon">home</i>
+ <span class="nav__text">Inicio</span>
+ 
+  </a>
+  <a href="#" class="nav__link">
+ <i class="material-icons nav__icon">slideshow</i>
+ <span class="nav__text">Series</span>
+  </a>
+  
+  
+  <a href="#" class="nav__link">
+  
+  <i class="material-icons nav__icon">auto_awesome_motion</i>
+ <span class="nav__text">Proximamente</span>
+  </a>
+
+  </a>
+  <a href="#" class="nav__link">
+ <i class="material-icons nav__icon">downloading</i>
+ <span class="nav__text">Descargas</span>
+  </a>
+  
+  
+
+  
+</nav>
+
+<style type="text/css">
+body {
+ margin: auto;
+ width:auto;
+ height:auto;
+ padding: 10px 0;
+ background-color:black;
+}
+
+.container{
+ width:100%;
+ height:100px;
+}
+.nav {
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ height: 10%;
+ box-shadow: 0 0 2px #131419;
+ background-color: black;
+ display: flex;
+ overflow-x: auto;
+}
+
+.nav__link {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ flex-grow: 1;
+ min-width: 50px;
+ overflow: hidden;
+ white-space: nowrap;
+ font-family: sans-serif;
+ font-size: 13px;
+ color: #cccccc;
+ text-decoration: none;
+ -webkit-tap-highlight-color: transparent;
+ transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+ background-color: #121212;
+}
+
+.nav__link--active {
+ color: #fff;
+}
+
+.nav__icon {
+ font-size: 32px;
+ 
+	}
+
+
+</style>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+<style type="text/css">
+play{
+  left:0;
+  right:0;
+  height:3.5em;
+  text-size:15px;
+  display:center;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+}
+
+
+
+.bt1{color:black;
+text-size:15px;
+background:#fff;
+border:1px solid #fff;
+border-radius:4px;
+font-weight:bold;
+width:33%;
+height: 33px;
+padding:15;}
+</style>

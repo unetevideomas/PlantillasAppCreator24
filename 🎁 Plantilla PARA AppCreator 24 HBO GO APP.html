@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>CodePen - UI Motion #2 / HBO GO App</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700'>
+<link rel="stylesheet" href="./style.css">
+<style type="text/css">
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 22px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+@-webkit-keyframes animate-logo {
+  0% {
+    transform: translate(0px, 290px) scale(2);
+  }
+  50% {
+    transform: translate(0px, 290px) scale(2);
+  }
+  75% {
+    transform: translate(0px, 315px) scale(2);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes animate-logo {
+  0% {
+    transform: translate(0px, 290px) scale(2);
+  }
+  50% {
+    transform: translate(0px, 290px) scale(2);
+  }
+  75% {
+    transform: translate(0px, 315px) scale(2);
+  }
+  100% {
+    transform: none;
+  }
+}
+@-webkit-keyframes animate-hero-image {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes animate-hero-image {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: none;
+  }
+}
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fade-in-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.app {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 375px;
+  height: 667px;
+  overflow: hidden;
+  background-color: #1b1d20;
+  box-shadow: 0 18px 30px -5px #7d7d7d;
+}
+.app__header {
+  position: fixed;
+  width: inherit;
+  background-color: #1a1b1e;
+  z-index: 10;
+}
+.app__header-button-wrapper {
+  opacity: 0;
+  position: absolute;
+}
+.app__header-content {
+  position: absolute;
+  opacity: 0;
+}
+.app__header-logo {
+  font-size: 0;
+  display: block;
+  margin: 15px auto;
+  background-image: url(https://theme.zdassets.com/theme_assets/2149439/3ff5271148cda27a6b6876d999aeb057c728ca94.png);
+  width: 130px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform-origin: center;
+  -webkit-animation: animate-logo 1.5s cubic-bezier(0.4, 0, 0.6, 1);
+          animation: animate-logo 1.5s cubic-bezier(0.4, 0, 0.6, 1);
+}
+.app__footer {
+  position: fixed;
+  width: inherit;
+  margin-top: -44px;
+  z-index: 11;
+  background: rgba(27, 29, 32, 0.95);
+  opacity: 0;
+  -webkit-animation: fade-in-bottom 225ms 1.4s forwards cubic-bezier(0, 0, 0.2, 1);
+          animation: fade-in-bottom 225ms 1.4s forwards cubic-bezier(0, 0, 0.2, 1);
+}
+.app__footer-wrapper {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1px;
+}
+.app__footer-button {
+  width: 33.3%;
+  text-align: center;
+  opacity: 0;
+  -webkit-animation: fade-in 225ms 200ms forwards cubic-bezier(0, 0, 0.2, 1);
+          animation: fade-in 225ms 200ms forwards cubic-bezier(0, 0, 0.2, 1);
+}
+.app__footer-button.is--active {
+  color: #e5bf2d;
+  position: relative;
+}
+.app__footer-button.is--active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  background: #e5bf2d;
+  top: 29px;
+}
+.app__home-shelf {
+  position: relative;
+  overflow: hidden;
+}
+.app__home-shelf .slick-list {
+  position: relative;
+}
+.app__home-shelf .slick-list::after {
+  content: "";
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to left, #1b1d20, rgba(255, 0, 0, 0));
+  display: block;
+  top: 0px;
+  right: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+.app__home-shelf .slick-track {
+  display: flex;
+  padding: 15px 0;
+  outline: 0;
+}
+.app__home-shelf-list {
+  margin: 0 0 0 15px;
+  opacity: 0;
+  -webkit-animation: fade-in-bottom 225ms 1.38s forwards cubic-bezier(0, 0, 0.2, 1);
+          animation: fade-in-bottom 225ms 1.38s forwards cubic-bezier(0, 0, 0.2, 1);
+}
+.app__home-shelf-item {
+  width: 115px;
+  height: 173px;
+  box-shadow: 0 10px 10px -5px black;
+  margin: 0 10px 0 0;
+  overflow: hidden;
+  border-radius: 5px;
+  outline: 0;
+  cursor: pointer;
+}
+.app__home-shelf-item-image {
+  width: 100%;
+  height: auto;
+}
+.app__home-shelf-title {
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0 0 0 15px;
+  opacity: 0;
+  -webkit-animation: fade-in-bottom 225ms 1.3s forwards cubic-bezier(0, 0, 0.2, 1);
+          animation: fade-in-bottom 225ms 1.3s forwards cubic-bezier(0, 0, 0.2, 1);
+}
+.app__home-shelf-button {
+  color: #e5bf2d;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  position: absolute;
+  top: -7px;
+  right: 15px;
+  font-weight: 500;
+  opacity: 0;
+  -webkit-animation: fade-in 225ms 1.3s forwards cubic-bezier(0, 0, 0.2, 1);
+          animation: fade-in 225ms 1.3s forwards cubic-bezier(0, 0, 0.2, 1);
+}
+.app__home-content {
+  padding: 25px 0;
+  height: 319px;
+  overflow-y: scroll;
+}
+.app__home-hero {
+  overflow: hidden;
+  height: 235px;
+  width: 100%;
+  margin: 62px 0 0 0;
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  opacity: 0;
+  -webkit-animation: fade-in 0.5s 1.2s forwards cubic-bezier(0, 0, 0.2, 1);
+          animation: fade-in 0.5s 1.2s forwards cubic-bezier(0, 0, 0.2, 1);
+}
+.app__home-hero .slick-track {
+  display: flex;
+  outline: 0;
+}
+.app__home-hero .slick-current .app__home-hero-item-title {
+  transform: none;
+  opacity: 1;
+}
+.app__home-hero .slick-current .app__home-hero-item-button {
+  transform: none;
+  opacity: 1;
+}
+.app__home-hero-dots {
+  position: absolute;
+  z-index: 2;
+  bottom: 7px;
+  left: 0;
+  right: 0;
+}
+.app__home-hero-dots .slick-dots {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  width: 30px;
+}
+.app__home-hero-dots .slick-dots li {
+  font-size: 0;
+  list-style: none;
+  outline: none;
+}
+.app__home-hero-dots .slick-dots li.slick-active button {
+  background: #e5bf2d;
+  opacity: 0.4;
+}
+.app__home-hero-dots .slick-dots button {
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  display: block;
+  line-height: 0;
+  padding: 0;
+  border: none;
+  background: white;
+  margin: 0 3px;
+  transition: all 355ms ease-in-out;
+  opacity: 0.2;
+}
+.app__home-hero-item {
+  position: relative;
+  overflow: hidden;
+  height: 235px;
+}
+.app__home-hero-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.74), rgba(255, 255, 255, 0));
+}
+.app__home-hero-item-title {
+  position: absolute;
+  color: white;
+  z-index: 3;
+  text-transform: uppercase;
+  bottom: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  left: 0;
+  right: 0;
+  transform: translateY(5px);
+  opacity: 0;
+  transition: transform 335ms ease-in-out, opacity 225ms ease;
+}
+.app__home-hero-item-button {
+  position: absolute;
+  color: #e5bf2d;
+  z-index: 3;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5px;
+  bottom: 7px;
+  left: 0;
+  right: 0;
+  transform: translateY(5px);
+  opacity: 0;
+  transition: transform 335ms 100ms ease-in-out, opacity 225ms ease;
+}
+.app__home-hero-item-image {
+  width: 500px;
+  height: auto;
+  transform-origin: center;
+  -webkit-animation: animate-hero-image 0.5s 1s cubic-bezier(0.4, 0, 0.2, 1);
+          animation: animate-hero-image 0.5s 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.app__product {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 9;
+  top: 60px;
+  left: 0;
+  background-color: #1a1b1e;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 225ms ease-in-out;
+}
+.app__product.is--active {
+  opacity: 1;
+  pointer-events: fill;
+}
+.app__product.is--active .js--product-page-hero {
+  opacity: 1;
+}
+.app__product.is--active .js--product-page-body {
+  transform: none;
+  opacity: 1;
+}
+.app__product-hero {
+  opacity: 0;
+  transition: all 195ms ease-in-out;
+}
+.app__product-description-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: whitesmoke;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  width: 95px;
+}
+.app__product-description-text {
+  display: inline-block;
+  color: gray;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.app__product-description-button {
+  color: #ceb233;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  display: inline-block;
+}
+.app__product-button {
+  height: 50px;
+  display: block;
+  border: 1px solid #f0cf37;
+  width: 47.5%;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #f0cf37;
+}
+.app__product-button--fill {
+  background: #f0cf37;
+  color: black;
+  box-shadow: 0 7px 10px -5px rgba(0, 0, 0, 0.5);
+}
+.app__product-wrapper-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0 0px 0;
+}
+.app__product-info {
+  display: flex;
+}
+.app__product-info-title {
+  margin: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: whitesmoke;
+  letter-spacing: 1px;
+  margin: 10px 0 2px 0;
+}
+.app__product-info-author {
+  margin: 0;
+  font-size: 14px;
+  color: #b8bfc4;
+}
+.app__product-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-end;
+  width: 45%;
+  padding: 0 0 10px 25px;
+}
+.app__product-info-thumb {
+  width: 40%;
+}
+.app__product-info-thumb-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.app__product-info-rating-wrapper {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 105px;
+  justify-content: space-between;
+}
+.app__product-info-rating-item {
+  background-image: url(https://image.flaticon.com/icons/svg/291/291205.svg);
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+}
+.app__product-body {
+  padding: 0 15px;
+  margin: -100px 0 0 0;
+  transform: translateY(40px);
+  opacity: 0;
+  transition: all 195ms ease-in-out;
+}
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="app">
+  <header class="app__header">
+    <div class="app__header-button-wrapper"><span class="app__header-button">Back</span></div>
+    <div class="app__header-content"><span class="app__header-content-title js--header-content-title">Guardians of Galaxy</span>
+      <p class="app__header-content-author js--header-content-author">author: Marvel</p>
+    </div>
+    <div class="app__header-logo-wrapper js--header-logo">
+      <h1 class="app__header-logo">HBOGO</h1>
+    </div>
+  </header>
+  <body class="app__body">
+    <div class="app__home">
+      <div class="app__home-hero">
+        <div class="app__home-hero-wrapper">
+          <div class="app__home-hero-item"><span class="app__home-hero-item-title">Star wars vii: Force Awakens</span>
+            <p class="app__home-hero-item-button">Watch now</p><img class="app__home-hero-item-image" src="https://wallpaperscraft.ru/image/zvyozdnye_vojny_probuzhdenie_sily_star_wars_the_force_awakens_glavnye_geroi_105940_2732x2732.jpg" style="position:  relative;top: -152px;left: -69px;"/>
+          </div>
+          <div class="app__home-hero-item"><span class="app__home-hero-item-title">Iron man 3</span>
+            <p class="app__home-hero-item-button">Watch now</p><img class="app__home-hero-item-image" src="http://ricmeyers.com/wp-content/ric-meyers-uploads/2013/05/Iron-Man-3-Movie-Poster.jpg"/>
+          </div>
+          <div class="app__home-hero-item"><span class="app__home-hero-item-title">The lego movie</span>
+            <p class="app__home-hero-item-button">Watch now</p><img class="app__home-hero-item-image" src="https://c9.quickcachr.fotos.sapo.pt/i/Bde12dfcc/20253018_e53yc.jpeg"/>
+          </div>
+        </div>
+        <div class="app__home-hero-dots js--hero-dots"></div>
+      </div>
+      <div class="app__home-content">
+        <div class="app__home-shelf">
+          <h3 class="app__home-shelf-title">Selected for you</h3>
+          <p class="app__home-shelf-button">See all</p>
+          <div class="app__home-shelf-list">
+            <div class="app__home-shelf-item"><img class="app__home-shelf-item-image" src="https://lumiere-a.akamaihd.net/v1/images/movie_poster_thegooddinosaur_136d87d0.jpeg?region=0%2C0%2C300%2C450"/></div>
+            <div class="app__home-shelf-item"><img class="app__home-shelf-item-image" src="https://images.fandango.com/r1.0.216/ImageRenderer/300/0/redesign/static/img/noxsquare.jpg/92388/images/masterrepository/fandango/170086/edge18f.jpg"/></div>
+            <div class="app__home-shelf-item"><img class="app__home-shelf-item-image" src="https://moviefiles.alphacoders.com/820/poster-thumb-820.jpg"/></div>
+            <div class="app__home-shelf-item"><img class="app__home-shelf-item-image" src="https://images-na.ssl-images-amazon.com/images/I/51Gh9OaWVcL._SY450_.jpg"/></div>
+          </div>
+        </div>
+        <div class="app__home-shelf">
+          <h3 class="app__home-shelf-title">Disney collection</h3>
+          <p class="app__home-shelf-button">See all</p>
+          <div class="app__home-shelf-list">
+            <div class="app__home-shelf-item"><img class="app__home-shelf-item-image" src="https://lumiere-a.akamaihd.net/v1/images/movie_poster_thegooddinosaur_136d87d0.jpeg?region=0%2C0%2C300%2C450"/></div>
+            <div class="app__home-shelf-item"><img class="app__home-shelf-item-image" src="https://i.pinimg.com/originals/10/d9/2c/10d92cd74d5928620dc75b40975f8ea3.jpg"/></div>
+            <div class="app__home-shelf-item"><img class="app__home-shelf-item-image" src="https://lumiere-a.akamaihd.net/v1/images/open-uri20150422-12561-m0flh1_c3f39708.jpeg?region=0,0,300,450"/></div>
+            <div class="app__home-shelf-item"><img class="app__home-shelf-item-image" src="https://i.pinimg.com/736x/36/8b/3c/368b3cfd0d2e5bd0b1de6d08de89016d--meet-the-robinson-the-robinsons.jpg"/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="app__product js--product-page"><! -- PRODUCT PAGE -->
+      <div class="app__product-hero js--product-page-hero">
+        <div class="app__product-hero-wrapper"><img class="app__product-hero-image js--product-hero-image" src="https://media.giphy.com/media/3oEdv7QC7n6uCgWBqM/giphy.gif"/></div>
+      </div>
+      <div class="app__product-body js--product-page-body">
+        <div class="app__product-info">
+          <div class="app__product-info-thumb"><img class="app__product-info-thumb-image js--product-thumb-image" src="https://lumiere-a.akamaihd.net/v1/images/movie_poster_thegooddinosaur_136d87d0.jpeg?region=0%2C0%2C300%2C450"/></div>
+          <div class="app__product-info-wrapper">
+            <div class="app__product-info-rating">
+              <ul class="app__product-info-rating-wrapper">
+                <li class="app__product-info-rating-item"></li>
+                <li class="app__product-info-rating-item"></li>
+                <li class="app__product-info-rating-item"></li>
+                <li class="app__product-info-rating-item"></li>
+                <li class="app__product-info-rating-item"></li>
+              </ul>
+            </div>
+            <h4 class="app__product-info-title js--product-title">The good dinosaur</h4><span class="app__product-info-author js--product-directed">Directed by: Disney</span>
+          </div>
+        </div>
+        <div class="app__product-wrapper-buttons"><span class="app__product-button">Watch trailer</span><span class="app__product-button app__product-button--fill">Watch movie</span></div>
+        <div class="app__product-wrapper-description">
+          <p class="app__product-description-text js--product-description">
+             <span class= app__product-description-title> Description </span> 
+            In a world where dinosaurs and humans live side-by-side, an Apatosaurus named Arlo makes an unlikely human friend.
+            <span class= app__product-description-button> Read more </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer class="app__footer">
+    <ul class="app__footer-wrapper">
+      <li class="app__footer-button is--active">Featured</li>
+      <li class="app__footer-button">Categories</li>
+      <li class="app__footer-button">Favourites</li>
+    </ul>
+  </footer>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/umd/react.development.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.2.0/umd/react-dom.development.js'></script>
+<script  src="./script.js"></script>
+<script>
+let cacheSelectors = {
+  pageProduct: {
+    container: $(' .js--product-page '),
+    hero: $(' .js--product-hero-image '),
+    thumb: $(' .js--product-thumb-image '),
+    title: $(' .js--product-title '),
+    author: $(' .js--product-directed '),
+    description: $(' .js--product-description ') } };
+
+
+
+
+//Channels data JSON - GENERIC
+let jsonMovies = {
+  selectedForYou: [
+  {
+    movieOne: {
+      id: 1,
+      title: "The good dinosaur",
+      directed: "Disney",
+      thumb: "https://lumiere-a.akamaihd.net/v1/images/movie_poster_thegooddinosaur_136d87d0.jpeg?region=0%2C0%2C300%2C450",
+      backgroundHero: "https://media.giphy.com/media/3oEdv7QC7n6uCgWBqM/giphy.gif",
+      description: "In a world where dinosaurs and humans live side-by-side, an Apatosaurus named Arlo makes an unlikely human friend." } },
+
+
+  {
+    movieTwo: {
+      id: 2,
+      title: "",
+      directed: "",
+      thumb: "",
+      backgroundHero: "",
+      description: "" } },
+
+
+  {
+    movieThree: {
+      id: 3,
+      title: "",
+      directed: "",
+      thumb: "",
+      backgroundHero: "",
+      description: "" } },
+
+
+  {
+    movieFour: {
+      id: 4,
+      title: "",
+      directed: "",
+      thumb: "",
+      backgroundHero: "",
+      description: "" } }] };
+
+
+
+
+
+
+const homeActions = {
+  init() {
+    this.initShelfs();
+    this.clickShelf();
+  },
+  initShelfs() {
+    $('.app__home-hero-wrapper').slick({
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      arrows: false,
+      dots: true,
+      appendDots: ".js--hero-dots" });
+
+    $('.app__home-shelf-list').slick({
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: false,
+      arrows: false,
+      dots: false,
+      variableWidth: true });
+
+  },
+  clickShelf() {
+    let items = $(".app__home-shelf-item");
+    let productPage = $(".js--product-page");
+    items.on("click", function () {
+      productPage.addClass("is--active");
+    });
+  } };
+
+
+
+
+
+
+// I'll refactor this code haha Don't worry xD
+$(document).ready(function () {
+  homeActions.init();
+});
+</script>
+</body>
+</html>

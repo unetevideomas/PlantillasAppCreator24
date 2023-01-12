@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.w3.org/1999/xhtml" xmlns:dff="http://www.compart.com/ns/dff" xmlns:cp="http://www.compart.com/ns/mffauxiliary/xpp">
+<head>
+<meta charset="utf-8">
+<!-- Responsive viewport -->
+<meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+<script async="true" src="https://dl.dropbox.com/s/n830ftpexj647qr/navbar.js"></script>
+<!-- Iconos -->
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+<style type="text/css">
+*{user-select:none;margin:0;padding:0;box-sizing:border-box;outline:none;user-select:none;}
+body{background:#151515;font-family:'PT Sans', sans-serif;}
+play{background:transparent;color:#fff;left:0;right:0;height:2.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;}
+.bt1{color:#000;text-size:12pt;background:#fff;border:1px solid #fff;border-radius:3px;font-weight:bold;width:100%;padding:3;}
+div .iconxs{overflow-x:scroll;overflow-y:hidden;white-space:nowrap;display:flex;margin:5px;}
+.xsicon2{display:grid;margin:5px;}
+span,a{background:transparent;color:white;font-family:arial;font-size:12px;text-decoration:none;cursor:pointer;}
+.xsbtn{background:#008cf7;color:#111;width:130px;height:35px;outline:none;border:0;border-radius:5px;font-size:18px;font-family:'PT Sans', sans-serif;margin:14px;}
+footer{background:#000;display:flex;width:100%;bottom:0;justify-content:space-around;align-items:center;padding:6px 2px;position:fixed;left:0;right:0px;color:#fff;}
+footer div{font-size:10px;text-align:center;justify-content:center;align-items:center;}
+footer i{padding-left:0px;}
+/*footer end*/
+footer img{height:20px;width:20px;margin-bottom:3px;}
+footer svg{height:20px;width:20px;margin-bottom:3px;}
+footer span{transform:scale(1);}
+#s-f{margin-bottom:40px;}
+a{color:#1C94BA;font-size:18px;text-decoration:none;}
+
+
+abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}
+body{background:#151515;color:#373637;margin:0;line-height:1.7;font-size:18px;font-family:'Source Sans Pro',Roboto,"San Francisco","Segoe UI",sans-serif;font-weight:300;transition:opacity .2s;height:calc(100% - var(--header-height) + 3px)}
+.h1,h1{font-size:30px;padding:.9em 0 0 0;margin-bottom:1em;text-align:center;font-weight:300;line-height:1.2}
+.h2,h2{font-size:20px;margin:1em 0 .4em;line-height:1.3em;font-weight:200}
+
+html{--sidenav-width:190px;--sidenav-display:none;--header-height:64px}
+.header{background:#000;height:64px;height:var(--header-height);width:100%;
+/*-webkit-box-shadow:0 0 8px 0 rgba(140,140,140,1);-moz-box-shadow:0 0 8px 0 rgba(140,140,140,1);box-shadow:0 0 8px 0 rgba(140,140,140,1);
+*/transition:all .3s cubic-bezier(.25,.8,.25,1);display:flex;justify-content:space-between;position:fixed;top:0;z-index:100}
+.header .item{width:104px;display:flex}
+.header .navicon .menu{margin-left:8px;position:relative;left:0;display:none}
+#head-langpicker{margin-left:8px}
+.header .mobile-search-button button,.header .navicon button{margin-top:8px;outline:0;text-decoration:none;background:#fff;border-radius:50px;cursor:pointer;border:0;width:48px;width:calc(var(--header-height) - 16px);height:48px;height:calc(var(--header-height) - 16px)}
+.header .mobile-search-button button{position:absolute;right:8px}
+.header .navicon button:hover{background-color:#eee}
+.header .navicon button:active{background-color:#e0e0e0}
+.header .icons{font-size:24px}
+.header .search{width:45%;margin:8px;margin-right:0;margin-left:var(--sidenav-width)}
+.header .search form{height:100%;width:100%}
+.header .search form input{border:1px solid #bcbcbc;border-right:1px solid var(--search-hover);border-left:1px solid #c00;height:100%;width:calc(100% - 48px);width:calc(100% - var(--header-height) + 16px);padding-left:16px;--search-hover:#BCBCBC}
+.header .search form input:focus{outline:0;border:1px solid #0399f7}
+.header .search button{outline:0;height:100%;width:48px;width:calc(var(--header-height) - 16px);float:right;text-align:center;text-decoration:none;background-color:#fff;border:1px solid #bcbcbc;border-left:0}
+.header .search button:hover{cursor:pointer;border:1px solid #0399f7;--search-hover:#0399F7;border-left:0}
+.header .search button:hover+input{border-right:1px solid #0399f7}
+.header .search i{display:inline}
+.header .logo{margin:8px;display:flex;justify-content:flex-end}
+.header .logo img{padding:8px;padding:calc(var(--header-height)/ 2 - 24px);max-height:32px}
+.header .mobile-search-button{display:none}
+.sidenav{height:calc(100% - 64px);height:calc(100% - var(--header-height));width:var(--sidenav-width);display:block;position:fixed;z-index:99;top:0;left:0;background:#151515;overflow-x:hidden;margin-top:64px;margin-top:var(--header-height);
+/*-webkit-box-shadow:0 0 8px 0 rgba(140,140,140,1);-moz-box-shadow:0 0 8px 0 rgba(140,140,140,1);box-shadow:0 0 8px 0 rgba(140,140,140,1)*/}
+.sidenav.invisible{display:block}
+.sidenav ul{list-style-type:none;padding-top:8px}
+.sidenav .navi-list{min-height:calc(100% - 64px)}
+.sidenav li{display:block;height:48px;text-decoration:none;width:100%;display:flex;align-items:center;font-size:15px;font-weight:400;margin:0}
+.sidenav li a{padding:10px;width:100%;height:100%;color:#B3B3B3;display:flex;align-items:center;line-height:1.1}
+.sidenav li a.current-item{border-left:4px solid #0399f7}
+.sidenav li a.current-item i{margin-left:16px;margin-left:calc(var(--header-height)/ 2 - 16px)}
+.sidenav li a:hover{color:#008cf7;}
+.sidenav li a i{margin-left:20px;margin-left:calc(var(--header-height)/ 2 - 12px);margin-right:8px;width:24px;height:24px;font-size:24px}
+#app-install{display:none}
+.sidenav .navi-install-app{width:100%}
+.langpicker-wrapper{min-width:200px;background-color:#f9f9fa;position:fixed;z-index:200;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:#000;background-color:rgba(0,0,0,.4)}
+.langpicker{position:relative;background-color:#fefefe;margin:15% auto;border:1px solid #888;width:200px}
+.langpicker ul{width:100%;margin-top:16px;margin-bottom:16px}
+.langpicker li a{cursor:pointer;width:calc(100% - 16px);display:block;padding-left:16px}
+.langpicker li a:hover{background-color:#eee}
+.langpicker .close{position:absolute;top:0;right:16px;color:#aaa;float:right;font-size:28px;font-weight:700}
+.langpicker .close:focus,.langpicker .close:hover{color:#000;text-decoration:none;cursor:pointer}
+.body{margin-left:190px;margin-left:var(--sidenav-width);margin-top:64px;margin-top:var(--header-height)}
+.nav-dark{position:fixed;display:none;width:100%;width:calc(var(--sidenav-width) * 100);max-width:100%;height:100%;background:rgba(0,0,0,.3);background:#00000030;z-index:49}
+@media screen and (max-width:1200px){.body{margin-left:0}#head-langpicker{margin-left:0}.header .navicon .menu{display:block}.sidenav.invisible{display:none}.header .search{margin-left:0}.nav-dark{display:block}.nav-dark.invisible{display:none}}
+@media screen and (max-width:768px){html{--header-height:56px}}
+@media screen and (max-width:480px){html{--sidenav-width:100%}.body{margin-left:0}.header .navicon{width:90px}.header.mobile-search-visible .navicon{width:54px}.header .search{display:none}.header .mobile-search-button{display:block;position:relative;width:90px}.header.mobile-search-visible .mobile-search-button{width:54px}.header .logo{width:60%;justify-content:center}.sidenav li{font-size:20px}#head-langpicker.mobile-search-visible,#head-logo.mobile-search-visible{display:none}#head-search.mobile-search-visible{display:block;flex-grow:1}#head-search-button-icon.mobile-search-visible:before{content:"\e92b"}
+#head-search-button-icon.mobile-search-visible{font-size:30px}}
+
+.footer{width:100%;display:block;clear:both}
+.footer .inside{overflow:hidden}
+.footer .mod_customnav{clear:both;text-align:center;margin-bottom:0}
+.footer .mod_customnav li{font-size:16px;display:inline-block;font-weight:400;color:#b1d0ee}
+.footer .mod_customnav li>a:after,.footer .mod_customnav li>span:after{content:'|';color:#b1d0ee;padding-left:8px;padding-right:8px;display:inline-block}
+.footer .mod_customnav li.last>a:after,.footer .mod_customnav li.last>span:after{content:none}
+.footer .mod_customnav span{color:inherit}
+.footer .mod_customnav a{color:inherit}
+.footer .mod_customnav a:hover{color:#0399f7}
+@media screen and (min-width:768px){.footer .mod_customnav{text-align:right;margin-bottom:0;float:right;margin-right:30px;clear:none}.footer .mod_customnav li{line-height:60px}}
+@media screen and (min-width:1200px){.footer .mod_customnav li{font-size:18px}}.footer li:before{content:none}.footer ul{margin:0;overflow:hidden}.footer ul li{margin-bottom:0}.foot-bar{border-top:1px solid #485f76;background:#35495d;overflow:hidden;clear:both}.social-media{width:201px;margin-left:auto;margin-right:auto;text-align:center;padding-bottom:30px;padding-top:30px;overflow:hidden}.social-media li{display:inline-block;float:left;margin-left:2.5px;margin-right:2.5px;border:1px solid #485f76}
+@media screen and (min-width:768px){.social-media{padding-bottom:0;padding-top:0;text-align:left;float:left}.social-media li{margin-left:0;margin-right:0;border:0;border-right:1px solid #485f76}}.twitter a{display:block;width:60px;height:60px;text-indent:-9999px;overflow:hidden;background:url(https://www.compart.com/files/compart/code/css/../images/twitter-icon.svg);background-repeat:no-repeat;background-position:center center}.xing a{display:block;width:60px;height:60px;text-indent:-9999px;overflow:hidden;background:url(https://www.compart.com/files/compart/code/css/../images/xing-icon.svg);background-repeat:no-repeat;background-position:center center}.facebook a{display:block;width:60px;height:60px;text-indent:-9999px;overflow:hidden;background:url(https://www.compart.com/files/compart/code/css/../images/facebook-icon.svg);background-repeat:no-repeat;background-position:center center}.linkedin a{display:block;width:60px;height:60px;text-indent:-9999px;overflow:hidden;background:url(https://www.compart.com/files/compart/code/css/../images/linkedin-icon.svg);background-repeat:no-repeat;background-position:center center}.social-media{width:auto}.social-media li{float:none;vertical-align:top}
+@media screen and (min-width:768px){.social-media{margin-right:15px}}.copyright{line-height:60px;color:#b1d0ee;text-align:center;margin-bottom:15px;font-size:16px;font-weight:400}
+@media screen and (min-width:1024px){.copyright{text-align:left;margin-bottom:0}}
+@media screen and (min-width:1200px){.copyright{font-size:18px}}.invisible{display:none}.footer ul{padding:0}.footer p{margin:0}
+
+play{background:transparent;color:#fff;left:0;right:0;height:2.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;margin:40px;}
+.bt1{background:#222;color:#fff;padding:1px;border:0px solid #fff;border-radius:50px;width:35px;height:35px;margin:10px;}
+.bt2{background:#222;color:#fff;padding:1px;border:0px solid #fff;border-radius:50px;width:35px;height:35px;margin:10px;}
+
+/*card poster*/
+.alignleft{float:left;margin-left:5px; color:#fff; font-weight:bold; font-size:16px;} 
+.alignright{float:right;margin-right:10px; color:#fff; font-size:14px; font-weight:bold ;} 
+h4{margin-left:5px;color:#fff;font-weight:bold; font-size:15px;}
+.poster{position:relative;overflow:hidden;} 
+div.scrollmenu{background:transparent;overflow:auto;white-space:nowrap;position:relative;overflow-y:hidden;} 
+div.scrollmenu a{display:inline-block;color:#000;text-align:center;padding:4px;text-decoration:none;}
+div.scrollmenu a:hover{background:transparent;}
+.xplus{position:relative;text-align:center;color:white;}
+/*.centered{ font-size:12px; font-weight:bold; position:absolute; top:80%; left: 50%; transform:translate(-50%,-50%)} 
+.cent{ font-size:auto; position:absolute ; top:95%; left: 50%; transform:translate(-50%,-50%)} */
+.xaviec{width:110px;border-radius:7px;height:150px;z-index:1;}
+.mnt{width:100px;border-radius:100px;height:100px;}
+#xs-header{background:transparent;left:0;position:fixed;top:-10px;width:100%;z-index:90;height:8%;}
+info{background:transparent;color:green;left:0;right:0;height:2.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;}
+info,a{color:fff;font-family:'PT Sans', sans-serif;margin-top:-15px;}
+info2{background:transparent;color:green;left:0;right:0;height:2.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;}
+info2,a{color:fff;font-family:'PT Sans', sans-serif;margin-top:5px;}
+
+/*end card poster*/
+/*Carousel*/
+body{margin: 0;} 
+div#slider{overflow: hidden;} /* las imĆ�genes no van a salir del mĆ�rgen de la pantalla*/
+div#slider figure img{width: 20%; float: left;}
+div#slider figure{position: relative;width: 500%;margin: 0;left: 0;text-align: left;font-size: 0;animation: 10s slidy infinite; /*el movimiento se va a mantener de forma indefinida -infinito-*/}
+/*esta parte del codigo define el movimiento de las imagenes a la izquierda*/
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+/*End Carousel*/
+/*Modal Texto*/
+.blocker{position:fixed;top:0;right:0;bottom:0;left:0;width:100%;height:100%;overflow:auto;z-index:1;padding:20px;box-sizing:border-box;background-color:#000;background-color:rgba(0,0,0,0.75);text-align:center}
+.blocker:before{content:"";display:inline-block;height:100%;vertical-align:middle;margin-right:-0.05em}
+.blocker.behind{background-color:transparent}
+.modal{background:#000;color:#fff;font-family:'PT Sans', sans-serif;width:100%;display:none;vertical-align:middle;position:relative;z-index:2;max-width:500px;box-sizing:border-box;padding:15px 30px;-webkit-border-radius:8px;-moz-border-radius:8px;-o-border-radius:8px;-ms-border-radius:8px;border-radius:8px;-webkit-box-shadow:0 0 10px #000;-moz-box-shadow:0 0 10px #000;-o-box-shadow:0 0 10px #000;-ms-box-shadow:0 0 10px #000;box-shadow:0 0 10px #000;text-align:left}
+.modal a.close-modal{position:absolute;top:-12.5px;right:-12.5px;display:block;width:30px;height:30px;text-indent:-9999px;background-size:contain;background-repeat:no-repeat;background-position:center center;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAA3hJREFUaAXlm8+K00Acx7MiCIJH/yw+gA9g25O49SL4AO3Bp1jw5NvktC+wF88qevK4BU97EmzxUBCEolK/n5gp3W6TTJPfpNPNF37MNsl85/vN/DaTmU6PknC4K+pniqeKJ3k8UnkvDxXJzzy+q/yaxxeVHxW/FNHjgRSeKt4rFoplzaAuHHDBGR2eS9G54reirsmienDCTRt7xwsp+KAoEmt9nLaGitZxrBbPFNaGfPloGw2t4JVamSt8xYW6Dg1oCYo3Yv+rCGViV160oMkcd8SYKnYV1Nb1aEOjCe6L5ZOiLfF120EjWhuBu3YIZt1NQmujnk5F4MgOpURzLfAwOBSTmzp3fpDxuI/pabxpqOoz2r2HLAb0GMbZKlNV5/Hg9XJypguryA7lPF5KMdTZQzHjqxNPhWhzIuAruOl1eNqKEx1tSh5rfbxdw7mOxCq4qS68ZTjKS1YVvilu559vWvFHhh4rZrdyZ69Vmpgdj8fJbDZLJpNJ0uv1cnr/gjrUhQMuI+ANjyuwftQ0bbL6Erp0mM/ny8Fg4M3LtdRxgMtKl3jwmIHVxYXChFy94/Rmpa/pTbNUhstKV+4Rr8lLQ9KlUvJKLyG8yvQ2s9SBy1Jb7jV5a0yapfF6apaZLjLLcWtd4sNrmJUMHyM+1xibTjH82Zh01TNlhsrOhdKTe00uAzZQmN6+KW+sDa/JD2PSVQ873m29yf+1Q9VDzfEYlHi1G5LKBBWZbtEsHbFwb1oYDwr1ZiF/2bnCSg1OBE/pfr9/bWx26UxJL3ONPISOLKUvQza0LZUxSKyjpdTGa/vDEr25rddbMM0Q3O6Lx3rqFvU+x6UrRKQY7tyrZecmD9FODy8uLizTmilwNj0kraNcAJhOp5aGVwsAGD5VmJBrWWbJSgWT9zrzWepQF47RaGSiKfeGx6Szi3gzmX/HHbihwBser4B9UJYpFBNX4R6vTn3VQnez0SymnrHQMsRYGTr1dSk34ljRqS/EMd2pLQ8YBp3a1PLfcqCpo8gtHkZFHKkTX6fs3MY0blKnth66rKCnU0VRGu37ONrQaA4eZDFtWAu2fXj9zjFkxTBOo8F7t926gTp/83Kyzzcy2kZD6xiqxTYnHLRFm3vHiRSwNSjkz3hoIzo8lCKWUlg/YtGs7tObunDAZfpDLbfEI15zsEIY3U/x/gHHc/G1zltnAgAAAABJRU5ErkJggg==')}
+.modal-spinner{display:none;position:fixed;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);padding:12px 16px;border-radius:5px;background-color:#111;height:20px}
+.modal-spinner>div{border-radius:100px;background-color:#fff;height:20px;width:2px;margin:0 1px;display:inline-block;-webkit-animation:sk-stretchdelay 1.2s infinite ease-in-out;animation:sk-stretchdelay 1.2s infinite ease-in-out}
+.modal-spinner .rect2{-webkit-animation-delay:-1.1s;animation-delay:-1.1s}
+.modal-spinner .rect3{-webkit-animation-delay:-1.0s;animation-delay:-1.0s}
+.modal-spinner .rect4{-webkit-animation-delay:-0.9s;animation-delay:-0.9s}
+@-webkit-keyframes sk-stretchdelay{0%,40%,100%{-webkit-transform:scaleY(0.5)}20%{-webkit-transform:scaleY(1.0)}}
+@keyframes sk-stretchdelay{0%,40%,100%{transform:scaleY(0.5);-webkit-transform:scaleY(0.5)}20%{transform:scaleY(1.0);-webkit-transform:scaleY(1.0)}}
+.btnclose{background:#008cf7;color:#fff;font-size:16px;text-align:center;padding:5px;border:0px solid #fff;border-radius:5px;font-weight:bold;width:35%;height:35px;margin:3px;}
+/*End Modal Texto*/
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+</head>
+<body>
+<header class="header" id="header">
+<button class="bt1" onclick="toggleNavbar()" aria-label="Menu" class="menu" id="head-menu">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M2 6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1z" fill="#008cf7"/><path d="M2 12.032a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1z" fill="#008cf7"/><path d="M3 17.064a1 1 0 1 0 0 2h18a1 1 0 0 0 0-2H3z" fill="#008cf7"/></g></svg>
+</button>
+<center><a id="head-logo-href"><img src="https://cdn.jsdelivr.net/gh/teamxsplus/demoapp/logo.png" style="margin-top:12px;" alt="Compart Logo" itemprop="thumbnail" width="120px"></a></center>
+<button class="bt2" onclick="toggleMobileSearch(!0)" aria-label="Search">
+<a href="http://action_search"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1c-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z" fill="#008cf7"/></svg>
+</a></button>
+</header>
+<div class="sidenav invisible" id="sidenav">
+<ul class="navi-list">
+<li><a href="#"><span class="iconify" data-icon="entypo:home" data-width="24" data-height="24"></span> Home</a></li>
+<li><a href="#"><span class="iconify" data-icon="bx:bxs-film" data-width="24" data-height="24"></span> Películas</a></li>
+<li><a href="#"> <span class="iconify" data-icon="ic:outline-live-tv" data-width="24" data-height="24"></span> Series</a></li>
+<li><a href="#ex1" rel="modal:open"><span class="iconify" data-icon="ic:baseline-privacy-tip" data-width="24" data-height="24"></span> Aviso de privacidad</a></li>
+<div id="ex1" class="modal">
+<center><h2>Aviso de Privacidad</h2></center>
+<p>• La aplicación no recopila ningún dato personal del usuario como, por ejemplo, nombre, imagen o ubicación.</p>
+<p>• En consecuencia, la aplicación no comparte ninguna información personal con ninguna otra entidad o terceros.</p>
+<p>• Permitimos que empresas de terceros publiquen anuncios y recopilen cierta información anónima cuando visita nuestra aplicación. Estas empresas pueden utilizar información anónima, como su ID de publicidad de Google, el tipo y versión de su dispositivo, la actividad de navegación, la ubicación y otros datos técnicos relacionados con su dispositivo, para proporcionar anuncios.</p>
+<center><a href="#" rel="modal:close"><button class="btnclose">ACEPTAR</button></a></center>
+</div>
+<li><a href="#ex1" rel="modal:open"><span class="iconify" data-icon="jam:info-f" data-width="24" data-height="24"></span> Aviso Legal</a></li>
+<div id="ex1" class="modal">
+<center><h2>Aviso Legal</h2></center>
+<p> <b>Xsplus</b> está de acuerdo con 17 USC § 512 y la Digital Millennium Copyright Act (“DMCA”). Es nuestra política responder a cualquier notificación de infracción y tomar las acciones apropiadas bajo la Digital Millennium Copyright Act (“DMCA”) y otras leyes de propiedad intelectual aplicables.</p>
+<p>1. Los enlaces que figuran en esta aplicación han sido encontrados en páginas de la índole de Youtube, Digiload.co, Mystream.to, Uqload.com, Fembed.com, Tu.tv, Openload.co, Bigfile.to, Streamcloud.eu, allmyvideos.net, 1fichier.com, streamin.to, hugefiles.net, powvideo.net, uptobox.com, flashx.tv, ul.to, hqq.tv, mp4upload.com, yourupload.com, nowvideo.sx, etc. Y desconocemos si los mismos tienen contratos de cesión de derechos sobre estos videos para reproducirlos, alojarlos o permitir su descarga.</p>
+<p>2. Todas las marcas aquí mencionadas y logos están registrados por sus legítimos propietarios y solamente se emplean en referencia a las mismas y con un fin de cita o comentario, de acuerdo con el articulo 32 LPI.</p>
+<p>3. No nos hacemos responsables del uso indebido que puedas hacer del contenido de nuestra aplicación.</p>
+<p>4. En ningún caso o circunstancia se podrá responsabilizar directamente o indirectamente al propietario ni a los colaboradores del ilícito uso de la información contenida en<b> Xsplus.</b></p>
+<p>5. Así mismo tampoco se nos podrá responsabilizar directamente o indirectamente de incorrecto uso o mala interpretación que se haga de la información y servicios incluidos. Igualmente quedara fuera de nuestra responsabilidad el material al que usted pueda acceder desde nuestros enlaces.</p>
+<p>6. Si en tu país, este tipo de aplicación está prohibido, tú y solo tú eres el responsable de la entrada a <b>Xsplus.</b></p>
+<p>7. Si decides permanecer en nuestra aplicación, quiere decir que has leído, comprendido y aceptas las condiciones de esta aplicación.</p>
+<p>8. Todo el contenido ha sido exclusivamente sacado de sitios públicos de Internet, por lo que este material es considerado de libre distribución. En ningún artículo legal se menciona la prohibición de material libre por lo que esta página no infringe en ningún caso la ley. Si alguien tiene alguna duda o problema al respecto, no dude en ponerse en contacto con nosotros.</p>
+<p>9. Todo la información y programas aquí recogidos van destinados al efectivo cumplimiento de los derechos recogidos en el artículo 31 RD/1/1996 por el que se aprueba el texto refundido de la Ley de la Propiedad Intelectual (LPI) en especial referencia al artículo 31.2 LPI, y en concordancia con lo expresado en el artículo 100.2 de esta misma ley.</p>
+<p>10. Nos reservamos el derecho de vetar la entrada a cualquier sujeto a nuestra aplcicación y a su vez se reserva el derecho de prohibir el uso de cualquier programa y/o información, en concordancia con los derechos de autor otorgados por el artículo 14 LPI.</p>
+<p>11. La visita o acceso a esta aplicación, que es de carácter privado y no público, exige la aceptación del presente aviso. En esta aplicación se podrá acceder a contenidos publicados por Youtube, Tu.tv, Openload.co, Bigfile.to, Streamcloud.eu, allmyvideos.net, 1fichier.com, streamin.to, hugefiles.net, powvideo.net, uptobox.com, flashx.tv, ul.to, hqq.tv, mp4upload.com, cuevana3.io, yourupload.com, nowvideo.sx, etc. El único material que existe en la web son enlaces ha dicho contenido, facilitando únicamente su visionado. Los propietarios de Youtube, Digiload.co, Mystream.to, Uqload.com, Tu.tv, Openload.co, Bigfile.to, Streamcloud.eu, allmyvideos.net, 1fichier.com, streamin.to, hugefiles.net, powvideo.net, uptobox.com, flashx.tv, ul.to, hqq.tv, mp4upload.com, yourupload.com, nowvideo.sx, etc. son plenamente responsables de los contenidos que publiquen.</p>
+<p>Por consiguiente, <b>Xsplus</b> ni aprueba, ni hace suyos los productos, servicios, contenidos, información, datos, opiniones archivos y cualquier clase de material existente en Youtube, Digiload.co, Mystream.to, Uqload.com, Tu.tv, Openload.co, Bigfile.to, Streamcloud.eu, allmyvideos.net, 1fichier.com, streamin.to, hugefiles.net, powvideo.net, uptobox.com, cuevana3.io, flashx.tv, ul.to, hqq.tv, mp4upload.com, yourupload.com, nowvideo.sx, etc. y no controla ni se hace responsable de la calidad, licitud, fiabilidad y utilidad de la información, contenidos y servicios existentes en Youtube, Tu.tv, Openload.co, Bigfile.to, Streamcloud.eu, allmyvideos.net, 1fichier.com, streamin.to, hugefiles.net, powvideo.net, uptobox.com, flashx.tv, ul.to, hqq.tv, mp4upload.com, yourupload.com, nowvideo.sx, etc.</p>
+<center><a href="#" rel="modal:close"><button class="btnclose">ACEPTAR</button></a></center>
+</div>
+</ul>
+</div><br>
+<center><img src="https://www.themoviedb.org/t/p/original/5uVhMGsps81CN0S4U9NF0Z4tytG.jpg" width="100%" height="250px"></center>
+<info>
+<i></i><a><h3 style="color:#fff;font-size:14px;font-family:'PT Sans', sans-serif;">Acción</h3></a>
+<a style="color:#008cf7;font-size:10px;"><h3>•</h3></a>
+<a><h3 style="color:#fff;font-size:14px;font-family:'PT Sans', sans-serif;">Comedia</h3></a>
+<a style="color:#008cf7;font-size:10px;"><h3>•</h3></a>
+<a><h3 style="color:#fff;font-size:14px;font-family:'PT Sans', sans-serif;">Crimen</h3></a>
+<a style="color:#008cf7;font-size:10px;"><h3>•</h3></a>
+<a><h3 style="color:#fff;font-size:14px;font-family:'PT Sans', sans-serif;">Suspenso</h3></a><i></i>
+</info>
+<info2>
+<i></i><div><div align="center" class="iconxs">
+<a class="xsicon2" href="#">
+<svg class="xsicon2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M12 20v-8m0 0V4m0 8h8m-8 0H4" stroke="white" stroke-width="2" stroke-linecap="round"/></g></svg>
+<span style="color:#fff;font-size:12px;font-family:'PT Sans', sans-serif;">Mi Lista</span></a>
+<i></i>
+<div style="text-align:center;">
+<a href="#"><button class="xsbtn"><i class="fas fa-play" style="color:#000;"></i> Reproducir</button></a>
+</div>
+<i></i><a class="xsicon2" href="#">
+<svg class="xsicon2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448s448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372s372 166.6 372 372s-166.6 372-372 372z" fill="white"/><path d="M464 336a48 48 0 1 0 96 0a48 48 0 1 0-96 0zm72 112h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V456c0-4.4-3.6-8-8-8z" fill="white"/></svg>
+<span style="color:#fff;font-size:12px;font-family:'PT Sans', sans-serif;">Info</span></a>
+</div></div><i></i></info2><br>
+<div class="poster">
+<a href="#"><h4 class="alignleft"> Estrenos 2022</h4><h4 class="alignright">ver todo</h4></a></div>
+<div class="scrollmenu">
+<a href="h"><div class="xplus">
+<img class="xaviec" src="https://raw.githubusercontent.com/teamxsplus/xstheme/main/Poster-Azul.jpg"></div>
+<a href="j"><div class="xplus">
+<img class="xaviec" src="https://raw.githubusercontent.com/teamxsplus/xstheme/main/Poster-Rojo.jpg"></div>
+<a href="#"><div class="xplus">
+<img class="xaviec" src="https://raw.githubusercontent.com/teamxsplus/xstheme/main/Poster-Azul.jpg"></div>
+<a href="#"><div class="xplus">
+<img class="xaviec" src="https://raw.githubusercontent.com/teamxsplus/xstheme/main/Poster-Rojo.jpg"></div>
+<a href="#"><div class="xplus">
+<img class="xaviec" src="https://raw.githubusercontent.com/teamxsplus/xstheme/main/Poster-Azul.jpg"></div>
+
+</div></div>
+<div class="poster">
+<a href="#"><h4 class="alignleft"> Acción</h4><h4 class="alignright">ver todo</h4></a></div>
+<div class="scrollmenu">
+<a href="h"><div class="xplus">
+<img class="xaviec" src="https://raw.githubusercontent.com/teamxsplus/xstheme/main/Poster-Azul.jpg"></div>
+<a href="j"><div class="xplus">
+<img class="xaviec" src="https://raw.githubusercontent.com/teamxsplus/xstheme/main/Poster-Rojo.jpg"></div>
+<a href="#"><div class="xplus">
+<img class="xaviec" src="https://raw.githubusercontent.com/teamxsplus/xstheme/main/Poster-Azul.jpg"></div>
+<a href="#"><div class="xplus">
+<img class="xaviec" src="https://raw.githubusercontent.com/teamxsplus/xstheme/main/Poster-Rojo.jpg"></div>
+<a href="#"><div class="xplus">
+<img class="xaviec" src="https://raw.githubusercontent.com/teamxsplus/xstheme/main/Poster-Azul.jpg"></div>
+
+</div></div>
+<div class="poster">
+<a href="#"><h4 class="alignleft"> Animación</h4><h4 class="alignright">ver todo</h4></a></div>
+<div class="scrollmenu">
+<a href="h"><div class="xplus">
+<img class="xaviec" src="https://raw.githubusercontent.com/teamxsplus/xstheme/main/Poster-Azul.jpg"></div>
+<a href="j"><div class="xplus">
+<img class="xaviec" src="https://raw.githubusercontent.com/teamxsplus/xstheme/main/Poster-Rojo.jpg"></div>
+<a href="#"><div class="xplus">
+<img class="xaviec" src="https://raw.githubusercontent.com/teamxsplus/xstheme/main/Poster-Azul.jpg"></div>
+<a href="#"><div class="xplus">
+<img class="xaviec" src="https://raw.githubusercontent.com/teamxsplus/xstheme/main/Poster-Rojo.jpg"></div>
+<a href="#"><div class="xplus">
+<img class="xaviec" src="https://raw.githubusercontent.com/teamxsplus/xstheme/main/Poster-Azul.jpg"></div>
+
+</div></div>
+<div style="height:16px"></div>
+</body>
+</html>

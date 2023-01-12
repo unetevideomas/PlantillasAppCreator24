@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<!--<b:include data='blog' name='all-head-content'/>
+<b:if cond='data:blog.pageType == "item"'>
+<title><data:blog.pageName/> | <data:blog.title/></title><b:else/><title><data:blog.pageTitle/></title>
+</b:if>-->
+<b:skin>
+<![CDATA[
+body {background:black;color:white;}
+
+#contenedor-general {
+width:100%; /*Ancho del blog*/
+height:100%; /*Largo del blog*/
+margin:0 auto 0; /*Centramos el contenido*/
+padding:0; /*Evitamos espaciados internos*/
+}
+
+#cabecera {display:none;}
+
+#cuerpo-entradas {
+width:100%; /*Ancho de las entradas*/
+height:100%; /*Largo de las entradas*/
+padding:0; /*Espaciados internos*/}
+
+#pie-de-pagina {
+visibility:hidden;
+display:none;}
+
+.feed-links {
+visibility:hidden;
+display:none;
+}
+/*
+.post-outer {
+visibility:hidden;
+display:none;
+}
+.post-title {
+visibility:hidden;
+display:none;
+}
+.post-title a {
+visibility:hidden;
+display:none;
+}
+*/
+.post-header {
+visibility:hidden;
+display:none;
+}
+.post-author {
+visibility:hidden;
+display:none;
+}
+.post-published {
+visibility:hidden;
+display:none;
+}
+.post-tags {
+visibility:hidden;
+display:none;
+}
+
+/*
+.post-body {
+visibility:hidden;
+display:none;
+}
+.post-footer {
+visibility:hidden;
+display:none;
+}
+*/
+.post-numero-0 {
+display:none;}
+.post-numero-1 {
+display:none;}
+.home-link {
+display:none;}
+.post-title.entry-title {
+display: none;}
+.blog-pager-older-link {display:none;}
+.blog-pager-newer-link {display:none;}
+
+@media handheld, only screen and (max-width: 767px) { 
+	body {
+	    font-size: 100%;
+	    -webkit-text-size-adjust: none;
+	}
+	.container {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+	.row,
+	body,
+	.container {
+	    width: 100%;
+	    min-width: 0;
+	    margin-left: 0px;
+	    margin-right: 0px;
+	    padding-left: 0px;
+	    padding-right: 0px;
+	}
+	    .row .onecol,
+	    .row .twocol,
+	    .row .threecol,
+	    .row .fourcol,
+	    .row .fivecol,
+	    .row .sixcol,
+	    .row .sevencol,
+	    .row .eightcol,
+	    .row .ninecol,
+	    .row .tencol,
+	    .row .elevencol,
+	    .row .twelvecol {
+	        width: auto;
+	        float: none;
+	        margin-left: 0px;
+	        margin-right: 0px;
+	        padding-left: 5px;
+	        padding-right: 5px;
+	    }
+	#header-2,
+	#header-3 {
+	    display: none;
+	    width: 0;
+	}
+	#Header1 #header-inner img { margin: 0 auto }
+	header { margin: 0 }
+	#nav li a { padding: .25em .5em }
+	/*ul#nav {
+	    float: left;
+	    position: relative !important;
+	    left: 50% !important;
+	    overflow: visible !important;
+	    padding: 0;
+	}
+	    ul#nav li {
+	        float: left;
+	        position: relative !important;
+	        right: 50% !important;
+	    }*/
+	/* .index
+          ----------------------------------------------- */
+	.index .date-outer,
+	.index .date-outer,
+	.index .date-outer:nth-of-type(2),
+	.index .date-outer:nth-of-type(3),
+	.index .date-outer:nth-of-type(4) {
+	    width: 100%;
+	    height: auto;
+	    float: none;
+	}
+        /* .Item
+          ----------------------------------------------- */
+     .item h3 {
+font-size: 1.304em;
+}
+}
+
+
+]]></b:skin>
+<script type='text/javascript'> document.oncontextmenu = function(){return false;}</script>
+</head>
+<body oncontextmenu="return false" onkeydown="return false">
+<div id="contenedor-general">
+<div id="cabecera">
+<b:section id="header" class="header" showaddelement="yes">
+<b:widget id="Header1" locked="true" title="Cabecera del blog" type="Header"/> 
+</b:section>
+</div>
+<div id="cuerpo-entradas">
+<b:section id="main" class="main" showaddelement="yes">
+<b:widget id="Blog1" locked="true" title="Entradas del blog" type="Blog"/>
+</b:section>
+</div>
+<!--<div id="columna-lateral">
+<b:section id="sidebar" class="sidebar" showaddelement="yes">
+<b:widget id="Label1" locked="false" title="Categorías" type="Label"/>
+</b:section>
+</div>-->
+<div style="clear:both" />
+<div id="pie-de-pagina">
+<b:section id="footer" class="footer" showaddelement="yes">
+</b:section>
+</div>
+</div>
+</body>
+</html>

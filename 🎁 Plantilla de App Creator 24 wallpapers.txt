@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/0964bcabaa.js"></script>
+<link rel="stylesheet" href="animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<body>
+    <style type="text/css">
+        *{
+        margin:0;
+        padding:0;
+        outline-color:none ;}
+        body{
+        background-color:#111111;
+        box-sizing:content-box ;
+        width:100%;
+        height:100%;
+        position:relative ;
+        overflow-y:none ;}
+        .container{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        padding:30px auto ;
+        z-index:9;}
+        .imageView{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100vh;
+        z-index:999;
+        color:#fbfbfb;
+        visibility:hidden;}
+        .imageView .img{
+            position: relative;
+        width: 75vw;
+        height:75vh;
+        border-radius:10px;
+        margin:30px auto ;}
+        img{
+        background-position:center;
+        width:100%;
+        height:100%;
+        border-radius:10px;}
+        .container img{
+        width:155px;
+        height:200px;
+        margin:10px;}
+        footer{
+        margin-left:1.5em;
+        color:green;
+        font-style:italic;
+        font-family:armenian;}
+        </style>
+<div class='imageView'>
+<div class="img">
+<i onclick="close()" id='close' class ="fas fa-times fa-3x"></i>
+<img id="img" class="animated zoomIn delay-1s" src=""/>
+<a href="#" class="btn" download="image.png">download wallpaper</a>
+</div></div>
+<div class="container">
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/27897.jpg"alt="Aung Thiha" >
+
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/27898.jpg" alt="Aung Thiha" height="100" width="100"/>
+<img src="https://ia601402.us.archive.org/20/items/800075222/HWWallpapers/27899.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia601402.us.archive.org/20/items/800075222/HWWallpapers/27900.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia601402.us.archive.org/20/items/800075222/HWWallpapers/27916.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia601402.us.archive.org/20/items/800075222/HWWallpapers/27935.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/27937.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia601402.us.archive.org/20/items/800075222/HWWallpapers/27938.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/27939.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia601402.us.archive.org/20/items/800075222/HWWallpapers/27940.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/27941.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/27942.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/28086.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/28091.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/28093.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia601402.us.archive.org/20/items/800075222/HWWallpapers/28100.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/28106.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/28114.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/28115.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/28122.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/28123.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/54508.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/54511.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia601402.us.archive.org/20/items/800075222/HWWallpapers/54512.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/54516.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia601402.us.archive.org/20/items/800075222/HWWallpapers/54517.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/54518.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia801402.us.archive.org/20/items/800075222/HWWallpapers/54519.jpg" alt="Aung Thiha" height="100" width="100" />
+<img src="https://ia601402.us.archive.org/20/items/800075222/HWWallpapers/55574.jpg" alt="Aung Thiha" height="100" width="100" />
+
+
+
+<img src="" alt="Aung Thiha" height="100" width="100" />
+<img style="border-radius: 15px;" src="https://1.bp.blogspot.com/-tgvGlDqVxyM/X69lBaINE2I/AAAAAAAAAAg/CAuNxDKqjpY-xbJdTgRCFMNcm5eITrdxACLcBGAsYHQ/s1220/20201114_010240.png" width="25" height="40%" ></a>
+</div>
+
+<script>
+var images = document.querySelectorAll('img');
+for (const img of images){ img.addEventListener('click', function(i) { 
+var url = i.target.getAttribute('src');
+document.querySelector('.imageView').style.visibility= "visible";
+document.querySelector('#img').src = url;
+fetch(url)
+.then(res => res.blob())
+.then(blob => document.querySelector('.btn').href = URL.createObjectURL(blob));
+})};
+document.querySelector('#close').addEventListener('click',close);
+function close(){
+document.querySelector('.imageView').style.visibility= "hidden";
+document.querySelector('#img').src = '';}
+</script>
+
+
+</div>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<nav class="nav">
+<a href="#" class="nav__link nav__link--active">
+<i class="material-icons nav__icon">home</i>
+<span class="nav__text"></span></a>
+<a href="#" class="nav__link">
+<i class="material-icons nav__icon">notifications</i>
+<span class="nav__text"></span></a>
+<a href="#" class="nav__link">
+<i class="material-icons nav__icon">dashboard_customize</i>
+<span class="nav__text"></span></a>
+<a href="#" class="nav__link">
+<i class="material-icons nav__icon">person</i>
+<span class="nav__text"></span></a>
+</nav>
+
+<style type="text/css">
+body{
+margin: auto;
+width:auto;
+height:auto;
+padding: 10px 0;
+background-color:black;}
+.container{
+width:100%;
+height:100px;}
+.nav{
+position: fixed;
+bottom: 0;
+width: 100%;
+z-index: 99999;
+height: 10%;
+box-shadow: 0 0 2px #131419;
+background-color: black;
+display: flex;
+overflow-x: auto;}
+.nav__link{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+flex-grow: 1;
+min-width: 50px;
+overflow: hidden;
+white-space: nowrap;
+font-family: sans-serif;
+font-size: 13px;
+color: #cccccc;
+text-decoration: none;
+-webkit-tap-highlight-color: transparent;
+transition: background-color 0.1s ease-in-out;}
+.nav__link:hover{
+background-color: #121212;}
+.nav__link--active{
+color: #fff;}
+.nav__icon{
+font-size: 32px;}
+</style>
+
+<style>
+h2{ color: #000; 
+font-family: Arial, Helvetica, sans-serif; 
+border-radius: 5px; margin:8px;} 
+div .jordan{ margin:7px; 
+border-radius: 5px; 
+display:adsolute;
+position:responsive;}
+.btn{
+    color: #fff;
+    background-color: rgb(0, 110, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    bottom: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+</style>
+</body>
+</html>

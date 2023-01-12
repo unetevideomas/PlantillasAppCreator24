@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- enlace-a-los-stylos-css -->
+    <link rel="stylesheet" href="">
+    <!-- enlace-a-otros-stylos-css -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <title>PelisMania</title>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    background: #000000;     
+}
+
+/* area-para-los-estilos-del-preloader */
+/* Normal Usage */
+.hidden {
+  overflow: hidden;
+}
+#spinner {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #f0f8ff;
+    z-index: 999999;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.spinner:before {
+  transform: rotateX(60deg) rotateY(45deg) rotateZ(45deg);
+  animation: 750ms rotateBefore infinite linear reverse;
+}
+.spinner:after {
+  transform: rotateX(240deg) rotateY(45deg) rotateZ(45deg);
+  animation: 750ms rotateAfter infinite linear;
+}
+.spinner:before,
+.spinner:after {
+  box-sizing: border-box;
+  content: '';
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -5em;
+  margin-left: -5em;
+  width: 10em;
+  height: 10em;
+  transform-style: preserve-3d;
+  transform-origin: 50%;
+  transform: rotateY(50%);
+  perspective-origin: 50% 50%;
+  perspective: 340px;
+  background-size: 10em 10em;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjI2NnB4IiBoZWlnaHQ9IjI5N3B4IiB2aWV3Qm94PSIwIDAgMjY2IDI5NyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+CiAgICA8dGl0bGU+c3Bpbm5lcjwvdGl0bGU+CiAgICA8ZGVzY3JpcHRpb24+Q3JlYXRlZCB3aXRoIFNrZXRjaCAoaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoKTwvZGVzY3JpcHRpb24+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBza2V0Y2g6dHlwZT0iTVNQYWdlIj4KICAgICAgICA8cGF0aCBkPSJNMTcxLjUwNzgxMywzLjI1MDAwMDM4IEMyMjYuMjA4MTgzLDEyLjg1NzcxMTEgMjk3LjExMjcyMiw3MS40OTEyODIzIDI1MC44OTU1OTksMTA4LjQxMDE1NSBDMjE2LjU4MjAyNCwxMzUuODIwMzEgMTg2LjUyODQwNSw5Ny4wNjI0OTY0IDE1Ni44MDA3NzQsODUuNzczNDM0NiBDMTI3LjA3MzE0Myw3NC40ODQzNzIxIDc2Ljg4ODQ2MzIsODQuMjE2MTQ2MiA2MC4xMjg5MDY1LDEwOC40MTAxNTMgQy0xNS45ODA0Njg1LDIxOC4yODEyNDcgMTQ1LjI3NzM0NCwyOTYuNjY3OTY4IDE0NS4yNzczNDQsMjk2LjY2Nzk2OCBDMTQ1LjI3NzM0NCwyOTYuNjY3OTY4IC0yNS40NDkyMTg3LDI1Ny4yNDIxOTggMy4zOTg0Mzc1LDEwOC40MTAxNTUgQzE2LjMwNzA2NjEsNDEuODExNDE3NCA4NC43Mjc1ODI5LC0xMS45OTIyOTg1IDE3MS41MDc4MTMsMy4yNTAwMDAzOCBaIiBpZD0iUGF0aC0xIiBmaWxsPSIjMDAwMDAwIiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIj48L3BhdGg+CiAgICA8L2c+Cjwvc3ZnPg==);
+}
+/* sitNSpin.less */
+@keyframes rotateBefore {
+  from {
+    transform: rotateX(60deg) rotateY(45deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(60deg) rotateY(45deg) rotateZ(-360deg);
+  }
+}
+@keyframes rotateAfter {
+  from {
+    transform: rotateX(240deg) rotateY(45deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(240deg) rotateY(45deg) rotateZ(360deg);
+  }
+}
+/* area-para-los-estilos-del-preloader */
+
+/* area de los stilos del navbar */
+#navbar {
+    background: #000000;
+    width: 100%;
+    height: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid #00c54f;
+}
+#navbar .logonavbar {
+    width: 12rem;
+    height: 100%;
+    object-fit: cover;
+}
+#navbar a {
+    position: absolute;
+    width: 16%;
+    margin: 0;
+    padding: 0;
+    height: 3rem;
+    color: #ffffff;
+    right: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+#navbar a:hover {
+    color: #00c54f;
+}
+#navbar #buscador {
+    right: 4rem;
+}
+/* area de los stilos del navbar */
+
+
+
+/* area para los estilos del modal */
+#modal1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    background: #000000;
+    display: none;
+    justify-items: center;
+    align-items: start;
+    grid-template-columns: repeat(1, 1fr);
+    overflow: auto;
+    z-index: 999999;
+}
+#modal1 .cerrarmodal1 {
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    width: 30%;
+    background: #00000000;
+}
+
+/* area del banner */
+#modal1 .banner {
+    position: absolute;
+    left: 0;
+    height: 10rem;
+    width: 100%;
+    background: #ffffff;
+    outline: 1px solid #00c54f;
+}
+#modal1 .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* area del banner */
+
+/* area del contenido del navbar */
+#modal1 .contenido {
+    position: relative;
+    top: 10.4rem;
+    left: 0;
+    width: 100%;
+    height: 14rem;
+    overflow: hidden;
+}
+#modal1 .contenido ul {
+    margin: 0;
+    width: 94%;
+    height: 12rem;
+    list-style: none;
+    padding: 0 8px;
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1.4rem;
+}
+#modal1 .contenido ul li {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: start;
+    color: #00c54f;
+    display: flex;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#modal1 .contenido ul li a {
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    margin: 0 4px;
+    padding: 0 8px;
+    overflow: hidden;
+    color: #ffffff;
+}
+#modal1 .contenido ul li a:hover {
+    color: #00c54f;
+}
+/* area del contenido del navbar */
+
+/* area del contenido del navbar redes */
+#modal1 .redes {
+    width: 100%;
+    height: 3rem;
+    display: grid;
+    top: 25rem;
+    position: absolute;
+}
+#modal1 .redes span {
+    width: 100%;
+    height: 0.06rem;
+    background: #00c54f;
+}
+#modal1 .redes ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+#modal1 .redes ul li {
+    width: 70%;
+    height: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background: #ffffff;
+    border-radius: 4px;
+}
+#modal1 .redes ul li:hover {
+    color: #00c54f;
+    background: #000000;
+    outline: 1px solid #00c54f;  
+}
+/* area del contenido del navbar redes*/
+/* area para los estilos del modal */
+
+
+/* stylos para ajustar el carousel */
+.carousel.pointer-event {
+    touch-action: pan-y;
+    width: 100%;
+    height: 10rem;
+    top: 0.2rem;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    overflow: hidden;
+}
+.carousel-item {
+    width: 100%;
+    padding: 2px 6px;
+    height: 10rem;
+}
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 4px;
+    border-radius: 12px;
+}
+.carousel-item h6 {
+    position: absolute;
+    background: #00000094;
+    color: #f0f8ff;
+    outline: 1px solid #ffffffb8;
+    left: 1rem;
+    top: 1rem;
+    width: 34%;
+    height: 16%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+}
+/* stylos para ajustar el carousel */
+
+/* ajustes-de-los-contenedores */
+/* ajustes-del-titulo-de-la-seccion */
+.conteiner1 {
+    position: relative;
+    margin: 0;
+    padding: 6px 4px;
+    width: 100%;
+    height: 100%;
+  }
+  #conteiner1 {
+    position: relative;
+    width: 100%;
+    height: 36.6rem;
+  }
+  #contencarru {
+    overflow: auto;
+    width: 100%;
+    display: flex;
+  }
+  #contencarru #conteiner1 {
+    position: relative;
+    width: 100%;
+    height: 36.8rem;
+    min-width: 100%;
+  }
+
+  .conteiner1 #titulo1 {
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .conteiner1 #titulo1 a {
+    display: contents;
+  }
+  .conteiner1 #titulo1 a h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: rgb(0 0 0);
+    transition: 0.4s;
+    width: 98%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f8ff;
+    border-radius: 8px;
+  }
+  .conteiner1 #titulo1 a h4:hover {
+    color: #ffffff;
+    background: #000000;
+    transition: 0.4s;
+    outline: 1px solid #ffffff;
+  }
+  .conteiner1 #titulo1 h4 svg {
+    position: relative;
+    right: 0.6rem;
+  }
+
+  .conteiner1 #flecha {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    height: 100%;
+    width: 8%;
+    color: rgb(0 0 0);
+  }
+/* ajustes-del-titulo-de-la-seccion */
+
+.conteiner1 #lista1 {
+    position: relative;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    height: 11rem;
+    display: flex;
+    flex-wrap: wrap;
+    top: 0.4rem;
+    flex-direction: column;
+    overflow: auto;
+}
+  .conteiner1 ul li {
+    position: relative;
+    background: #1a1a1a;
+    width: 32.17%;
+    height: 100%;
+    border-radius: 4px;
+    margin: 2px;
+    padding: 0;
+    overflow: hidden;
+  }
+  .conteiner1 ul li #portadas {
+    width: 100%;
+    height: 100%;
+  }
+  .conteiner1 ul li #portadas img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+    transition: 0.4s;
+  }
+  .conteiner1 ul li #portadas img:hover {
+    transition: 0.4s;
+    transform: scale(1.5);
+    filter: blur(1px);
+  }
+
+  .conteiner1 ul li #portadas #tipode {
+    position: absolute;
+    width: 53%;
+    height: 12%;
+    top: 8%;
+    background: #0000009e;
+    color: #f0f8ff;
+    border-radius: 0 4px 4px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .conteiner1 ul li #portadas #tipode h6 {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  .conteiner1 ul li #portadas p {
+    position: absolute;
+    top: 84%;
+    background: #0000009e;
+    color: #f0f8ff;
+    width: 100%;
+    height: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 4px 4px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .conteiner1 ul li #portadas .play {
+display: contents;
+  }
+/* ajustes-de-los-contenedores */
+
+/* ajustes-de-los-contenedores */
+/* ajustes-del-titulo-de-la-seccion */
+.conteiner2 {
+    position: relative;
+    margin: 0;
+    padding: 6px 4px;
+    width: 100%;
+    height: auto;
+}
+  .conteiner2 #titulo1 {
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .conteiner2 #titulo1 a {
+    display: contents;
+  }
+  .conteiner2 #titulo1 a h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: rgb(0 0 0);
+    transition: 0.4s;
+    width: 98%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f8ff;
+    border-radius: 8px;
+  }
+  .conteiner2 #titulo1 a h4:hover {
+    color: #ffffff;
+    background: #000000;
+    transition: 0.4s;
+    outline: 1px solid #ffffff;
+  }
+  .conteiner2 #titulo1 h4 svg {
+    position: relative;
+    right: 0.6rem;
+  }
+
+  .conteiner2 #flecha {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    height: 100%;
+    width: 8%;
+    color: rgb(0 0 0);
+  }
+/* ajustes-del-titulo-de-la-seccion */
+
+.conteiner2 .lista2 {
+    position: relative;
+    left: 0;
+    margin: 0;
+    padding: 6px;
+    list-style: none;
+    width: 100%;
+    height: 40rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.4rem;
+}
+.conteiner2 .lista2 li {
+    position: relative;
+    background: #1a1a1a;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    margin: 2px;
+    padding: 0;
+    overflow: hidden;
+}
+  .conteiner2 .lista2 li #portadas {
+    width: 100%;
+    height: 100%;
+  }
+  .conteiner2 .lista2 li #portadas img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+    transition: 0.4s;
+  }
+  
+  .conteiner2 .lista2 li #portadas img:hover {
+    transition: 0.4s;
+    transform: scale(1.5);
+    filter: blur(1px);
+  }
+
+  .conteiner2 .lista2 li #portadas #tipode {
+    position: absolute;
+    width: 53%;
+    height: 12%;
+    top: 8%;
+    background: #0000009e;
+    color: #f0f8ff;
+    border-radius: 0 4px 4px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .conteiner2 .lista2 li #portadas #tipode h6 {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  .conteiner2 .lista2 li #portadas p {
+    position: absolute;
+    top: 84%;
+    background: #0000009e;
+    color: #f0f8ff;
+    width: 100%;
+    height: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 4px 4px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .conteiner2 .lista2 li #portadas .play {
+    color: rgb(255 255 255);
+    background: rgb(0 0 0 / 68%);
+    width: 38%;
+    height: 20%;
+    top: 40%;
+    left: 34%;
+    position: absolute;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid rgb(255 255 255);
+    border-radius: 6px;
+  }
+/* ajustes-de-los-contenedores */
+
+
+
+
+
+
+
+/* ajustes-del-banner */
+/* stilos-para-la-seccion-del-banner */
+#banner {
+    position: relative;
+    width: 100%;
+    height: 8rem;
+    background: #2e2e2e00;
+    padding: 6px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 12px;
+  }
+  #banner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+  }
+  #banner ul li {
+    width: 100%;
+    height: 100%;
+    padding: 0px 6px;
+  }
+  #banner ul li a {
+    display: contents;
+  }
+  #banner ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  #banner ul li a h6 {
+    margin: 0;
+    padding: 0 4px;
+    position: absolute;
+    top: 0;
+    background: #0000006b;
+    width: 96.4%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255 255 255);
+    font-family: sans-serif;
+    font-size: 22px;
+    border-radius: 12px;
+  }
+  #banner ul li a h6:hover {
+    color: #000000;
+    background: #ffffff6b;
+    ;
+  }
+
+/* stilos-para-la-seccion-del-banner */
+
+
+/* stilos-del-pie-de-pagina */
+#piedpagina {
+    position: relative;
+    width: 100%;
+    height: 2rem;
+    background: #000000;
+    color: #f0f8ff;
+    outline: 1px solid #00c54f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+  #piedpagina h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* stilos-del-pie-de-pagina */
+
+
+@media (min-width: 600px) {
+/* ajuste del area para el modal */
+#modal1 {
+    width: 40%;
+}
+#modal1 .cerrarmodal1 {
+    width: 60%;
+}
+/* ajuste del area para el modal */
+
+
+/* ajuste del area del carousel de bootstrap */
+.carousel.pointer-event {
+    height: 14rem;
+}
+.carousel-inner {
+    height: 14rem;
+}
+.carousel-item {
+    height: 14rem;
+}
+/* ajuste del area del carousel de bootstrap */
+
+
+/* ajuste de area portadas de carrucel */
+.conteiner1 #lista1 {
+    height: 14rem;
+}
+.conteiner1 ul li {
+    width: 24.18%;
+}
+/* ajuste de area portadas de carrucel */
+
+
+/* ajuste de area del banner */
+#banner {
+    width: 100%;
+    height: 12rem;
+    padding: 6px;
+    margin: 0;
+}
+/* ajuste de area del banner */
+
+/* ajuste de area del titulo de las portadas conteiner 1 */
+.conteiner1 ul li #portadas p {
+    top: 88%;
+    height: 12%;
+}
+/* ajuste de area del titulo de las portadas conteiner 1 */
+
+
+/* ajuste de area portadas de conteiner 2 */
+.conteiner2 .lista2 {
+    height: 40rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+/* ajuste de area portadas de conteiner 2 */
+
+
+/* ajuste de area del titulo de las portadas conteiner 2 */
+.conteiner2 .lista2 li #portadas p {
+    top: 86%;
+    height: 14%;
+}
+/* ajuste de area del titulo de las portadas conteiner 2 */
+}
+
+
+
+
+
+@media (min-width: 320px) {
+#modal1 .contenido ul {
+    height: 14rem;
+}
+#modal1 .contenido ul li a {
+    font-size: 15px;
+}
+}
+</style>
+
+</head>
+<body class="hidden">
+
+<!-- area del contenido del spinner -->
+    <div id="spinner" class="spinner">
+    </div>
+<!-- area del contenido del spinner -->
+
+<!-- area para el contenido del navbar -->
+    <div id="navbar">
+        <img class="logonavbar" src="https://i.postimg.cc/FH8dpRLY/20220220-045322.png" alt="logo">
+        <!-- boton-para-ir-al-buscador -->
+        <a id="buscador" href="go:buscador"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg></a>
+        <!-- boton-para-abrir-el-menu -->
+        <a id="burger" href="javascript:abrirmodal1()"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+          </svg></a>
+    </div>
+
+<!-- area para el modal del navbar -->
+    <div id="modal1">
+        <a class="cerrarmodal1" href="javascript:cerrarmodal1()"></a>
+    <!-- area del banner -->
+        <div class="banner">
+            <img src="https://wipy.tv/wp-content/uploads/2020/10/portadas-variantes-de-black-widow-1200x720.jpg" alt="banner">
+        </div>
+    <!-- area del contenido -->
+        <div class="contenido">
+            <ul>
+            <!-- boton de inicio -->
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                  </svg><a href="">Inicio</a>
+                </li>
+            <!-- boton de categorias -->
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-folder-fill" viewBox="0 0 16 16">
+                    <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z"/>
+                  </svg><a href="">Categorias</a>
+                </li>
+            <!-- boton de Tienda -->
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                    <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
+                  </svg><a href="">Tienda</a>
+                </li>
+            <!-- boton de Política de Privacidad -->
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-diamond-fill" viewBox="0 0 16 16">
+                    <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg><a target="_blank" href="http://www.e-droid.net/privacy.php?ida=1930220&idl=es">Política de Privacidad</a>
+                </li>
+            <!-- boton de salir de la app -->
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z"/>
+                  </svg><a target="_blank" href="http://www.e-droid.net/privacy.php?ida=1930220&idl=es">Cerrar Aplicacion</a>
+                </li>
+            </ul>
+        </div>
+    <!-- area de las redes -->
+        <div class="redes">
+            <span></span>
+            <ul>
+            <!-- boton de Instagram -->
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg><a target="_blank" href="http://www.e-droid.net/privacy.php?ida=1930220&idl=es"></a>
+            </li>
+            <!-- boton de Telegram -->
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+              </svg><a target="_blank" href="http://www.e-droid.net/privacy.php?ida=1930220&idl=es"></a>
+            </li>
+            <!-- boton de Wahttsap -->
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+              </svg><a target="_blank" href="http://www.e-droid.net/privacy.php?ida=1930220&idl=es"></a>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+
+<!-- area para el cousel de bootstrap -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <h6>Proximamente</h6>
+            <img src="https://i.postimg.cc/jqyhSg9Y/1638895.jpg" class="d-block w-100" alt="banner">
+          </div>
+          <div class="carousel-item">
+            <h6>Proximamente</h6>
+            <img src="https://i.postimg.cc/7h11th7Z/Jujutsu-Kaisen-0.jpg" class="d-block w-100" alt="banner">
+          </div>
+          <div class="carousel-item">
+            <h6>Proximamente</h6>
+            <img src="https://i.postimg.cc/NFv7xmKn/el-proyecto-adam.jpg" class="d-block w-100" alt="banner">
+          </div>
+        </div>
+    </div>
+
+
+<!-- area para el contenido de las portadas -->
+  <div class="conteiner1">
+    <div id="titulo1">
+      <a href=""><h4><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-collection-play-fill" viewBox="0 0 16 16">
+        <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437z"/>
+      </svg>Recientes</h4></a>
+    </div>
+    <ul id="lista1" class="lista1">
+      <!-- portada-mumero-1 -->
+      <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/90L1bzyH/i-want-you-back.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Comedia</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Quiero que vuelvas</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/nV2dpSgS/scream.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Terror</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Scream</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/YqSd9fwr/tall-girl-2.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Romance</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Tall Girl 2</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/dVknRs1g/heart-shot.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Romance</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Heart Shot</p>
+        </div>
+    </li>
+    </ul>
+  </div>
+
+  <!-- area-para-los-stilos-del-banner-numero-1 -->
+<div id="banner">
+    <ul>
+      <li><a target="_blank" href=""><img src="https://i.postimg.cc/xTv5dxXb/doctor-strange.jpg" alt="banner"></a></li>
+    </ul>
+</div>
+  <!-- area-para-los-stilos-del-banner -->
+
+
+<!-- area para el contenido de las portadas 2 -->
+  <div class="conteiner2">
+    <div id="titulo1">
+      <a href=""><h4><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-collection-play-fill" viewBox="0 0 16 16">
+        <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437z"/>
+      </svg>Estrenos</h4></a>
+    </div>
+    <ul class="lista2">
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href="go:Freeguy"><img src="https://i.postimg.cc/QdyJxvPp/Free-Guy.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Estrenos</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Free Guy</p>
+        </div>
+    </li>
+      <!-- portada-mumero-1 -->
+      <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/pd9TXSsf/ai-love-you.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Estrenos</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Amor artificial</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/7LpLCNRp/fistful-of-vengeance.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Estrenos</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Venganza a golpes</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/9MZQy75z/shang-chi-and-the-legend-of-the-ten-rings.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Estrenos</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Shang Chi</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/MHwK5pq5/ufo.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Estrenos</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>UFO</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/xdH2ZVs4/0567806.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Estrenos</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Luz Negra</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/1tQQh725/1717222.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Estrenos</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Godzilla vs Kong</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/B6BGqcf5/3669007.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Estrenos</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>¡Qué despadre!</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/ZnYz0BJG/5578745.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Estrenos</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>El exorcismo de Dios</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/RFPSZ4KZ/animales-fantasticos-peliculas-2.webp" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Estrenos</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Animales Fantasticos 2</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/0jRPysCT/gd-ZV5-CBBo.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Estrenos</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Piratas: El último tesoro de la corona</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/q72tr4y3/image.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Estrenos</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Sin respiro</p>
+        </div>
+    </li>
+    </ul>
+  </div>
+
+
+
+  <!-- area-para-los-stilos-del-banner-numero-2 -->
+  <div id="banner">
+    <ul>
+      <li><a target="_blank" href=""><img src="https://i.postimg.cc/sfmS0v0b/the-batman.png" alt="banner"></a></li>
+    </ul>
+</div>
+  <!-- area-para-los-stilos-del-banner -->
+
+
+<!-- contenedor numero 3 -->
+<div class="conteiner2">
+    <div id="titulo1">
+      <a href=""><h4><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-collection-play-fill" viewBox="0 0 16 16">
+        <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437z"/>
+      </svg>Anime</h4></a>
+    </div>
+    <ul class="lista2">
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/tCfY6y81/ponyo.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Anime</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Ponyo en el acantilado</p>
+        </div>
+    </li>
+      <!-- portada-mumero-1 -->
+      <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/mgHhNJGm/Fire-Works.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Anime</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>FireWorks</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/BvfbhpS4/kotonoha-no-niwa-the-garden-of-words.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Anime</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Kotonoha no Niwa</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/xC0CQdNZ/gekijouban-violet-evergarden.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Anime</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Violet Evergarden: La película</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/1tJz3Zp3/doragon-ball-broly.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Anime</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Dragon Ball Super: Broly</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/bN1Kx9BQ/boku-no-hero-academia.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Anime</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>My Hero Academia: El despertar de los héroes</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/1RDQBSgn/sen-to-chihiro-no-kamikakushi.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Anime</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>El viaje de Chihiro</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/wTVdKkQ9/eiga-given.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Anime</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Given: The Movie!</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/Dww37bxL/tenki-no-ko-weathering-with-you.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Anime</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>El tiempo contigo</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/vTz9Ysj3/Palabras-Que-Burbujean-Como-Refresco.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Anime</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Palabras Que Burbujean Como Refresco</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/7PgntvBC/Kimi-no-Na-wa-Your-Name-612760352-mmed.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Anime</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Kimi no Na wa</p>
+        </div>
+    </li>
+    <!-- portada-mumero-1 -->
+    <li>
+        <div id="portadas">
+      <!-- portada -->
+          <a class="play" href=""><img src="https://i.postimg.cc/fbJv8JFZ/Josee-el-tigre-y-los-peces.jpg" alt="portada1"></a>
+      <!-- tipo-de-pelicula -->
+      <span id="tipode"><h6 class="tipotext">Anime</h6></span>
+      <!-- nombred-de-la-pelicula -->
+        <p>Josee el tigre y los peces</p>
+        </div>
+    </li>
+    </ul>
+  </div>
+
+
+
+
+
+
+  <div id="piedpagina">
+    <h6>PelisMainia</h6>
+  </div>
+
+
+
+
+
+
+
+
+<script>
+    // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    // abri-ventanas-rmodal-1
+    function abrirmodal1(){
+        document.getElementById("modal1").style.display="grid";
+    }
+    
+    function cerrarmodal1(){
+        document.getElementById("modal1").style.display="none";
+    }
+    
+    
+    // <!-- javascrip-para-el-elemento-preload -->
+      window.onload = function(){
+          $("#spinner").fadeOut();
+          $("body").removeClass("hidden")
+      }
+    // <!-- javascrip-para-el-elemento-preload -->
+    </script>
+
+<!-- javascrip-para-el-elemento-preload -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

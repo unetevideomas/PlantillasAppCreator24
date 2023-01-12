@@ -1,0 +1,294 @@
+
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<script src="https://kit.fontawesome.com/0964bcabaa.js"></script>
+		<link rel="stylesheet" href="animate.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+		
+	</head>
+	<body>
+	
+	<div class='imageView'>
+		
+		<div class="img">
+				<i onclick="close()" id='close' class ="fas fa-times fa-3x"></i>
+			<img id="img" class="animated zoomIn delay-1s" src=""/>
+		
+		</div>
+	</div>
+
+	<div class="container">
+	   <img   src="https://1.bp.blogspot.com/-GpzaK-II-6s/YQfRMrogWkI/AAAAAAAAESU/Cxx0TAZFf5Ym8jyYE7e9Ed42oj5vP201gCLcBGAsYHQ/s0/7506A050-F737-462D-999E-A57E44F0F98C.png"alt="Aung Thiha" height="100" width="100" />
+	  <img 
+src="https://1.bp.blogspot.com/-jdx8v4QR8zs/YQfRM7jVkEI/AAAAAAAAESY/3Desble82CkaT0fmVIZYKGpu5bE5g0O0gCLcBGAsYHQ/s0/1DCBA1DC-A71B-427D-A918-49F2FA65B9E3.png" alt="Aung Thiha" height="100" width="100"/>
+	  <img
+src="https://1.bp.blogspot.com/-zaz6Wxt843E/YQfRRPAzwlI/AAAAAAAAESk/b62PFWHN9Ucs0iT-8ttVi5hrzQvzIUtRgCLcBGAsYHQ/s0/8EFF4108-1932-47DB-8C0F-A311CAAB84FB.png" alt="Aung Thiha" height="100" width="100" />
+	   <img
+src="https://1.bp.blogspot.com/-g9N67H3wM1Y/YQfRMlTYHKI/AAAAAAAAESQ/BnflkkXtH-oM9TGQMCn1QQ2Bn9j7QuvuwCLcBGAsYHQ/s0/016E723C-87D9-4F79-9C6A-8D0D7E0B638C.png" alt="Aung Thiha" height="100" width="100" />
+	  <img
+src="https://1.bp.blogspot.com/-pyZuTDnfuSM/YQfRQ2iB-9I/AAAAAAAAESg/Qx6I74YSCckY6ykxz20z5RZn41F5q2EvgCLcBGAsYHQ/s0/90BE7DDB-96C0-4D42-960B-99551877103F.png" alt="Aung Thiha" height="100" width="100" />
+	<img  
+src="https://1.bp.blogspot.com/-INvnigejDC4/YQfRPWs_7MI/AAAAAAAAESc/5EgGMBIKD1kiaXTkzcIrkdP7sZiq1FlSACLcBGAsYHQ/s0/8715AA30-0A09-4CB6-8DFE-6CF17983B916.png" alt="Aung Thiha" height="100" width="100" />
+	<img
+src="https://1.bp.blogspot.com/-naEoFaQhMVo/YQfRSMmMgwI/AAAAAAAAESo/dXAQUVJeDLkLAFlQ9E8-n3AqNi-fIcDQQCLcBGAsYHQ/s0/A891039F-7813-4378-8C3B-586AA270751D.png" alt="Aung Thiha" height="100" width="100" />
+	<img
+src="https://1.bp.blogspot.com/-b_qaTLGSWfg/YQfVFgz4V2I/AAAAAAAAETc/kbVMGE8CKXAwscePnq7heJKdiDRBY0c1QCLcBGAsYHQ/s0/F8821B6E-8C70-4D3E-9B56-0ECB4670A311.png" alt="Aung Thiha" height="100" width="100" />
+	<img
+src="https://1.bp.blogspot.com/-GN0yShNHQYw/YQfVEnub4OI/AAAAAAAAETY/LRuyxXorUIsc6-wtdddo2o_xn3jQBWufwCLcBGAsYHQ/s0/E4CB2AD8-795E-486A-AD50-61AEA676AB0F.png" alt="Aung Thiha" height="100" width="100" />
+	<img
+src="https://1.bp.blogspot.com/-Nlyd1NVL13E/YQfVD3yM9-I/AAAAAAAAETU/YHz9-GpH3Gw-peBwEp6b0nCepB2eEy7HwCLcBGAsYHQ/s0/D8F16005-C1B3-4EF5-8BA4-009306B33E69.png" alt="Aung Thiha" height="100" width="100" />
+	<img
+src="https://1.bp.blogspot.com/-arctcpLCLUk/YQfVA-SNAxI/AAAAAAAAETI/mOkmMfaBLUkETOkzKXejHXZN6qJahaozgCLcBGAsYHQ/s0/8260C6EA-FD33-4B79-BE1F-C3371C7C116D.png" alt="Aung Thiha" height="100" width="100" />
+	<img
+src="https://1.bp.blogspot.com/-mhpAs87nbV8/YQfXqno8VtI/AAAAAAAAET0/OB3j3IqC9iw_529ia7T2jmOpzKrTL_i1wCLcBGAsYHQ/s0/D44DEA8D-D0D4-4D4B-8F83-8AB0018BF1FE.png" alt="Aung Thiha" height="100" width="100" />
+	<img
+src="https://1.bp.blogspot.com/-d2mzXD_VEW8/YQfXq6rvzyI/AAAAAAAAET4/rhxB-1KBM7Q4qzNZQbaOsZCm7DnPuLv5ACLcBGAsYHQ/s0/7693C610-E9B4-44E1-929C-892E3869CD0D.png" alt="Aung Thiha" height="100" width="100" />
+	<img
+src="https://1.bp.blogspot.com/-PhYk7BnmZYo/YQfVDjLCO3I/AAAAAAAAETQ/fT8oVork1Csq2Hp2TCNWo3Vu_sN_F4KgwCLcBGAsYHQ/s0/8A21CCBD-6E58-49AD-88BF-37A67C29CE2F.png" alt="Aung Thiha" height="100" width="100" />
+	<img
+src="https://1.bp.blogspot.com/-Y_qwT1Z0Csc/YQfU_SaMCNI/AAAAAAAAES8/UDU3IQ9h5XkZcwjrLHKQg5NUIkLp2EwNQCLcBGAsYHQ/s0/28A8DB0B-C9E1-409A-9C44-91585C47B9C2.png" alt="Aung Thiha" height="100" width="100" />
+	 <img 
+src="https://1.bp.blogspot.com/-SaE3qthzfTU/YQfU_vH2gWI/AAAAAAAAETA/BcYEIs3mA94KDLQ2tk0trHx5V91wy9aowCLcBGAsYHQ/s0/77EF9B42-201A-4C08-9C6D-9217C919B30F.png" alt="Aung Thiha" height="100" width="100" />
+<img 
+src="https://1.bp.blogspot.com/-KNh0cRFhXCo/YQfVDcaijeI/AAAAAAAAETM/x67yCX398YY2FgoiwOKTwqiHY6c0cjy8ACLcBGAsYHQ/s0/91E1505A-9C11-4529-A0B1-7E4CED27708B.png" alt="Aung Thiha" height="100" width="100" />
+<img 
+src="https://1.bp.blogspot.com/-2HfCdxwbCnc/YQfU_q34OsI/AAAAAAAAETE/O2UaUtu3thwo9DIHB02rQmLxI0Yed-P_wCLcBGAsYHQ/s0/2015AA03-11B8-40B7-BAE0-9DEA6D79639B.png" alt="Aung Thiha" height="100" width="100" />
+
+
+
+	   <img style="border-radius: 15px;"  src="https://1.bp.blogspot.com/-tgvGlDqVxyM/X69lBaINE2I/AAAAAAAAAAg/CAuNxDKqjpY-xbJdTgRCFMNcm5eITrdxACLcBGAsYHQ/s1220/20201114_010240.png" width="25" height="40%" ></a>
+
+
+	</div>
+	
+			
+		
+	
+ 
+
+<script>
+	
+	
+	var images = document.querySelectorAll('img');
+	
+	
+	for (const img of images){ img.addEventListener('click', function(i) { 
+	
+	var url = i.target.getAttribute('src');
+	
+	 document.querySelector('.imageView').style.visibility= "visible";
+	   document.querySelector('#img').src = url;
+	})};
+	
+ document.querySelector('#close').addEventListener('click',close);
+	
+   function close(){
+	  document.querySelector('.imageView').style.visibility= "hidden";
+	   document.querySelector('#img').src = '';
+	}
+	
+	
+</script>
+	  </body>
+</html>
+
+
+
+
+<style type="text/css">
+
+
+
+
+
+
+*{
+	margin:0;
+	padding:0;
+	outline-color:none ;
+}
+
+body {
+	background-color:#111111;
+	box-sizing:content-box ;
+	width:100%;
+	height:100%;
+	position:relative ;
+	overflow-y:none ;
+}
+.container{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	padding:30px auto ;
+	z-index:9;
+	
+	
+}
+
+.imageView{
+	
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100vh;
+	
+	z-index:999;
+	color:#fbfbfb;
+	visibility:hidden;
+}
+
+.imageView .img{
+	width: 75vw;
+	height:75vh;
+	border-radius:10px;
+	
+	margin:30px auto ;
+}
+
+img{
+   
+	background-position:center;
+	width:100%;
+	height:100%;
+	border-radius:10px;
+}
+
+.container img{
+	
+	width:180px;
+	height:280px;
+	
+	margin:10px;
+}
+footer{
+	margin-left:1.5em;
+	color:green;
+	font-style:italic;
+	font-family:armenian;
+}
+
+</style>
+			
+		
+
+
+
+</div>
+
+
+
+
+
+  
+
+
+	
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<nav class="nav">
+   
+  <a href="#" class="nav__link nav__link--active">
+ <i class="material-icons nav__icon">home</i>
+ <span class="nav__text"></span>
+ 
+  </a>
+  <a href="#" class="nav__link">
+ <i class="material-icons nav__icon">notifications</i>
+ <span class="nav__text"></span>
+  </a>
+  
+  
+  </a>
+  <a href="#" class="nav__link">
+ <i class="material-icons nav__icon">dashboard_customize</i>
+ <span class="nav__text"></span>
+  </a>
+  
+  
+  </a>
+  <a href="#" class="nav__link">
+ <i class="material-icons nav__icon">person</i>
+ <span class="nav__text"></span>
+  </a>
+  
+</nav>
+
+<style type="text/css">
+body {
+ margin: auto;
+ width:auto;
+ height:auto;
+ padding: 10px 0;
+ background-color:black;
+}
+
+.container{
+ width:100%;
+ height:100px;
+}
+.nav {
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ z-index: 99999;
+ height: 10%;
+ box-shadow: 0 0 2px #131419;
+ background-color: black;
+ display: flex;
+ overflow-x: auto;
+}
+
+.nav__link {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ flex-grow: 1;
+ min-width: 50px;
+ overflow: hidden;
+ white-space: nowrap;
+ font-family: sans-serif;
+ font-size: 13px;
+ color: #cccccc;
+ text-decoration: none;
+ -webkit-tap-highlight-color: transparent;
+ transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+ background-color: #121212;
+}
+
+.nav__link--active {
+ color: #fff;
+}
+
+.nav__icon {
+ font-size: 32px;
+ 
+}
+
+
+
+</style>
+
+
+<style> h2{ color: #000; font-family: Arial, Helvetica, sans-serif; border-radius: 5px; margin:8px; } 
+
+div .jordan{ margin:7px; border-radius: 5px; 
+
+display:adsolute;
+position:responsive; 
+
+
+
+{
+</style>

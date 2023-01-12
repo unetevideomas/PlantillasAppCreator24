@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html dir='ltr' lang='es' prefix='og: http://ogp.me/ns#' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<!-- Basic data -->
+<meta charset='UTF-8'/>
+<meta content='article' property='og:type'/>
+<!-- Responsive viewport -->
+<meta content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' name='viewport'/>
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css"/>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style type="text/css">
+body{background:#151515;font-family:'PT Sans', sans-serif;}
+play{background:transparent;color:#fff;left:0;right:0;height:2.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;padding:7px;}
+play,a{color:#008cf7;font-size:18px;margin-top:15px;}
+/*Select Box*/
+select{background:transparent;color:#fff;font-family:'PT Sans', sans-serif;font-size:18px;border:solid 0px #fff;border-radius:5px;outline:none;width:150px;height:30px;margin:5px;}
+.box{color:#fff;padding:5px;display:none;margin-top:0;}
+#xaviec{background:#000;position:fixed;top:-5px;width:100%;z-index:90;height:8%;}
+</style>
+<style>
+.video-js .vjs-menu-button-inline.vjs-slider-active,.video-js .vjs-menu-button-inline:focus,.video-js .vjs-menu-button-inline:hover,.video-js.vjs-no-flex .vjs-menu-button-inline{width:10em}
+.video-js .vjs-controls-disabled .vjs-big-play-button{display:none!important}
+.video-js .vjs-control{width:3em}
+.video-js .vjs-menu-button-inline:before{width:1.5em}
+.vjs-menu-button-inline .vjs-menu{left:3em}
+.video-js .vjs-load-progress div,.vjs-seeking .vjs-big-play-button,.vjs-waiting .vjs-big-play-button{display:none!important}
+.video-js .vjs-mouse-display:after,.video-js .vjs-play-progress:after{padding:0 .4em .3em}
+.video-js.vjs-ended .vjs-loading-spinner{display:none}
+.video-js.vjs-ended .vjs-big-play-button{display:block!important}
+.video-js.vjs-paused .vjs-big-play-button,.vjs-paused.vjs-has-started.video-js .vjs-big-play-button,video-js.vjs-ended .vjs-big-play-button{display:block}
+.video-js .vjs-big-play-button{top:50%;left:50%;background-color:rgba(255,0,0,.8);font-size:2.5em;border-radius:50%}
+.video-js .vjs-big-play-button:active,.video-js .vjs-big-play-button:focus,.video-js:hover .vjs-big-play-button{background-color:rgba(255,0,0,.9)}
+.video-js .vjs-loading-spinner{border-color:#de2c2c}
+.video-js .vjs-control-bar2{background-color:transparent}
+.video-js .vjs-control-bar{background-color:rgba(0,0,0,0)!important;color:#fff;font-size:17px}
+.video-js .vjs-play-progress,.video-js .vjs-volume-level{background-color:red}
+.video-js .vjs-big-play-button{height:2em!important;width:2em!important;line-height:1.7em!important;margin-top:-1em!important;margin-left:-1em;border-width:4px}
+.video-js .vjs-big-play-button:before,.video-js .vjs-icon-play:before{font-size:40px}
+.video-js .vjs-progress-holder{font-size:1.7em;border-radius:10px}
+.video-js .vjs-progress-holder .vjs-load-progress,.video-js .vjs-progress-holder .vjs-load-progress div,.video-js .vjs-progress-holder .vjs-play-progress,.video-js .vjs-slider,.vjs-volume-level{border-radius:10px}
+.video-js .vjs-load-progress{background:rgba(255,255,255,.5)}
+.video-js,.video-js .vjs-tech,.video-js video,.vjs-poster{border-radius:8px}
+</style>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Montserrat,sans-serif;text-decoration:none;color:#fff;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+*,:focus{outline:0}
+body{background:#000}
+video{width:100%;height:auto}
+#video_player{max-width:600px;margin:0 auto}
+.Xsplus{display:grid;grid-template-columns:repeat(1,1fr);grid-gap:1rem;margin:1rem 0;padding:0 1rem}
+.Xsplus a{display:flex;justify-content:center;align-items:center;padding:50px 1rem;font-size:20px;color:#fafafa;border-radius:20px;box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);position:relative;background:rgba(0,0,0,.55);overflow:hidden;text-align:center}
+.Xsplus a::after{content:'';position:absolute;display:block;width:100%;height:100%;background:url(https://www.udrop.com/file/66YU/Portadaxsplus.jpg);background-size:cover;background-position:center center;opacity:.8;z-index:-1}
+h2{margin:.7rem 1rem}
+#titulo{color:var(--plyr-color-main)}
+:root{--plyr-color-main:#ff0030}
+</style>
+</head>
+<body>
+<figure id="video_player">
+<video id="player" controlsList="nodownload" controls autoplay="true" data-poster="https://www.udrop.com/file/66YU/Portadaxsplus.jpg">
+<source src="" type="application/x-mpegURL">
+</video>
+<div>
+<h2 style="font-size:16px;">Estás viendo <span id="titulo" style="color:#008cf7;font-size:16px;">Capítulo 1</span></h2>
+</div>
+<play>
+<span>Elegir Temporada</span>
+<select>
+<option value="temp1">Temporada 1</option>
+<option value="temp2">Temporada 2</option>
+<option value="temp3">Temporada 3</option>
+<option value="temp4">Temporada 4</option>
+</select></play>
+<figcaption>
+<div class="Xsplus">
+<div class="temp1 box">
+<a href="https://www.udrop.com/file/6oUC/y2mate.com_-_TVアニメ８６エイティシックスオープニング映像ヒトリエ3分29秒_1080p.mp4
+">1x1</a>
+<a href="storage/emulated/0/Download/MEGA Downloads/Aldnoah Zero/Aldnoah Zero
+Aldnoah Zero 01.mp4">1x2</a>
+
+</div>
+<div class="temp2 box">
+<a href="#">2x1</a>
+<a href="#">2x2</a>
+
+</div>
+<div class="temp3 box">
+<a href="#">3x1</a>
+<a href="#">3x2</a>
+
+</div>
+
+</div>
+</figcaption>
+</figure>
+<script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+<script>
+const player = new Plyr('#player',{
+settings: []
+});
+</script>
+<script type="text/javascript">
+/*Select Box*/
+$(document).ready(function(){
+$("select").change(function(){
+$(this).find("option:selected").each(function(){
+var optionValue = $(this).attr("value");
+if(optionValue){
+$(".box").not("." + optionValue).hide();
+$("." + optionValue).show();} else{
+$(".box").hide();}});}).change();});
+</script>
+<script>
+var video_player = document.getElementById("video_player"),
+links = video_player.getElementsByTagName('a');
+for (var i=0; i<links.length; i++) {
+links[i].onclick = handler;}
+function handler(e) {
+e.preventDefault();
+videotarget = this.getAttribute("href");
+filename = videotarget.substr(0, videotarget.lastIndexOf('.')) || videotarget;
+video = document.querySelector("#video_player video");
+source = document.querySelectorAll("#video_player video source");
+source[0].src = filename + ".mp4";
+localStorage.setItem('LavenganzadelajuanasT1-link', source[0].src);
+video.autoplay = true;  
+video.load();
+texto = this.innerText;
+localStorage.setItem('LavenganzadelajuanasT1-numero', texto);
+cambiar = document.getElementById('titulo');
+cambiar.innerText = texto;
+localStorage.setItem('LavenganzadelajuanasT1LavenganzadelajuanasT1-actual', 0)
+window.location.reload();}
+let numero = localStorage.getItem('LavenganzadelajuanasT1-numero');
+document.getElementById('titulo').innerText = numero;
+let link = localStorage.getItem('LavenganzadelajuanasT1-link');
+let enlace = document.querySelectorAll("#video_player video source");
+enlace[0].src = link;
+window.scrollTo({ top: 0, behavior: 'smooth' }); 
+function actualTime() {
+var myPlayer = document.getElementById('player');
+if (myPlayer.currentTime != 0){
+localStorage.setItem('LavenganzadelajuanasT1-actual', myPlayer.currentTime);}
+setTimeout(actualTime, 3000);}
+actualTime();
+let video = document.querySelector("#video_player video");
+video.play();
+document.getElementById('player').currentTime = localStorage.getItem('LavenganzadelajuanasT1-actual');
+</script>
+<script>
+var boxes = document.querySelectorAll("input[type='checkbox']");
+for (var i = 0; i < boxes.length; i++) {
+var box = boxes[i];
+if (box.hasAttribute("store")) {
+setupBox(box);}}
+function setupBox(box) {
+var storageId = box.getAttribute("store");
+var oldVal    = localStorage.getItem(storageId);
+box.checked = oldVal === "true" ? true : false;
+box.addEventListener("change", function() {
+localStorage.setItem(storageId, this.checked); 
+});}
+</script>
+</body>
+</html>

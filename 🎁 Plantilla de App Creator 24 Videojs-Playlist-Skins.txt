@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<!-- Video.js source files CSS + JS -->
+<link href="https://vjs.zencdn.net/7.5.5/video-js.css" rel="stylesheet">
+<script src="https://vjs.zencdn.net/7.5.5/video.js"></script>
+<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<!-- Video.js plugins CSS + JS -->
+<link href="https://players.brightcove.net/videojs-thumbnails/videojs.thumbnails.css" rel="stylesheet">
+<link href="https://players.brightcove.net/videojs-bc-playlist-ui/1/videojs-bc-playlist-ui.css" rel="stylesheet">
+<script src="https://players.brightcove.net/videojs-thumbnails/videojs.thumbnails.js"></script>
+<script src="http://videojs-skins.omartopic.com/demo/scripts/videojs-playlist.js"></script>
+<script src="https://players.brightcove.net/videojs-bc-playlist-ui/1/videojs-bc-playlist-ui.min.js"></script>
+<!-- Video.js skins plugin CSS -->
+<link href="http://videojs-skins.omartopic.com/plugin/styles/videojs-skins.min.css" rel="stylesheet">
+</head>
+<body>
+<style>
+body{background:black;}
+/* Skin 1 */
+.video-js.skin-1 .vjs-play-progress { background: #37bc9b; }
+.video-js.skin-1 .vjs-volume-bar.vjs-slider-horizontal .vjs-volume-level { background: #37bc9b; }
+.vjs-playlist-skin-1 .vjs-playlist-item.vjs-selected { background: #37bc9b; }
+.vjs-playlist-skin-1.vjs-mouse .vjs-playlist-item:focus .vjs-playlist-thumbnail:before, .vjs-playlist-skin-1.vjs-mouse .vjs-playlist-item:hover .vjs-playlist-thumbnail:before { background: #37bc9b; }
+</style>
+
+<script>
+// Demo Thumbnails
+var thumbnails = {
+"0": {"src": "http://solutions.brightcove.com/bcls/assets/images/sea-lionfish-thumbnail.png"},
+"30": {"src": "http://solutions.brightcove.com/bcls/assets/images/sea-anemone-thumbnail.png"},
+"60": {"src": "http://solutions.brightcove.com/bcls/assets/images/sea-clownfish-thumbnail.png"},
+"90": {"src": "http://solutions.brightcove.com/bcls/assets/images/sea-seahorse-thumbnail.png"}}
+// Demo Playlists
+var playlist = [
+{name: 'Demo video 1',
+description: 'Duis justo sem, auctor at faucibus in, finibus in nulla. Nulla vitae eros non ligula hendrerit semper. Fusce facilisis commodo turpis in egestas.',
+duration: 45,
+sources: [
+{ src: 'http://vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4' },
+{ src: 'http://vjs.zencdn.net/v/oceans.webm', type: 'video/webm' },],
+thumbnail: [{src: 'http://solutions.brightcove.com/bcls/assets/images/sea-lionfish-thumbnail.png'}]},
+{name: 'Demo video 2',
+description: 'Mauris vulputate nibh ac risus tristique congue. Vestibulum sollicitudin mattis elit, ac volutpat libero interdum ut.',
+duration: 45,
+sources: [
+{ src: 'http://vjs.zencdn.net/v/oceans.mp4?2', type: 'video/mp4' },
+{ src: 'http://vjs.zencdn.net/v/oceans.webm?2', type: 'video/webm' },],
+thumbnail: [{src: 'http://solutions.brightcove.com/bcls/assets/images/sea-anemone-thumbnail.png'}]},
+{name: 'Demo video 3',
+description: 'hasellus feugiat eros ante, donec tincidunt diam eget justo ultricies, a varius massa laoreet. Nullam et faucibus augue.',
+duration: 45,
+sources: [
+{ src: 'http://vjs.zencdn.net/v/oceans.mp4?5', type: 'video/mp4' },
+{ src: 'http://vjs.zencdn.net/v/oceans.webm?5', type: 'video/webm' },],
+thumbnail: [{
+src: 'http://solutions.brightcove.com/bcls/assets/images/great-blue-heron-thumbnail.png'
+}]}]
+</script>
+
+
+<!-- Skin 1 demo -->
+<section class="b-video">
+<!-- Video -->
+<div class="b-player playlist-aside">
+<video id="video-1" class="video-js skin-1" controls preload="auto" width="770" height="240" poster="https://dl.dropbox.com/s/e25dlv4q91hjlr6/megatv.png" data-setup="{}">
+<source src="demo/temp/video.mp4" type='video/mp4'>
+</video>
+<div class="vjs-playlist vjs-playlist-video-1 vjs-playlist-skin-1"></div>
+</div>
+
+<!-- Video 1 init DEMO -->
+<script>
+var video1 = videojs('video-1');
+video1.thumbnails(thumbnails); // thumbnails init
+video1.playlist(playlist); // playlists init
+video1.playlistUi({
+className: 'vjs-playlist-video-1'
+});
+</script>
+</section>
+
+</body>
+</html>

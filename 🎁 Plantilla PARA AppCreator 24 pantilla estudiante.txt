@@ -1,0 +1,186 @@
+
+
+
+<style> h2{ color: #000; font-family: Arial, Helvetica, sans-serif; border-radius: 5px; margin:20px; } div .jordan{ margin:7px; border-radius: 7px; position: center; </style>
+	
+	
+</style>
+
+
+
+	<style type="text/css">
+	 
+		}
+		button{
+			background-color: white;
+			color: black;
+			border: none;
+			border-radius: 5px;
+			size: 20px;
+			width: 70px;
+			padding: 10px;
+		}
+		div .enimak {
+		  overflow-x: scroll;
+		  overflow-y: hidden;
+		  white-space: nowrap;}
+		}
+  
+	</style>
+</head>
+
+<div>
+	<div class="firstfield" >
+	  
+   </div>
+ 
+
+
+	<h2> <font size="4" color= "#fff" face= "arial">Populares</font> </h2>
+
+
+
+
+	<div align="center" class="enimak">
+			
+			
+			
+			<a href="go:musica">
+			<img class=jordan
+			 
+			   <img style="border-radius: 10px;"  src="https://1.bp.blogspot.com/-HK3GuuDMUsg/YL8EGkGNPbI/AAAAAAAADow/PoQ2dYNnZSI0S2ySHfD0aFsfMf7GHv-sQCLcBGAsYHQ/s0/3F703FAA-1095-4CA0-9C92-3EB7F345A8E2.jpeg" width="95%" height="38%" ></a>
+			
+			
+			
+			
+			
+			
+			<a href="go:moda">
+			<img class=jordan
+			 
+			   <img style="border-radius: 10px;"  src="https://1.bp.blogspot.com/-hyUjPQUr-CY/YL8EHGxvtZI/AAAAAAAADo0/HhdquncLZIcCD-t1kryGCGG3BjTgNRFfgCLcBGAsYHQ/s0/4D17CB52-9BD0-47F0-A9D8-E82EABC6DEA7.jpeg" width="95%" height="38%" ></a>
+			
+			
+			
+					<a href="go:anime">
+			<img class=jordan
+			 
+			   <img style="border-radius: 10px;"  src="https://1.bp.blogspot.com/-9P2P-V95630/YL8EHazKRaI/AAAAAAAADo4/ntp84d4EVkc0jG7OjB015jp8vdBQzh8tQCLcBGAsYHQ/s0/9CEC1EEB-D7AD-4790-AA08-08F0FBFFC5ED.jpeg" width="95%" height="38%" ></a>
+	
+			
+			
+</div>
+
+
+
+
+<html>
+
+<style>
+	
+	
+	
+
+
+
+<style> h2{ color: #000; font-family: Arial, Helvetica, sans-serif; border-radius: 5px; margin:20px; } div .jordan{ margin:7px; border-radius: 7px; position: center; </style>
+	
+	
+</style>
+
+
+
+
+
+<center>
+
+
+<a href="go:365dias">
+
+<div class="jordan" > <img class=jordan 
+ src="http://es.web.img3.acsta.net/c_215_290/pictures/20/03/02/09/29/5096195.jpg" width="110px" height="155px" /></a>
+
+
+
+<a href="go:365dias"> <img class=jordan 
+
+src="http://es.web.img3.acsta.net/c_215_290/pictures/20/03/02/09/29/5096195.jpg" width="110px" height="155px" /></a>
+
+
+<a href="go:365dias"> <img class=jordan  src="http://es.web.img3.acsta.net/c_215_290/pictures/20/03/02/09/29/5096195.jpg" width="110px" height="155px" /></a>
+
+
+
+<a href="go:365dias"> <img class=jordan   src="http://es.web.img3.acsta.net/c_215_290/pictures/20/03/02/09/29/5096195.jpg" width="110px" height="155px" /></a>
+
+
+
+<a href="go:365dias"> <img class=jordan	src="http://es.web.img3.acsta.net/c_215_290/pictures/20/03/02/09/29/5096195.jpg" width="110px" height="155px" /></a>
+
+
+
+<a href="go:365dias"> <img  class=jordan src="http://es.web.img3.acsta.net/c_215_290/pictures/20/03/02/09/29/5096195.jpg" width="110" height="155" /></a>
+
+
+
+
+</center>
+
+
+
+
+
+
+<center>
+
+
+<a href="go:365dias">
+
+<div class="jordan" > <img class=jordan 
+ src="http://es.web.img3.acsta.net/c_215_290/pictures/20/03/02/09/29/5096195.jpg" width="110px" height="155px" /></a>
+
+
+
+<a href="go:365dias"> <img class=jordan 
+
+src="http://es.web.img3.acsta.net/c_215_290/pictures/20/03/02/09/29/5096195.jpg" width="110px" height="155px" /></a>
+
+
+<a href="go:365dias"> <img class=jordan  src="http://es.web.img3.acsta.net/c_215_290/pictures/20/03/02/09/29/5096195.jpg" width="110px" height="155px" /></a>
+
+
+
+<a href="go:365dias"> <img class=jordan   src="http://es.web.img3.acsta.net/c_215_290/pictures/20/03/02/09/29/5096195.jpg" width="110px" height="155px" /></a>
+
+
+
+<a href="go:365dias"> <img class=jordan	src="http://es.web.img3.acsta.net/c_215_290/pictures/20/03/02/09/29/5096195.jpg" width="110px" height="155px" /></a>
+
+
+
+<a href="go:365dias"> <img  class=jordan src="http://es.web.img3.acsta.net/c_215_290/pictures/20/03/02/09/29/5096195.jpg" width="110px" height="155px" /></a>
+
+
+
+
+
+
+</center>
+
+
+
+<head> <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> </head> <div id="bottom-navigation-container"> <div class="bottom-nav active"> <a href="go:S1"> <div class="material-icons">home</div> <div class="bottom-nav-title">Inicio</div> </a> </div> <div class="bottom-nav"> <a href="go:grupo"> <div class="material-icons">group</div> <div class="bottom-nav-title">Chat</div> </a> </div> <div class="bottom-nav"> <a href="go:reciente"> <div class="material-icons">note</div> <div class="bottom-nav-title">Reciente</div> </a> </div> <div class="bottom-nav"> <a href="go:jugar"> <div class="material-icons">circle</div> <div class="bottom-nav-title">Juegos</div> </a> </div> <div class="bottom-nav"> <a href="go:usuarios"> <div class="material-icons">account_circle</div> <div class="bottom-nav-title">Usuarios</div> </a> </div> </div>
+
+ 
+  
+    <style> body{ 
+    background: #121212;
+    margin: 0; 
+    font-family: arial; 
+        
+  
+      
+      
+  } #bottom-navigation-container{ display: flex; justify-content: center; position: fixed; bottom: 0; width: 100%; padding: 10px 0; box-shadow: 0 -2px 20px rgba(0, 0, 0, .15); Background:#121212; } .bottom-nav{ margin-right: 15px; margin-left: 15px; } .bottom-nav:first-child{ margin-left: 0; } .bottom-nav:last-child{ margin-right: 0; } .bottom-nav > a, .bottom-nav > a:hover, .bottom-nav > a:active{ color: #cccccc; text-decoration: none; } .bottom-nav > a > .material-icons{ display: flex; justify-content: center; font-size: 21px; } .bottom-nav > a > .bottom-nav-title{ font-size: 13px; } .bottom-nav.active > a{ color: #ffffff; } .wrapper-text { max-width: 100%; margin: 0 auto; z-index: 1; top: 0; background: #fff; padding-left: 5em; padding-right: 5em; padding-top: 3em; padding-bottom: 5em; position: flex; height: 100%; font-size: 23px; color: gray } h5 { font-size: 24px } </style>
+
+

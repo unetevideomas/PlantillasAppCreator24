@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu Infeeior Editado Por Xavier Suarez</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<script src="script.js"></script>
+</head>
+<body>
+<!--Inicio Home-->
+<div id="home" class="tabsc">
+
+</div>
+<!--Home End-->
+<!--Buscador-->
+<div id="buscador" class="tabsc" style="display:none"><div id="search-par">
+
+</div>
+<!--Buscador End-->
+<!--Descarga-->
+<div id="descarga" class="tabsc" style="display:none">
+
+</div>
+<!--Descarga End-->
+<!--Perfil-->
+<div id="perfil" class="tabsc" style="display:none">
+
+</div></div>
+<!--Perfil End-->
+<!--footer start-->
+<div id="s-f"></div>
+<footer id="foot">
+<div id="foot-m" onclick="tabs('home')">
+<span style="font-size:21px; font-weight:bold;" id="tab1">⌂</span>
+<div>Home</div>
+</div>
+<div id="foot-m" onclick="tabs('find')">
+<i class="material-icons" id="tab2">search</i>
+<div>buscador</div>
+</div>
+<div id="foot-m" onclick="tabs('descarga')">
+<i class="material-icons" id="tab3"><img src="data:image/png;base64,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"></i>
+<div>Descarga</div> 
+</div>
+<div id="foot-m" onclick="tabs('perfil')">
+<i class="material-icons" id="tab3"><img src="https://api.sololearn.com/Uploads/Avatars/18669173.jpg"></i>
+<div>Perfil</div> 
+</div>
+</div>
+</footer>
+<!-- footer end -->
+</body>
+</html>
+<style type="text/css">
+
+body{background-color:#000;
+}
+
+
+/* footer */
+footer{
+    display:flex;
+    width:100%;
+    bottom:0;
+    justify-content:space-around;
+    align-items:center;
+    padding:6px 2px;
+    position:fixed;
+    left:0;
+    right:4px;
+    color:#fff;
+    background:var(--amazon-color);
+   /* box-shadow:0px -0.5px 2px grey;*/
+}
+
+footer div{
+    font-size:8px;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+}
+
+footer i{ padding-left:4px;}
+/*footer end*/
+
+footer img{
+    height:18px;
+    width:18px;
+    margin-bottom:3px;
+}
+
+footer span{
+    transform:scale(1);
+}
+#s-f{
+    margin-bottom:40px;
+}
+
+
+</style>
+<script type="text/javascript">
+//tabs
+function tabs(tabc) {
+    var i;
+    var tabs = document.getElementsByClassName("tabsc");
+    for (i = 0; i < tabs.length; i++) {
+       tabs[i].style.display = "none";  
+    }
+    document.getElementById(tabc).style.display = "block";  
+}
+</script>

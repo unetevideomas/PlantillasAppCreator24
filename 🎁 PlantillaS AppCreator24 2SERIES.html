@@ -1,0 +1,368 @@
+<!--HTML MODIFICADO POR LUIS POOL-->
+<head>
+    <meta charset="UTF-8">
+    <title>REPRODUCTOR DE CINEMA COOL MOVIES </title>
+    
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css"/>
+<!--HTML MODIFICADO POR LUIS   POOL-->
+    <style>
+    .video-js .vjs-menu-button-inline.vjs-slider-active,.video-js .vjs-menu-button-inline:focus,.video-js .vjs-menu-button-inline:hover,.video-js.vjs-no-flex .vjs-menu-button-inline{width:10em}.video-js .vjs-controls-disabled .vjs-big-play-button{display:none!important}.video-js .vjs-control{width:3em}.video-js .vjs-menu-button-inline:before{width:1.5em}.vjs-menu-button-inline .vjs-menu{left:3em}.video-js .vjs-load-progress div,.vjs-seeking .vjs-big-play-button,.vjs-waiting .vjs-big-play-button{display:none!important}.video-js .vjs-mouse-display:after,.video-js .vjs-play-progress:after{padding:0 .4em .3em}.video-js.vjs-ended .vjs-loading-spinner{display:none}.video-js.vjs-ended .vjs-big-play-button{display:block!important}.video-js.vjs-paused .vjs-big-play-button,.vjs-paused.vjs-has-started.video-js .vjs-big-play-button,video-js.vjs-ended .vjs-big-play-button{display:block}.video-js .vjs-big-play-button{top:50%;left:50%;background-color:rgba(255,0,0,.8);font-size:2.5em;border-radius:50%}.video-js .vjs-big-play-button:active,.video-js .vjs-big-play-button:focus,.video-js:hover .vjs-big-play-button{background-color:rgba(255,0,0,.9)}.video-js .vjs-loading-spinner{border-color:#de2c2c}.video-js .vjs-control-bar2{background-color:transparent}.video-js .vjs-control-bar{background-color:rgba(0,0,0,0)!important;color:#fff;font-size:17px}.video-js .vjs-play-progress,.video-js .vjs-volume-level{background-color:red}.video-js .vjs-big-play-button{height:2em!important;width:2em!important;line-height:1.7em!important;margin-top:-1em!important;margin-left:-1em;border-width:4px}.video-js .vjs-big-play-button:before,.video-js .vjs-icon-play:before{font-size:40px}.video-js .vjs-progress-holder{font-size:1.7em;border-radius:10px}.video-js .vjs-progress-holder .vjs-load-progress,.video-js .vjs-progress-holder .vjs-load-progress div,.video-js .vjs-progress-holder .vjs-play-progress,.video-js .vjs-slider,.vjs-volume-level{border-radius:10px}.video-js .vjs-load-progress{background:rgba(255,255,255,.5)}.video-js,.video-js .vjs-tech,.video-js video,.vjs-poster{border-radius:8px}
+    </style>
+<!--HTML MODIFICADO POR LUIS  POOL-->
+    <style>*{margin:0;padding:0;box-sizing:border-box;font-family:Montserrat,sans-serif;text-decoration:none;color:#fff;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}*,:focus{outline:0}body{background:#000}video{width:100%;height:auto}#video_player{max-width:300px;margin:0 auto}.Luispool{display:grid;grid-template-columns:repeat(12,1fr);grid-gap:10rem;margin:10rem 60;padding:0 100rem}.Luispool a{display:flex;justify-content:center;align-items:center;padding:500px 100rem;font-size:20px;color:#fafafa;border-radius:20px;box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);position:relative;background:rgba(0,0,0,.55);overflow:hidden;text-align:center}.Luispool a::after{content:'';position:absolute;display:block;width:100%;height:100%;background:url(https://www.udrop.com/file/66YU/Portadaxsplus.jpg);background-size:cover;background-position:center center;opacity:.8;z-index:-1}h2{margin:.7rem 1rem}#titulo{color:var(--plyr-color-main)}:root{--plyr-color-main:#78FF00}</style>
+    
+    
+    
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Plantilla Modicada Por Xavier Suarez</title>
+<style type="text/css">
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Raleway';}
+body{background:#151617;}
+div .xstv{overflow-x:scroll;overflow-y:hidden;white-space:nowrap;margin:1px;border-radius:7px;}
+#header{position:fixed;width:100%;top:-5px;}
+footer{background:#000;display:flex;width:100%;bottom:0;justify-content:space-around;align-items:center;padding:6px 2px;position:fixed;left:0;right:0px;color:#fff;}
+footer div{font-size:10px;text-align:center;justify-content:center;align-items:center;}
+footer i{padding-left:0px;}
+/*footer end*/
+footer img{height:20px;width:20px;margin-bottom:3px;}
+footer svg{height:20px;width:20px;margin-bottom:3px;}
+footer span{transform:scale(1);}
+#s-f{margin-bottom:40px;}
+.slider{width:100%;margin:auto;overflow:hidden;}
+.slider ul{display:flex;padding:0;width:400%;
+animation:cambio 10s infinite alternate linear;}
+.slider li{width:100%;list-style:none;}
+.slider img{width:100%;}
+@keyframes cambio{0% {margin-left: 0;}20% {margin-left: 0;}25% {margin-left: -100%;}45% {margin-left: -100%;}50% {margin-left: -200%;}70% {margin-left: -200%;}75% {margin-left: -300%;}100% {margin-left: -300%;}}
+</style>
+<script type="text/javascript">
+//tabs
+function xavi(tabc) {var i;
+var xavi = document.getElementsByClassName("xaviec");
+for (i = 0; i < xavi.length; i++) {xavi[i].style.display = "none";}
+document.getElementById(tabc).style.display = "block";}
+</script>
+</head>
+<body>
+
+<!-- Slider Portada -->
+<div class="slider">
+<ul><li><a href="1"><img src="https://i.postimg.cc/BvJTCnbG/27.jpg" alt=""></a></li>
+<li><a href="2"><img src="https://i.postimg.cc/zGrt95vx/28.jpg" alt=""></a></li>
+<li><a href="3"><img src="https://i.postimg.cc/ZqqcSqSx/29.jpg" alt=""></a></li>
+<li><a href="3"><img src="https://i.postimg.cc/m2zWbbbR/31.jpg" alt=""></a></li>
+</ul></div>
+<html>
+ 
+ </div>
+<div class="titulo">
+<Center><h4 style="color:red;padding:7px;font-size:30px">CHICOS EN BUSCA DEL AMOR</h4>
+
+<span style="color:#ff0030;"><b>Género:</b> <h9 style="color:#fff;">Comedia, Drama, Romance</9></span><br>
+</div>
+</info><br>
+
+</head>
+<body>
+    
+
+
+<link rel='stylesheet' href='https://dl.dropboxusercontent.com/s/s88px7t3izddass/Cuevana.css'><link rel="stylesheet">
+
+</a><!-- modificado por luis pool-->
+
+</head>
+<style type="text/css">
+
+/*html{min-height:100%;position:relative;}
+
+*/
+
+body{background-color:#000;font-family:'Roboto Condensed', sans-serif;color:#fff;margin:0 0 70px 0;padding:0!important;height:100%;display:inline-block;width:100%;width:-moz-available;width:-webkit-fill-available;width:fill-available;}
+
+.Wallpaper{padding:0 0 30% 0;background-size:100%;background-repeat:no-repeat;background-color:#181821;border-radius:px;}
+
+/*.ConjuntoHeadCont{width:-80%;width:-moz-available;width:-webkit-fill-available;width:fill-available;position:relative;z-index:1;}
+
+*/
+
+.xs img{width:110px;height:150px;margin-top:-60px;padding:10px;}
+
+.title{color:fff;margin-top:100px;text-align:left;margin-left:120px;}
+
+@media screen and (max-width:600px) 
+
+.SingleContent h1{font-size: 27px;top: 0;}
+
+.Wallpaper{padding: 0 0 45% 0;}
+
+@media screen and (max-width:380px) 
+
+.Wallpaper{padding: 0 0 55% 0;}
+
+.sinopsis{margin-top:-10px;padding:10px;}
+
+info{background:transparent;color:green;font-family:'PT Sans', sans-serif;left:0;right:0;height:2.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;}
+
+info,a{color:fff;font-size:1px;margin-top:8px;}
+
+play{background:transparent;color:#fff;left:0;right:0;height:2.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;padding:0px;}
+
+play,a{color:#fff;font-size:18px;margin-top:-15px;}
+
+/*Select Box*/
+
+select{background:transparet;color:#fff;font-family:'PT Sans', sans-serif;font-size:18px;border:solid 0px #fff;border-radius:5px;outline:none;width:150px;height:30px;margin:5px;}
+
+.box{color:#fff;padding:5px;display:none;margin-top:0;}
+
+a{text-decoration:none;color:}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+#btn-mas{display:none;}
+
+.container{position:fixed;bottom:20px;right:20px;}
+
+.redes a, .icon-mas2{display:block;text-decoration:none;width:55px;height:55px;line-height:55px;text-align:center;border-radius:50%;box-shadow:0px 1px 10px rgba(0,0,0,0.0);transition:all 500ms ease;}
+
+.redes a{margin-bottom:-15px;opacity:0;visibility:hidden;}
+
+#btn-mas:checked~ .redes a{margin-bottom:20px;opacity:1;visibility:visible;}
+
+.icon-mas2{cursor:pointer;background:#ff0030;color:#fff;font-size:23px;}
+
+#btn-mas:checked
+
+~ .btn-mas .icon-mas2{transform:rotate(137deg);font-size:25px;}
+
+body{background:#000;}
+
+#modalxsplus{position:fixed;width:100%;height:100%;top:0px;left:0px;background:#000;display:none;}
+
+#modalxsplus.abrir{display: block;}
+
+#modalxsplus-content{position: absolute;width: 100%;height: 100vh;border-radius:0px;left: 0%;top:0px;margin-left: 0%;margin-top:0px;text-align: center;padding-top: 0px;}
+
+#xsclose{position:fixed;left:0;top:0px;padding:3px;font-size: 35px; height:35px;width:35px;text-align: center;color: #ffffff;cursor: pointer;}
+
+@media(orientation:landscape){
+
+#modalxsplus-content{position: fixed;width: 100%;height: 100vh;border-radius:0px;left: 0%;top:0px;margin-left: 0%;margin-top: 0px;text-align: center;padding-top: 0px;}
+
+#xsclose{position:fixed;right:0;top:0px;padding:3px;font-size:40px;height:30px;width:30px;text-align:center;color:#ffffff;cursor:pointer;}}
+
+
+/* area de los stilos del navbar */
+
+				}
+  #contencarru #conteiner1 {
+    position: relative;
+    width: 100%;
+    height: 36.8rem;
+    min-width: 100%;
+  }
+
+  .conteiner1 #titulo1 {
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .conteiner1 #titulo1 a {
+    display: contents;
+  }
+  .conteiner1 #titulo1 a h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: rgb(0 0 0);
+    transition: 0.4s;
+    width: 98%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #212F3D;
+    border-radius: 8px;
+  
+  }
+  .conteiner1 #titulo1 a h2:hover {
+    color: #ffff;
+    background: #00000;
+    transition: 0.4s;
+    outline: 1px solid #fff;
+  }
+  .conteiner1 #titulo1 h4 svg {
+    position: relative;
+    right: 0.6rem;
+  }
+  
+/* area de los estilos de los botones */
+
+#banner .btn {
+
+    position: absolute;
+
+    top: 2rem;
+
+    background: #fff;
+
+    color: #000000;
+
+    width: 20;
+
+    height: 20;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 5px;
+
+}
+
+#banner .atras {
+
+    left: 0.9rem;
+
+}
+
+#banner .compartir {
+
+    right: .9rem;
+
+}
+
+/* area de los estilos de los botones *
+</style>
+
+<body>
+
+<center>
+
+<div id="banner">
+
+   
+    </svg></a>
+<body ondragstart="return false;" ondrop="return false;">
+
+<div class="ConjuntoHeadCont">
+
+</div></div>
+
+<div class="xs">
+</div>
+</div>
+<info style="background:#00;">
+
+</info>
+
+
+</button>
+
+                  <iframe allowfullscreen='' frameborder='0' height='200' id='main__iframe' name='main__iframe' playsinline='' sandbox=" allow-same-origin allow-scripts" scrolling="no" src='https://www.youtube.com/embed/xVEyQzeffwY' width='100%'></iframe>
+</div>
+</div>
+<Center><h4 style="color:red;padding:7px;font-size:30px">SINOPSIS</h4>
+<p style="color:#fff;padding:7px;text-align: justify;line-height:25px;">
+Chicos en busca del amor" se basa en la verdadera historia de Lee Young Suk, que comenzó a vender verduras en una pequeña tienda en 1998 y ahora posee 33 tiendas de verduras en todo el país.  
+<center>
+<div class='container__wrapper'>
+
+<div id='main__player'>
+
+<div class='flex__watch__title'>
+<h1 style="color:#FF0000;font-size:35px;">TEMPORADA 1<strong ></h1>
+
+<select class='server__select' onchange='document.getElementById(&#39;main__iframe&#39;).src = this.options[this.selectedIndex].value;'>
+
+<option value=''>CAPITULOS</option>
+
+<option value='AQUI VA LA URL'>Capitulo 1</option>
+
+<option value='AQUI VA LA URL'>Capitulo 2</option>
+ 
+<option value='AQUI VA LA URL'>Capitulo 3</option>
+
+<option value='AQUI VA LA URL'>Capitulo 4</option>
+
+<option value='AQUI VA LA URL'>Capitulo 5</option>
+
+<option value='AQUI VA LA URL'>Capitulo 6</option>
+
+<option value='AQUI VA LA URL'>Capitulo 7</option>
+
+<option value='AQUI VA LA URL'>Capitulo 8</option>
+ 
+<option value='AQUI VA LA URL'>Capitulo 9</option>
+
+<option value='AQUI VA LA URL'>Capitulo 10</option>
+
+<option value='AQUI VA LA URL'>Capitulo 11</option>
+
+<option value='AQUI VA LA URL'>Capitulo 12</option>
+
+<option value='AQUI VA LA URL'>Capitulo 13</option>
+
+<option value='AQUI VA LA URL'>Capitulo 14</option>
+
+<option value='AQUI VA LA URL'>Capitulo 15</option>
+
+<option value='AQUI VA LA URL'>Capitulo 16</option>
+ 
+<option value='AQUI VA LA URL'>Capitulo 17</option>
+
+<option value='AQUI VA LA URL'>Capitulo 18</option>
+
+<option value='AQUI VA LA URL'>Capitulo 19</option>
+
+<option value='AQUI VA LA URL'>Capitulo 20</option>
+
+<option value='AQUI VA LA URL'>Capitulo 21</option>
+
+<option value='AQUI VA LA URL'>Capitulo 22</option>
+
+<option value='AQUI VA LA URL'>Capitulo 23</option>
+
+<option value='AQUI VA LA URL'>Capitulo 24</option>
+
+
+
+</select>
+</div>
+
+
+<!-- agregar tu trailer tambi茅n aqui 馃憜馃憜 -->
+
+
+
+<br/>
+
+</div>
+
+
+</main>
+
+<center>
+
+</center>
+</div>
+
+</body>
+
+</html>
+
+
+<br><h4><style="color:#FF0;font-size:60px;">LO MEJOR EN SERIE</h4></a>
+
+<center><h1 style="color:#00BFFF;font-size:50px;">𝑪𝑰𝑵𝑬 <strong style="color:#fff;">𝑴𝑨𝑻</strong><style="color:#fff;">  </strong></h1></center>
+
