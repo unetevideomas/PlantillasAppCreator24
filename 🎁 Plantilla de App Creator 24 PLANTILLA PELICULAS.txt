@@ -1,0 +1,123 @@
+<div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+			<p style="text-align:center"><h3>Películas de Acción</h3></center>
+				<div class="indicadores"></div>
+			</div>
+
+			
+				<div class="contenedor-movie">
+					<div class="movie">
+						
+						<div class="pelicula">
+							<a href="https://dl.dropboxusercontent.com/s/ftmtuqxq2ny6wjq/esika%20campa%C3%B1a%2017.pdf"><img src="https://dl.dropboxusercontent.com/s/b299p75uck9e7av/esika%20campa%C3%B1a%2014.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="https://dl.dropboxusercontent.com/s/ftmtuqxq2ny6wjq/esika%20campa%C3%B1a%2017.pdf"><img src="https://dl.dropboxusercontent.com/s/b299p75uck9e7av/esika%20campa%C3%B1a%2014.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="https://dl.dropboxusercontent.com/s/ftmtuqxq2ny6wjq/esika%20campa%C3%B1a%2017.pdf"><img src="https://dl.dropboxusercontent.com/s/b299p75uck9e7av/esika%20campa%C3%B1a%2014.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+						<a href="https://dl.dropboxusercontent.com/s/ftmtuqxq2ny6wjq/esika%20campa%C3%B1a%2017.pdf"><img src="https://dl.dropboxusercontent.com/s/b299p75uck9e7av/esika%20campa%C3%B1a%2014.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+						<a href="https://dl.dropboxusercontent.com/s/ftmtuqxq2ny6wjq/esika%20campa%C3%B1a%2017.pdf"><img src="https://dl.dropboxusercontent.com/s/b299p75uck9e7av/esika%20campa%C3%B1a%2014.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+						<a href="https://dl.dropboxusercontent.com/s/ftmtuqxq2ny6wjq/esika%20campa%C3%B1a%2017.pdf"><img src="https://dl.dropboxusercontent.com/s/b299p75uck9e7av/esika%20campa%C3%B1a%2014.jpg" alt=""></a>
+						</div>
+						
+						
+						
+						
+						
+					</div>
+				</div>
+				
+				
+				
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
+
+<style type="text/css">
+:root {
+	--rojo: #E50914;
+	--fondo: #020202;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 100%;
+	margin: auto;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+	color: white;
+	font-size: 30px;
+}
+
+/* ---- ----- ----- movie ----- ----- ----- */
+.peliculas-recomendadas .contenedor-movie {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-movie .movie {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .contenedor-movie .movie .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.peliculas-recomendadas .contenedor-movie .movie .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.peliculas-recomendadas .contenedor-movie .movie .pelicula img {
+	width: 100%;
+	vertical-align: top;
+        border-radius: 5px;
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	
+.peliculas-recomendadas .contenedor-movie .movie {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 6px;
+	}
+	
+</style>

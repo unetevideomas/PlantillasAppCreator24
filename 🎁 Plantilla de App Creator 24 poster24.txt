@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    
+
+    <title></title>
+  </head>
+  <body>
+  
+    <style type="text/css">
+ 
+      body {
+        /*Creado por JoseMiguelVip*/
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        box-sizing: border-box;
+        padding: 0%;
+        margin: 0%;
+        background: url(https://i.pinimg.com/736x/e1/0b/fc/e10bfc77627d8c440fc16ce526ff4976.jpg);
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+      }
+      
+      .capa {
+        z-index: -2;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        background: #38273b;
+        opacity: 0.6;
+        
+      }
+      
+      .parrafo{
+      
+      padding:20px 20px;
+      position: block;
+      box-shadow: 1px 5px 25px rgba(0,0,0,0,45);
+      font-size: 14px;
+      color: #f0f0f0;
+      font-weight: 600;
+      
+      
+      }
+      .parrafo img {
+       border-radius: 9px;
+        width: 150px;
+        float: left;
+        margin-right: 15px;
+        text-align: justify;
+        
+        
+      }
+      #format {
+        box-shadow: none;
+        
+        background: #252525;
+        border-radius: 15px;
+        border: 1px #212121 solid;
+        color: white;
+        width: 180px;
+        height: 40px;
+        font-weight: 900;
+        align-content: Center;
+        align-items: center;
+        align-self: center;
+        
+      }
+      p {
+        opacity: 0.7;
+      }
+      .option  {
+        
+        text-align: Center;
+        font-weight: 900;
+
+      }
+      .select {
+        text-align: center;
+      }
+      .btn button{
+        font-weight: 900;
+        border: none;
+        background: red;
+        color: white;
+        width: 160px;
+        height: 40px;
+        margin-left: 28%;
+        text-align: center;
+        align-items: center;
+        opacity: 0.7;
+        border-radius: 10px;
+        
+      }
+    </style>
+    <div class="capa"></div>
+    
+    <div class="parrafo">
+      <img src="https://upload.wikimedia.org/wikipedia/en/6/64/Zoids_Wild_Anime_Announcement.jpg">
+ <p>Serie de TV (1999-2000). 67 episodios. Los Zoids son maquinas-bestias usadas normalmente para transporte y especialmente para la guerra. Algunos tipos de Zoids, conocidos como Organoides, son Zoids en miniatura y a su vez son organismos vivos. Esos Organoides tienen la capacidad de fusionarse con los Zoids normales y hacerlos más poderosos
+Van (Ban) Freiheit descubre un Organodie en un laboratorio abandonado mientras huye de dos Zoids. También hay en el laboratorio un tubo con una extraña chica en animación suspendida. él rompe el tubo y se lleva consigo a ambos, la chica y el Organoide. Cerca de la salida encuentran un Zoids estropeado y sucio, el Organoide se fusiona con él y repara los daños. Mientras escapan Van llama al Organoide Zeke y dedice ser su amigo. La chica, que se llama Fiona, quiere encontrar un lugar llamado Zoids Eve y asi Van, Zeke y Fiona comienzan su aventura. </p>
+    </div>
+    
+
+  
+
+
+
+<div class="btn">
+<a href="aqui enlace"><button>REPRODUCIR</button></a>
+</div>
+
+
+  </body>
+</html>

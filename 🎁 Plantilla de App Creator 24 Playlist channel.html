@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html><head>
+<title>Channel Playlist</title>
+<meta name="viewport"content="width=device-width,initial-scale=1"></meta>
+<script src="https://cdn.radiantmediatechs.com/rmp/5.10.2/js/rmp.min.js"></script>    
+<div class="row">
+<div class="col-sm-12">
+<div class="rmp-playlist-container">
+<div class="rmp-playlist-player-wrapper">
+<div id="rmpPlayer"></div>
+<style>
+body{
+height:100%;
+width:100%;
+margin:0;
+padding:0;
+background:#fff;
+}
+</style>
+</head> 
+
+<!-- { src: 
+{ hls:"#"}, "contentMetadata": 
+{ "title": "#", "description": "#", "thumbnail":"#", "poster": [ "#" ] },}, -->
+   
+<script> var playlistData =  [
+
+{ src: 
+{ hls:"https://m-c036-j2apps.s.llnwi.net/hls/5045.BFlixMovies.in.m3u8"}, 
+"contentMetadata": { 
+"title": "Hello 1", 
+"description": "Hello", 
+"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Ur5t_tg3BxCzyZ4HWJNv_Du4pr_nzqHn-Q&usqp=CAU", 
+"poster": [ "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Ur5t_tg3BxCzyZ4HWJNv_Du4pr_nzqHn-Q&usqp=CAU" ] },},
+
+{ src: 
+{ hls:"https://m-c036-j2apps.s.llnwi.net/hls/5045.BFlixMovies.in.m3u8"}, 
+"contentMetadata": { 
+"title": "Hello 2", 
+"description": "Hello", 
+"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Ur5t_tg3BxCzyZ4HWJNv_Du4pr_nzqHn-Q&usqp=CAU", 
+"poster": [ "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Ur5t_tg3BxCzyZ4HWJNv_Du4pr_nzqHn-Q&usqp=CAU" ] },},
+
+{ src: 
+{ hls:"https://m-c036-j2apps.s.llnwi.net/hls/5045.BFlixMovies.in.m3u8"}, 
+"contentMetadata": { 
+"title": "Hello 3", 
+"description": "Hello", 
+"thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Ur5t_tg3BxCzyZ4HWJNv_Du4pr_nzqHn-Q&usqp=CAU", 
+"poster": [ "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Ur5t_tg3BxCzyZ4HWJNv_Du4pr_nzqHn-Q&usqp=CAU" ] },},
+
+
+];var settings = {
+licenseKey: 'Kl8lbz16cz1rN2l2enM9Z2M9NnZvMnllaT9yb201ZGFzaXMzMGRiMEElXyo=',
+skin: 's3',
+posterScaleMode: 'stretch',
+automaticFullscreenOnLandscape: true,
+preload: 'nono',
+playlistUpNextAutoplay: true,
+playlistEndedLoop: false,
+playlistData: playlistData
+};var elementID = 'rmpPlayer'; var rmp = new RadiantMP(elementID); rmp.init(settings); 
+</script> 
+</div>
+</div>
+</div>
+</body> 
+</html>  

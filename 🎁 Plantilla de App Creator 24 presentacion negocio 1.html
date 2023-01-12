@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Título de la página</title>
+	<link rel="stylesheet" href="https://bootswatch.com/5/cyborg/bootstrap.min.css">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<style>
+		
+			.cuerpo {
+			display: ;
+			position: absolute;
+			top: 0;
+			Left:0;
+			width:100vw;
+			height:100vh;
+			background: ;
+			z-index-9;
+			}
+			
+			div.superior {
+			background: ;		/*Escoje el color de fondo que desees*/
+			}
+			
+			h1 {
+			color: #ffbd15;
+			margin-top: 10px;
+			font-family: cursive;
+			}
+			
+			h2, h4 {
+			color: #ececec;
+			}
+			
+			.superior img {
+			width: 90%;
+			height: auto;
+			border-radius: 10px;
+			border: 3px Solid white;
+			margin: 10px;
+			}
+			
+			.inferior {
+			position: relative;
+			background: ;
+			display: grid;
+			text-align: center;
+			padding: 30px 10px 20px 10px;
+			}
+			
+			a {
+			font-size: 20px;
+			font-weight: 666;
+			color: white;
+			background: linear-gradient(#ffbd15,#a67b0e,#ffbd15);
+			padding: 20px 30px;
+			margin: 15px 20px 14px 20px;
+			border-radius: 50px;
+			text-decoration: none;
+			
+			}
+	
+
+
+/* MODAL
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .3rem;
+  background: var(--black);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-dialog {
+  position: relative;
+  width: 1500px;
+  border-radius: 5px;
+  border: 2px Solid #ffbd15;
+  background: #000;
+  overflow: auto;
+  cursor: default;
+}
+
+.modal-dialog > * {
+  padding: 1rem;
+}
+
+.modal-header,
+.modal-footer {
+  background: #111;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header .close-modal {
+  font-size: 1.5rem;
+}
+
+.modal p + p {
+  margin-top: 1rem;
+}
+	
+			
+	</style>
+</head>
+<body>
+	
+	<div class="cuerpo"><center>
+			<div class="superior">
+					<h1>Nombre de tu negocio</h1>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsRKyYRW-vzjqSrGEs-_GGvvjYdrpmHne89A&usqp=CAU" alt="Imagen de tu negocio">
+					<h2>Tipo de negocio</h2>
+					<h4>Dirección</h4>
+					
+			</div>
+			
+			<div class="inferior">
+					<a href="#"><bottom type="button" class="open-modal" data-open="modal1">Descripción de tu negocio</bottom></a>
+					
+					<a href="#"><bottom type="button" class="open-modal" data-open="modal2">Servicios que ofreces</bottom></a>
+					<a href="#"><bottom type="button" class="open-modal" data-open="modal3">Método de contacto</bottom></a>
+			</div>
+			
+			
+			<div class="modal" id="modal1" data-animation="slideInOutLeft">
+  <div class="modal-dialog">
+    <header class="modal-header">
+      Cerrar ventana
+      <button class="close-modal" aria-label="close modal" data-close>
+        ✕  
+      </button>
+    </header>
+    <section class="modal-content"><p>
+    		Haz una descripcion de tu negocio.
+    </p>
+    </section>
+    </div>
+    </div>
+    
+    <div class="modal" id="modal2" data-animation="slideInOutLeft">
+  <div class="modal-dialog">
+    <header class="modal-header">
+      Cerrar ventana
+      <button class="close-modal" aria-label="close modal" data-close>
+        ✕  
+      </button>
+    </header>
+    <section class="modal-content"><p>
+    		Que servicios ofreces.
+    </p>
+    </section>
+    </div>
+    </div>
+    
+    <div class="modal" id="modal3" data-animation="slideInOutLeft">
+  <div class="modal-dialog">
+    <header class="modal-header">
+      Cerrar ventana
+      <button class="close-modal" aria-label="close modal" data-close>
+        ✕  
+      </button>
+    </header>
+    <section class="modal-content"><p>
+    		Contacto.
+    </p>
+    </section>
+    </div>
+    </div>
+	</center></div>
+				
+				
+<script>
+	const openEls = document.querySelectorAll("[data-open]");
+const closeEls = document.querySelectorAll("[data-close]");
+const isVisible = "is-visible";
+
+for (const el of openEls) {
+  el.addEventListener("click", function() {
+    const modalId = this.dataset.open;
+    document.getElementById(modalId).classList.add(isVisible);
+  });
+}
+
+for (const el of closeEls) {
+  el.addEventListener("click", function() {
+    this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+  });
+}
+
+document.addEventListener("click", e => {
+  if (e.target == document.querySelector(".modal.is-visible")) {
+    document.querySelector(".modal.is-visible").classList.remove(isVisible);
+  }
+});
+
+document.addEventListener("keyup", e => {
+  // if we press the ESC
+  if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
+    document.querySelector(".modal.is-visible").classList.remove(isVisible);
+  }
+});
+
+
+</script>			
+
+</body>
+</html>

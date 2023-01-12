@@ -1,0 +1,1257 @@
+<style type="text/css">
+    #warning-message { display: none; }
+    @media only screen and (orientation:portrait){
+        #wrapper { display:none; }
+        #warning-message { display:block; }
+    }
+    @media only screen and (orientation:landscape){
+        #warning-message { display:none; }
+    }
+</style>
+<h1 style="text-align: center;">&nbsp;</h1>
+<h1 style="text-align: center;">&nbsp;</h1>
+<h1 style="text-align: center;">&nbsp;</h1>
+<h1 style="text-align: center;">&nbsp;</h1>
+<h1 style="text-align: center;">&nbsp;</h1>
+<h1 style="text-align: center;">&nbsp;</h1>
+<h1 style="text-align: center;">&nbsp;</h1>
+<h1 style="text-align: center;"><span style="background-color: #ff0000;font-size: 72px; color: #ffffff;"><strong>ALERTA</strong></span></h1>
+<h1 style="text-align: center;"><p><img src="https://julie.aprendecomohacerlo.com/uploads/images/content/rotar-pantalla-android_102.jpg" width="500" height="370" /></p>
+<h1 style="text-align: center;"><span style="background-color: #ffff00; color: #ff0000;"><strong>PARA VISUALIZAR ESTE CONTENIDO; DEBE PONER SU DISPOSITIVO ANDROID EN ORIENTACION HORIZONTAL!</strong></span></h1>
+<h1 style="text-align: center;"><span style="background-color: #ffff; color: #ff0000;"><strong>RECUERDA TENER INSTALADA LA APP OFICIAL DE MILLERFLIX</strong></span></h1>
+
+
+....
+<div id="wrapper">
+<style>
+        body {
+            background: url(https://th.bing.com/th/id/OIP.od5XzIUaocrXsc2-tTbnMwHaE8?pid=ImgDet&rs=1) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            font-family: 'Oswald', sans-serif;
+            color: #fff;
+        }
+<link rel="stylesheet" href="login.css">
+
+<table>
+<?php
+include('conexion.php');
+session_start();
+
+if(isset($_SESSION['nombredelusuario']))
+{
+	$usuarioingresado = $_SESSION['nombredelusuario'];
+	echo "<tr><td colspan='2' align='center'><h1>Bienvenido: $usuarioingresado </h1></td></tr>";
+}
+else
+{
+	header('location: index.php');
+}
+?>
+<form method="POST">
+<tr><td colspan='2' align="center"><input type="submit" value="Cerrar sesión" name="btncerrar" /></td></tr>
+</form>
+
+<tr><td colspan="2"><h1>Listado de usuarios</h1></td></tr>
+<tr><td><label>Usuario</label></td>
+	<td><label>Contraseña</label></td>
+</tr>
+
+<?php 
+
+if(isset($_POST['btncerrar']))
+{
+	session_destroy();
+	header('location: index.php');
+}
+	
+$sql="SELECT * FROM login";
+$result=mysqli_query($conn,$sql);
+
+while($mostrar=mysqli_fetch_array($result))
+{
+	
+?>
+<tr> <td><?php echo $mostrar['usuario'] ?>
+	<td><?php echo $mostrar['password'] ?>
+
+</tr>
+<?php
+}
+
+
+
+?>
+</table>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr"><head><script language="JavaScript">
+
+</script>
+<style>
+#sess {
+    position:absolute;
+    top:0px;
+    left:0px;
+    height: 10px;
+    width: 10px;
+}
+</style>
+</head><body><div id="sess">
+<iframe frameborder="0" height="10px" name="display" scrolling="no" src="" width="10px"></iframe>
+</div>
+<style type="text/css">
+    .feed-links{display:none;}
+    
+html,body {
+overflow:hidden;
+background-color:#fff !important;
+
+
+}
+</style>
+<style>
+.blog-pager {
+visibility: hidden;
+}
+</style>
+<style>
+h3 {
+visibility: hidden;
+}
+</style>
+<style>
+
+        html,body{
+            margin:0;padding:0;width:100%;height:100%;
+        }
+
+
+body {
+scrollbar-color: #0099FF #fff;
+}
+
+
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0099FF;
+    -webkit-border-radius: 1ex;
+
+}
+
+::-webkit-scrollbar-corner {
+    background: #fff;
+}
+
+  a {
+color: #0099FF;
+font-family: Arial;
+font-weight: 900;
+text-decoration: none;
+}
+  a:hover {
+text-decoration: underline;
+}
+  
+
+</style>
+<style>
+#cookieChoiceInfo {
+   height:0px;
+   visibility:hidden !important;
+   display:none !important;
+}
+</style>
+
+<link href="https://www.blogger.com/static/v1/widgets/14020288-widget_css_bundle.css" rel="stylesheet" type="text/css">
+<link href="https://vjs.zencdn.net/7.8.3/video-js.css" rel="stylesheet">
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://vjs.zencdn.net/7.7.6/video-js.css" rel="stylesheet">
+<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="blogger" name="generator">
+<link href="http://iptv.mataocio.com/favicon.ico" rel="icon" type="image/x-icon">
+<link href="http://iptv.mataocio.com/2021/03/mo-display.html" rel="canonical">
+<link rel="alternate" type="application/atom+xml" title="MataOcio | IPTV - Atom" href="http://iptv.mataocio.com/feeds/posts/default">
+<link rel="alternate" type="application/rss+xml" title="MataOcio | IPTV - RSS" href="http://iptv.mataocio.com/feeds/posts/default?alt=rss">
+<link rel="service.post" type="application/atom+xml" title="MataOcio | IPTV - Atom" href="https://www.blogger.com/feeds/5992034039883246677/posts/default">
+
+<link rel="alternate" type="application/atom+xml" title="MataOcio | IPTV - Atom" href="http://iptv.mataocio.com/feeds/5999736044305149481/comments/default">
+<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+<meta content="http://iptv.mataocio.com/2021/03/mo-display.html" property="og:url">
+<meta content="mo-display" property="og:title">
+<meta content="                              Canales                                               CATEGORIA     _____________________      24/07     ..." property="og:description">
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>MILLERFLIX / SMARTV</title>
+<style id="page-skin-1" type="text/css"><!--
+
+--></style>
+<link href="https://www.blogger.com/dyn-css/authorization.css?targetBlogID=5992034039883246677&amp;zx=059181fa-417f-4b60-af95-c3ad95893bd7" media="all" onload="if(media!='all')media='all'" rel="stylesheet"><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=5992034039883246677&amp;zx=059181fa-417f-4b60-af95-c3ad95893bd7' rel='stylesheet'/></noscript>
+
+
+
+<div id="main-wrapper">
+<div class="main no-items section" id="main"></div>
+</div>
+<div id="sidebar-wrapper">
+<div class="sidebar section" id="sidebar"><div class="widget HTML" data-version="1" id="HTML2">
+<div class="widget-content">
+<style>
+#arrow-left {
+ z-index: 99999;
+position: fixed;
+top: 0px;
+left: 0px;
+width:100px;
+
+}
+</style>
+<div id="arrow-left">
+ <a href="salir.php"><img width="50px" src="https://archive.org/download/istockphoto-1163959082-170667a_ccexpress/istockphoto-1163959082-170667a_ccexpress.png"></a>
+</div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;HTML2&quot;));" rel="nofollow" target="configHTML2" title="Editar">
+<img alt="" height="18" src="https://resources.blogblog.com/img/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget Blog" data-version="1" id="Blog1">
+<div class="blog-posts hfeed">
+
+          <div class="date-outer">
+        
+
+          <div class="date-posts">
+        
+<div class="post-outer">
+<div class="post hentry uncustomized-post-template" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+<meta content="5992034039883246677" itemprop="blogId">
+<meta content="5999736044305149481" itemprop="postId">
+<a name="5999736044305149481"></a>
+<h3 class="post-title entry-title" itemprop="name">
+mo-display
+</h3>
+<div class="post-header">
+<div class="post-header-line-1"></div>
+</div>
+<div class="post-body entry-content" id="post-body-5999736044305149481" itemprop="description articleBody">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+
+
+
+  
+    
+  <style>
+    .title-label{margin-bottom: 80px;}
+#MO-menu {
+z-index: 999999;
+position: absolute;
+background-color: transparent;
+  width: 190px;
+right: 0px;
+top: 4px;
+}
+</style>
+
+
+
+
+<style>
+#minibar {
+z-index: 9999;
+position: absolute;
+  display: block;
+
+background-color: transparent;
+-webkit-box-shadow: 3px 0px 35px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 0px 35px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 0px 35px 0px rgba(0,0,0,0.75);
+right: 0px;
+top: 0px;
+width: 199px;
+height: 68px;
+}
+</style>
+
+
+
+
+
+<style>
+#panel {
+z-index: 9993;
+position: absolute;
+  display: block;
+border: 2px solid #0099FF;
+background-color: transparent;
+-webkit-box-shadow: 3px 0px 35px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 0px 35px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 0px 35px 0px rgba(0,0,0,0.75);
+right: 4px;
+top: -8px;
+width: 200px;
+height: calc(100% - 56px);
+}
+</style>
+
+
+<style>
+.panel-close {
+    z-index: 9994;
+    position:absolute;
+    bottom:10px;
+    right:100px;
+    border: 2px solid #F44336;
+    background-color: #F44336;
+    border-radius: 5px;
+    padding: 2px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Arial;
+    color: #ECEFF1;
+    cursor: pointer;
+-webkit-box-shadow: 3px 0px 35px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 0px 35px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 0px 35px 0px rgba(0,0,0,0.75);
+}
+</style>
+<div class="panel-close" id="flip">Mostrar & Ocultar/Canales</div>
+
+
+
+<style>
+a {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+}
+  
+  h2 {font-size: 16px;}
+</style>
+
+
+
+
+<!-- HIDE LINKS URL SYSTEM  -->
+<script>
+        $(function(){
+            $("a.hidelink").each(function (index, element){
+                var href = $(this).attr("href");
+                $(this).attr("hiddenhref", href);
+                $(this).removeAttr("href");
+            });
+            $("a.hidelink").click(function(){
+                url = $(this).attr("hiddenhref");
+                window.open(url, 'xDisplay');
+
+            })
+        });
+    </script>
+    <style>
+        a.hidelink {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="panel" style="">
+  
+  
+
+
+
+<script language="JavaScript" type="text/javascript"><!--
+  function irA(menu){window.location.href = menu.options[menu.selectedIndex].value;}
+  // fin de javascript -->
+</script>
+<form id="MO-menu" name="formulario">
+  <p><select name="menu" size="1" onchange="irA(this)" style="width: 146px; border-color: #0099ff !important; BACKGROUND-COLOR: #EF5350; COLOR: #ECEFF1; FONT-FAMILY: Verdana, Arial; FONT-SIZE: 9pt; FONT-WEIGHT: bold;">
+    <option selected="" value="#">CATEGORIA
+    </option><option value="#24/07">24/07
+    </option><option value="#Latino">LATINOS
+    </option><option value="#argentina">ARGENTINA
+    </option><option value="#colombia">COLOMBIA
+    </option><option value="#el salvador">EL SALVADOR 
+    </option><option value="#peru">PERU    
+    </option><option value="#españa">ESPAÑA
+    </option><option value="#mexico">MEXICO
+    </option><option value="#ecuador">ECUADOR 
+    </option><option value="#chile">CHILE
+    </option><option value="#costa rica">COSTA RICA
+    </option><option value="#cuba">CUBA
+    </option><option value="#bolivia">BOLIVIA   
+   
+
+  </option></select></p>
+</form>
+
+  
+  
+  
+
+  <div id="minibar"></div>
+  
+<style>
+
+  
+.list {
+z-index:9991;
+position: absolute;
+display: flex;
+justify-content: center;
+top: 0px;
+right: 0px;
+height: 100%;
+width: 200px;
+background-color: transparent;
+overflow: auto;
+}
+.alist {
+position: absolute;
+justify-content: center;
+top: -60px;
+width: 180px;
+}
+.alist > a {
+border: 1px solid #EF5350;
+border-radius: 5px;
+padding: 4px 10px;
+justify-content: center;
+display: flex;
+margin-top: -16px;
+ cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+</style>
+<div class="list">
+
+<div class="alist">
+  
+  
+
+  <br>
+    <br>
+    <br>
+
+
+
+
+<div class="title-label" id="24/07"></div>
+<h2 style="color: #FFD54F; display: flex; font-family: Arial; justify-content: center;">24/7</h2>
+  <br>
+
+
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2922.m3u8">24/7 ROBOTECH</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2924.m3u8">24/7 DINOSAURIOS</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2925.m3u8">24/7 FUTURAMA</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2926.m3u8">24/7 Dragon Ball z</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2927.m3u8">24/7 ALF</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2928.m3u8">24/7 POKEMON</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2928.m3u8">24/7 EL PRINCIPE DEL RAP</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2930.m3u8">24/7 LOONEY TOONS</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2931.m3u8">24/7 | The Big Bang Theory</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2939.m3u8">24/7 NARUTO</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2940.m3u8">24/7 HE MAN</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2941.m3u8">24/7 CABALLEROS DEL SODIACO</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2943.m3u8">24/7 SUPER CAMPEONES</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2945.m3u8">24/7 SPIDERMAN</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2946.m3u8">24/7 BOB ESPONJA</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2947.m3u8">24/7 MALCOLM</a>
+<br>
+
+
+
+<div class="title-label" id="Latino"></div>
+<h2 style="color: #FFD54F; display: flex; font-family: Arial; justify-content: center;">LATINOS</h2>
+  <br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/38.m3u8">Latino | A&En</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/39.m3u8">Latino | Golf </a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/41.m3u8">Latino | A3S</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/42.m3u8">Latino | ADN40</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/43.m3u8">Latino | Affizionados</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/44.m3u8">Latino | AMC</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/45.m3u8">Latino | Animal Planet</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/46.m3u8">Latino | Antena 3</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/47.m3u8">Latino | AXN</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/48.m3u8">Latino | AXN White</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/49.m3u8">Latino | AyM Sports</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/50.m3u8">Latino | AZ Cinema</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/51.m3u8">Latino | AZ Corazon</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/52.m3u8">Latino | AZ Mundo</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/53.m3u8">Latino | Azteca 1</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/54.m3u8">Latino | Azteca 7</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/55.m3u8">Latino | Bandamax</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/56.m3u8">Latino | beIN Sports</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/57.m3u8">Latino | beIN Sports La Liga</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/58.m3u8">Latino | Boomerang</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/59.m3u8">Latino | Canal 11</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/60.m3u8">Latino | Canal 5</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/61.m3u8">Latino | Canal De Las Estrellas</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/63.m3u8">Latino | Cartoon Network</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/64.m3u8">Latino | CineCanal</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/65.m3u8">Latino | CineLatino</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/66.m3u8">Latino | Cinemax</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/67.m3u8">Latino | CNN en Espanol</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/68.m3u8">Latino | Comedy Central</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/69.m3u">Latino | De Pelicula</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/70.m3u8">Latino | Discovery Channel</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/72.m3u8">Latino | Discovery en Espanol</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/73.m3u8">Latino | Discovery Familia</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/74.m3u8">Latino | Discovery H&H</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/75.m3u8">Latino | Discovery ID</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/76.m3u8">Latino | Discovery Kids</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/77.m3u8">Latino | Discovery Science</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/78.m3u8">Latino | Discovery Theater</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/79.m3u8">Latino | Discovery TLC</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/80.m3u8">Latino | Discovery Turbo</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/81.m3u8">Latino | Discovery World</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/82.m3u8">Latino | Disney Channel</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/83.m3u8">Latino | Disney Jr</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/84.m3u8">Latino | Disney XD</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/85.m3u8">Latino | Distrito Comedia</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/86.m3u8">Latino | E!</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/87.m3u8">Latino | El Garage</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/88.m3u8">Latino | El Gourmet</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/90.m3u8">Latino | ESPN 2</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/91.m3u8">Latino | ESPN 3</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/92.m3u8">Latino | ESPN Deportes</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/93.m3u8">Latino | ESPN Plus</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/94.m3u8">Latino | Estrella TV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/95.m3u8">Latino | Food Network</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/96.m3u8">Latino | Foro TV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/97.m3u8">Latino | FOX</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/98.m3u8">Latino | FOX PREMIUM Action</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/99.m3u8">Latino | FOX PREMIUM Cinema</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/100.m3u8">Latino | FOX PREMIUM Classic</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/101.m3u8">Latino | FOX PREMIUM Family</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/102.m3u8">Latino | FOX Life</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/103.m3u8">Latino | FOX PREMIUM Movies</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/104.m3u8">Latino | FOX PREMIUM Series</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/105.m3u8">Latino | FOX Sports</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/106.m3u8">Latino | FOX Sports 2</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/107.m3u8">Latino | FOX Sports 3</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/111.m3u8">Latino | FX</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/112.m3u8">Latino | FXM</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/113.m3u8">Latino | Gala TV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/114.m3u8">Latino | Glitz</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/115.m3u8">Latino | Gol TV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/116.m3u8">Latino | Golden EDGE</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/117.m3u8">Latino | Golden Plus</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/118.m3u8">Latino | HBO</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/119.m3u8">Latino | HBO 2</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/120.m3u8">Latino | HBO Family</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/121.m3u8">Latino | HBO Plus</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/122.m3u8">Latino | History 2</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/123.m3u8">Latino | History Channel</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/124.m3u8">Latino | Hola TV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/125.m3u8">Latino | Imagen</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/126.m3u8">Latino | Lifetime</a>
+<br>
+
+<div class="title-label" id="argentina"></div>
+<h2 style="color: #FFD54F; display: flex; font-family: Arial; justify-content: center;">ARGENTINA</h2>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3034.m3u8">ARGENTINA | ESPN 1</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3035.m3u8">ARGENTINA | ESPN 2</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3036.m3u8">ARGENTINA | ESPN 3</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3037.m3u8">ARGENTINA | ESPN PLUS</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3038.m3u8">ARGENTINA | Fox sports 1</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3039.m3u8">ARGENTINA | Fox Sports 2</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/551.m3u8">ARGENTINA | CINE AR</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/552.m3u8">ARGENTINA | FOX SPORTS PREMIUN</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/1133.m3u8">ARGENTINA | TELEFE</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2991.m3u8">ARGENTINA | 13 MAX</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2992.m3u8">ARGENTINA | 24H NOTICIAS</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2993.m3u8">ARGENTINA | 5RTV SANTA FE</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2994.m3u8">ARGENTINA | 5TV CORRIENTES</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2995.m3u8">ARGENTINA | 9 MULTIVISION</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2997.m3u8">ARGENTINA | ARGENTINIZIMA SATELITAL</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2999.m3u8">ARGENTINA | CANAL 10 GENERAL ROCA</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3000.m3u8">ARGENTINA | CANAL 26</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3001.m3u8">ARGENTINA | CHACRA TV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3002.m3u8">ARGENTINA | CIUDAD TV CHACO</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3004.m3u8">ARGENTINA | FENIX TV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3008.m3u8">ARGENTINA | TLX</a>
+<br>
+
+<div class="title-label" id="colombia"></div>
+<h2 style="color: #FFD54F; display: flex; font-family: Arial; justify-content: center;">COLOMBIA</h2>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3057.m3u8">COLOMBIA | TELECARIBE DEPORTES</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3058.m3u8">COLOMBIA | SEÑAL COLOMBIA</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3059.m3u8">COLOMBIA | CANAL UNO</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3060.m3u8">COLOMBIA | CANAL TRO</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3061.m3u8">COLOMBIA | RCN NOVELAS</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/62.m3u8">COLOMBIA | Caracol</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/140.m3u8">COLOMBIA | RCN</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/517.m3u8">COLOMBIA | NTN24</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/523.m3u8">COLOMBIA | CARACOL INTERNACIONAL</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/524.m3u8">COLOMBIA | CITY TV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/525.m3u8">COLOMBIA | CANAL 12</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/528.m3u8">COLOMBIA | TELEANTIOQUIA</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/530.m3u8">COLOMBIA | TELECARIBE</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/532.m3u8">COLOMBIA | TELEMEDELLIN</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/984.m3u8">COLOMBIA | WINSPORTS PLUS</a>
+<br>
+
+<div class="title-label" id="el salvador"></div>
+<h2 style="color: #FFD54F; display: flex; font-family: Arial; justify-content: center;">EL SALVADOR</h2>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3062.m3u8">EL SALVADOR | CANAL 12</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3063.m3u8">EL SALVADOR | TELE EL SALVADOR</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3064.m3u8">EL SALVADOR | CANAL 6</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3065.m3u8">EL SALVADOR | CANAL 4</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3066.m3u8">EL SALVADOR | CANAL 2</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3068.m3u8">EL SALVADOR | TCS PLUS</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3069.m3u8">EL SALVADOR | TIGO SPORTS 1</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3071.m3u8">EL SALVADOR | CANAL 10</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3072.m3u8">EL SALVADOR | CANAL 21</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3073.m3u8">EL SALVADOR | CANAL 33</a>
+<br>
+
+<div class="title-label" id="peru"></div>
+<h2 style="color: #FFD54F; display: flex; font-family: Arial; justify-content: center;">PERU</h2>
+<br>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3219.m3u8">PERU | Direc tv Sports</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3320.m3u8">PERU | BEST CABLE SPORT</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/459.m3u8">PERU | America TV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/460.m3u8">PERU | ATV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/461.m3u8">PERU | LATINA</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/462.m3u8">PERU | PANAMERICANA</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/463.m3u8">PERU | GOL PERU</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/464.m3u8">PERU | MOVISTAR DEPORTES</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/466.m3u8">PERU | PERU MAGICO</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/468.m3u8">PERU | TV PERU</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/469.m3u8">PERO | TV PERU NOTICIAS</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/470.m3u8">PERU | CANAL IPE</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/472.m3u8">PERU | ATV PLUS</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/473.m3u8">PERU | WILLAX TV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/979.m3u8">PERU | BHTV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/980.m3u8">PERU | ANTARES TV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/982.m3u8">PERU | CULTURA 24</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/1117.m3u8">PERU | CANAL N</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/1196.m3u8">PERU | RPP</a>
+<br>
+
+<div class="title-label" id="españa"></div>
+<h2 style="color: #FFD54F; display: flex; font-family: Arial; justify-content: center;">ESPAÑA</h2>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3220.m3u8">ESPAÑA : BOING</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3322.m3u8">ESPAÑA : DAZN 1</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3323.m3u8">ESPAÑA : DAZN 2</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3324.m3u8">ESPAÑA : DAZN 3</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3325.m3u8">ESPAÑA : DAZN 4</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3326.m3u8">ESPAÑA : DAZN FORMULA 1</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/1044.m3u8">ESPAÑA | TOROS TV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2974.m3u8">ESPAÑA | REAL MADRID TV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2974.m3u8">ESPAÑA | REAL MADRID TV</a>
+<br>
+
+<div class="title-label" id="mexico"></div>
+<h2 style="color: #FFD54F; display: flex; font-family: Arial; justify-content: center;">MEXICO</h2>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3282.m3u8">MEXICO : TNT SPORTS</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3389.m3u8">MEXICO | TELEVISA MONTERREY</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3392.m3u8">MEXICO : ONCE NIÑOS</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/1116.m3u8">MEXICO | INGENIO TV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/974.m3u8">MEXICO | CANAL 4 SALTILLO</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/972.m3u8">MEXICO | CANAL 10 CANCUN</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/962.m3u8">MEXICO | EXTREMA X</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/894.m3u8">MEXICO | Azteca Plus</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/896.m3u8">MEXICO | Film And Arts</a>
+<br>
+
+<div class="title-label" id="ecuador"></div>
+<h2 style="color: #FFD54F; display: flex; font-family: Arial; justify-content: center;">ECUADOR</h2>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3390.m3u8">ECUADOR : EL CANAL DEL FUTBOL</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3293.m3u8">ECUADOR : Directv ecuador</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/507.m3u8">ECUADOR | CANAL UNO</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/508.m3u8">ECUADOR | ECUADOR TV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/509.m3u8">ECUADOR | ECUADOR TV INTERNACIONAL</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/510.m3u8">ECUADOR | ECUAVISA</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/511.m3u8">ECUADOR | ECUAVISA Quito"</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/512.m3u8">ECUADOR | GAMAVISION</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/513.m3u8">ECUADOR | RTS</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/514.m3u8">ECUADOR | TC TELEVISION</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/515.m3u8">ECUADOR | TELEAMAZONAS</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/516.m3u8">ECUADOR | OROMAR TV</a>
+<br>
+
+<div class="title-label" id="chile"></div>
+<h2 style="color: #FFD54F; display: flex; font-family: Arial; justify-content: center;">CHILE</h2>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/536.m3u8">CHILE | 24HORAS</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/537.m3u8">CHILE | CANAL 13</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/538.m3u8">CHILE | CDF</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/541.m3u8">CHILE | CDO BASICO</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/542.m3u8">CHILE | CDO PREMIUN</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/543.m3u8">CHILE | CHILEVISION</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/544.m3u8">CHILE | ETC TV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/545.m3u8">CHILE | FOX SPORTS</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/546.m3u8">CHILE | LA RED</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/547.m3u8">CHILE | MEGA</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/549.m3u8">CHILE | TELETRAK</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/550.m3u8">CHILE | TVN</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2949.m3u8">CHILE | PINGUINO TV</a>
+<br>
+
+<div class="title-label" id="costa rica"></div>
+<h2 style="color: #FFD54F; display: flex; font-family: Arial; justify-content: center;">COSTA RICA</h2>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/788.m3u8">COSTA RICA | CANAL 14 TV SUR</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/790.m3u8">COSTA RICA | TIGO SPORTS</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/791.m3u8">COSTA RICA | REPRETEL 11</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/792.m3u8">COSTA RICA | REPRETEL 6</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/793.m3u8">COSTA RICA | TELETICA 7</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/794.m3u8">COSTA RICA | TELEUNO</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/1041.m3u8">COSTA RICA | FUTV</a>
+<br>
+
+<div class="title-label" id="cuba"></div>
+<h2 style="color: #FFD54F; display: flex; font-family: Arial; justify-content: center;">CUBA</h2>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/1321.m3u8">CUBA | CUBAVISION</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/1322.m3u8">CUBA | CUBAVISION INTERNACIONAL</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/1323.m3u8">CUBA | AMERICA TV</a>
+<br>
+
+<div class="title-label" id="bolivia"></div>
+<h2 style="color: #FFD54F; display: flex; font-family: Arial; justify-content: center;">BOLIVIA</h2>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/2985.m3u8">BOLIVIA | RED ONLINE</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3009.m3u8">BOLIVIA | BOLIVIA TV DEPORTES 7.2</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3010.m3u8">BOLIVIA | CATOLICA TV</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3011.m3u8">BOLIVIA | RED ADVENIR</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3012.m3u8">BOLIVIA | RTP</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3013.m3u8">BOLIVIA | TVU</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3014.m3u8">BOLIVIA | UNITEL</a>
+<br>
+<a class="hidelink" target="xDisplay" hiddenhref="http://millerflixpro.epizy.com/index.html?file=http://soberon.us:25461/live/bullnew/soberonnew/3015.m3u8">BOLIVIA | XTO TV</a>
+<br>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+#movid {
+position: absolute;
+top: -20px;
+left: 0px;
+-webkit-box-shadow: 3px 0px 35px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 0px 35px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 0px 35px 0px rgba(0,0,0,0.75);
+height: calc(100% + 22px);
+width: 100%;
+
+
+}
+</style>
+<div id="movid">
+<iframe scrolling="no" frameborder="0" height="100%" name="xDisplay" id="xDisplay" src="https://iptv.scripts.cdn.mataocio.com/index.html?file=https://videostreaming.cloudserverlatam.com:443/cloudservertv/cloudservertv/playlist.m3u8" width="100%" __idm_id__="977989633"></iframe>
+</div>
+
+
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<div class="post-footer-line post-footer-line-1">
+<span class="post-author vcard">
+</span>
+<span class="post-timestamp">
+</span>
+<span class="reaction-buttons">
+</span>
+<span class="post-comment-link">
+</span>
+<span class="post-backlinks post-comment-link">
+</span>
+<span class="post-icons">
+<span class="item-control blog-admin pid-950747405">
+<a href="https://www.blogger.com/post-edit.g?blogID=5992034039883246677&amp;postID=5999736044305149481&amp;from=pencil" title="Editar entrada">
+<img alt="" class="icon-action" height="18" src="//img2.blogblog.com/img/icon18_edit_allbkg.gif" width="18">
+</a>
+</span>
+</span>
+<div class="post-share-buttons goog-inline-block">
+</div>
+</div>
+<div class="post-footer-line post-footer-line-2">
+<span class="post-labels">
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3">
+<span class="post-location">
+</span>
+</div>
+</div>
+</div>
+<div class="comments" id="comments">
+<a name="comments"></a>
+</div>
+</div>
+
+        </div></div>
+      
+</div>
+<div class="blog-pager" id="blog-pager">
+<a class="home-link" href="http://iptv.mataocio.com/">Inicio</a>
+</div>
+<div class="clear"></div>
+<div class="post-feeds">
+</div>
+</div><div class="widget HTML" data-version="1" id="HTML1">
+<div class="widget-content">
+<script language="Javascript" type="text/javascript"> 
+<!-- Begin 
+document.oncontextmenu = function(){return false} 
+// End --> 
+</script>
+
+
+  <!--Romper Iframes-->
+   <script type="text/javascript"><!--
+   if(top.location!=this.location) top.location=this.location;
+   //--></script>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;HTML1&quot;));" rel="nofollow" target="configHTML1" title="Editar">
+<img alt="" height="18" src="https://resources.blogblog.com/img/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget HTML" data-version="1" id="HTML3">
+<div class="widget-content">
+<script>
+function launchFullScreen(element) {
+  if(element.requestFullScreen) {
+    element.requestFullScreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen();
+  }
+
+document.getElementById("l1").style.display = "none";
+document.getElementById("l2").style.display = "block";
+
+document.getElementById("fulltrans").style.display = "none";
+document.getElementById("fulltrans-but").style.display = "none";
+
+
+
+}
+
+
+// Lanza en pantalla completa en navegadores que lo soporten
+ function cancelFullScreen() {
+     if(document.cancelFullScreen) {
+         document.cancelFullScreen();
+     } else if(document.mozCancelFullScreen) {
+         document.mozCancelFullScreen();
+     } else if(document.webkitCancelFullScreen) {
+         document.webkitCancelFullScreen();
+     }
+
+document.getElementById("l1").style.display = "block";
+document.getElementById("l2").style.display = "none";
+
+
+
+
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {  
+document.getElementById("fulltrans").style.display = "block";
+      document.getElementById("fulltrans-but").style.display = "flex";
+}
+
+ }
+</script>
+
+
+
+
+<style>
+#bttt {
+    position:absolute;
+    z-index:9999999999999999999999999;
+    top:6px;
+    right:12px;
+    cursor: pointer;
+
+}
+</style>
+<div id="bttt">
+<a id="l1" onclick="launchFullScreen(document.documentElement);"><img height="50px" width="50px" src="https://static.vecteezy.com/system/resources/previews/003/174/438/large_2x/expand-to-fullscreen-and-exit-from-full-screen-mode-icon-elements-vector.jpg"></a>
+<a id="l2" onclick="cancelFullScreen();" style="display:none;"><img height="50px" width="50px" src="https://static.vecteezy.com/system/resources/previews/003/174/438/large_2x/expand-to-fullscreen-and-exit-from-full-screen-mode-icon-elements-vector.jpg"></a>
+</div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;HTML3&quot;));" rel="nofollow" target="configHTML3" title="Editar">
+<img alt="" height="18" src="https://resources.blogblog.com/img/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget HTML" data-version="1" id="HTML4">
+<div class="widget-content">
+<!-- Parche trans Fullscreen -->
+<style>
+#fulltrans {
+    position:fixed;
+    z-index:9999999999999999999999999999999999999;
+    top:0px;
+    left:0px;
+   height: 100%;
+   width:100%;
+  display: none;
+
+}
+
+
+
+
+<style>
+
+#ft2 {
+  border-radius: 20px;
+}
+
+#fulltrans-but {
+    position:absolute;
+    z-index:9999999999999999999999999999999999999;
+    top: calc(50% - 90px);
+    left: calc(50% - 318px);
+   display: none;
+   height: 90px;
+   width: 318px;
+justify-content: center;
+flex-direction: column;
+text-align:center;
+}
+
+
+
+<script>
+
+
+function launchFullScreen2(element) {
+  if(element.requestFullScreen) {
+    element.requestFullScreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen();
+  }
+
+document.getElementById("fulltrans").style.display = "none";
+
+}</script>
+
+
+
+
+
+<script>
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {  
+document.getElementById("fulltrans").style.display = "block";
+      document.getElementById("fulltrans-but").style.display = "flex";
+}
+</script>
+
+
+
+
+
+
+
+
+<style>
+@media screen and (max-height: 500px) {
+#fulltrans-but { 
+zoom: 60%;
+}
+} 
+</style>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;HTML4&quot;));" rel="nofollow" target="configHTML4" title="Editar">
+<img alt="" height="18" src="https://resources.blogblog.com/img/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+</div>
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/2080820689-widgets.js"></script>
+<script type="text/javascript">
+</div>
+<div id="warning-message">
+    this website is only viewable in landscape mode
+</div>

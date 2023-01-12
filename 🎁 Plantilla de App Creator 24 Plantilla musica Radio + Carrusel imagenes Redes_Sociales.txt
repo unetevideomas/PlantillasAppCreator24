@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.4/plyr.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.css'><link rel="stylesheet" href="./style.css">
+  
+  
+  
+  <style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #171717;
+}
+
+section {
+  max-width: 576px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
+
+header {
+  text-align: center;
+  margin: 2rem 0 0 0;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+header h3 {
+  color: #fff;
+  margin: 15px 0 3px 0;
+}
+
+header p {
+  color: crimson;
+}
+
+label {
+  color: #fff;
+  border-bottom: 4px solid crimson;
+  margin-left: 2rem;
+  width: fit-content;
+  padding: 0 0.5rem;
+  margin-top: 3rem;
+  display: block;
+}
+
+ul {
+  background-color: #131313;
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem 0.5rem 0 0.5rem;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #a8a8a8;
+  margin-bottom: 15px;
+  padding-bottom: 0.5rem;
+}
+
+.track-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.track-number {
+  color: #a8a8a8;
+  margin-right: 10px;
+}
+
+.track-detail_name {
+  color: #fff;
+}
+
+.track-detail_desc {
+  color: #a8a8a8;
+}
+
+footer {
+  background-color: #030303;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.slider {
+  background-color: darken(white, 50%);
+  border-radius: 2px;
+  cursor: pointer;
+  height: 2px;
+  position: relative;
+  width: 100%;
+}
+
+.slider-progress {
+  background-color: crimson;
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  width: 0%;
+}
+.slider-pin {
+  background-color: white;
+  border-radius: 8px;
+  height: 8px;
+  position: absolute;
+  pointer-events: all;
+  right: -5px;
+  top: -2px;
+  width: 8px;
+  box-shadow: (0px 1px 1px 0px rgba(0, 0, 0, 0.32));
+  transition: (transform 0.25s ease);
+}
+
+.count {
+  color: #585858;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin: 3px 0 1rem 0;
+  font-weight: bold;
+}
+
+.event {
+  color:#eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+</style>
+  
+  
+
+
+<style>
+
+.contenedor {
+	width: 100%;
+	margin: auto;
+        
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+        float: left;
+        
+}
+
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+        padding: 10px;
+        background: #E0E4E5;
+	font-size: 24px;
+        text-decoration. none;
+}
+
+.contenedor-titulo-controles h3 {
+	color: #000;
+        
+        background: #E0E4E5;
+	font-size: 24px;
+        text-decoration. none;
+}
+
+/* ---- ----- ----- movie ----- ----- ----- */
+.peliculas-recomendadas .contenedor-movie {
+	width: 100%;
+    height: 50%;
+	padding: 20px 5px;
+	overflow: hidden;
+	scroll-behavior: smooth;
+        border-radius: 5px;
+        
+}
+
+.peliculas-recomendadas .contenedor-movie .movie {
+	display: flex;
+	flex-wrap: nowrap;
+        border-radius: 5px;
+        
+}
+
+.peliculas-recomendadas .contenedor-movie .movie .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+        border-radius: 5px;
+}
+
+.peliculas-recomendadas .contenedor-movie .movie .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.peliculas-recomendadas .contenedor-movie .movie .pelicula img {
+	width: 125px;
+        height: 135px;
+	vertical-align: top;
+        border-radius: 7%;
+        float: left;
+        margin-right: 10px;
+        text-decoration: none;
+}
+
+.peliculas-recomendadas .contenedor-movie .movie .pelicula img .a{
+        padding: 10px;
+        background: #000000;
+        border-radius: 5px;
+        color: #ffffff;
+        text-decoration: none;    
+
+} 
+
+
+.a{
+        padding: 10px;
+        background: #000000;
+        border-radius: 5px;
+        color: #ffffff;
+        text-decoration: none;    
+
+} 
+.logo img{
+    
+    border-radius: 5px;
+    
+}
+.beneficios{
+    background: #000;
+    line-height: 150%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid yellow;
+}
+
+.parrafo{
+    background-color: transparent;
+    line-height: 150%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+
+.redes {
+     width: 100%;
+     border-radius: 50px;    
+     border-radius: 5px;
+    
+ }
+  
+  .redes img {
+    border-radius: 10px;
+    padding-right: 4px;
+  }
+
+.redes a{
+      padding-left: 7px;
+}
+
+.h3{
+        background: #000;
+        border-radius: 5px;
+        color: #ffffff;
+        text-decoration: none;
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	
+.peliculas-recomendadas .contenedor-movie .movie {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 15px;
+	}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+<script>
+   ahora=new Date();
+   dia=ahora.getDay();
+   hora=ahora.getHours();
+   minutos=ahora.getMinutes();
+   if(dia>=1 && dia<=6){
+      if(hora>=1 && hora<=24){
+         document.write("<p class='simple-text-abierto'>Abierto ahora</p>");
+      }
+      else{
+        document.write("<p class='simple-text-cerrado'>Cerrado ahora</p>");
+      }
+   }
+   else{
+      if(dia==6){
+         if(hora>=1 && hora<24){
+            document.write("<p class='simple-text-abierto'>Abierto ahora</p>");
+         }
+         else{
+           document.write("<p class='simple-text-cerrado'>Cerrado ahora</p>");
+         }
+      }
+     if(dia==0){
+         if(hora>=1 && hora<24){
+            document.write("<p class='simple-text-abierto'>Abierto ahora</p>");
+         }
+         else{
+           document.write("<p class='simple-text-cerrado'>Cerrado ahora</p>");
+         }
+      }
+     
+     
+      else{
+         document.write("<p class='simple-text-cerrado'>Cerrado ahora</p>");
+      }
+   }
+  
+      
+      
+</script>
+                          
+                          
+<style>
+                            
+.simple-text-abierto {
+         width: 33%;
+         background: green;
+         border-radius: 5px;
+         text-align: center;
+         padding: 2px;
+         color: white;
+         float: left;
+         margin-top: -3px;                      
+  }
+
+.simple-text-cerrado {
+         width: 33%;
+         background: red;
+         border-radius: 5px;
+         text-align: center;
+         padding: 2px;
+         color: white;
+         float: left;
+         margin-top: -3px;                      
+  }
+                            
+                            
+  </style>
+
+
+
+
+<!-- partial:index.partial.html -->
+<div class="container">
+
+
+
+  
+  <section>
+<!-- CURRENT PLAYING HEADER -->
+<header>
+<img src="https://cdn.britannica.com/03/151903-131-E310E9EC/Microphone-background-sound-waves-energy-Music.jpg" alt="playing-cover"/>
+<h3>Track Name</h3>
+<p>Track desc</p>
+</header>
+<!-- PLAYLIST LABEL-->
+<label>Emisora</label>
+<!-- TRACK LIST -->
+<ul></ul>
+<!-- MUSIC CONTROLS -->
+<footer>
+<!-- SLIDER -->
+<div class="slider">
+<div class="slider-progress">
+<div class="slider-pin"></div>
+</div></div>
+<!-- COUNT -->
+<div class="count">
+<span class="count-current">00:01</span>
+<span class="count-final">11:23</span>
+</div>
+<!-- EVENTS -->
+<div class="event">
+<i class="fas fa-caret-left event-prev"></i>
+<i class="fas fa-play event-playPause"></i>
+<i class="fas fa-caret-right event-next"></i>
+<i class="fas fa-volume-up event-muteUnmute"></i>
+</div>
+</footer>
+</section>
+<audio src="" id="audio"></audio>
+
+
+
+
+    
+
+
+
+
+<script src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
+<script>//<![CDATA[
+const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));
+//]]></script>
+
+
+
+
+
+
+
+
+<div class="single-item">
+<a href="#"><img class="img-responsive" src="https://dl.dropboxusercontent.com/s/mw3q2k1q5q5fsgd/1.jpg"></a>
+<a href="#"><img class="img-responsive" src="https://dl.dropboxusercontent.com/s/mw3q2k1q5q5fsgd/1.jpg"></a>
+
+<a href="#"><img class="img-responsive" src="https://dl.dropboxusercontent.com/s/mw3q2k1q5q5fsgd/1.jpg"></a>
+
+
+
+
+</div>
+
+<br>
+  <br>           
+                               
+   <div class="redes">
+
+<a href="tel:3124498727"><img src="https://dl.dropboxusercontent.com/s/8vx775zgj31s7im/icono%20llamar.png"></a>
+<a href="https://api.whatsapp.com/send?phone=573124498727"><img src="https://dl.dropboxusercontent.com/s/96r6l012almpg9t/whatsapp.png"></a>
+<a href="https://www.facebook.com/lamerameraonline"><img src="https://dl.dropboxusercontent.com/s/uv9g4cincw98l9n/facebook.png"></a>
+<a href="#"><img src="https://dl.dropboxusercontent.com/s/6qfxs9794e4ahkj/instagram.png"></a>
+<a href="go:noticias"><img src="https://dl.dropboxusercontent.com/s/cz3td4hoalp9o95/icono%20chat%20vip.jpg"></a>
+
+</div>                             
+                                
+				
+
+			</section>
+		</div>
+	</div>
+
+
+
+
+
+<center><h4><b><span style="color: #fff; font-size: 20px;">VIP Business 2022 ©</b></h4></center>
+						
+						
+						
+						
+						
+					</div>
+				</div>
+
+
+
+
+
+
+
+</div><!--main end-->
+</div><!--container end-->
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.js'></script><script  src="./script.js">
+
+</script>
+
+
+<script>
+$('.single-item').slick({
+  dots: true,
+  arrows: false,
+  mobileFirst: true,
+  autoplay: true,
+  // fade: true,
+  cssEase: 'ease'
+});
+$('.variable-width').slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  autoplay: true,
+  speed: 300,
+  slidesToShow: 2,
+  centerMode: false,
+  variableWidth: false,
+  centerPadding:'50px'
+});
+</script>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+}
+
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 0px;
+}
+ 
+/* ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  background:rgb(100,0,0);
+  -webkit-box-shadow: inset 0 0 6px rgba(100,0,0,0.5); 
+} */
+
+body{
+    background-image: url("https://dl.dropboxusercontent.com/s/2w5ztyjdxeuy2cv/imagen%20inicio%20radio%20la%20Mera.jpg");
+    background-size: cover;
+    background.repeat: no repeat;
+  height:100vh;
+}
+
+
+
+.container{
+  background:transparent;
+  width:100%;
+  height:100%;
+  position:relative;
+  overflow-Y:scroll;
+  margin-top:0em;
+  
+}
+play{
+  left:0;
+  right:0;
+  height:3.5em;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+  
+}
+h3{
+  color:#fff;
+    background: #000;  
+}
+.single-item img{
+        width:98%;
+	margin-top:8px;
+	height:220px;
+	display:flex;
+	justify-content:center;
+	transition:0.5s;
+        border-radius: 10px;
+
+   
+}
+.single-item{
+  position:relative;
+  border-radius: -25px;
+}
+.slick-dots li button:before{
+  color:white;
+  opacity:1;
+  text-shadow:1px 2px 1px black;
+}
+.slick-dots li.slick-active button:before{
+  color:red;
+  opacity:1;
+}
+.variable-width  img{
+  width:400px;
+  padding-right:7px; 
+  border-radius: 10px;
+}
+.bt1{color:#fff;
+text-size:19pt;
+background:red;
+border:1px solid #fff;
+border-radius:3px;
+font-weight:bold;
+width:100%;
+padding:10;}
+
+.bt1:hover{color:#fff;
+text-size:19pt;
+background:green;
+border:1px solid #fff;
+border-radius:3px;
+font-weight:bold;
+width:100%;
+padding:10;
+}
+
+
+</style>
+
+
+<script id=»_wauwaa»>var _wau = _wau || []; _wau.push([«classic», «zltotgacrhd9», «waa»]);
+(function() {var s=document.createElement(«script»); s.async=true;
+s.src=»http://widgets.amung.us/classic.js»;
+document.getElementsByTagName(«head»)[0].appendChild(s);
+})();</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+
+
+
+<style>
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: 0;
+}
+
+body{
+	background: #000;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrap{
+	max-width: 1100px;
+	width: 100%;
+      
+	margin: auto;
+}
+
+.wrap > h1{
+	color: #494B4D;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 15px 0px;
+}
+
+.wrap > h1:after{
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #C7C7C7;
+	margin: 20px 0;
+}
+
+.store-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.category_list{
+	display: flex;
+	flex-wrap: wrap;
+	width: 18%;
+}
+
+.category_list .category_item{
+	display: block;
+	width: 90%;
+	padding: 10px 0;
+	margin-bottom: 20px;
+	background: #3c71e0;
+
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.category_list .ct_item-active{
+	background: #2D3E50;
+}
+
+/* PRODUCTOS ============*/
+
+.products-list{
+	width: 82%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.products-list .product-item{
+	width: 22%;
+	margin-left: 3%;
+	margin-bottom:25px;
+	
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-self: flex-start;
+
+	transition: all .4s;
+}
+
+.products-list .product-item img{
+	width: 100%;
+    padding: 0px;
+    background: #E0E4E5; 
+    
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.20);
+    
+    
+}
+
+.products-list .product-item a{
+	display: block;
+	width: 100%;
+	background: transparent;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+    border-radius: 0px 0px 5px 5px;
+    
+    margin-bottom:-5px;
+    
+}
+  
+  .products-list .product-item p{
+	display: block;
+	width: 100%;
+	padding: 0px 0;
+	background: #3c71e0;
+
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.30);
+    
+}
+  
+ .products-list .product-item h5  {
+    width: 50%;
+    
+    
+    padding-right: 3px;
+    margin-top: 4px;
+    
+    
+    
+    
+    
+    
+    
+  } 
+  
+  
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1100px){
+	.products-list .product-item{
+		width: 30.3%;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.category_list,
+	.products-list{
+		width: 100%;
+	}
+
+	.category_list{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.category_list .category_item{
+		align-self: flex-start;
+		width: 15%;
+		font-size: 14px;
+	}
+
+	.products-list .product-item{
+		margin-left: 4.5%;
+	}
+
+	.products-list .product-item:nth-child(3n+1){
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.category_list{
+		flex-direction: row;
+	}
+	.category_list .category_item{
+		width: 32%;
+		margin-bottom: 20px;
+                border-radius: 5px;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+	.products-list .product-item{
+		width: 47.5%;
+	}
+
+	.products-list .product-item:nth-child(3n+1){
+		margin-left: 4.5%;
+	}
+
+	.products-list .product-item:nth-child(2n+1){
+		margin-left: 0px;
+	}
+
+}
+
+@media screen and (max-width: 350px){
+	.products-list .product_item{
+		width: 100%;
+		margin-left: 0px;
+	}
+}
+
+
+</style>
+
+
+
+
+
+<script>
+
+$(document).ready(function(){
+
+	// AGREGANDO CLASE ACTIVE AL PRIMER ENLACE ====================
+	$('.category_list .category_item[category="all"]').addClass('ct_item-active');
+
+	// FILTRANDO PRODUCTOS  ============================================
+
+	$('.category_item').click(function(){
+		var catProduct = $(this).attr('category');
+		console.log(catProduct);
+
+		// AGREGANDO CLASE ACTIVE AL ENLACE SELECCIONADO
+		$('.category_item').removeClass('ct_item-active');
+		$(this).addClass('ct_item-active');
+
+		// OCULTANDO PRODUCTOS =========================
+		$('.product-item').css('transform', 'scale(0)');
+		function hideProduct(){
+			$('.product-item').hide();
+		} setTimeout(hideProduct,400);
+
+		// MOSTRANDO PRODUCTOS =========================
+		function showProduct(){
+			$('.product-item[category="'+catProduct+'"]').show();
+			$('.product-item[category="'+catProduct+'"]').css('transform', 'scale(1)');
+		} setTimeout(showProduct,400);
+	});
+
+	// MOSTRANDO TODOS LOS PRODUCTOS =======================
+
+	
+});
+
+
+</script>
+
+
+ <!-- JS -->
+<script src="./script.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function () {
+  const tracksList = [
+    {
+      audioSrc:
+        'https://live.hbstreaming.com/radiolatina',
+      coverSrc: 'https://dl.dropboxusercontent.com/s/knnf07v3tquxdh1/2.png',
+      name: 'La Mera Mera Online',
+      desc: 'Acevedo Huila',
+      id: 1,
+    },
+    
+  ];
+
+  const currentTrackName = document.querySelector('header h3');
+  const currentTrackDesc = document.querySelector('header p');
+  const currentTrackCover = document.querySelector('header img');
+  const currentTrackAudio = document.querySelector('audio');
+  const playPauseBtn = document.querySelector('.event-playPause');
+  const muteUnmuteBtn = document.querySelector('.event-muteUnmute');
+  const playNextBtn = document.querySelector('.event-next');
+  const playPrevBtn = document.querySelector('.event-prev');
+  const progress = document.querySelector('.slider-progress');
+  const currentTrackTime = document.querySelector('.count-current');
+  const finalTrackTime = document.querySelector('.count-final');
+  // ADD TRACKS TO MY PLAYLIST ON PAGE LOAD
+  (function addMyTracksList() {
+    for (let track of tracksList) {
+      var li = document.createElement('li');
+      li.id = track.id;
+      li.innerHTML = `
+                    <div class="track-number">0${track.id}</div>
+                    <img
+                    src=${track.coverSrc}
+                    class="track-img"
+                    alt=""
+                    />
+
+                    <div class="track-detail">
+                    <div class="track-detail_name">${track.name}</div>
+                    <div class="track-detail_desc">
+                        <small>${track.desc}</small>
+                    </div>
+                    </div>
+        `;
+      document.querySelector('ul').appendChild(li);
+      (function (id) {
+        li.addEventListener(
+          'click',
+          () => {
+            playSelectedTrack(id);
+          },
+          false
+        );
+      })(track.id);
+    }
+  })();
+
+  let trackId = 1;
+
+  const loadTrack = (songId) => {
+    const song = tracksList.find((track) => track.id === songId);
+
+    const { audioSrc, coverSrc, name, desc } = song;
+    currentTrackName.innerText = name;
+    currentTrackDesc.innerText = desc;
+    currentTrackAudio.src = audioSrc;
+    currentTrackCover.src = coverSrc;
+  };
+
+  const playSelectedTrack = (songId) => {
+    trackId = songId;
+    loadTrack(songId);
+    playTrack();
+  };
+
+  loadTrack(trackId);
+
+  const playTrack = () => {
+    playPauseBtn.classList.remove('fa-play');
+    playPauseBtn.classList.add('fa-pause');
+
+    currentTrackAudio.play();
+  };
+
+  const pauseTrack = () => {
+    playPauseBtn.classList.remove('fa-pause');
+    playPauseBtn.classList.add('fa-play');
+
+    currentTrackAudio.pause();
+  };
+
+  const playPrevTrack = () => {
+    trackId--;
+
+    if (trackId < 0) {
+      trackId = tracksList.length - 1;
+    }
+    loadTrack(trackId);
+    playTrack();
+  };
+
+  const playNextTrack = () => {
+    trackId++;
+    if (trackId > tracksList.length - 1) {
+      trackId = 0;
+    }
+    loadTrack(trackId);
+    playTrack();
+  };
+
+  const updateProgress = () => {
+    const currentTime = currentTrackAudio.currentTime;
+    const trackDuration = currentTrackAudio.duration;
+    const percent = (currentTime / trackDuration) * 100;
+    progress.style.width = percent + '%';
+    let curMins = Math.floor(currentTime / 60);
+    let curSecs = Math.floor(currentTime - curMins * 60);
+    let durMins = Math.floor(trackDuration / 60) || '--';
+    let durSecs = Math.floor(trackDuration - durMins * 60) || '--';
+
+    if (curMins < 10) {
+      curMins = `0${curMins}`;
+    }
+    if (curSecs < 10) {
+      curSecs = `0${curSecs}`;
+    }
+    if (durMins < 10) {
+      durMins = `0${durMins}`;
+    }
+    if (durSecs < 10) {
+      durSecs = `0${durSecs}`;
+    }
+
+    currentTrackTime.innerText = `${curMins}:${curSecs}`;
+    finalTrackTime.innerText = `${durMins}:${durSecs}`;
+  };
+
+  const muteUnmuteTrack = () => {
+    if (currentTrackAudio.muted) {
+      currentTrackAudio.muted = false;
+      muteUnmuteBtn.classList.remove('fa-volume-mute');
+      muteUnmuteBtn.classList.add('fa-volume-up');
+    } else {
+      currentTrackAudio.muted = true;
+      muteUnmuteBtn.classList.remove('fa-volume-up');
+      muteUnmuteBtn.classList.add('fa-volume-mute');
+    }
+  };
+
+  playPauseBtn.addEventListener('click', () => {
+    const currentlyPlaying = playPauseBtn.classList.contains('fa-pause');
+
+    currentlyPlaying ? pauseTrack() : playTrack();
+  });
+  muteUnmuteBtn.addEventListener('click', () => muteUnmuteTrack());
+
+  playPrevBtn.addEventListener('click', () => playPrevTrack());
+  playNextBtn.addEventListener('click', () => playNextTrack());
+
+  currentTrackAudio.addEventListener('timeupdate', () => updateProgress());
+});
+</script> 
+
+</body>
