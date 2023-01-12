@@ -1,0 +1,144 @@
+	<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<div class="middle">
+		<div class="menu">
+			<li class="item" id="Temporada 1">
+				<a href="#Temporada 1" class="btn"></i>Temporada 1</a>
+				<div class="smenu">
+					<a href="#">Capitulo 1</a>
+					<a href="#">Capitulo 2</a>
+					<a href="#">Capitulo 3</a>
+				</div>
+			</li>
+
+			<li class="item" id="Temporada 2">
+				<a href="#Temporada 2" class="btn"></i>Temporada 2</a>
+				<div class="smenu">
+					<a href="#">Capitulo 1</a>
+					<a href="#">Capitulo 2</a>
+					<a href="#">Capitulo 3</a>
+				</div>
+			</li>
+
+			<li class="item" id="Temporada 3">
+				<a href="#Temporada 3" class="btn"></i>Temporada 3</a>
+				<div class="smenu">
+					<a href="#">Capitulo 1</a>
+					<a href="#">Capitulo 2</a>
+					<a href="#">Capitulo 3</a>
+				</div>
+			</li>
+
+			</li>
+		</div>
+	</div>
+</body>
+</html>
+<style type="text/css">  
+body {
+  
+}* {
+   background: #121212;
+ 	margin: 0;
+	color: #111;
+	padding: 0;
+	font-family: sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+
+.middle {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+.menu {
+	width: 340px;
+	border-radius: 8px;
+	overflow: hidden;
+	background: #2d2c41;
+}
+
+.item {
+	border-top: 1px solid #000;
+}
+
+.btn {
+	display: block;
+	padding: 16px 20px;
+	background: #2d2c41;
+	color: #fff ;
+	position: relative;
+}
+
+.btn:before {
+	content: "";
+	position: relative;
+	width: 14px;
+	height: 14px;
+	top: 100px;
+	backgrund: #111;
+	left: 20px;
+	bottom: -7px;
+	transform: rotate(45deg);
+}
+
+.btn i {
+	margin-right: 10px;
+	backgrund: #111;
+}
+
+.smenu {
+	background: #2d2c41;
+	overflow: hidden;
+	transition: max-height 0.3s;
+	max-height: 0;
+}
+
+.smenu a {
+	display: block;
+	padding: 16px 26px;
+	color: #ffff;
+	font-size: 14px;
+	margin: 4px 0;
+	position: relative;
+}
+
+.smenu a:before {
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 100%;
+	background: #e30202;
+	left: 0;
+	top: 0;
+	transition: 0.3s;
+	opacity: 0;
+}
+
+.smenu a:hover::before {
+	opacity: 1;
+}
+
+.item:target .smenu {
+	max-height: 10em;
+}
+</style>
+
+

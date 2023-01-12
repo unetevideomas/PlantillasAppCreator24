@@ -1,0 +1,164 @@
+<!-- creado por jordan -->
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Movie website</title>
+  <meta name="viewport" content="width="device-width, initial-scale=1.0" >
+  <link rel="stylesheet" href=style.css>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.4/plyr.css"/>
+	</head>
+	<body>
+		<div class="container header">
+			
+		
+		<div class="container movie-details">
+		 <div class="row">
+		  <div class="col-md-6 left-box">
+		  <h1>TITULO</h1>
+		  <p>DESCRIPCION
+			</p>
+		
+		  <!--BOTONES-->	
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<nav class="nav">
+
+
+<a href="#" class="nav__link nav__link--active">
+	<i class="material-icons nav__icon">smart_display</i>
+	<span class="nav__text"></span></a>
+	
+
+   <a href="#" class="nav__link nav__link--active">
+	<i class="material-icons nav__icon">downloading</i>
+	<span class="nav__text"></span></a>
+	
+  <a href="#" class="nav__link nav__link--active">
+	<i class="material-icons nav__icon">language</i>
+	<span class="nav__text"></span></a>
+	
+
+				<!--IMG-->
+		  </div>
+		   <div class="col-md-6 text-centre">
+			   <img src="https://www.dropbox.com/s/hzvysje0o73p3k9/e804333c704730c2c804a37e91a165e1.jpg?raw=1" alt="" class="movie-img">
+		   </div>  
+		</div>
+		</div>
+		<div><!--video-->
+			<video class="js-player" controls="" poster="" preload="none">
+				<source src="#" type="video/mp4"></source>
+			  </video>
+			  <hr>
+
+
+<div class="fb-comment-embed" data-href="https://fb.watch/6SB1aGMyCy/" data-width="560" data-include-parent="false"></div>
+
+
+
+
+
+<script src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
+<script>//<![CDATA[
+const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));
+//]]></script>
+
+
+
+
+<div id="fb-root"></div> <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v11.0&appId=234438698310942&autoLogAppEvents=1" nonce="3gj99Gga"></script>
+
+		</div>
+	</body>
+</html>
+
+
+
+<style type="text/css"> 
+
+
+
+
+* {
+	margin:0;
+	padding:0;
+}
+body{
+background-color: black;
+background-position:center ;
+background-size:cover;
+}
+.logo{
+width:150px;
+	margin-top:18px;
+}
+.header{
+	height:10px;
+}
+.header-btn{
+	text-decoration:none !important ;
+	border-radius:30px;
+	padding:7px 20px;
+	float:right;
+	margin-top:15px;
+	color:#fff!important;
+	background:#107afd;
+	font-weight:600;
+}
+.movie-details{
+	margin:20% 0px;
+}
+.left-box{
+	color:#fff;
+	margin:15px 0;
+	padding:20px;
+}
+.casting img{
+	height:50px;
+	width:50px;
+	margin-right:10px;
+	cursor:pointer ;
+}
+.left-box a{
+	text-decoration:none !important ;
+	border-radius:30px;
+	padding:7px 20px;
+	margin-top:35px;
+	color:#fff!important;
+	background:#107afd;
+	font-weight:600;
+	display:inline-block ;
+	margin-right:10px;
+	}
+.download-btn{
+	border:1px solid #fff !important;
+	background:transparent !important;
+}
+.fa{
+	margin:0 5px;
+}
+.movie-img{
+	height:350px;
+	box-shadow:-4px 4px 5px 0 #000;
+}
+.series h3{
+	color:#fff;
+}
+.series img{
+	width:100%;
+	margin-top:15px;
+	box-shadow:-4px 4px 5px 0 #000;
+	transition:0.5s;
+}
+.series img:hover{
+	transform:translateY(-10px); 
+}
+
+
+
+.nav__icon {
+	font-size: 38px;
+	height: auto ;
+}

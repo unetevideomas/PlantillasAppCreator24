@@ -1,0 +1,23 @@
+<div style="text-align: center;"><br /></div>
+<strong>
+              </strong><br />
+<div style="text-align: center;">
+<div class="separator" style="background-color: white; background-image: linear-gradient(rgb(49, 75, 188), rgb(88, 106, 186)); border-radius: 27px; box-shadow: rgba(0, 0, 0, 0.19) 0px 3px 5px 0px; margin: 3px; padding: 8px 15px; text-align: center;">
+أختر أحد السيرفرات للمشاهدة
+<div class="separator" style="background-color: white; background-image: linear-gradient(rgb(49, 75, 187), rgb(53, 78, 187)); border-radius: 27px; margin: 3px; padding: 8px 15px; text-align: center;">
+<br /></div>
+<div style="text-align: center;">
+                <strong><input onclick="myframe.location.href='https://ok.ru/videoembed/3996056685172'" type="button" value="السيرفر 1" />
+                <input onclick="myframe.location.href='https://ok.ru/videoembed/3998598236788'" type="button" value="السيرفر 2" />
+                <input onclick="myframe.location.href='https://ok.ru/videoembed/3998529227380'" type="button" value="السيرفر 3" />
+                <input onclick="myframe.location.href='https://ok.ru/videoembed/3996097579636'" type="button" value="السيرفر 4" />
+              </strong></div>
+<strong>
+</strong>
+<br />
+<div id="monitor">
+<div id="in-mon">
+<div style="text-align: center;">
+<iframe allowfullscreen="" frameborder="0" height="500" marginheight="0" marginwidth="0" name="myframe" scrolling="no" src="" width="100%">
+</iframe></div></div></div>
+</div></div>

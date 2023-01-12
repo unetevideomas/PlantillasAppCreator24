@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://schema.org/WebPage">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<title>Editado Por Xsplus</title>
+<link rel="shortcut icon" href="https://pelisplus.icu/img/favicon.png">
+<link rel="icon" type="image/x-icon" href="https://pelisplus.icu/img/favicon.png" />
+<link rel="stylesheet" type="text/css" href="https://pelisplus.icu/player/css/main.css?v=1.6" />
+<script type="text/javascript" src="https://pelisplus.icu/player/js/jquery.min.js?v=1.6"></script>
+<script type="text/javascript" src="https://pelisplus.icu/js/jw8.9/jwplayer.js?v=1.6"></script>
+<style>
+#myVideo .jw-active-option{color: #cccccc !important;}
+.jw-dock-image{background-size: 70% !important;background-size: 70% 70% !important;}
+.videocontent,#myVideo{min-height:100vh/*260px*/;}
+@media only screen and (max-width: 450px) { 
+.jw-settings-topbar .jw-settings-close { margin-right: 30px; !important}}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<div class="videocontent">
+<script>
+    $(document).ready(function () {
+        closeServer();
+        $("#show-server").click(function(e){ 
+            e.preventDefault();
+            $(".list-server-items").toggle();
+        });
+        $(".list-server-items li.linkserver").click(function(e){
+            e.preventDefault();
+            var link = $(this).attr('data-video');
+            var data_status = $(this).attr('data-status');
+            if ($(this).hasClass("active")) {
+                return false;
+            }else{
+                $("iframe").hide();
+                $(".videocontent img").hide();
+                $("iframe").attr('src', '');
+                if(document.getElementById('myVideo')){
+                    if(data_status == 0){
+                        playerInstance.play();
+                        $("#myVideo").show();
+                    }else{
+                        playerInstance.stop();
+                        $("#myVideo").hide();
+                    }
+                }
+                
+                if(data_status == 1){
+                    $("#load-iframe").show();
+                    $("#load-iframe iframe").show();
+                    $("#load-iframe iframe").attr('src', link);
+                }else{
+                    $("#load-iframe").hide();
+                }
+                closeServer();   
+            }
+            $('.list-server-items li').removeClass('active');
+            $(this).addClass('active');
+        });
+        $("#embedvideo").width($(document).width());
+        $("#embedvideo").height($(document).height());
+    });
+    function closeServer(){
+        setTimeout(function () {
+            $('.list-server-items').fadeOut();
+        }, 5000)
+    }
+</script>
+<style>
+ .videocontent{position: relative;color: #fff;}
+ #list-server-more{z-index: 1;padding: 10px 0 0 0;position: absolute;color: #fff;top: 0;right: 8px;text-align: right;font-family: Arial, Helvetica, sans-serif;}
+ #show-server{color: #fff;padding: 5px 15px;font-size: 10px;background: url('https://pelisplus.icu/video/img/bg/icon.png') no-repeat center center;}
+ .list-server-items{margin-top: 10px;background: rgba(0, 0, 0, .7);}
+ .list-server-items li {cursor: pointer;padding: 6px 5px 6px 15px;color: #ccc;text-align: right;list-style: none;border-top: solid 1px #20201f;font-size: 13px;}
+ .list-server-items li.active, .list-server-items li:hover{color: #fff;}
+ #load-iframe{display: none;position: relative;}
+  .list-server-items li:first-child{border: 0;}
+ .list-server-items a{color: #ccc;text-decoration: none}
+ .list-server-items a:hover,.list-server-items .active a{
+     color: #FFFFFF;
+ }
+</style>
+<div id="list-server-more">
+<a href="javascript:void(0)" id="show-server" title="Show Server"></a>
+<ul class="list-server-items">
+<li class="active linkserver"  data-status="0" data-video="">Main Server</li>
+<li class="linkserver" data-status="1" data-video="https://sbplay2.com/e/ottq7uel2xhl">StreamSB</li>
+<li class="linkserver" data-status="1" data-video="https://fembed-hd.com/v/5d0w1cd0r-xllkq">Fembed</li>
+</ul>
+</div>
+<div id="load-iframe">
+<iframe id="embedvideo" src="" allowfullscreen="true" marginwidth="0" marginheight="0" sandbox="allow-same-origin allow-scripts" scrolling="no" frameborder="0" style="width:100%;height:100%"></iframe>
+</div>
+<div id="myVideo"></div>
+<script type="text/JavaScript">
+              var playerInstance = jwplayer("myVideo");
+              var countplayer = 1;
+              var countcheck = 0;
+              playerInstance.setup({
+                  sources:[{file: 'https://pelisloadtop.com/server41/c99fd96530ff720053b473622df3ca36/EP.0.2.v0.1641892518.m3u8?mac=GCQMLEXssU6Hj7mt8xI%2FhgBtEq2R5jjQGnGqEs11VWU%3D&expiry=1642731999416',label: 'hls P','type' : 'hls'}],
+                                          });
+              playerInstance.on('error', function() {
+                  current_time = playerInstance.getPosition();
+                  countcheck ++;
+                  console.log("countcheck:"+countcheck);
+                  console.log("countplayer:"+countplayer);
+                  if(countcheck < 4){
+                      playerInstance.load();
+                      playerInstance.play();
+                      playerInstance.seek(current_time);
+                  }
+                  if(countplayer == 1 && countcheck== 3){
+                      playerInstance.setup({
+                          sources:[{file: 'http://error.com',label: 'auto P','type' : 'mp4'},],
+                      autostart: true,
+                                                                  });
+                      playerInstance.play();
+                      playerInstance.on('error', function() {
+                          changeLink();
+                      });
+                  }
+              });
+              function changeLink() {
+                  window.location = "https://sbplay2.com/e/ottq7uel2xhl";
+              }
+              playerInstance.addButton(
+                  "https://pelisplus.icu/img/download.svg",
+                  "Download Video",
+                  function() {
+                      window.open(
+                          "https://pelisplus.icu/download?id=MTMyNzUz",
+                          "_blank"
+                      );
+                  },
+                  "download"
+              );
+</script>
+</div>
+</div>
+<script>
+    $(document).ready(function () {
+        $(".videocontent #embedvideo").width($(document).width());
+        $(".videocontent #embedvideo").height($(document).height());
+
+        setTimeout(function () {
+            $('.alert-type').fadeOut();
+        }, 5000)
+
+    });
+</script>
+</body>
+</html>

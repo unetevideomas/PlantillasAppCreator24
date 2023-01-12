@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Carrousel Netflix</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<style type="text/css">
+body{
+	background: #151515;
+	color: #fff;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.carrousel{
+	white-space: nowrap;
+	position: relative;
+	width: auto;
+	overflow: hidden;
+	padding: 80px 80px 0px 0px;
+	left: 50px;
+}
+
+.car{
+	padding: 15px;
+	width: 100vw;
+	height: 230px;
+	position: relative;
+}
+
+.car h1{
+	font-size: 24px;
+	top: 70px;
+	position: relative;
+	left: 20px;
+}
+
+.movie{
+	width: 280px;
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+	display: inline-block;
+	margin-left: 5px;
+	transition: 0.6s all ease;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.movie .cover{
+	background: #555;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-image: url('https://i.ytimg.com/vi/rCzwPnaJT-c/maxresdefault.jpg');
+	background-size: cover;
+}
+
+.car .buttonsArrow{
+	top: 130px;
+	position: absolute;
+}
+
+.car .buttonsArrow .left, .car .buttonsArrow .right{
+	height: 180px;
+  background: rgba(0,0,0,.40);
+  width: 50px;
+  padding: 10px;
+  z-index: 1000;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.car .buttonsArrow i{
+	z-index: 100;
+	top: 38%;
+	font-size: 32px;
+	position: absolute;
+}
+
+.car .buttonsArrow .left{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.car .buttonsArrow .right{
+	position: absolute;
+  right: calc(-99vw + 0px);
+  float: right;
+  top: 1px;
+  margin-right: -2px;
+}
+
+.movie .overlay{
+	position: absolute;
+	background: rgba(0,0,0,.40);
+	width: 100%;
+	z-index: -1;
+	transition: 0.2s ease;
+	height: 100%;
+}
+
+.carrousel .active{
+	transform: scale(1.7);
+  margin: 0px 106px 0px 106px;
+}
+
+.carrousel .movie .play{
+	background: #fff;
+	color: #151515;
+	width: 25px;
+	padding: 5px;
+	height: 26px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 12px;
+	position: relative;
+	top: 45px;
+	left: 9px;
+}
+
+.carrousel .overlay h1{
+	font-size: 13px;
+	position: relative;
+	top: 45px;
+	left: 5px;
+}
+
+.carrousel .overlay .idade{
+	top: 40px;
+	position: relative;
+	background: #151515;
+	color: #fff;
+	border-radius: 2px;
+	padding: 2px;
+	left: 5px;
+	font-size: 12px;
+}
+
+.carrousel .overlay .temporadas{
+	top: 17px;
+	position: relative;
+	color: #fff;
+	border-radius: 2px;
+	padding: 2px;
+	font-size: 14px;
+	left: -15px;
+	transform: scale(0.7);
+}
+
+.carrousel .overlay .tags{
+	top: 17px;
+	position: relative;
+	color: #fff;
+	border-radius: 2px;
+	padding: 2px;
+	font-size: 12px;
+	left: 4px;
+	transform: scale(0.7);
+}
+
+.carrousel .overlay .right{
+	position: absolute;
+	right: 10px;
+	height: 100%;
+	top: 35%;
+}
+
+.carrousel .overlay .right .btn-ri{
+	font-size: 11px;
+	background: rgba(0,0,0,.40);
+	border-radius: 20px;
+	border: 1px solid #fff;
+	width: 24px;
+	height: 24px;
+	text-align: center;
+	padding: 4px;
+	transform: scale(0.75);
+	cursor: pointer;
+}
+
+.carrousel .overlay .right .btn-ri:hover{
+	background: rgba(0,0,0,.50);
+}
+
+.carrousel .movie .play i{
+	top: -2px;
+	left: 1px;
+	position: relative;
+}
+
+.carrousel .overlay .more{
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	margin-top: 6px;
+}
+
+.ativo{
+	z-index: 200 !important;
+	opacity: 1;
+}
+</style>
+<div id="app">
+	<div class="car" v-for="b in carrousel">
+	<h1>Séries</h1>
+		<div class="buttonsArrow">
+			<div class="left">
+				<i class="fas fa-chevron-left"></i>
+			</div>
+			<div class="right">
+				<i class="fas fa-chevron-right"></i>
+			</div>
+		</div>
+	<div class="carrousel"
+			 :class="{hovered: hoverMovie !== null}">
+		<div class="movie" 
+				 @mouseenter="hoverMovie = i + ''+b"
+				 @mouseleave="hoverMovie = null"
+				 :class="{active : hoverMovie == i + ''+b}" v-for="i in movies">
+			<div class="cover"></div>
+			<div class="overlay" :class="{ativo : hoverMovie == i + ''+b}">
+				<div class="play">
+					<i class="fas fa-play"></i>
+				</div>
+				<h1>Nome</h1>
+				<span class="idade">
+					18
+				</span>
+				<div class="temporadas">
+					5 Temporadas
+				</div>
+				<span class="tags">
+					Violento, Sangue
+				</span>
+				<div class="right">
+					<div class="btn-ri"><i class="far fa-thumbs-up"></i></div>
+					<div class="btn-ri"><i class="far fa-thumbs-down"></i></div>
+					<div class="btn-ri">
+						<i class="fas fa-check"></i>
+					</div>
+				</div>
+				<div class="more">
+						<i class="fas fa-chevron-down"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- partial -->
+  <script>
+  const app = new Vue({
+  el: "#app",
+  data: {
+  movies: 30,
+  carrousel: 3,
+  hoverMovie: null
+  },
+  methods: {
+  
+  }
+  })
+  </script>
+
+</body>
+</html>

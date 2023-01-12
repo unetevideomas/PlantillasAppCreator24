@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>by Compayito to Enikop group</title>
+<!-- https://t.me/appcreator24enikop-->
+<style>
+* {
+margin: 0px;
+font-family: arial;
+}
+
+body {
+background: red;
+}
+
+.paises {
+display: flex;
+white-space: nowrap;
+overflow: auto;
+}
+
+center {
+    color: white;
+}
+
+.paises .img img {
+display: grid;
+width: 70px;
+height: 70px;
+text-align: center;
+border-radius: 50px;
+margin: 5px;
+}
+
+.canales a img {
+width: 130px;
+height: 130px;
+}
+.canales {
+display: block;
+background: white;
+border-radius: 50px 50px 0px 0px;
+margin-top: 40px;
+}
+
+.center {
+    position: relative;
+    margin-left: 13%;
+}
+
+.card {
+    display: inline-grid;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 9px;
+    border-left: 1px solid #f2eeee;
+    border-bottom: 2px solid #dfdada;
+}
+
+div a span {
+    
+    font-weight: bold;
+    color: #847d7d;
+    padding: 3px;
+    border-radius: 0px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="paises">
+
+<div class="img"><a href="#"><img src="https://seeklogo.com/images/1/24-7-logo-915E38A85D-seeklogo.com.gif"></a><center><span>24/7</span></center></div>
+
+<div class="img"><a href="#"><img src="https://us.123rf.com/450wm/valentint/valentint1604/valentint160401126/54724602-24-7-icono-botón-de-internet-en-el-fondo-blanco-.jpg?ver=6"></a><center><span>24/7</span></center></div>
+
+<div class="img"><a href="#"><img src="https://us.123rf.com/450wm/valentint/valentint1604/valentint160401126/54724602-24-7-icono-botón-de-internet-en-el-fondo-blanco-.jpg?ver=6"></a><center><span>24/7</span></center></div>
+
+<div class="img"><a href="#"><img src="https://us.123rf.com/450wm/valentint/valentint1604/valentint160401126/54724602-24-7-icono-botón-de-internet-en-el-fondo-blanco-.jpg?ver=6"></a><center><span>24/7</span></center></div>
+
+<div class="img"><a href="#"><img src="https://us.123rf.com/450wm/valentint/valentint1604/valentint160401126/54724602-24-7-icono-botón-de-internet-en-el-fondo-blanco-.jpg?ver=6"></a><center><span>24/7</span></center></div>
+
+<div class="img"><a href="#"><img src="https://us.123rf.com/450wm/valentint/valentint1604/valentint160401126/54724602-24-7-icono-botón-de-internet-en-el-fondo-blanco-.jpg?ver=6"></a><center><span>24/7</span></center></div>
+
+<div class="img"><a href="#"><img src="https://us.123rf.com/450wm/valentint/valentint1604/valentint160401126/54724602-24-7-icono-botón-de-internet-en-el-fondo-blanco-.jpg?ver=6"></a><center><span>24/7</span></center></div>
+
+<div class="img"><a href="#"><img src="https://us.123rf.com/450wm/valentint/valentint1604/valentint160401126/54724602-24-7-icono-botón-de-internet-en-el-fondo-blanco-.jpg?ver=6"></a><center><span>24/7</span></center></div>
+
+
+
+</div>
+
+
+<div class="canales">
+
+<div class="center">
+<a class="card" href="#"><div><img src="https://cdn.worldvectorlogo.com/logos/a-e-4066.svg"></div><span>A&E</span></a>
+
+<a class="card" href="#"><div><img src="https://cdn.worldvectorlogo.com/logos/a-e-4066.svg"></div><span>A&E</span></a>
+
+<a class="card" href="#"><div><img src="https://cdn.worldvectorlogo.com/logos/a-e-4066.svg"></div><span>A&E</span></a>
+
+<a class="card" href="#"><div><img src="https://cdn.worldvectorlogo.com/logos/a-e-4066.svg"></div><span>A&E</span></a>
+
+<a class="card" href="#"><div><img src="https://cdn.worldvectorlogo.com/logos/a-e-4066.svg"></div><span>A&E</span></a>
+
+<a class="card" href="#"><div><img src="https://cdn.worldvectorlogo.com/logos/a-e-4066.svg"></div><span>A&E</span></a>
+
+<a class="card" href="#"><div><img src="https://cdn.worldvectorlogo.com/logos/a-e-4066.svg"></div><span>A&E</span></a>
+
+<a class="card" href="#"><div><img src="https://cdn.worldvectorlogo.com/logos/a-e-4066.svg"></div><span>A&E</span></a>
+
+<a class="card" href="#"><div><img src="https://cdn.worldvectorlogo.com/logos/a-e-4066.svg"></div><span>A&E</span></a>
+
+<a class="card" href="#"><div><img src="https://cdn.worldvectorlogo.com/logos/a-e-4066.svg"></div><span>A&E</span></a>
+
+<a class="card" href="#"><div><img src="https://cdn.worldvectorlogo.com/logos/a-e-4066.svg"></div><span>A&E</span></a>
+
+<a class="card" href="#"><div><img src="https://cdn.worldvectorlogo.com/logos/a-e-4066.svg"></div><span>A&E</span></a>
+
+<a class="card" href="#"><div><img src="https://cdn.worldvectorlogo.com/logos/a-e-4066.svg"></div><span>A&E</span></a>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+Código para enlazar Directamente a la App Web video Caster.
+
+intent://ok.ru/videoembed/3269081041450#Intent;package=com.instantbits.cast.webvideo;scheme=https;end
+
+Código para enlazar Directamente al Reproductor MX Player Pro.
+
+intent://ok.ru/videoembed/3269081041450#Intent;package=com.mxtech.videoplayer.pro;scheme=https;end
+
+Código para enlazar Directamente al Reproductor VLC.
+
+intent://dl.dropbox.com/s/aimrb6b3mo0pw0o/Warriyo%20-%20Mortals.mp4#Intent;package=org.videolan.vlc;scheme=https;end

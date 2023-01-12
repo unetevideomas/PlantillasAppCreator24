@@ -1,0 +1,663 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Plyr Playlist 2 - youtube api</title>
+  <style>
+/* button[data-plyr="play"]:before {
+   font-family: FontAwesome;
+   content: "\f048";
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+}
+button[data-plyr="play"]:after {
+   font-family: FontAwesome;
+   content: "\f051";
+   display: inline-block;
+   padding-left: 3px;
+   vertical-align: middle;
+} */
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+/* Playlist  */
+/* scrollbar rules have to be separate, browsers not supporting this syntax will skip them when combined. */
+.plyr-playlist-wrapper ul::-webkit-scrollbar {
+  width: 6px;
+}
+
+.plyr-playlist-wrapper ul::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.plyr-playlist-wrapper ul::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  /*  background: #fff; */
+  background: #3498db;
+}
+.plyr-playlist-wrapper {
+  background: rgba(0, 0, 0, 0.8);
+  position: relative;
+  padding: 0.5em 0.5em 0.5em 0.25em;
+}
+.plyr-playlist-wrapper .plyr-playlist {
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* position: absolute;
+  right: 65px;
+  bottom: 100%; */
+  position: relative;
+  margin-top: 0;
+  padding: 6px 4px;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 8px 0px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 8px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 8px 0px inset;
+}
+
+.plyr-playlist-wrapper ul {
+  padding: 0;
+  margin: 0;
+  max-height: 12em;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.plyr-playlist-wrapper ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.plyr-playlist-wrapper .plyr-playlist li {
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 0px;
+  margin-bottom: 3px;
+  font-size: 90%;
+}
+
+.plyr-playlist-wrapper .plyr-playlist li.pls-playing,
+.plyr-playlist-wrapper .plyr-playlist li:hover {
+  color: #3498db;
+  background-color: rgba(255, 255, 255, 0.09);
+}
+.plyr-playlist-wrapper .plyr-playlist li.pls-playing a {
+  color: #3498db;
+}
+
+/* .plyr-playlist li:hover {
+  background-color: rgba(255, 255, 255, 0.09);
+} */
+
+.plyr-playlist-wrapper .plyr-playlist li a {
+  text-decoration: none;
+  font-family: arial;
+  color: #c9c9c9;
+  display: block;
+  padding: 10px 0;
+  outline: none;
+  padding: 0.5em 0.25em 0.5em 0.75em;
+  /*margin-right: 0.5em;*/
+  font-size: 90%;
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+
+.plyr-playlist-wrapper .plyr-playlist li:last-child a {
+  border-bottom: 0;
+}
+
+.plyr-playlist li a:hover,
+.plyr-playlist li a:focus,
+.plyr-playlist li a:active {
+  color: #04a9f3;
+  /*  color: #00c85f;*/
+  /*   text-decoration: none; */
+}
+
+.plyr-miniposter {
+  width: auto;
+  height: 22px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: left;
+  margin-right: 10px;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+/*******************/
+
+.plyr-type-playlist plyr-playlist a.plyr-playlist-item-remove {
+  float: right;
+  margin-right: 15px;
+  /*font-weight: bold;*/
+  background-color: transparent;
+}
+
+
+/* PREVIOUS NEXT BUTTON */
+
+.plyr-prev {
+  margin-right: 0 !important;
+}
+.plyr-next {
+  margin-left: 0 !important;
+}
+.plyr__controls [data-plyr="play"] {
+  margin-left: 0 !important;
+}
+/*
+.plyr-next:before {
+  fa-step-backward
+  content: "\f048";
+}
+*/
+
+
+/* YOUTUBE HIDE BLACK BARS https://stackoverflow.com/a/33604743/211324 */
+/* https://jsfiddle.net/onigetoc/nomzb6hf/ */
+  </style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+https://plyr.io/
+https://cdnjs.com/libraries/plyr
+參考https://codepen.io/onigetoc/pen/veWNbP
+
+<!--為codepen右側CSS內容
+<link href="css/style.css" rel="stylesheet">
+-->
+
+<!---->
+<link rel="stylesheet" href="https://cdn.plyr.io/2.0.13/plyr.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="container">
+
+  <div id="player">
+    <div class="js-player" data-type="youtube" data-video-id="" data-ytpls="PL533213361AEB44D3"></div>
+    <!-- <div class="plyr-playlist-wrapper"><ul class="plyr-playlist"></ul></div> RDxdYFuCp3m9k-->
+  </div>
+
+
+  <!--   <ul id="playlist"></ul> -->
+</div>
+  <script src="https://cdn.plyr.io/2.0.13/plyr.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.4.7/plyr.min.js"></script> -->
+<!---->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!--為codepen右側js內容
+<script src="js/main.js"></script>-->
+<!-- partial -->
+  <script>
+  // YOUTUBE API 
+//https://stackoverflow.com/questions/43839217/how-do-i-retrieve-my-youtube-channel-playlists
+// BY CHANNEL
+//https://content.googleapis.com/youtube/v3/channels?id=UC_x5XG1OV2P6uZZ5FSM9Ttw&part=snippet%2CcontentDetails%2Cstatistics&key=12345
+// FOR USERNAME
+//https://content.googleapis.com/youtube/v3/channels?forUsername=ginocote&part=snippet%2CcontentDetails%2Cstatistics&key=12345
+
+// THEN GET BY UPLOAD ID AND LOAD API playlistItems 
+
+// BY CHANNEL ID GET ALL
+//https://content.googleapis.com/youtube/v3/playlists?channelId=UC-VKI9vpl2tSyv0FK9E1-KA&maxResults=50&part=snippet&key=12345
+
+var addbuttons = true ;
+
+var players = plyr.setup(".js-player");
+
+/* PLAYLIST  */
+var myPlaylist = [
+  {
+    type: "youtube",
+    title: "Charlie Puth - Attention [Official Video]",
+    author: "Charlie Puth",
+    sources: [{ 
+      src: "nfs8NYg7yQM", 
+      type: "youtube"
+    }],
+    src: "nfs8NYg7yQM",
+    poster: "https://img.youtube.com/vi/nfs8NYg7yQM/hqdefault.jpg"
+  },
+  {
+    type: "youtube",
+    title: "Avicii - SOS ft. Aloe Blacc (Unofficial Video)",
+    author: "Avicii",
+    sources: [{ 
+      src: "RnVbU3NYrZw", 
+      type: "youtube"
+    }],
+    poster: "https://i.ytimg.com/vi/RnVbU3NYrZw/default.jpg"
+  },
+  {
+    type: "youtube",
+    title: "Loud Luxury feat. brando - Body (Official Video HD)",
+    author: "Loud Luxury",
+    sources: [{ 
+      src: "https://www.youtube.com/watch?v=UyxKu20xmBs", 
+      type: "youtube"
+    }],
+    poster: "https://i.ytimg.com/vi/UyxKu20xmBs/default.jpg"
+  },
+  {
+    type: "youtube",
+    title: "Loud Luxury x anders - Love No More (Official Music Video)",
+    author: "Loud Luxury",
+    sources: [{ 
+      src: "https://www.youtube.com/watch?v=PJF0SBwfDq8", 
+      type: "youtube"
+    }],
+    poster: "https://img.youtube.com/vi/PJF0SBwfDq8/hqdefault.jpg"
+  },
+  {
+    type: "audio",
+    title: "Clublife by Tiësto 542 podcast ",
+    author: "Tiësto",
+    sources: [{ 
+      src: "http://feed.pippa.io/public/streams/593eded1acfa040562f3480b/episodes/59c0c870ed6a93163c0a193d.m4a", 
+      type: "m4v"
+    }],
+    poster: "https://img.youtube.com/vi/r6KXy0j85AM/hqdefault.jpg"
+  },
+  {
+    type: "audio",
+    title: "Vocal Trance Vol 261",
+    author: "Sonnydeejay",
+    sources: [{ 
+      src: "http://archive.org/download/SonnydeejayVocalTranceVol261/Sonnydeejay%20-Vocal%20Trance%20vol%20261.mp3", 
+      type: "mp3"
+    }],
+    poster: "http://4.bp.blogspot.com/-d6IPBUIj6YE/ThpRaIGJXtI/AAAAAAAABQ8/54RNlCrKCv4/s1600/podcast.jpg"
+  },
+  {
+    type: "youtube",
+    title: "2 hours Trance Music - Armin Van Buuren",
+    author: "Armin van Buuren",
+    sources: [{ 
+      src: "https://www.youtube.com/watch?v=r6KXy0j85AM", 
+      type: "youtube"
+    }],
+    poster: "https://img.youtube.com/vi/r6KXy0j85AM/hqdefault.jpg"
+  },
+  {
+    type: "youtube",
+    title: "2 hours Trance Music - Armin Van Buuren",
+    author: "Armin van Buuren",
+    sources: [{ 
+      src: "https://www.youtube.com/watch?v=r6KXy0j85AM", 
+      type: "youtube"
+    }],
+    poster: "https://img.youtube.com/vi/r6KXy0j85AM/hqdefault.jpg"
+  },
+  {
+    type: "youtube",
+    title: "2 hours Trance Music - Armin Van Buuren",
+    author: "Armin van Buuren",
+    sources: [{ 
+      src: "https://www.youtube.com/watch?v=r6KXy0j85AM", 
+      type: "youtube"
+    }],
+    poster: "https://img.youtube.com/vi/r6KXy0j85AM/hqdefault.jpg"
+  },
+  {
+    type: "youtube",
+    title: "2 hours Trance Music - Armin Van Buuren",
+    author: "Armin van Buuren",
+    sources: [{ 
+      src: "https://www.youtube.com/watch?v=r6KXy0j85AM", 
+      type: "youtube"
+    }],
+    poster: "https://img.youtube.com/vi/r6KXy0j85AM/hqdefault.jpg"
+  },
+  {
+    type: "youtube",
+    title: "2 hours Trance Music - Armin Van Buuren",
+    author: "Armin van Buuren",
+    sources: [{ 
+      src: "https://www.youtube.com/watch?v=r6KXy0j85AM", 
+      type: "youtube"
+    }],
+    poster: "https://img.youtube.com/vi/r6KXy0j85AM/hqdefault.jpg"
+  },
+  {
+    type: "youtube",
+    title: "2 hours Trance Music - Armin Van Buuren",
+    author: "Armin van Buuren",
+    sources: [{ 
+      src: "https://www.youtube.com/watch?v=r6KXy0j85AM", 
+      type: "youtube"
+    }],
+    poster: "https://img.youtube.com/vi/r6KXy0j85AM/hqdefault.jpg"
+  }
+];
+
+/****************************************************************************************/
+// var myPlaylist = ""; 
+// Load json playlist OR Youtube api 3. Playlist WILL NOT WORK WITH THIS API KEY
+/****************************************************************************************/
+
+// setTimeout(function(){
+
+//   //$("li.pls-playing").removeClass("pls-playing");
+//   //$(".plyr-playlist-wrapper").remove();
+
+//   var target = ".js-player";
+//   //var limit = 50;
+//   var apikey = "AIzaSyDDBk8tAkod1VRRNyFZF09fgQyMpnSe5HI";
+
+//   loadPlaylist(target, apikey, 10, myPlaylist); 
+  
+// }, 5000);
+//   // scrollTo BUG
+
+
+var apikey = "<YOUR_YOUTUBE_API_KEY>"; // GET YOUR YOUTUBE API KEY
+//var apikey = ""; // ONLY FOR MY CUSTOM PLAYLIST NO NEED FOR YOUTUBE API KEY
+var target = ".js-player";
+var limit = 30;
+
+$(document).ready(function(){
+  // loadPlaylist(target, apikey, limit = 20, myPlaylist); // LOAD JSON PLAYLIST
+  loadPlaylist(target, apikey, limit, myPlaylist);  // LOAD YOUTUBE OR USER VIDEO LIST
+  
+}); // JQUERY READY END
+
+function loadPlaylist(target, apikey, limit = 20, myPlaylist) {
+  
+  $("li.pls-playing").removeClass("pls-playing");
+  $(".plyr-playlist-wrapper").remove();
+
+  limit = limit-1;
+  
+  // GET YOUTUBE PLAYLIST
+  //var getPlaylist = $("div[data-type='youtube']").eq(0).data("playlist");
+  //var getPlaylist = $("[data-type='youtube']").data("playlist");
+  //var getPlaylist = $(".js-player").eq(0).data("playlist");
+  
+  if (myPlaylist) {
+
+    PlyrPlaylist(".plyr-playlist", myPlaylist, limit);
+    //return 
+  } else{
+    
+    var ytplaylist = $(target).attr("data-ytpls");
+    var ytuser = $(target).attr("data-user");
+
+    //if ($('.js-player[data-ytpls]').length > 0){
+    if (ytplaylist) {
+      getTYPlaylist(ytplaylist, apikey, limit)
+      //alert(ytplaylist);
+    } else if (ytuser) {
+      alert(ytuser);
+    }
+    
+  }
+    
+//typeof $getYTPls === "undefined") return;
+
+  //var getPlaylist = $(".js-player").eq(0).data("playlist");
+//   var $getData = $(".js-player").eq(0);
+
+//   var $getYTPls = $getData.data("ytpls");
+
+  //alert(getPlaylist);
+  //console.log(myPlaylist[0]);
+
+  //if (typeof $getYTPls === "undefined") return;
+
+  //var apikey = "AIzaSyB64VbCIHW48wwarovz64tcsRaZrciFkWM";
+  //
+  //var playlistId = "RDQMyFModNyxXx8";
+  //var playlistId = $getYTPls;
+
+  //"https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&id=YOUR-PLAYLIST-ID&key={YOUR_API_KEY}"
+
+function getTYPlaylist(playlistId, apikey, limit) {
+  
+  $.ajax({
+    url:
+      "https://content.googleapis.com/youtube/v3/playlistItems?&key=" +
+      apikey +
+      "&maxResults=" +
+      limit +
+      "&part=id,snippet&playlistId=" +
+      playlistId +
+      "&type=video",
+    dataType: "jsonp",
+    success: function(data) {
+      console.log(data.items);
+      //console.log(data.items[0].snippet.title);
+
+      resultData = youtubeParser(data);
+
+      console.log(resultData);
+
+      PlyrPlaylist(".plyr-playlist", resultData, limit);
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+      alert(textStatus, +" | " + errorThrown);
+    }
+  });
+  
+}
+
+  //PlyrPlaylist(".plyr-playlist", myPlaylist);
+
+  function PlyrPlaylist(target, myPlaylist, limit) {
+    $('<div class="plyr-playlist-wrapper"><ul class="plyr-playlist"></ul></div>').insertAfter("#player");
+
+    var startwith = 0; // Maybe a playlist option to start with choosen video
+
+    var playingclass = "";
+    var items = [];
+    //var playing == 1 ;
+    $.each(myPlaylist, function(id, val) {
+      //items.push('<li>' + option.title + '</li>');
+      //alert(id)
+
+      //console.log(val);
+
+      if (0 === id) playingclass = "pls-playing";
+      else playingclass = "";
+
+      items.push(
+        '<li class="' +playingclass +'"><a href="#" data-type="' +val.sources[0].type +'" data-video-id="' +val.sources[0].src +'"><img class="plyr-miniposter" src="' + val.poster + '"> ' +
+val.title +" - " +val.author +"</a></li> ");
+      
+      if (id == limit) 
+        return false;
+      
+    });
+    $(target).html(items.join(""));
+    
+    setTimeout(function(){ 
+      //$(target+" .pls-playing").find("a").trigger("click");
+      
+    }, 600);
+    
+    // players[0].on("isReady", function(event) {
+    //   alert("isReady")
+    //   $(target+" .pls-playing").find("a").trigger("click");
+    // });
+    
+  // players[0].on("ready", function(event) {
+  //   //$(".plyr-playlist .pls-playing").find("a").one().trigger("click");
+  //   //players[0].play();
+  //   $(target+" .pls-playing").find("a").trigger("click");
+  // });
+
+    // hack, play the first video in the playlist
+    // setTimeout(function(){ 
+    //       $(target).find("a").trigger("click");
+    // }, 500);
+
+    //   var getObj = myPlaylist[startwith];
+
+    //   var video_id = getObj.youtube;
+    //   var video_title = getObj.title;
+
+    //   alert(video_id)
+
+    //   console.log(video_id);
+
+    //   //console.log(myPlaylist[0]);
+
+    //   players[0].source({
+    //     type: "video",
+    //     title: "video_title",
+    //     sources: [{ src: "cLcKew4cQq4", type: "youtube" }]
+    //   });
+
+    //console.log(items[0]);
+  }
+
+  players[0].on("ready", function(event) {
+    //$(".plyr-playlist .pls-playing").find("a").one().trigger("click");
+    console.log("Ready.....................................................");
+    players[0].play();
+    
+    
+    if(addbuttons){
+      
+      $(".plyr-playlist .pls-playing").find("a").trigger("click");
+      
+      $('<button type="button" class="plyr-prev"><i class="fa fa-step-backward fa-lg"></i></button>').insertBefore('.plyr__controls [data-plyr="play"]');
+
+      $('<button type="button" class="plyr-next"><i class="fa fa-step-forward fa-lg"></i></button>').insertAfter('.plyr__controls [data-plyr="pause"]');
+      
+      addbuttons = false ;
+    }
+    
+  }).on("ended", function(event) {
+    var $next = $(".plyr-playlist .pls-playing")
+      .next()
+      .find("a")
+      .trigger("click");
+    //$next.parent().addClass("pls-playing");
+  });
+
+    // hack, play the first video in the playlist
+    //$(".plyr-playlist .pls-playing").find("a").trigger("click");
+    //$(target).find("pls-playing a").trigger("click");
+    // setTimeout(function(){ 
+    //       $(".plyr-playlist .pls-playing").find("a").trigger("click");
+    // }, 500);
+
+  $(document).on("click", "ul.plyr-playlist li a", function(event) {
+    //$("ul.plyr-playlist li a").on("click", function(event) {
+    event.preventDefault();
+
+    $("li.pls-playing").removeClass("pls-playing");
+    $(this)
+      .parent()
+      .addClass("pls-playing");
+
+    var video_id = $(this).data("video-id");
+    var video_type = $(this).data("type");
+    var video_title = $(this).text();
+
+    //alert(video_id);
+
+    players[0].source({
+      type: "video",
+      title: "video_title",
+      sources: [{ src: video_id, type: video_type }]
+    });
+
+    //ScrollTo($(".pls-playing").attr("href"), 500,0,10);
+
+    $(".plyr-playlist").scrollTo(".pls-playing", 300);
+
+    // players[0].on("ended", function(event) {
+    //   console.log("test");
+    // });
+  })
+  .on("click", ".plyr-prev", function(event) {
+    var $next = $(".plyr-playlist .pls-playing")
+      .prev()
+      .find("a")
+      .trigger("click");
+  })
+  .on("click", ".plyr-next", function(event) {
+    var $next = $(".plyr-playlist .pls-playing")
+      .next()
+      .find("a")
+      .trigger("click");
+  });
+
+  ///////////////////////
+
+  // GET YOUTUBE PLAYLIST
+  /* YOUTUBE PLAYLIST PARSER */
+  // http://jsfiddle.net/onigetoc/cb2u1y4k/
+  function youtubeParser(data) {
+    var new_Data = data.items.map(function(item) {
+      var thumb;
+
+      if (item.snippet.thumbnails) {
+        if (item.snippet.thumbnails.default)
+          //live?
+          thumb = item.snippet.thumbnails.default.url;
+
+        if (item.snippet.thumbnails.medium)
+          //live?
+          thumb = item.snippet.thumbnails.default.url;
+      }
+
+      return {
+        //type: "youtube",
+        title: item.snippet.title,
+        description: item.snippet.description,
+        author: item.snippet.channelTitle,
+        sources: [{ 
+          src: item.snippet.resourceId.videoId, 
+          type: item.kind.split('#')[0] 
+        }],
+        poster: thumb
+      };
+    });
+
+    console.log(new_Data);
+
+    // var output = {
+    //   item: new_Data
+    // };
+
+    return new_Data;
+  }
+}
+
+/****** GC ScrollTo **********/
+// mine: https://jsfiddle.net/onigetoc/5kh0e5f4/
+// https://stackoverflow.com/questions/2346011/how-do-i-scroll-to-an-element-within-an-overflowed-div
+jQuery.fn.scrollTo = function(elem, speed, margin) {
+  jQuery(this).animate(
+    {
+      scrollTop:
+        jQuery(this).scrollTop() -
+        jQuery(this).offset().top +
+        jQuery(elem).offset().top
+    },
+    speed == undefined ? 1000 : speed
+  );
+  return this;
+};
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>M3u8 Streaming</title>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link href='favicon2.ico' rel='shortcut icon' type='image/x-icon'>
+    <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js"></script>
+</head>
+
+<body style='margin:0;' oncontextmenu='return false;' onkeydown='return false;'>
+    <div id="player"></div>
+    <script>
+        window.onload = function() {
+            var player = new Clappr.Player({
+                source: 'http://starplus/vod302/index.m3u8',
+                parentId: "#player",
+                plugins: [LevelSelector, ChromecastPlugin, ClapprPip.PipButton, ClapprPip.PipPlugin],
+                height: '100%',
+                width: '100%',
+                autoPlay: true,
+            });
+        };
+    </script>
+</body>
+
+</html>

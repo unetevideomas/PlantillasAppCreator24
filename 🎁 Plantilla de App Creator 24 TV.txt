@@ -1,0 +1,97 @@
+<!DOCTYPE html> <html> <head> <title>Page Title</title> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <style> body { background-color:black; } .alignleft{ float:left; margin-left:5px; color:silver; font-weight:bold; font-size:15px; } .alignright{ float:right; margin-right:10px; color:red; font-size:15px; font-weight:normal ; } h4{ margin-left:5px; color:silver; font-weight:bold; font-size:15px; } .nta { position:relative ; overflow:hidden ; } div.scrollmenu { background-color: black; overflow: auto; white-space: nowrap; position:relative ; overflow-y:hidden ; } div.scrollmenu a { display: inline-block; color: white; text-align:center; padding: 4px; text-decoration: none; } div.scrollmenu a:hover { background-color: black; } .cen{ position:relative ; text-align:center; color:white; } .centered{ font-size:14px; font-weight:bold; position:absolute ; top:80%; left: 50%; transform:translate(-50%,-50%) } .cent{ font-size:auto; position:absolute ; top:95%; left: 50%; transform:translate(-50%,-50%) } .nt{ width: 105px; border-radius: 5px; height: 120px ; z-index:1; } .mnt{ width: 100px; border-radius: 2px; height: 100px; } </style> </head> <body> <div id="HeadCarousel" class="carousel slide " data-ride="carousel"> <ol class="carousel-indicators"> <li data-target="#HeadCarousel" data-slide-to="0" class="active"></li> <li data-target="#HeadCarousel" data-slide-to="1"></li> <li data-target="#HeadCarousel" data-slide-to="2"></li> <li data-target="#HeadCarousel" data-slide-to="3"></li> </ol> <div class="carousel-inner"> <div class="item active"> <a class="item" href="intent://d4e6999e0485.eu-central-1.playback.live-video.net/api/video/v1/eu-central-1.529707182583.channel.KQmujSgYE0Rv.m3u8#Intent;package=com.instantbits.cast.webvideo;scheme=https;end"> <img src="https://i.postimg.cc/BQGH8DTy/f1arabiasaudita.jpg"> <div class="carousel-caption cap"> <h3></h3> </div> </a> </div> <div class="item "> <a class="item" href="https://5f700d5b2c46f.streamlock.net/catamarcatelevision/catamarcatelevision/chunklist_w1323989111.m3u8"> <img src="https://i.postimg.cc/8z7cHGHK/fifa22.jpg"> <div class="carousel-caption cap"> <h3></h3> </div> </a> </div> <div class="item"> <a class="item" href="go:c47"> <img src="https://i.postimg.cc/0NY2R35g/mcvsam.jpg"> <div class="carousel-caption cap"> <h3></h3> </div> </a> </div> <div class="item"> <a class="item" href="go:c50"> <img src="https://i.postimg.cc/Wb29b3H7/football.jpg"> <div class="carousel-caption cap"> <h3></h3> </div> </a> </div> </div> <a class="left carousel-control" href="#HeadCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a> <a class="right carousel-control" href="#HeadCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a> </div>
+
+<div class="nta"> <h4>FEATURED</h4></div>
+
+<div class="scrollmenu"> <a href="go:c18"><div class="cen"> <img class="nt" src="https://i.postimg.cc/xCfsG8Tp/espn2.png"><h5 
+class="centered"></h5></div> <a href="go:c63"><div class="cen"> <img class="nt" src="https://i.postimg.cc/50kXv0Dc/visiop.png"><h5
+class="centered"></h5></div> <a href="go:c66"><div class="cen"> <img class="nt" src="https://i.postimg.cc/jStvMxMw/retp3.png"><h5
+class="centered"></h5></div> <a href="go:C67"><div class="cen"> <img class="nt" src="https://i.postimg.cc/Y9FchRVg/cstv.png"><h5
+class="centered"></h5></div> <a href="go:C73"><div class="cen"> <img class="nt" src="https://i.postimg.cc/pd4RDHS9/controlvg.png"><h5
+class="centered"></h5></div> <a href="go:C69"><div class="cen"> <img class="nt" src="https://i.postimg.cc/yxb3NVSv/tvpop.png"><h5
+class="centered"></h5></div> <a href="go:c68"><div class="cen ag"> <img class="nt" src="https://i.postimg.cc/QN6PhRVP/retroplay.png"> <h5 class="centered"></h5> </div> </a> </div> </div> <div class="nta"> <a href="go:JFZone"><h4 class="alignleft">CHILE CHANNELS</h4><h4 class="alignright">See All</h4></a> </div>
+
+<div class="scrollmenu"> <a href="go:c9"> <img class="mnt" src="https://i.postimg.cc/RFs5tYnF/tvn.png"> <a href="go:c10"> <img class="mnt" src="https://i.postimg.cc/FKp2t6pZ/24h.png"> <a href="go:c11"> <img class="mnt" src="https://i.postimg.cc/KvLcXZMD/tvchile.png"> <a href="go:c12"> <img class="mnt" src="https://i.postimg.cc/kMRq8nfP/t13.png"> <a href="go:c13"> <img class="mnt" src="https://i.postimg.cc/cL9bX3L9/13e.png"> <a href="go:c14"> <img class="mnt" src="https://i.postimg.cc/FH8xYVR4/13t.png"> <a href="go:c15"> <img class="mnt" src="https://i.postimg.cc/15KTV2hZ/13p.png"> <a href="go:c16"> <img class="mnt" src="https://i.postimg.cc/k4wgDwcM/viwix.png"> </div> <div class="nta"> <a href="go:popular"><h4 class="alignleft">SERIES TVN</h4><h4 class="alignright">See All</h4></a></div> 
+
+<div class="scrollmenu"> <a href="go:c59"><div class="cen"> <img class="nt" src="https://i.postimg.cc/FKH7T25g/diamp1.png"></div> <a href="go:c60"><div class="cen ag"> <img class="nt" src="https://i.postimg.cc/qRqst1kQ/lamonja.png"></div> <a href="go:c61"><div class="cen"> <img class="nt" src="https://i.postimg.cc/HWqMHQNG/bus.png"></div> <a href="go:c71"><div class="cen"> <img class="nt" src="https://i.postimg.cc/zvkbfvfZ/diamenospensadolapasaj.png"></div> <a href="go:c72"><div class="cen"> <img class="nt" src="https://i.postimg.cc/cLzKCVdH/diamenospensadoelp.png"></div> </div> <div class="nta"> <a href="go:popular"><h4 class="alignleft">RADIOS CHANNELS</h4><h4 class="alignright">See All</h4></a></div> 
+
+<div class="scrollmenu"> <a href="go:c74"><div class="cen"> <img class="nt" src="https://i.postimg.cc/tg3GVxFc/radiopopular.png"></div> <a href="go:c60"><div class="cen ag"> <img class="nt" src="https://i.postimg.cc/qRqst1kQ/lamonja.png"></div> <a href="go:c61"><div class="cen"> <img class="nt" src="https://i.postimg.cc/HWqMHQNG/bus.png"></div> <a href="go:c71"><div class="cen"> <img class="nt" src="https://i.postimg.cc/zvkbfvfZ/diamenospensadolapasaj.png"></div> <a href="go:c72"><div class="cen"> <img class="nt" src="https://i.postimg.cc/cLzKCVdH/diamenospensadoelp.png"></div> </div> <div class="nta"> <a href="go:kids"><h4 class="alignleft">KIDS CHANNELS</h4><h4 class="alignright">See All</h4></a></div>
+
+<div class="scrollmenu"> <a href="go:c58"><div class="cen"> <img class="nt" src="https://i.postimg.cc/2jgqwcSg/energk.png"></div> <a href="go:off"><div class="cen ag"> <img class="nt" src="https://i.postimg.cc/HWMfRpSt/gomaxtv.png"></div> <a href="go:off"><div class="cen"> <img class="nt" src="https://i.postimg.cc/HWMfRpSt/gomaxtv.png"></div> <a href="go:az"><div class="cen"> <img class="nt" src="https://i.postimg.cc/HWMfRpSt/gomaxtv.png"></div> <a href="go:off"><div class="cen"> <img class="nt" src="https://i.postimg.cc/HWMfRpSt/gomaxtv.png"></div> </div> </div> <div class="nta"> <a href="go:sport"><h4 class="alignleft">SPORTS CHANNELS</h4><h4 class="alignright">See All</h4></a></div>
+
+<div class="scrollmenu"> <a href="go:c18"><div class="cen ag"> <img class="nt" src="https://i.postimg.cc/xCfsG8Tp/espn2.png"></div> <a href="go:c36"><div class="cen"> <img class="nt" src="https://i.postimg.cc/52Y73jdn/dubaisport.png"></div> <a href="go:c37"><div class="cen"> <img class="nt" src="https://i.postimg.cc/fyvL1MGP/dubaisport2.png"></div> <a href="go:c38"><div class="cen"> <img class="nt" src="https://i.postimg.cc/dt43Btmk/dubaisport3.png"></div> <a href="go:c52"><div class="cen"> <img class="nt" src="https://i.postimg.cc/ZRh0jJj1/mmatv.png"></div> <a href="go:c53"><div class="cen"> <img class="nt" src="https://i.postimg.cc/CMZhfnRM/abu1.png"></div> <a href="go:c54"><div class="cen"> <img class="nt" src="https://i.postimg.cc/qMVThbfQ/abu2.png"></div> <a href="go:c55"><div class="cen"> <img class="nt" src="https://i.postimg.cc/BQkmN6cC/abudabi3.png"></div> <a href="go:c33"><div class="cen"> <img class="nt" src="https://i.postimg.cc/FHGYbPS5/tennischan.png"></div> <a href="go:c34"><div class="cen"> <img class="nt" src="https://i.postimg.cc/FHYNBmCZ/beinspt.png"></div></div> </div> </div> <div class="nta"> <a href="go:CS"><h4 class="alignleft">MUSIC CHANNELS</h4></a></div>
+
+<div class="scrollmenu"> <a href="go:c56"><div class="cen ag"> <img class="nt" src="https://i.postimg.cc/ZRDNZwHz/rewind.png"></div> <a href="go:c57"><div class="cen"> <img class="nt" src="https://i.postimg.cc/g2ZWmsyF/tocahits.png"></div> <a href="go:c62"><div class="cen"> <img class="nt" src="https://i.postimg.cc/s2VwX6pB/rcktv.png"></div> <a href="go:c75"><div class="cen"> <img class="nt" src="https://i.postimg.cc/J4ktTHzP/classicrock.png"></div> <a href="go:c64"><div class="cen"> <img class="nt" src="https://i.postimg.cc/0NG5GCH1/retp1.png"></div> <a href="go:c65"><div class="cen"> <img class="nt" src="https://i.postimg.cc/P5sQPtgV/retp2.png"></div> <a href="go:c70"><div class="cen"> <img class="nt" src="https://i.postimg.cc/NjJmMqWy/radioteca.png"></div> </div> </body> </html>
+
+
+<br>
+   <br>
+
+<!-- Histats.com  END  -->
+</div>
+</div></div>
+</main>
+<button class='scrolltop button--muted button--icon' style='transform: scale(0);'><i class='fa fa-chevron-up'></i></button>
+<div class='footer'>
+<span></span>
+</div>
+<script type='text/javascript'>
+//<![CDATA[
+//<![CDATA[
+// Menú
+let menu = document.querySelector(".navigation__toggle"),
+    menuIcon = document.querySelector(".navigation__toggle i");
+
+menu.addEventListener("click", function() {
+    document.body.classList.toggle("is-navigation-open");
+
+    if (document.body.classList.contains("is-navigation-open")) {
+        menuIcon.classList.remove("fa-bars");
+        menuIcon.classList.add("fa-times");
+
+    } else {
+        menuIcon.classList.remove("fa-times");
+        menuIcon.classList.add("fa-bars");
+    }
+
+});
+
+// Buscar
+let searchToggle = document.querySelector(".search__toggle.button--icon"),
+	searchToggleIcon = document.querySelector(".search__toggle.button--icon i");
+
+searchToggle.addEventListener("click", function() {
+    document.body.classList.toggle("is-search-open");
+
+    if (document.body.classList.contains("is-search-open")) {
+        searchToggleIcon.classList.remove("fa-search");
+        searchToggleIcon.classList.add("fa-times");
+
+    } else {
+        searchToggleIcon.classList.remove("fa-times");
+        searchToggleIcon.classList.add("fa-search");
+    }
+
+});
+//]]>
+</script>
+<script type='text/javascript'>
+//<![CDATA[
+  var trailer = document.querySelector("#trailer"),
+  trailerIframe = document.querySelector("#trailer iframe"),
+  closeTrailer = document.querySelector(".modal-video-close-btn");
+
+ 
+
+ });
+  
+  closeTrailer.addEventListener("click", function() {
+				
+    trailer.style.display = "none";
+	trailerIframe.src = "about:blank";
+
+ });
+//]]>
+nt.getElementById('HTML1'), {}, 'displayModeFull'));
+</script>
+</body>
+</html>

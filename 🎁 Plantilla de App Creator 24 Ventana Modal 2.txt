@@ -1,0 +1,27 @@
+<head>
+<script src="https://megaplayonline.github.io/ventana-modal/jquery-3.5.1.min.js"></script>
+<script src="https://megaplayonline.github.io/ventana-modal/main.js"></script>
+<link href="https://megaplayonline.github.io/ventana-modal/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+AQUI VA TU HTML
+
+
+
+<div class="pop-up">
+<div class="pop-up-wrap">
+<div class="pop-up-title"></div>
+<div class="subcription">
+<div class="line"></div>
+<i class="far fa-times-circle" id="close"></i>
+<div class="sub-content">
+<span style="color: #3EB495;"><h3>!Bievenido a TonPlay!</h3></span>
+<br>
+<span style="color: #fff;"><h3>
+TonPlay te ofrece el mejor catálogo de Películas & Series Para ti.
+</h3></span>
+<br>
+<img src="https://wwkodmuwop0y4wlurg9mlq-on.drv.tw/CN/img/portadita.png" width="60%" height="25%" alt="">
+</div><div class="line"></div>

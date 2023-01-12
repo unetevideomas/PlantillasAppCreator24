@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>Slider básico automático (responsive)</title>
+</head>
+<style type="text/css">
+body { margin: 0; } 
+div#slider { overflow: hidden; } /* las imágenes no van a salir del márgen de la pantalla*/
+div#slider figure img { width: 20%; float: left; }
+
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 10s slidy infinite; /*el movimiento se va a mantener de forma indefinida -infinito-*/
+}
+
+/*esta parte del código define el movimiento de las imágenes a la izquierda*/
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+</style>
+
+<body>
+<!-- partial:index.partial.html -->
+<div id="slider">
+<figure>
+<a href="#">
+<img src="https://www.themoviedb.org/t/p/w500_and_h282_face/p1QH7fXRYggspYQCCjs9iQ13DRK.jpg" alt="">
+<a href="#">
+<img src="https://www.themoviedb.org/t/p/w500_and_h282_face/lKZs165E3PKDyMSW0Z4EGPdsbH8.jpg" alt="">
+<a href="#">
+<img src="https://www.themoviedb.org/t/p/w500_and_h282_face/xXHZeb1yhJvnSHPzZDqee0zfMb6.jpg" alt="">
+<a href="#">
+<img src="https://www.themoviedb.org/t/p/w500_and_h282_face/8s4h9friP6Ci3adRGahHARVd76E.jpg" alt="">
+<!--Copia todo esto para una nueva portada y lo pegas mas abajo-->
+<a href="Aqui va la URL de la pelicula o seccion que quieras enlazar">
+<img src="Aqui va la URL de la portada de la película" alt="Aqui va el nombre de la pelicula">
+<!--Aqui pega lo copiado-->
+
+
+
+</figure>
+</div>
+<!-- partial -->
+
+</body>
+</html>

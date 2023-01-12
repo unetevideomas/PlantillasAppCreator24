@@ -1,0 +1,56 @@
+<style type="text/css">
+@font-face{font-family:'Titillium Web';font-style:normal;font-weight:300;src:local('Titillium Web Light'),local('TitilliumWeb-Light'),url(https://fonts.gstatic.com/s/titilliumweb/v6/NaPDcZTIAOhVxoMyOr9n_E7ffGjEGIVzY4SY.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Titillium Web';font-style:normal;font-weight:300;src:local('Titillium Web Light'),local('TitilliumWeb-Light'),url(https://fonts.gstatic.com/s/titilliumweb/v6/NaPDcZTIAOhVxoMyOr9n_E7ffGjEGItzYw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Titillium Web';font-style:normal;font-weight:400;src:local('Titillium Web Regular'),local('TitilliumWeb-Regular'),url(https://fonts.gstatic.com/s/titilliumweb/v6/NaPecZTIAOhVxoMyOr9n_E7fdM3mDbRS.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Titillium Web';font-style:normal;font-weight:400;src:local('Titillium Web Regular'),local('TitilliumWeb-Regular'),url(https://fonts.gstatic.com/s/titilliumweb/v6/NaPecZTIAOhVxoMyOr9n_E7fdMPmDQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Titillium Web';font-style:normal;font-weight:600;src:local('Titillium Web SemiBold'),local('TitilliumWeb-SemiBold'),url(https://fonts.gstatic.com/s/titilliumweb/v6/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGIVzY4SY.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Titillium Web';font-style:normal;font-weight:600;src:local('Titillium Web SemiBold'),local('TitilliumWeb-SemiBold'),url(https://fonts.gstatic.com/s/titilliumweb/v6/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGItzYw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Titillium Web';font-style:normal;font-weight:700;src:local('Titillium Web Bold'),local('TitilliumWeb-Bold'),url(https://fonts.gstatic.com/s/titilliumweb/v6/NaPDcZTIAOhVxoMyOr9n_E7ffHjDGIVzY4SY.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Titillium Web';font-style:normal;font-weight:700;src:local('Titillium Web Bold'),local('TitilliumWeb-Bold'),url(https://fonts.gstatic.com/s/titilliumweb/v6/NaPDcZTIAOhVxoMyOr9n_E7ffHjDGItzYw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+
+abbr,address,article,aside,audio,b,blockquote,body,body div,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font-weight:400;vertical-align:baseline;background:0 0}
+a{display:block;text-decoration:none;color:#fff}
+body,html{height:100%}
+li{list-style-type:none}
+button,input{font-family:'Titillium Web',sans-serif;background:0 0;outline:0;color:#fff;border:0}
+body{margin:0;padding:0;background:#121b24;font-family:'Titillium Web',sans-serif;color:#fff}
+
+.ioaj ul li:hover,.ioaj ul li:hover a,.jhak,.jhak a,header nav .vakz ul li a:hover{color:#10d5ff;border-color:#10d5ff!important}
+header nav .vakz ul li.jhak:before{width:3px;position:absolute;top:0;left:-50px;bottom:0;content:'';background:#10d5ff;height:28px;margin:auto}
+.cplz{margin:0 40px}
+.cplzb{padding:0 40px}
+.dhfa.cplzb{margin-left:200px}
+.sezshn .dhfa.cplzb{padding:0!important}
+.fdkdh.neha:hover .dfsb,.fdkdh.nehb:hover .dgfh,.fdkdh.nehz:hover .dfsa,.ioaj.neha:hover .dgsdz.zjbnb,.ioaj.nehb:hover .dgsdz.zjbna,.ioaj.nehz:hover .dgsdz{display:block}
+.ioaj{overflow:hidden;margin-bottom:18px;position:relative}
+.ioaj ul{white-space:nowrap;-webkit-transition:transform .3s ease-in-out;-o-transition:transform .3s ease-in-out;-webkit-transition:-webkit-transform .3s ease-in-out;transition:-webkit-transform .3s ease-in-out;transition:transform .3s ease-in-out;transition:transform .3s ease-in-out,-webkit-transform .3s ease-in-out;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}
+.ioaj ul li{display:inline-block;text-transform:uppercase;font-weight:600;margin-right:15px;padding:0 4px;font-size:15px;border-bottom:2px solid transparent}
+
+@media screen and (min-width:1740px)
+{.buzk,.dhfa.cplzb{margin-left:220px}
+.ioaj ul li{font-size:17px}}
+
+@media screen and (min-width:1599px) and (max-width:1739px)
+{.ioaj ul li{font-size:16px}}
+
+@media screen and (min-width:799px) and (max-width:1023px)
+{.cplz{margin:0 30px}
+.cplzb{padding:0 30px}}
+
+@media screen and (max-width:801px)
+{.buzk,.dhfa.cplzb{margin-left:0}
+.cplz{margin:0 20px}
+.cplzb{padding:0 20px}}
+
+@media (pointer:coarse)
+{.ioaj::-webkit-scrollbar,.kljk .fdkdh::-webkit-scrollbar{display:none;width:0}
+.ioaj{overflow:auto}}
+</style>
+
+<div class="ioaj cplzb"><ul>
+<li class="jhak"><a href="#">Nuevos EPS</a></li>
+<li><a href="#">Series</a></li>
+<li><a href="#">Doramas</a></li>
+<li><a href="#">Telenovelas</a></li></ul></div>
+

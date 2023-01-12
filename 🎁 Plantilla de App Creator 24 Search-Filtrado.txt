@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Megaplay</title>
+<style type="text/css">
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background: #e05656;
+    padding: 10px;
+}
+
+#input-search{
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    text-indent: 10px;
+}
+
+.content-search{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    display: none;
+}
+
+.content-table{
+    width: 95%;
+    max-height: 200px;
+    height: auto;
+    background: white;
+    margin-left: 10px;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+.content-table table{
+    width: 100%;
+}
+
+tbody tr td a{
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+tbody tr td a:hover{
+    background: transparent;
+}
+
+#table_length, #table_filter, #table_info, #table_paginate{
+    display: none;
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+
+</head>
+<body ondragstart="return false;" ondrop="return false;">
+
+<!---Inicio del Buscador Interno--->
+<input type="search" id="input-search" placeholder="Buscar aqui">
+<div class="content-search">
+<div class="content-table">
+<table id="table">
+<thead><tr><td></td></tr>
+</thead><tbody>
+<tr><td><a href="#">Megaplay</a></td></tr>
+<tr><td><a href="#">Superjavi593</a></td></tr>
+<tr><td><a href="#">Tonplay</a></td></tr>
+<tr><td><a href="#">Tecnoman</a></td></tr>
+<!---Copia esto para la siguiente Busqueda--->
+<tr><td><a href="#"></a></td></tr>
+<!---Pega aqui el codigo del Buscador para una nueva Busqueda--->
+<!---No tocar esto--->
+</tbody></table></div></div>
+
+
+
+<script type="text/javascript">
+/*Search JS*/
+var buscador = $("#table").DataTable();
+
+$("#input-search").keyup(function(){
+    
+    buscador.search($(this).val()).draw();
+    
+    if ($("#input-search").val() == ""){
+        $(".content-search").fadeOut(300);
+    }else{
+        $(".content-search").fadeIn(300);
+    }
+})
+</script>
+</body>
+</html>

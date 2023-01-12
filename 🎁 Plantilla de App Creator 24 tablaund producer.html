@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>tablas de puntuación</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+	<style type="text/css">
+		body{
+			background: #000000;
+			padding-top: 10px;
+			text-decoration: none;
+		}
+		#titulo{
+			width: 100%;
+			height: 80px;
+			background:#C0392B;
+			text-align: center;
+			border-radius: 5px;
+			padding-top: 2px
+		}
+		#descrip{
+			width: 100%;
+			height: 50px;
+			background:#212F3D;
+			text-align: center;
+			border-radius: 5px;
+			color:#F1C40F;
+		}
+		#contenido{
+			width: 100%;
+			height:900px;
+			background:url(https://www.digitaltoo.com/wp-content/uploads/sites/3/2020/12/free-fire-20.jpg)fixed no-repeat;
+			background-size: 100% auto, 100%;
+
+			text-align: center;
+			border-radius: 5px;
+		}
+		#contenido textarea{
+			width: 100%;
+			padding: 5px;
+			border-radius: 5px;
+			border: 4px solid #000000;
+			overflow:hidden;
+			font-size:14px;
+            display:block;
+            text-align: center;
+            color: #000000;
+		}
+		canvas{
+  position:relative;
+  width:80%;
+  height:370px;
+  border:#000000 solid 2px;
+  background-color:#aaaaaa;
+  border-radius: 10px; 
+}
+.main{
+  display:grid;
+  grid-template-       columns:1fr;/*repeat(3,1fr);*/
+  grid-column-gap:1em;
+  grid-row-gap:1em;
+}
+.selector{
+  position:relative;
+  background-color:#566573;
+  width:80%;
+  height:80px;
+  border-radius: 10px;
+  color:#F1C40F;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 20px;}
+}
+@keyframes colores{
+    from {border:red solid 2px;}
+    to {border:black solid 2px;}
+}
+@keyframes letras{
+  from{color:white;}
+  to{color:black;}
+}
+#puntos{
+	width: 100%;
+	height: 90%;
+	border:#000000 solid;
+	border-radius: 30px;
+	background: #aaaaaa;
+	color:#000000;
+	}
+	#reproductor{
+		width: 100%;
+		height: 300px;
+		border: #000000 solid;
+		border-radius: 30px;
+		padding-top: 5%;
+	}
+	#text{
+		width: 100%;
+		height: 300px;
+		border: #000000 solid;
+		border-radius: 30px;
+		padding: 100%;
+		text-decoration: none;
+	}
+	a {
+  background: #2C3E50;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  margin: 10px;
+  font-family: arial;
+  font-size: 20px;
+  transition: font-size  2s;
+  border-radius: 20px;
+}
+a:hover {
+  background: #ABB2B9;
+  font-size: 30px;
+}
+	</style>
+
+</head>
+<body>
+<div class="container">
+    <div id="titulo"><h1>UNDPRODUCER grupo 1</h1></div>
+
+   <div id="descrip">
+      <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+         <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><h3>Clanes/Team</h3></div>
+         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><h3>Pocisión</h3></div>
+         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><h3>Kills</h3></div>
+         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><h3>PTS</h3></div>
+      </div>
+      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><h3>Imagen del grupo</h3></div>
+   </div>
+   <div id="contenido">
+      <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><textarea rows="1"></textarea></div>
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+   
+
+   
+      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><textarea rows="1"></textarea></div>
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+   
+
+   
+      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><textarea rows="1"></textarea></div>
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+   
+
+   
+      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><textarea rows="1"></textarea></div>
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+   
+
+   
+      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><textarea rows="1"></textarea></div>
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+   
+
+   
+      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><textarea rows="1"></textarea></div>
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+   
+
+   
+      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><textarea rows="1"></textarea></div>
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+   
+
+   
+      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><textarea rows="1"></textarea></div>
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+   
+
+   
+      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><textarea rows="1"></textarea></div>
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+   
+
+   
+      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><textarea rows="1"></textarea></div>
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+   
+
+   
+      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><textarea rows="1"></textarea></div>
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+   
+
+   
+      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><textarea rows="1"></textarea></div>
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><textarea rows="1"></textarea></div>
+     
+</div>
+<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+	 <div class="main">
+   <div>
+      <canvas id="cv1">
+      </canvas>
+       <div class="selector">
+          <h3>Cargar imagen</h3>
+         <input type="file" multiple="false" accept="image/*" id="infoto" onchange="SubirFoto()">
+       </div> 
+    </div>
+</div>
+
+</div>
+
+
+
+     
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+           <br>
+	<div id="puntos">
+	<p>Puntos por posición.</p>
+            <ol>
+              <li>12 Pts</li>
+              <li>11 Pts</li>
+              <li>10 Pts</li>
+              <li>9 Pts</li>
+              <li>8 Pts</li>
+              <li>7 Pts</li>
+              <li>6 Pts</li>
+              <li>5 Pts</li>
+              <li>4 Pts</li>
+              <li>3 Pts</li>
+              <li>2 Pts</li>
+              <li>1 Pts</li>
+            </ol>
+            <p>Por kills +1 Puntos</p></div>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><br><div id="editor"><textarea scrooling="si" id="text"></textarea></div></div>
+         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><br>
+         	<div id="reproductor">
+         		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><a href="#">Enviar</a></div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><a href="#">Crear grupo 2</a></div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><a href="#">Crear grupo 3</a></div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><a href="#">Crear final</a></div>
+         	</div>
+         </div> 
+         
+</div>
+
+
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+<script type="text/javascript">
+	var image1=null;
+var image2=null;
+var image3=null;
+function SubirFoto()
+{
+  var input=document.getElementById("infoto");
+  var canvas=document.getElementById("cv1");
+  image1=new SimpleImage(input);
+  image1.drawTo(canvas);
+}
+function Foto2()
+{
+  var foto=document.getElementById("infoto2");
+  var canvas=document.getElementById("cv2");
+  image2=new SimpleImage(foto);
+  image2.drawTo(canvas);
+}
+
+function LimpiarBits(color)
+{
+  var x =Math.floor(color/16)*16;
+  return x;
+}
+function Hide()
+{
+  for(var pixel of image1.values())
+    {
+      pixel.setRed(LimpiarBits(pixel.getRed()));   pixel.setBlue(LimpiarBits(pixel.getBlue()));
+pixel.setGreen(LimpiarBits(pixel.getGreen()));
+    }
+  var canvas=document.getElementById("cv2");
+  image1.drawTo(canvas);
+}
+
+function Convinar()
+{
+  
+}
+</script>
+
+</body>
+</html>

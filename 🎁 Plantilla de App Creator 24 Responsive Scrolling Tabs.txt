@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Propeller is a front-end responsive framework based on Material design & Bootstrap.">
+<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+<title>Responsive Scrolling Tabs</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+<link href="style.css" type="text/css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-1.11.3.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+<div class="scroll-card scroll-z-depth">
+<div class="scroll-tabs scroll-tabs-bg" scroll="true">
+<ul class="nav nav-tabs" role="tablist">
+<li class="active"><a href="#Accion" data-toggle="tab">Acción</a></li>
+<li><a href="#Animación" data-toggle="tab">Animación</a></li>
+<li><a href="#Aventuras" data-toggle="tab">Aventuras</a></li>
+<li><a href="#Ciencia-Ficción" data-toggle="tab">Ciencia Ficción</a></li>
+<li><a href="#Comedia" data-toggle="tab">Comedia</a></li>
+</ul>
+</div>
+<div class="scroll-card-body">
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="Accion">
+ACCIÓN
+</div>
+
+<div role="tabpanel" class="tab-pane" id="Animación">
+ANIMACIÓN
+</div>
+
+<div role="tabpanel" class="tab-pane" id="Aventuras">
+AVENTURAS
+</div>
+
+<div role="tabpanel" class="tab-pane" id="Ciencia-Ficción">
+CIENCIA FICCIÓN
+</div>
+
+<div role="tabpanel" class="tab-pane" id="Comedia">
+COMEDIA
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{background:#000;}
+.scroll-tabs {
+	position: relative;
+	font-family: "Roboto", sans-serif;
+	background: #eee;
+}
+ @media (max-width: 767px) {
+.scroll-tabs {
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+}
+.scroll-tabs .nav-tabs {
+	border-bottom: none;
+}
+.scroll-tabs .nav-tabs.nav-justified > li > a {
+	border: none;
+	border-radius: 0;
+}
+.scroll-tabs .nav-tabs.nav-justified > .active > a, .scroll-tabs .nav-tabs.nav-justified > .active > a:hover, .scroll-tabs .nav-tabs.nav-justified > .active > a:focus {
+	border: none;
+}
+.scroll-tabs .nav-tabs > li.active > a, .scroll-tabs .nav-tabs > li.active > a:hover, .scroll-tabs .nav-tabs > li.active > a:focus {
+	color: black;
+	cursor: default;
+	background-color: transparent;
+	border: none;
+	border-bottom-color: transparent;
+	opacity: 1;
+}
+.scroll-tabs .nav-tabs > li {
+	margin-bottom: 0;
+	line-height: 50px;
+}
+.scroll-tabs .nav-tabs > li > a {
+	padding: 1.125rem 1.5rem 1.0625rem;
+	color: rgba(0, 0, 0, 0.54);
+	font-size: 0.875rem;
+	font-weight: 500;
+	margin-right: 0;
+	line-height: 1;
+	border: none;
+	border-radius: 0;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.scroll-tabs .nav-tabs > li > a:hover, .scroll-tabs .nav-tabs > li > a:focus {
+	border-color: transparent;
+	background-color: transparent;
+}
+.scroll-tabs .scroll-tab-active-bar {
+	position: absolute;
+	bottom: 0;
+	width: 25%;
+	height: 3px;
+	background: #FC0;
+	transition: all 0.2s ease-in-out;
+}
+.scroll-tabs-bg {
+	background-color: #000;
+}
+.scroll-tabs-bg .nav-tabs > li > a {
+	color: #fff;
+}
+.scroll-tabs-bg .nav-tabs > li .dropdown-menu a {
+	color: #333333;
+}
+.scroll-tabs-bg .nav-tabs > li.active > a, .scroll-tabs-bg .nav-tabs > li.active > a:hover, .scroll-tabs-bg .nav-tabs > li.active > a:focus {
+	color: white;
+	font-weight: 500;
+}
+.scroll-tabs-bg .scroll-tabs-scroll-right, .scroll-tabs-bg .scroll-tabs-scroll-left {
+	background-color: #000;
+	color: #fff;
+}
+.scroll-tabs-scroll-container {
+	display: block;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.scroll-tabs-scroll-right {
+	float: right;
+	right: 0;
+	top: 0;
+}
+.scroll-tabs-scroll-left {
+	float: left;
+	left: 0;
+}
+.scroll-tabs-scroll-right, .scroll-tabs-scroll-left {
+	position: absolute;
+	z-index: 99;
+	text-align: center;
+	cursor: pointer;
+	display: none;
+	white-space: no-wrap;
+	vertical-align: middle;
+	padding: 0.75rem 1.5rem 0.375rem;
+	background-color: #fff;
+	color: #868e96;
+	line-height: 1.7;
+}
+.tab-content {
+	background: #f2f2f2;
+	padding: 15px;
+}
+h1 {
+	font-size: 90px;
+	color:#000;
+	position: absolute;
+	top: 45%;
+	text-align: center;
+	font-weight: 900;
+	display: block;
+	left: 0;
+	right: 0;
+	line-height: 110px;
+}
+</style>
+<script type="text/javascript">
+"use strict";
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var commons = function () {
+	
+	function commons() {}
+	commons.attachParentSelector = function (parentSelector, defaultSelector) {
+		var customSelector = defaultSelector;
+		if (parentSelector && parentSelector !== '' && parentSelector.length > 0) {
+			if (parentSelector === defaultSelector) {
+				customSelector = defaultSelector;
+			} else if ($(parentSelector).hasClass(defaultSelector)) {
+				customSelector = parentSelector + "" + defaultSelector;
+			} else {
+				customSelector = parentSelector + " " + defaultSelector;
+			}
+		}
+		return customSelector;
+	};
+	return commons;
+};
+function _inherits(SubClass, SuperClass) {
+	if (typeof SuperClass !== "function" && SuperClass !== null) {
+		throw new TypeError("Super expression must either be null or a function, not " + typeof SuperClass);
+	}
+	SubClass.prototype = new SuperClass();
+}
+var propellerControlMapping = {
+	"scroll-checkbox": function () {
+		$('.scroll-checkbox').scrollCheckBox();
+	},
+	"scroll-radio": function () {
+		$('.scroll-radio').scrollRadio();
+	},
+	"scroll-textfield": function () {
+		$('.scroll-textfield').scrollTextfield();
+	},
+	"scroll-dropdown": function () {
+		$('.scroll-dropdown').scrollDropdown();
+	},
+	"scroll-alert-toggle": function () {
+		$('.scroll-alert-toggle').scrollAlert();
+	},
+	"scroll-tabs": function () {
+		$('.scroll-tabs').scrollTab();
+	},
+	"scroll-sidebar": function () {
+		$().scrollSidebar();
+	},
+	"scroll-accordion": function () {
+		$('.scroll-accordion').scrollAccordion();
+	},
+	"scroll-ripple-effect": function () {
+		$('.scroll-ripple-effect').scrollButton();
+	}
+};
+var observeDOM = (function () {
+	var MutationObserver = window.MutationObserver || window.WebKitMutationObserver,
+		eventListenerSupported = window.addEventListener;
+	return function (obj, callback) {
+		if (MutationObserver) {
+			var obs = new MutationObserver(function (mutations, observer) {
+				if (mutations[0].addedNodes.length || mutations[0].removedNodes.length) {
+					callback(mutations);
+				}
+			});
+			obs.observe(obj, {
+				childList: true,
+				subtree: true,
+				attributes: true,
+				characterData: true
+			});
+		} else if (eventListenerSupported) {
+			obj.addEventListener('DOMNodeInserted', callback, false);
+			obj.addEventListener('DOMNodeRemoved', callback, false);
+		}
+	};
+})();
+$(document).ready(function () {
+	$.propellerkit();
+});
+$.propellerkit = function() {
+	observeDOM(document.querySelector('body'), function (mutations) {
+		processMutation(0);
+		function processMutation(index) {
+			if (index >= mutations.length) {
+				return;
+			}
+			var mutation = mutations[index];
+			var nodes = mutation.addedNodes;
+			processNodes(nodes, function () {
+				processMutation(index + 1);
+			});
+		}
+		
+		function processNodes(nodes, callback) {
+			if (nodes.length === 0) {
+				callback();
+				return;
+			}
+			processNode(nodes, 0, function () {
+				callback();
+			});
+		}
+
+		function processNode(nodes, index, callback) {
+			if (index >= nodes.length) {
+				callback();
+				return;
+			}
+			var node = nodes[index];
+			if (containsscrollClassPrefix(node)) {
+				if ($(node).attr("data-toggle") !== undefined && $(node).attr("data-toggle").toLowerCase() === "popover") {
+					$().scrollPopover();
+				}
+				var classes = $(node).attr('class');
+				if (classes === undefined) {
+					callback();
+					return;
+				}
+				classes = classes.split(' ');
+				classes.forEach(function (clazz) {
+					if (propellerControlMapping[clazz]) {
+						propellerControlMapping[clazz]();
+						return true;
+					}
+					return false;
+				});
+				processNode(nodes, index+1, function() {
+					callback();
+				});
+			} else {
+				try {
+					var childNodes = node.childNodes;
+					processNodes(childNodes, function() {
+						processNode(nodes, index+1, function() {
+							callback();
+						});
+					});
+				} catch (e) {
+					
+				}
+			}
+		}
+		function containsscrollClassPrefix(ele) {
+			if ($(ele).attr('class') === undefined) {
+				return false;
+			}
+			var classes = $(ele).attr('class').split(' ');
+			for (var i = 0; i < classes.length; i++) {
+				
+				if (propellerControlMapping.hasOwnProperty(classes[i])) {
+					return true;	
+				}				
+			}
+			return false;
+		}
+	});
+};
+var scrollTab = function ($) {
+    var NAME = 'scrollTab';
+    var JQUERY_NO_CONFLICT = $.fn[NAME];
+
+    var ClassName = {
+        scroll_TAB: 'scroll-tabs',
+		NAV_JUSTIFIED: 'nav-justified',
+		PREV_TAB: 'prev-tab',
+        LAST_TAB: 'last-tab',
+        PM_INI: "pm-ini",
+		SCROLL: "scroll-tabs-scroll",
+        SCROLL_CONTAINER: 'scroll-tabs-scroll-container',
+        ACTIVE_BAR: 'scroll-tab-active-bar'
+    };
+    var Selector = {
+        PARENT_SELECTOR: '',
+		scroll_TAB: '.' + ClassName.scroll_TAB,
+        UL_NAV_TABS: 'ul.nav-tabs',
+        LI: 'li',
+        SCROLL_CONTAINER: '.' + ClassName.SCROLL_CONTAINER,
+        NAV_TAB: '.nav-tabs',
+        SCROLL_RIGHT: '.scroll-tabs-scroll-right',
+        SCROLL_LEFT: '.scroll-tabs-scroll-left',
+        UL_LI_ACTIVE: 'ul li.active',
+        ACTIVE_BAR: '.' + ClassName.ACTIVE_BAR,
+        NAV: '.nav',
+        UL_LI: 'ul li',
+        NAV_TABS_LI: '.nav-tabs li',
+        LAST_TAB: '.' + ClassName.LAST_TAB,
+        PREV_TAB: '.' + ClassName.PREV_TAB,
+        PM_INI: '.' + ClassName.PM_INI
+    };
+    var Template = {
+        ACTIVE_BAR_DIV: "<div class='scroll-tab-active-bar'></div>",
+        SCROLL_LEFT: "<div class='scroll-tabs-scroll-left'><i class='fa fa-caret-left'></i></div>",
+        SCROLL_RIGHT: "<div class='scroll-tabs-scroll-right'><i class='fa fa-caret-right'></i></div>",
+        SCROLL_CONTAINER: "<div class='scroll-tabs-scroll-container'></div>"
+    };
+    function widthOfList($this) {
+        var itemsWidth = 0;
+        $this.find(Selector.LI).each(function () {
+            var itemWidth = $(this)[0].getBoundingClientRect().width;
+            itemsWidth += itemWidth;
+        });
+        return itemsWidth;
+    }
+    function appendulwidth($this) {
+        if ($this.find(Selector.UL_NAV_TABS).hasClass(ClassName.NAV_JUSTIFIED)) {
+            $this.find(Selector.UL_NAV_TABS).width("100%");
+        } else {
+            $this.find(Selector.UL_NAV_TABS).width(widthOfList($this));
+        }
+    }
+    function getLeftPosi($this) {
+        return $this.find(Selector.UL_NAV_TABS).position().left;
+    }
+
+    function reAdjust($this) {
+        if (($this.outerWidth()) < widthOfList($this)) {
+            var navScrolledRight = $this.find(Selector.SCROLL_CONTAINER).scrollLeft(),
+                navWrapWidth = $this.width(),
+                navWidth = $this.find(Selector.NAV_TAB).width(),
+                ammountRight = navWidth - navScrolledRight - navWrapWidth;
+            if (ammountRight > 0) {
+                $this.find(Selector.SCROLL_RIGHT).show();
+            }
+        }
+        else {
+            $this.find(Selector.SCROLL_RIGHT).hide();
+        }
+        if (getLeftPosi($this) < 0) {
+            var navScrolledLeft = $this.find(Selector.SCROLL_CONTAINER).scrollLeft(),
+                ammountLeft = navScrolledLeft;
+            if (ammountLeft > 0) {
+                $this.find(Selector.SCROLL_LEFT).show();
+            }
+        }
+        else {
+            $this.find(Selector.SCROLL_LEFT).hide();
+        }
+    }
+    function activeTabCenter($this) {
+        var $tabWidth = $this.outerWidth(),
+            $middlePosition = $tabWidth / 2,
+            $tabWrapperLeft = $this.offset().left,
+            $sliderActive = $this.find(Selector.UL_LI_ACTIVE),
+            $activeWidth = $sliderActive.outerWidth(),
+            $tabHalfWidth = $activeWidth / 2,
+            $tableftScroll = $this.find(Selector.SCROLL_CONTAINER).scrollLeft(),
+            $tableftPosi = $this.find(Selector.UL_LI_ACTIVE).offset().left,
+            $tabCenterPosi = $tableftPosi - $middlePosition - $tabWrapperLeft + $tableftScroll + $tabHalfWidth;
+        	$this.find(Selector.SCROLL_CONTAINER).animate({ scrollLeft: $tabCenterPosi }, 1);
+    }
+    function sliderLoad($this) {
+        var $slider = $this.find(Selector.ACTIVE_BAR),
+            $sliderActive = $this.find(Selector.UL_LI_ACTIVE),
+            $isX = $sliderActive.offset().left,
+            $navX = $this.find(Selector.NAV).offset().left,
+            $wrapperLeft = $this.offset().left,
+            $sliderLeft = $isX - $wrapperLeft,
+            $finalPossion = $wrapperLeft - $navX + $isX - $wrapperLeft;
+
+        if ($navX < $wrapperLeft) {
+            $slider.width($sliderActive.width() + "px").css("left", $finalPossion + "px");
+        } else {
+            $slider.width($sliderActive.width() + "px").css("left", $sliderLeft + "px");
+        }
+        $this.find(Selector.UL_LI).click(function () {
+            var $thisWidth = $(this).width() + "px",
+                $newLeft = $(this).offset().left - $wrapperLeft,
+                $navX = $(this).closest(Selector.NAV).offset().left;
+            $finalPossion = $wrapperLeft - $navX + $newLeft;
+
+            $slider.width($thisWidth).css("left", $finalPossion + "px");
+        });
+    }
+    function onResizeWindow(event) {
+        var $this = event.data.param1;
+        setTimeout(function () {
+            appendulwidth($this);
+            reAdjust($this);
+            activeTabCenter($this);
+        }, 150);
+        sliderLoad($this);
+    }
+    function onscrollTabScrollRightClick(event) {
+        var $this = event.data.param1;
+        var $tabSet = '',
+            $wrapper = $(event.currentTarget).prev(Selector.SCROLL_CONTAINER),
+            $tab = $wrapper.find(Selector.NAV_TABS_LI),
+            $thisWidht = $(event.currentTarget).outerWidth(),
+            $navCotainer = $this.outerWidth(),
+            $wrapperRight = $this.offset().left + $navCotainer;
+
+        $tab.each(function () {
+            var SuspectTabLeft = $(this).offset().left;
+            var SuspectTabRight = $(this).offset().left + $(this).outerWidth();
+            $(this).removeClass(ClassName.PREV_TAB);
+            if (SuspectTabLeft < $wrapperRight && SuspectTabRight > $wrapperRight) {
+                $tabSet = SuspectTabRight - $wrapperRight + $thisWidht;
+                $(this).addClass(ClassName.LAST_TAB);
+                $(this).prev().removeClass(ClassName.LAST_TAB);
+            }
+        });
+        var finalTab = $wrapper.find(Selector.LAST_TAB).next().length;
+        if (finalTab === 0) {
+            var lastTabRight = $wrapper.find(Selector.LAST_TAB).offset().left + $wrapper.find(Selector.LAST_TAB).outerWidth();
+            var NewScrollAmount = lastTabRight - $wrapperRight;
+            $wrapper.animate({ scrollLeft: '+=' + NewScrollAmount });
+            $(event.currentTarget).fadeOut('slow');
+        }
+        else {
+            $wrapper.animate({ scrollLeft: '+=' + $tabSet });
+        }
+        $(event.currentTarget).parents(Selector.scroll_TAB).find(Selector.SCROLL_LEFT).fadeIn('slow');
+    }
+    function onscrollTabScrollLeftClick(event) {
+        var $this = event.data.param1;
+        var $wrapper = $(event.currentTarget).next(Selector.SCROLL_CONTAINER),
+            $tab = $wrapper.find(Selector.NAV_TABS_LI),
+            $thisWidht = $(event.currentTarget).outerWidth(),
+            $wrapperLeft = $this.offset().left,
+            $tabSetLeft = '';
+
+        $tab.each(function () {
+            var SuspectTabLeft = $(this).offset().left;
+            var SuspectTabRight = $(this).offset().left + $(this).outerWidth();
+            $(this).removeClass(ClassName.LAST_TAB);
+            if (SuspectTabLeft < $wrapperLeft && SuspectTabRight > $wrapperLeft) {
+                $tabSetLeft = $wrapperLeft - SuspectTabLeft + $thisWidht;
+                $(this).addClass(ClassName.PREV_TAB);
+                $(this).next().removeClass(ClassName.PREV_TAB);
+            }
+        });
+        var finalTab = $wrapper.find(Selector.PREV_TAB).prev().length;
+
+        if (finalTab === 0) {
+            var lastTableft = $wrapper.find(Selector.PREV_TAB).offset().left;
+            var NewScrollAmount = $wrapperLeft - lastTableft;
+            $wrapper.animate({ scrollLeft: '-=' + NewScrollAmount });
+            $(event.currentTarget).fadeOut('slow');
+        }
+        else {
+            $wrapper.animate({ scrollLeft: '-=' + $tabSetLeft });
+        }
+        $(event.currentTarget).parents(Selector.scroll_TAB).find(Selector.SCROLL_RIGHT).fadeIn('slow');
+    }
+    function onUlLiClick(event) {
+        var $this = event.data.param1;
+        var $wrapper = $(event.target).closest(Selector.SCROLL_CONTAINER);
+        var activeLeft = $(event.target).offset().left;
+        var activeRight = $(event.target).offset().left + $(event.target).outerWidth();
+        var $navCotainer = $this.outerWidth();
+        var $wrapperRight = $this.offset().left + $navCotainer;
+        var $buttonWidth = $(Selector.SCROLL_RIGHT).outerWidth();
+        var $wrapperLeft = $this.offset().left;
+        var cuttRight = $wrapperRight - $buttonWidth;
+        var cuttleft = $wrapperLeft + $buttonWidth;
+        if (activeLeft < cuttleft && activeRight > cuttleft) {
+
+            var setLeft = $wrapperLeft - activeLeft + $buttonWidth;
+            $wrapper.animate({ scrollLeft: '-=' + setLeft });
+            $(event.target).parents(Selector.scroll_TAB).find(Selector.SCROLL_RIGHT).fadeIn('slow');
+        }
+        if (activeLeft < cuttRight && activeRight > cuttRight) {
+            var setRight = activeRight - $wrapperRight + $buttonWidth;
+            $wrapper.animate({ scrollLeft: '+=' + setRight });
+            $(event.target).parents(Selector.scroll_TAB).find(Selector.SCROLL_LEFT).fadeIn('slow');
+        }
+    }
+    var scrollTab = function () {
+        _inherits(scrollTab, commons);
+        function scrollTab(options) {
+            $(window).unbind("resize");
+			$(scrollTab.prototype.attachParentSelector(Selector.PARENT_SELECTOR, Selector.scroll_TAB)).each(function () {
+                var $this = $(this);
+                if (options !== undefined && options.scroll !== null && (options.scroll === true || options.scroll === "true")) {
+                    $this.addClass(ClassName.SCROLL);
+                } else {
+                    $this.removeClass(ClassName.SCROLL);
+                    if (options !== undefined && $this.attr("scroll") !== undefined && $this.attr("scroll").toLowerCase() === "true") {
+                        $this.attr("scroll", "false");
+                    }
+                    if ($this.find(".nav.nav-tabs").parent().attr("class").split(" ").indexOf(ClassName.SCROLL_CONTAINER) > -1) {
+                        $this.find(".nav.nav-tabs").unwrap();
+                        $this.find(Selector.ACTIVE_BAR).remove();
+                        $this.find(Selector.SCROLL_LEFT).remove();
+                        $this.find(Selector.SCROLL_RIGHT).remove();
+                    }
+                }
+                if ($this.attr("scroll") !== undefined && $this.attr("scroll").toLowerCase() === "true") {
+                    $this.addClass(ClassName.SCROLL);
+                }
+                if ($this.attr("class").split(" ").indexOf(ClassName.SCROLL) > -1) {
+                    if ($this.find(".nav.nav-tabs").parent().attr("class").split(" ").indexOf(ClassName.SCROLL_CONTAINER) < 0) {
+                        $this.find(".nav.nav-tabs").wrap(Template.SCROLL_CONTAINER);
+                        $this.find(Selector.SCROLL_CONTAINER).append(Template.ACTIVE_BAR_DIV);
+                        $this.find(Selector.SCROLL_CONTAINER).before(Template.SCROLL_LEFT);
+                        $this.append(Template.SCROLL_RIGHT);
+                    }
+                } else {
+                    if ($this.find(Selector.ACTIVE_BAR).length === 0) {
+                        $this.find(".nav.nav-tabs").before(Template.ACTIVE_BAR_DIV);
+                    }
+                }
+                appendulwidth($this);
+                reAdjust($this);
+                activeTabCenter($this);
+                sliderLoad($this);
+                $this.find(Selector.SCROLL_RIGHT).off("click");
+                $this.find(Selector.SCROLL_LEFT).off("click");
+				$this.find(Selector.SCROLL_RIGHT).click({ param1: $this }, onscrollTabScrollRightClick);
+                $this.find(Selector.SCROLL_LEFT).click({ param1: $this }, onscrollTabScrollLeftClick);
+                $this.find(Selector.UL_LI).click({ param1: $this }, onUlLiClick);
+                $(window).resize({ param1: $this }, onResizeWindow);
+            });
+        }
+        return scrollTab;
+    } ();
+    var plugInFunction = function (options) {
+        if (this.selector !== "") {
+            Selector.PARENT_SELECTOR = this.selector;
+        }
+        new scrollTab(options);
+    };
+	$.fn[NAME] = plugInFunction;
+    return scrollTab;
+	
+} (jQuery)();
+</script>
+</body>
+</html>
