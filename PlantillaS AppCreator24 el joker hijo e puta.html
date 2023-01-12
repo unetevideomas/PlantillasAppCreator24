@@ -1,0 +1,286 @@
+
+<!--DOCTYPE html-->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutorial - Galería de imágenes</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('#myInput').on('input', function() {
+var value = $(this).val().toLowerCase();
+$('.gallery >.poster').filter(function() {
+$(this).toggle($(this).find('a').attr('title').toLowerCase().indexOf(value) > -1)});});});
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{user-select:none;margin:0;padding:0;box-sizing:border-box;outline:none;user-select:none;}
+body{background:#151515;}
+#xs-header{background:#000;left: 0;position: fixed;top: 0;width: 100%;z-index: 90;height: 8%;}
+.xsposter{margin:0px;position:relative;display:inline-block;overflow-x:scroll;overflow-y:hidden;}
+play{background:#000;color:#fff;padding:5px;left:0;right:0;height:2.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;}
+.wrapper{margin:0px;max-width:1100px;}
+.wrapper nav{display:flex;justify-content:center;}
+.wrapper .items{display:flex;max-width:720px;width:100%;justify-content:space-between;overflow:auto;}
+.items span{background:#000;color:#fff;padding:7px 25px;font-size:14px;cursor:pointer;border:0px solid #ddd;transition: all 0.3s ease;}
+.items span.active{color:#fff000;background:#ff000;}
+.gallery{display: flex;flex-wrap: wrap;margin-top: 3px;}
+.gallery .poster{width: calc(100% / 3);padding:5px;}
+.gallery .poster span{display: flex;width: 100%;overflow: hidden;}
+.gallery .poster img{background:#fff;border-radius:7px;vertical-align: middle;transition: all 0.3s ease;cursor: pointer;}
+.gallery .poster.hide{display: none;}
+@keyframes animate {
+0%{transform: scale(0.5);}
+100%{transform: scale(1);}}
+@media (max-width: 1000px) {
+.gallery .poster{width: calc(100% / 6);}}
+@media (min-width: 1360px) {
+.gallery {margin-left: -10%;margin-right: -10%;}}
+@media (max-width: 800px) {
+.gallery .poster{width: calc(100% / 5);}}
+@media (max-width: 700px) {
+.wrapper nav .items{max-width: 1000px;}nav .items span{padding: 7px 15px}}
+@media (max-width: 600px) {
+.wrapper{margin: 0px auto;}
+.wrapper nav .items{overflow: auto;}
+nav .items span{margin:0px;}
+.gallery .poster{width: calc(100% / 3);}}
+
+.xaviec{background:#000;position:fixed;top:-5px;width:100%;}
+</style>
+</head>
+<body>
+<div class="xaviec">
+<play>
+<h1 style="color:#fff000;font-size:35px;">ო<strong style="color:#fff;">ovies🇨🇴</strong></h1>
+<input id="myInput" type="search" placeholder="Buscar..." size="12" style="border-radius: 6px; outline: none; border: 0px; padding: 4px 4px; font-size: 12pt;">
+</play>
+<div class="wrapper">
+<nav><div class="items">
+<span class="item active" data-name="all">Todos</span>
+<span class="item" data-name="peliculas">peliculas</span>
+<span class="item" data-name="series">series</span>
+<span class="item" data-name="animes">animes</span>
+
+
+</div></nav></div></div><br><br><br><br>
+<div class="gallery">
+  <a href="https://valleyapp.blogspot.com/2022/01/euphoria.html?m=1"title="Euphoria">
+ <div class="poster" data-name="series"><span><img height="140px" src=" https://www.themoviedb.org/t/p/original/5mi3aRl16yKmfpQJMzvqN5TXkdA.jpg " width="110px"></span></a></div>     
+
+  <a href="https://valleyapp.blogspot.com/2022/01/ataquealostitanes.html?m=1"title="ataque a los Titanes">
+ <div class="poster" data-name="animes"><span><img height="140px" src=" https://www.themoviedb.org/t/p/original/oWEiAAGZTBqgj2Hxhxvr9xTjjlu.jpg " width="110px"></span></a></div>
+ <a href=" https://valleyapp.blogspot.com/2022/01/ellibrodebobadet.html?m=1 "title="El libro de bobafet">
+ <div class="poster" data-name="series"><span><img height="140px" src=" https://www.themoviedb.org/t/p/original/gNbdjDi1HamTCrfvM9JeA94bNi2.jpg " width="110px"></span></a></div>
+
+<a href="https://valleyapp.blogspot.com/2022/01/rebelde.html?m=1"title="rebelde">
+ <div class="poster" data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/b1IBsimEJOLjBLYsdBZ1VAcmq73.jpg" width="110px"></span></a></div>     
+<a href="https://valleyapp.blogspot.com/p/harrypotter.html?m=1"title="Harry potter">
+<div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/1whbe62WT52o6hjTJ8q1A9zehxS.jpg" width="110px"></span></a></div>    
+ <a href="https://valleyapp.blogspot.com/2022/01/cobrakai.html?m=1"title="cobra kai">
+ <div class="poster"data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/6POBWybSBDBKjSs1VAQcnQC1qyt.jpg" width="110px"></span></a></div>        
+  <a href="https://valleyapp.blogspot.com/2021/12/elfos.html?m=1" title="elfos">
+ <div class="poster" data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/6upMMT2Uz4bhJabBCWhYKESIbF4.jpg" width="110px"></span></a></div>  
+ <a href="https://valleyapp.blogspot.com/p/prpep.html?m=1"title="no mires arriba">
+ <div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/z9i4sKVWElpG9bxtdqTQIUOP0Da.jpg" width="110px"></span></a></div>
+ <a href="https://valleyapp.blogspot.com/p/matrix.html?m=1"title="matrix">
+ <div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/8c4a8kE7PizaGQQnditMmI1xbRp.jpg" width="110px"></span></a></div>   
+ <a href="https://valleyapp.blogspot.com/p/prueba.html?m=1"title="spiderman no way Home">
+ <div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/1z7ZQhga4AcSkQNqEU3Tf9XpxoX.jpg" width="110px"></span></a></div>
+ <a href="https://valleyapp.blogspot.com/p/anonima.html"title="anonima">
+ <div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/6hQRlHRXR8mATvrSVmYXMWF4s.jpg" width="110px"></span></a></div>
+ <a href="https://valleyapp.blogspot.com/p/imperdonable.html"title="imperdonable">
+ <div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/qpZUU24mIn1IQGwovqEUT0AjGj2.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/harrypotter.html"title="Harry Potter">
+<div class="poster" data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/hiLk9o3j2604NTQOlRg2tnOWqH4.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/encounter.html"title="encounter">
+<div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/8rC6GjArIefWNfOXtUSdJm8KLEz.jpg" width="110px"></span></a></div>
+ <a href="https://valleyapp.blogspot.com/p/davidelfos.html"title="David elfos">
+<div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/rNjQUytRwW9p2yfUdlGX6DoL3Gb.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/thewitcher.html?m=1"title="the witcher">
+ <div class="poster" data-name="series"><span><img height="140px" src=" https://www.themoviedb.org/t/p/original/wjSDJonLoZ9clZqnlZr2KuuprHe.jpg " width="110px"></span></a></div>
+  <a href="https://valleyapp.blogspot.com/2021/12/casadepapel.html "title="la casa de papel">
+ <div class="poster" data-name="series"><span><img height="140px" src=" https://www.themoviedb.org/t/p/original/z01Dc0Ly2GmCpLe6Scx4d3dPP1S.jpg " width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/rondaerror.html"title="ron da error">
+ <div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/1kkVXCAy11pZEyVn1BJsJTN2kOc.jpg" width="110px"></span></a></div>
+ <a href="https://valleyapp.blogspot.com/p/actividadparanormal.html?m=1"title="actividad paranormal">
+ <div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/yX1B6N9IOGSLiHTLBOkCBMwHuSN.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/invasion.html"title="invasión">
+ <div class="poster"data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/y02TXn2JjP77Bszc3ffEstwfZ2E.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/laruedadeltiempo.html?m=1"title="la rueda del tiempo">
+ <div class="poster"data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/7cVmgz7TzkZf64VD6Vc3AOZS1uA.jpg" width="110px"></span></a></div>
+ <a href="https://valleyapp.blogspot.com/p/salvolanavida.html"title="salvando la navidad">
+ <div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/3d75sU7TvqyWuGukbXnfX5q0cl9.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/ultimoduelo.html?m=1"title="último duelo">
+<div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/zjrJE0fpzPvX8saJXj8VNfcjBoU.jpg" width="110px"></span></a></div>  
+<a href="https://valleyapp.blogspot.com/p/mipobreangelito.html"title="mi pobre angelito">
+ <div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/s7S415WLERQmcEwMndaxPblFunQ.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/dexter.html"title="dexter">
+ <div class="poster" data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/wZKneYneCBw85VheXSXUS7Sp5EN.jpg" width="110px"></span></a></div>
+  <a href="https://valleyapp.blogspot.com/p/sputnik.html?m=1"title="Sputnik">
+<div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/iQXVoEM4MStsbRq9l3NnBwdb9di.jpg" width="110px"></span></a></div>
+  <a href="https://valleyapp.blogspot.com/p/herida.html"title="herida">
+ <div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/lGCNVKSaMlEsAVjIFdfzKjEWwwJ.jpg" width="110px"></span></a></div>
+ <a href="https://valleyapp.blogspot.com/p/chigalandia.html"title="chigalandia">
+<div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/gNObb3Q1P2yO2Z14bs6AXx0cWVy.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/ojo-de-halcom.html"title="ojo de halcon">
+ <div class="poster" data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/ommKNzt6wmtz3mQS3e3rrDnISOM.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/cazafantasma.html"title="cazafantasmas">
+<div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/yBlHh4BNiGYgfBTAFi8XONfseN8.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/eternls.html"title="eternals">
+ <div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/zpSW0AswPGYZQvLVsHbAcTzEyy3.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/narutoshipuden.html"title="naruto">
+ <div class="poster" data-name="animes"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/kV27j3Nz4d5z8u6mN3EJw9RiLg2.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/maradona.html?m=1"title="maradona">
+<div class="poster" data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/nk1mNTw30bfhvMb89ismDOCamgO.jpg" width="110px"></span></a></div>    
+  <a href="https://valleyapp.blogspot.com/2022/01/serievisavis.html?m=1"title="vis a vis">
+ <div class="poster"data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/rD3Q9c5iKjCb5oKvBn1vLIFv654.jpg" width="110px"></span></a></div>  
+  <a href="https://valleyapp.blogspot.com/2022/01/greysanatomy.html?m=1"title="Grey's anatomy">
+ <div class="poster"data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/zPIug5giU8oug6Xes5K1sTfQJxY.jpg" width="110px"></span></a></div>      
+<a href="https://valleyapp.blogspot.com/p/cliford.html"title="cliford">
+<div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/kW5JBtCGnIwBS1SD4sMXu8gee4U.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/rapidoyfurioso.html"title="rápido y furioso">
+ <div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/TX1T3c3CDBN0y8iDNvlQbtiA5Z.jpg" width="110px"></span></a></div>
+ <a href="https://valleyapp.blogspot.com/p/lasshoot.html"title="last shoot">
+<div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/jrLAPwURuG9OAXj79NdMktmevMs.jpg" width="110px"></span></a></div>
+ <a href="https://valleyapp.blogspot.com/2021/12/starwar.html"title="Star war">
+ <div class="poster"data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/tyEgE0plST1EuwLaLi9pwAQrLyw.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/southpark.html"title="south partk">
+<div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/bm3N4UaaznVswjxcNuTPBZN1Xo2.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/canta2.html"title="canta 2">
+<div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/ybjcJqJ4KGFYSgfDoODdRfqhGV9.jpg" width="110px"></span></a></div>
+ <a href="https://valleyapp.blogspot.com/2021/12/borutonaruto.html?m=1"title="Boruto naruto">
+<a href="https://valleyapp.blogspot.com/p/butcher.html?m=1"title="butcher">
+ <div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/6ycmNVZT3IzwnA6x3b6p42dRqry.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/cajaoscura.html?m=1"title="Caja Oscura">
+<div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/kSxot0vVOmLsviEdSml1izyiC4g.jpg" width="110px"></span></a></div>      
+<a href="https://valleyapp.blogspot.com/2021/12/see.html?m=1"title="see">
+
+<div class="poster" data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/9GB2iXCPVP6bgyQXXPUchX8CD7p.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/casagucci.html"title="casa Gucci">
+<div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/9MVyhDsVmZjjaE8F09zhbg87ssw.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/freeguy.html"title="freeguy">
+ <div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/suaooqn1Mnv60V19MoGxneMupJs.jpg" width="110px"></span></a></div>
+ <a href="https://valleyapp.blogspot.com/2021/12/narcosmexico.html"title="narcos mexico">
+<div class="poster"data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/timVm5mBW7T6II8EURVPL1In2Ht.jpg" width="110px"></span></a></div>
+  <a href="https://valleyapp.blogspot.com/2021/12/gosiipgirl.html"title="Gossip Girl">
+ <div class="poster"data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/es3mkwOXIQ5s72jEDCmzstmYryE.jpg" width="110px"></span></a></div>
+  <a href="https://valleyapp.blogspot.com/2021/12/perdidosespacio.html"title="Perdidosen el espacio">
+<div class="poster" data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/qv2PvsVjLttp4FmUUJ1G9d11qTe.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/titanes.html"title="Titanes">
+ <div class="poster" data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/dZcFbRFhUW7MB7L5gZb7QG9fdRd.jpg" width="110px"></span></a></div>
+  <a href="https://valleyapp.blogspot.com/p/olds.html"title="olds">
+ <div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/hwZ0d29xTh7BvJZfolLffRR6iVr.jpg" width="110px"></span></a></div>
+ <a href="https://valleyapp.blogspot.com/2021/12/flash.html?m=1"title="flash">
+ <div class="poster" data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/sn5T0gm0EMxhKZGUPeAs38HVc6a.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/residentevil.html"title="resident evil">
+ <div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/htpKy3nUBNtCsaTj2pWU9JwPKlj.jpg" width="110px"></span></a></div>
+  <a href="https://valleyapp.blogspot.com/2021/12/elite.html?m=1"title="elite">
+<div class="poster"data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/hMNi01KTkQ13kc6dNLX04Jvm4m7.jpg" width="110px"></span></a></div>
+  <a href="https://valleyapp.blogspot.com/p/thevoyeurs.html?m=1"title="The Voyeurs">
+ <div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/yBO3DYWlLp8gbTkgSjlGSrP1Hz.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/principenewyork.html?m=1"title="Principe en NewYork">
+<div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/4MP33dIRIqAUduskJvJDzeWJR9n.jpg" width="110px"></span></a></div>    
+<a href="https://valleyapp.blogspot.com/p/llantomaldito.html "title="llanto maldito">
+<div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/iwlmZKndp7fIfHbxVzQtk9zby3A.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/riverdale.html"title="Riverdale">
+<div class="poster" data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/mlk5jA1ewWUxle6LY9bEi7aiI97.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/encanto_10.html"title="encanto">
+<div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/pZc0GpA8jPTwqHuABnSW6XwvWAi.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/venom2.html"title="Venom 2">
+<div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/jMBTJQiHAyGlZR05J2sq5coA6ew.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/finch.html"title="finch">
+<div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/akCtSzs2ln4lFWODXZ412lmsjUe.jpg" width="110px"></span></a></div>
+ <a href="https://valleyapp.blogspot.com/2021/12/arcane.html"title="arcane">
+<div class="poster"data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/xQ6GijOFnxTyUzqiwGpVxgfcgqI.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/estamos-trabaando-con-la-etiqueta-del.html"title="Shang chi">
+<div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/9VqajJXm29uprSaxOcEh7O0d6E9.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/loki.html"title="loki">
+<div class="poster" data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/kAHPDqUUciuObEoCgYtHttt6L2Q.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/alerta.html"title="alerta roja">
+<div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/13ve6bUECZTrgnnQu5frOodXpwO.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/jungle.html"title="jungle cruise">
+<div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/esgrxpxrQufea2A3iHJUquG4mdz.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/chucky.html"title="Chucky">
+<div class="poster"data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/iF8ai2QLNiHV4anwY1TuSGZXqfN.jpg" width="110px"></span></a></div>
+ <a href="https://valleyapp.blogspot.com/p/monster2.html"title="monster family 2">
+<div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/eReiljCm4Z6v9LgcWlA2Qsfa54U.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/onepuchman.html"title="one Puch man">
+ <div class="poster"data-name="animes"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/iE3s0lG5QVdEHOEZnoAxjmMtvne.jpg" width="110px"></span></a></div>
+ <a href="https://valleyapp.blogspot.com/p/jeansbons.html"title="Jeans Bons">
+<div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/rDfYClNuplM26KwPbyFAE7CDZo4.jpg" width="110px"></span></a></div>
+  <a href="https://valleyapp.blogspot.com/p/barrendero.html?m=1" title="Barrendero Espaciales">
+<div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/9A9kcmNQjK0YB7j4qy5xc2yOlWV.jpg" width="110px"></span></a></div>
+  <a href="https://valleyapp.blogspot.com/2021/12/soloasesinatot.html?m=1"title="solo asesinato">
+  <div class="poster" data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/lF4A6vdmNnK9XnI8OI60hHNb1rV.jpg" width="110px"></span></a></div>
+  <a href="https://valleyapp.blogspot.com/p/cadyman.html"title="cadyman">
+<div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/40FuQAiHjCvh9fYFigGAVWJ6Czu.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/juegocalamar.html"title="el juego del calamar">
+ <div class="poster"data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/yvW9VuHiwfAaTNYjALROI8evNIT.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/wandavision.html"title="wandavisión">
+ <div class="poster"data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/frobUz2X5Pc8OiVZU8Oo5K3NKMM.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/rickandmorty.html?m=1"title="Rick and Morty">
+ <div class="poster"data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/58ugmnhnrnWC8tLNvifxlQVFB7K.jpg" width="110px"></span></a></div>
+ <a href="https://valleyapp.blogspot.com/p/themedium.html"title="the medium">
+ <div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/2aP7usXx1uLbduhrsW84hn3yRyY.jpg" width="110px"></span></a></div>
+  <a href="https://valleyapp.blogspot.com/p/mortalkombat.html"title="mortal Kombat">
+ <div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/jtBHWEbuTrqhsd1Xf3jqF1Rr3KY.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/lovedeatchrobots.html?m=1"title="love deatch robots">
+<div class="poster"data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/yirhzFbggq8FHuAEnxCZUKr2B9H.jpg" width="110px"></span></a></div>
+  <a href="https://valleyapp.blogspot.com/p/snakeorigin_13.html"title="Snake Origin">
+ <div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/paU2I3oEvXdj0UcELlQcwC360rZ.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/standdelosbesos3.html"title="standelosbesos 3">
+ <div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/jdD6Rd8XMXPFZmCXLKWPthd1HsV.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/blackwindow.html"title="Black Window">
+ <div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/oggEsESyLjVGD7jbIdBfa2hFUrx.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/escuadron.html"title="escuadrón suicida">
+ <div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/fPJWlhXA2VXf4MlQ3JenVsz1iba.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/themandalorian.html?m=1"title="the mandalorian">
+<div class="poster" data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg" width="110px"></span></a></div>   
+  <a href="https://valleyapp.blogspot.com/p/zonariesgo.html?m=1"title="zona riesgo">
+<div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/6XYLiMxHAaCsoyrVo38LBWMw2p8.jpg" width="110px"></span></a></div>
+ <a href="https://valleyapp.blogspot.com/p/afteraquicomienza.html?m=1"title="After Aqui Comienza">
+ <div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/u3B2YKUjWABcxXZ6Nm9h10hLUbh.jpg" width="110px"></span></a></div>  
+ <a href="https://valleyapp.blogspot.com/p/afterenmilpedazos.html?m=1"title="after mil pedazos">
+ <div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/8nPw22C41EUWXREWmY9iIivMXxm.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/p/greenland.html?m=1"title="greenland">
+ <div class="poster" data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/9iFkwShRf5M29yLABAdsEZyr9w6.jpg" width="110px"></span></a></div>
+<a href="https://valleyapp.blogspot.com/2021/12/finalspace.html?m=1"title="final space">
+<div class="poster" data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/zT6tXWsJoBOWJT1PeUEKLTFOoHh.jpg" width="110px"></span></a></div>     
+<a href="https://valleyapp.blogspot.com/p/joker.html?m=1"title="joker">
+ <div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/v0eQLbzT6sWelfApuYsEkYpzufl.jpg" width="110px"></span></a></div>      
+<a href="https://valleyapp.blogspot.com/2021/12/stranger.html?m=1"title="Stranger">
+<div class="poster" data-name="series"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/g3nzhHBDTrJ7RWhzozFTYFjvRbd.jpg" width="110px"></span></a></div>      
+<a href="https://valleyapp.blogspot.com/p/afteralmaspedidas.html?m=1"title="After Almas Pedidas">
+<div class="poster"data-name="peliculas"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/3WfvjNWr5k1Zzww81b3GWc8KQhb.jpg" width="110px"></span></a></div>  
+  <a href="https://valleyapp.blogspot.com/2022/01/demonslayer.html?m=1"title="DemonSlayer">
+<div class="poster" data-name="animes"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/wrCVHdkBlBWdJUZPvnJWcBRuhSY.jpg" width="110px"></span></a></div>    
+  <a href="https://valleyapp.blogspot.com/p/naruto.html?m=1"title="Naruto">
+<div class="poster" data-name="animes"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/7TmKuiLmmoK5NLALkW9cPY7eZwV.jpg" width="110px"></span></a></div>  
+  <a href="https://valleyapp.blogspot.com/2022/01/slamdunk.html?m=1"title="slam Dunk">
+ <div class="poster" data-name="animes"><span><img height="140px" src="https://www.themoviedb.org/t/p/original/qsQBwhNYAHTWdPv3k1Vq6dtpiwk.jpg" width="110px"></span></a></div>
+  
+
+
+</div><br>
+<script>
+const filterItem = document.querySelector(".items");
+const filterImg = document.querySelectorAll(".gallery .poster");
+window.onload = ()=>{ 
+filterItem.onclick = (selectedItem)=>{ 
+if(selectedItem.target.classList.contains("item")){ 
+filterItem.querySelector(".active").classList.remove("active"); 
+selectedItem.target.classList.add("active"); 
+let filterName = selectedItem.target.getAttribute("data-name"); 
+filterImg.forEach((image) => {
+let filterImges = image.getAttribute("data-name"); 
+if((filterImges == filterName) || (filterName == "all")){
+image.classList.remove("hide"); 
+image.classList.add("show"); }
+else{image.classList.add("hide"); image.classList.remove("show"); }});}}
+for (let i = 0; i < filterImg.length; i++) {
+filterImg[i].setAttribute("onclick", "preview(this)"); }}
+</script>
+</body>
+</html>

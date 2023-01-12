@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body class="hidden">
+
+<!-- area del contenido del spinner -->
+<div id="spinner" class="spinner">
+</div>
+<!-- area del contenido del spinner -->
+    
+<div id="banner">
+    <a class="btn atras" href="go:inicio"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+    </svg></a>
+    <a class="btn compartir" href="http://action_share"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+    </svg></a>
+    <div class="generos">
+gif        <h6>ACCION</h6>
+        <h6>COMEDIA</h6>
+        <h6>CRIMEN</h6>
+    </div>
+</div>
+
+<div id="portada">
+    <div class="portada">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVIfirEAAb9fGhyZihq1UqbuZ00E0R7n3kFQ&usqp=CAU" alt="portada">
+    </div>
+    <div class="info">
+        <h6>SINOPSIS</h6>
+        <P>Un ladrón de bancos se entrega a la policía porque se ha enamorado y decide llevar una vida honrada. Sin embargo, cuando descubre que los federales son aún más corruptos que él, se verá obligado a utilizar todo su entrenamiento y experiencia como ex marine y ladrón profesional para limpiar su nombre.</P>
+    </div>
+</div>
+
+<div id="btn2">
+<!-- enlace para calificar pelicula -->
+    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-sunglasses-fill" viewBox="0 0 16 16">
+        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM2.31 5.243A1 1 0 0 1 3.28 4H6a1 1 0 0 1 1 1v.116A4.22 4.22 0 0 1 8 5c.35 0 .69.04 1 .116V5a1 1 0 0 1 1-1h2.72a1 1 0 0 1 .97 1.243l-.311 1.242A2 2 0 0 1 11.439 8H11a2 2 0 0 1-1.994-1.839A2.99 2.99 0 0 0 8 6c-.393 0-.74.064-1.006.161A2 2 0 0 1 5 8h-.438a2 2 0 0 1-1.94-1.515L2.31 5.243zM4.969 9.75A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .866-.5z"/>
+    </svg></a>
+<!-- enlace para descargar pelicula -->
+    <a href="https://565297941.contenthx.me/d/aczludqwo7hvw4m6h6xy77kiyhefcuawhi2bmflftmprbuf5c5eq3y74e27ii2mx7273qcxi/video.mp4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
+        <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z"/>
+    </svg></a>
+<!-- enlace para reporver trailer de la pelicula -->
+    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
+        <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+    </svg></a>
+<!-- enlace para reportar links -->
+    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-diamond-fill" viewBox="0 0 16 16">
+        <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+    </svg></a>
+</div>
+
+<div id="conteinervid">
+    <div class="VideoPlayer Bglg">
+        <h6>SERVIDORES</h6>
+        <ul class="TbVideoNv" role="tablist">
+        <li role="presentation" data-id="1" class="active">
+        <a id="video1" href="#option1"></a>1</li>
+        <li role="presentation" data-id="2" class="">
+        <a id="video" href="#option2"></a>2</li>
+        
+        </ul>
+    </div>
+</div>
+
+<div id="reproductors">
+<div class="video">
+    <div id="video-content" class="video-html"><iframe allowfullscreen="" frameborder="0" height="200px" sandbox="allow-same-origin allow-scripts" scrolling="no" src="https://pelisplushd.net/fembed.php?url=47m28azl12-4q1z" width="100%"></iframe>
+</div>
+</div>
+
+
+
+
+
+      
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000000;
+}
+
+
+/* area-para-los-estilos-del-preloader */
+/* Normal Usage */
+.hidden {
+  overflow: hidden;
+}
+#spinner {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #f0f8ff;
+    z-index: 999999;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.spinner:before {
+  transform: rotateX(60deg) rotateY(45deg) rotateZ(45deg);
+  animation: 750ms rotateBefore infinite linear reverse;
+}
+.spinner:after {
+  transform: rotateX(240deg) rotateY(45deg) rotateZ(45deg);
+  animation: 750ms rotateAfter infinite linear;
+}
+.spinner:before,
+.spinner:after {
+  box-sizing: border-box;
+  content: '';
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -5em;
+  margin-left: -5em;
+  width: 10em;
+  height: 10em;
+  transform-style: preserve-3d;
+  transform-origin: 50%;
+  transform: rotateY(50%);
+  perspective-origin: 50% 50%;
+  perspective: 340px;
+  background-size: 10em 10em;
+  background-image: url(https://image.tmdb.org/t/p/w780/2M2JxEv3HSpjnZWjY9NOdGgfUd.jpg);
+}
+/* sitNSpin.less */
+@keyframes rotateBefore {
+  from {
+    transform: rotateX(60deg) rotateY(45deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(60deg) rotateY(45deg) rotateZ(-360deg);
+  }
+}
+@keyframes rotateAfter {
+  from {
+    transform: rotateX(240deg) rotateY(45deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(240deg) rotateY(45deg) rotateZ(360deg);
+  }
+}
+/* area-para-los-estilos-del-preloader */
+
+
+/* area de los estilos del banner */
+#banner {
+    background-image: url(https://image.tmdb.org/t/p/w780/2M2JxEv3HSpjnZWjY9NOdGgfUd.jpg);
+    width: 100%;
+    height: 12rem;
+    position: relative;
+    background-size: cover;
+}
+/* area de los estilos de los botones */
+#banner .btn {
+    position: absolute;
+    top: 0.6rem;
+    background: #ffffff;
+    color: #000000;
+    width: 12%;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+#banner .atras {
+    left: 0.6rem;
+}
+#banner .compartir {
+    right: 0.6rem;
+}
+/* area de los estilos de los botones */
+/* area de los estilos de los generos */
+#banner .generos {
+    position: absolute;
+    right: 0.2rem;
+    color: rgb(240 248 255);
+    display: flex;
+    width: 60%;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    top: 10rem;
+}
+#banner .generos h6 {
+    width: 80%;
+    height: 80%;
+    margin: 2px;
+    padding: 0;
+    border-radius: 2px;
+    background: rgb(240 248 255);
+    color: rgb(0 0 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+/* area de los estilos de los generos */
+/* area de los estilos del banner */
+
+/* area de los estilos de la portada e informacion */
+#portada {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 12rem;
+    overflow: hidden;
+    top: 10rem;
+    padding: 0 7px;
+}
+#portada .portada {
+    position: relative;
+    left: 0;
+    width: 64%;
+}
+#portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+/* area de los estilos de la portada e informacion */
+
+/* area de los estilos de la informacion */
+#portada .info {
+    position: relative;
+    width: 100%;
+    height: 84%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 0 8px;
+    top: 2rem;
+}
+
+#portada .info h6 {
+    margin: 0;
+    width: 100%;
+    height: 16%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: #ed143d;
+    font-size: 14px;
+    font-weight: 600;
+}
+#portada .info p {
+    margin: 0;
+    width: 100%;
+    height: 80%;
+    overflow: auto;
+    color: #ffffff;
+    font-size: 14px;
+}
+/* area de los estilos de la informacion */
+
+
+/* area del contenedor de los btones 2 */
+#btn2 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 2rem;
+    justify-items: center;
+    align-items: center;
+    top: 10.6rem;
+}
+#btn2 a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    background: #000000;
+    transition: 0.4s;
+}
+#btn2 a:hover {
+    background: #ffffff;
+    color: #000000;
+    transition: 0.4s;
+}
+/* area del contenedor de los btones 2 */
+
+/* area del conteiner de los btn de los servidores */
+#conteinervid {
+    position: relative;
+    top: 11rem;
+    width: 97%;
+    height: 2rem;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 6px;
+    border-radius: 2px 2px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#conteinervid .VideoPlayer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#conteinervid .VideoPlayer h6 {
+  margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    background: #000000;
+    color: #ed143d;
+    border-radius: 2px 0 0 2px;
+    left: 0;
+    top: 0;
+}
+#conteinervid .VideoPlayer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    right: 0;
+    overflow: auto;
+}
+#conteinervid .VideoPlayer ul li {
+    height: 100%;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    color: #ffffff;
+    transition: 0.4s;
+}
+#conteinervid .VideoPlayer ul li.active {
+    background: #ffffff;
+    color: #000000;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+/* area del conteiner de los btn de los servidores */
+
+
+/* stylos del contemedor del video */
+.video {
+    width: 97%;
+    height: 13rem;
+    position: relative;
+    top: 11.4rem;
+    background: rgb(240 248 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    padding: 0;
+}
+.video #video-content {
+    width: 100%;
+    height: 98%;
+    background: #ed143d;
+    border-radius: 0 0 2px 2px;
+}
+/* stylos del contemedor del video */
+
+
+/* area de los estilos de la portada */
+#reparto {
+    position: relative;
+    width: 100%;
+    height: 6rem;
+    top: 12rem;
+    padding: 4px;
+}
+#reparto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: auto;
+    align-items: center;
+    justify-items: center;
+}
+#reparto ul li {
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+#reparto ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* area de los estilos de la portada */
+
+
+
+
+/* area para los estilos del titulo */
+#titulo {
+    position: relative;
+    top: 12rem;
+    padding: 0 6px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#titulo h6 {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+/* area para los estilos del titulo */
+
+
+/* stylos para ajustar el carousel */
+.carousel.pointer-event {
+    touch-action: pan-y;
+    width: 100%;
+    height: 10rem;
+    top: 12rem;
+    position: relative;
+}
+.carousel-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.carousel-item {
+    width: 100%;
+    padding: 2px 6px;
+    height: 100%;
+}
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 4px;
+    border-radius: 12px;
+}
+.carousel-item h6 {
+    position: absolute;
+    background: #00000094;
+    color: #f0f8ff;
+    outline: 1px solid #ffffffb8;
+    left: 1rem;
+    top: 1rem;
+    width: 34%;
+    height: 16%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+}
+/* stylos para ajustar el carousel */
+
+
+/* ajustes-de-los-contenedores */
+/* ajustes-del-titulo-de-la-seccion */
+.conteiner1 {
+    position: relative;
+    margin: 0;
+    padding: 6px 4px;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 12rem;
+    display: grid;
+    flex-wrap: wrap;
+    grid-gap: 0.4rem;
+}
+  #conteiner1 {
+    position: relative;
+    width: 100%;
+    height: 36.6rem;
+  }
+  #contencarru {
+    overflow: auto;
+    width: 100%;
+    display: flex;
+  }
+  #contencarru #conteiner1 {
+    position: relative;
+    width: 100%;
+    height: 36.8rem;
+    min-width: 100%;
+  }
+
+  .conteiner1 #titulo1 {
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .conteiner1 #titulo1 h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: rgb(0 0 0);
+    transition: 0.4s;
+    width: 98%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f8ff;
+    border-radius: 8px;
+  }
+  .conteiner1 #titulo1 h4 svg {
+    position: relative;
+    right: 0.6rem;
+  }
+
+  .conteiner1 #flecha {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    height: 100%;
+    width: 8%;
+    color: rgb(0 0 0);
+  }
+/* ajustes-del-titulo-de-la-seccion */
+
+.conteiner1 #lista1 {
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    height: 11rem;
+    top: 2.8rem;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.conteiner1 ul li {
+    position: relative;
+    background: #1a1a1a;
+    width: 32%;
+    height: 100%;
+    border-radius: 4px;
+    margin: 2px;
+    padding: 0;
+    overflow: hidden;
+}
+  .conteiner1 ul li #portadas {
+    width: 100%;
+    height: 100%;
+  }
+  .conteiner1 ul li #portadas img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+    transition: 0.4s;
+  }
+  .conteiner1 ul li #portadas img:hover {
+    transition: 0.4s;
+    transform: scale(1.5);
+    filter: blur(1px);
+  }
+
+  .conteiner1 ul li #portadas #tipode {
+    position: absolute;
+    width: 53%;
+    height: 12%;
+    top: 8%;
+    background: #0000009e;
+    color: #f0f8ff;
+    border-radius: 0 4px 4px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .conteiner1 ul li #portadas #tipode h6 {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  .conteiner1 ul li #portadas p {
+    position: absolute;
+    top: 84%;
+    background: #0000009e;
+    color: #f0f8ff;
+    width: 100%;
+    height: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 4px 4px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .conteiner1 ul li #portadas .play {
+display: contents;
+  }
+/* ajustes-de-los-contenedores */
+
+
+
+
+/* area de los media screan para responsive */
+@media (min-width: 600px) {
+#banner .btn {
+  width: 8%;
+}
+#banner {
+  height: 14rem;
+}
+#banner .generos {
+  top: 12rem;
+}
+#portada {
+  height: 12rem;
+  top: 12rem;
+}
+#portada .portada {
+  width: 30%;
+}
+#portada .info h6 {
+  font-size: 16px;
+}
+#portada .info p {
+  font-size: 15px;
+}
+#conteinervid .VideoPlayer h6 {
+    width: 20%;
+    font-size: 18px;
+    margin: 0 6px;
+}
+#conteinervid .VideoPlayer ul {
+  width: 60%;
+}
+.video {
+  height: 20rem;
+}
+.video #video-content {
+  height: 98%;
+}
+#titulo {
+  padding: 0 10px;
+}
+#titulo h6 {
+  font-size: 18px;
+}
+.carousel.pointer-event {
+  height: 14rem;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel-item {
+  height: 100%;
+}
+.conteiner1 #lista1 {
+  height: 14rem;
+  align-items: center;
+}
+.conteiner1 ul li {
+  width: 24%;
+}
+#reparto {
+  height: 10rem;
+}
+}
+
+
+/* area de los media screan para responsive */
+@media (max-width: 320px) {
+#portada {
+  height: 10rem;
+}
+.video {
+  height: 12rem;
+}
+.video #video-content {
+  height: 98%;
+}
+#reparto ul li {
+  height: 80%;
+}
+.conteiner1 #lista1 {
+  height: 10rem;
+}
+#btn2 {
+  top: 8.6rem;
+}
+#conteinervid {
+  top: 9rem;
+}
+.video {
+  top: 9.4rem;
+}
+#titulo {
+  top: 10rem;
+}
+#reparto {
+  top: 10rem;
+}
+.carousel.pointer-event {
+  top: 10rem;
+}
+.conteiner1 {
+  top: 10rem;
+}
+}
+
+
+
+
+</style>
+
+<script>
+var video = [];
+    var inicio = 'slug';
+      video[1] = 'https://uqload.com/embed-hxcf8ey3rss1.html'; // zplayer
+      video[2] = 'https://pelisplushd.net/fembed.php?url=5dqk8idzk3rmpz1'; // fembed
+     
+
+$(document).ready(function() {
+  $(".VideoPlayer ul li:first").addClass("active");
+  $('.video-html').html('<iframe src="'+video[1]+'" width="100%" sandbox="allow-same-origin allow-scripts" height="100%" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+  $(".VideoPlayer ul li").click(function () {
+    $(".VideoPlayer ul li").removeClass("active");
+    $(this).addClass("active");
+    $('#video-content').html('<iframe src="'+video[$(this).attr('data-id')]+'" sandbox="allow-same-origin allow-scripts" width="100%" height="100%" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+    return false;
+  });
+});
+
+$(document).ready(function(){
+  $("ul li").on("click", function(){
+    $(this).siblings().removeClass("active")
+    $(this).addClass("active")
+  })
+})
+
+// <!-- javascrip-para-el-elemento-preload -->
+window.onload = function(){
+    $("#spinner").fadeOut();
+$("body").removeClass("hidden")
+}
+// <!-- javascrip-para-el-elemento-preload -->
+</script>
+
+<!-- javascrip-para-el-elemento-preload -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

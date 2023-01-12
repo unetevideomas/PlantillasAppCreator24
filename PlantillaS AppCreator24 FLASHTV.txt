@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="es" manifest="index.appcache">
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, maximum-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="author" content="ADERGALAXIA">
+    <title>FLASH TV |Bienvenidos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+    <!--Import materialize.css-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	  <style type="text/css">
+	  body {
+	    font-family: 'arial', serif;
+	    text-shadow: 1px 1px 1px #aaa;
+	    margin: auto;
+	    width:100%;
+	    height:100%;
+	    background-color: black;
+	  }
+	  .wrapper{
+	    background-image:url("https://i.ibb.co/bFgwFMn/90883.jpg");
+	    position: fixed;
+	    width: 100%;
+	    height: 70px;
+	    text-align: center;
+	    z-index: 2;
+	    margin: auto;
+	    padding: 3px;
+	  }
+	  .wrapper img {
+	    width: 50%;
+	  }
+	  .Estrenos {
+	    text-align: center;
+	    padding-top: 65px;
+	  }
+	  .Estrenos img {
+	    width: 100%;
+	    height: 40%;
+	  }
+	  button{
+			background-color: white;
+			color: black;
+			border-radius: 10px;
+			width: 150px;
+			height: 50px;
+			padding: 0;
+		}
+	  h2{
+	    color: darkturquoise;
+	    font-family: Arial, Helvetica, sans-serif;
+	    border-radius: 5px;
+	    margin:3px;
+	  }
+	  .linea {
+	    width: 100%;
+	    height: 2px;
+	    background-color:brown;
+	  }
+	  .container {
+	    width: 100%;
+		  overflow-x: scroll;
+		  overflow-y: hidden;
+		  white-space: nowrap;
+		  padding: 5px;
+		}
+		div .container2 {
+		  width: 31.6%;
+		  height: 165px;
+		  flex-direction:column;
+		  align-items: center;
+		  justify-content: center;
+		  overflow: hidden;
+		  white-space: nowrap;
+		  font-family: sans-serif;
+		  display: inline-flex;
+		  background: whitesmoke;
+		  border-radius: 20px;
+		  font-weight: bold;
+		  text-decoration: black;
+		  margin: 2px;
+		  transition: 3s;
+		}
+		.container2 img {
+		  width: 100%;
+		}
+		main {
+		  padding-bottom:14%;
+		}
+		.footer {
+		  position:fixed;
+		  bottom: 0;
+		  width: 100%;
+		  height: 8%;
+		  box-shadow: 0 0 0 #131419;
+		  background-color: black;
+		  display: flex;
+		  overflow-x: auto;
+		  z-index: 1;
+		}
+		.nav_link {
+		  width:25%;
+		  height:60px;
+		  flex-direction:column;
+		  align-items: center;
+		  justify-content: center;
+		  overflow: hidden;
+		  white-space: nowrap;
+		  font-family: sans-serif;
+		  color: #cccccc;
+		  text-decoration: none;
+		  -webkit-tap-highlight-color: transparent;
+		  transition: background-color 0.1s ease-in-out;
+		  margin: 0px;
+          display:flex;
+		}
+		.nav_link:hover {
+		  background-color: darkblue;
+		}
+		.nav_link--active{
+		  color: yellow ;
+		}
+		.Titulos {
+		  font-size:15px;
+		  color: black;
+		  padding-bottom: 15%;
+		  display: block;
+		  position:relatiVe;
+		}
+		.nav_text {
+		  text-align: center;
+		  display: inline-block;
+		  color: ghostwhite;
+		}
+		b {
+		  color:red;
+		  font-size: 12px;
+		  letter-spacing: 10px;
+		}
+		.btn-large{
+		  width:100%;
+		  height:40px;
+		  flex-direction:column;
+		  align-items: center;
+		  justify-content: center;
+		  overflow: hidden;
+		  white-space: nowrap;
+		  font-family: sans-serif;
+		  color: #cccccc;
+		  text-decoration: none;
+		  -webkit-tap-highlight-color: transparent;
+		  transition: background-color 0.1s ease-in-out;
+		  display:flex;
+		  border-radius:20px;
+		  background: black;
+		}
+		.espacio{
+		  padding: 5px;
+		}
+		.modal{
+		  border-radius:20px;
+		  width: 50%;
+		  margin-top: 40%;
+		  background: wheat;
+		}
+		.modal-content {
+		  margin: -7%;
+		}
+		.btn{
+		  width:100%;
+		  height:43px;
+		  flex-direction:column;
+		  align-items: center;
+		  justify-content: center;
+		  overflow: hidden;
+		  white-space: nowrap;
+		  font-family: sans-serif;
+		  text-decoration: none;
+		  -webkit-tap-highlight-color: transparent;
+		  transition: background-color 0.1s ease-in-out;
+		  display:flex;
+		  background: #B00D0E;
+		  font-size: 12px;
+		}
+		.icon{
+		  font-size: 10px;
+		}
+	  </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <img src="https://i.ibb.co/F4XB6pS/20201128-172538.png">
+      </div>
+    </header>
+    <main>
+      <div class="Estrenos">
+        <img src="https://i.ibb.co/L97cNn1/portadamk-1.jpg">
+        <a href="go:mortal-kombat">
+          <button>
+            <h6 class="fas fa-play"> Ver ahora</h6>
+          </button>
+        </a>
+      </div>
+      <div class="linea"></div>
+      <div class="font-effect-shadow-multiple"><b>CANALES DEL ECUADOR</b>
+      </div>
+      <div class="container">
+        <div class="container2">
+          <img src="https://i.ibb.co/0DzSbQD/Photo-1630885080414.png">
+          <a class="waves-effect waves-light btn modal-trigger" href="#TC"><p class="icon fas fa-play"> TC TELEVISIÓN</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="TC" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1432
+">OPCION 1-FHD</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1433">OPCION 2-HD</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1434">OPCION 3-SD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/9V6z9c0/Ecuavisa.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#ECUAVISA"><p class="icon fas fa-play">  ECUAVISA</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="ECUAVISA" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1284">OPCIÓN 1-FHD GYQ</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1285">OPCÍON 2-FHD UIO</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1286">OPCÍON 3-HD GYQ</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1287">OPCÍON 4-HD UIO</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1288">OPCÍON 5-SD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/zh7XrhD/Photo-1608014278016.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#RTS"><p class="icon fas fa-play">  RTS</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="RTS" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1417">OPCIÓN 1-FHD</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1418">OPCÍON 2-HD</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1419">OPCÍON 3-SD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/5jqppfb/Photo-1630899647621.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#TELEAMAZONAS"><p class="icon fas fa-play">  TELEAMAZONAS</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="TELEAMAZONAS" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1436">OPCIÓN 1-FHD GYQ</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1437">OPCÍON 2-HD GYQ</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1438">OPCÍON 3-SD</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1439">OPCÍON 4-FHD UIO</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1440">OPCÍON 5-HD UIO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/YWqyjmk/Photo-1630900209551.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#CANALUNO"><p class="icon fas fa-play">  CANAL UNO</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="CANALUNO" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1239">OPCIÓN 1-FHD</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1240">OPCÍON 2-HD</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1241">OPCÍON 3-SD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/281n5fX/Photo-1631042181302.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#GAMATV"><p class="icon fas fa-play">  GAMA TV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="GAMATV" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1346">OPCIÓN 1-FHD</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1347">OPCÍON 2-HD</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1348">OPCÍON 3-SD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/9HCNhfX/Photo-1631286589664.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#TELEVICENTROEC"><p class="icon fas fa-play">  TELEVICENTRO</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="TELEVICENTROEC" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1471">OPCIÓN 1-FHD</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1472">OPCÍON 2-HD</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1473">OPCÍON 3-SD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/4NrZcK7/Photo-1631680600822.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#OROMARTV"><p class="icon fas fa-play">  OROMARTV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="OROMARTV" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:25609">OPCIÓN 1-HD</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1400">OPCÍON 2-SD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/W3p4fb7/Photo-1632795781677.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#ECUADORTV"><p class="icon fas fa-play"> ECUADOR TV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="ECUADORTV" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:43047">OPCIÓN 1-HD</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1283">OPCÍON 2-SD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/MG2LTGG/Photo-1632856198935.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#RTU"><p class="icon fas fa-play"> RTU</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="RTU" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1420">OPCIÓN 1-SD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/c6R0BHm/Photo-1632856719818.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#TELERAMA"><p class="icon fas fa-play"> ECUADOR TV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="TELERAMA" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:62832">OPCÍON 1-SD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/Sf1kD80/Photo-1632746179533.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#CANELATV"><p class="icon fas fa-play">  CANELA TV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="CANELATV" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1494">OPCIÓN 1-SD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/QnFPb1t/Photo-1632857309751.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#GOLTVEC"><p class="icon fas fa-play"> ECUADOR TV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="#GOLTVEC" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1350">OPCIÓN 1-FHD</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1351">OPCÍON 2-HD</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:6797">OPCÍON 3-SD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/997TMM4/Photo-1632868778941.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#DIRECTVEC"><p class="icon fas fa-play"> DIRECTV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="DIRECTVEC" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:4018">OPCIÓN 1-FHD</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1268">OPCÍON 2-HD</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1269">OPCÍON 3-SD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/wWf7mLg/Photo-1632873289246.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#ZARACAYTV"><p class="icon fas fa-play"> ZARACAY TV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="#ZARACAYTV" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1505">OPCIÓN 1-SD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/MD53pph/Photo-1632873321539.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#ECOTEL"><p class="icon fas fa-play"> ECOTEL TV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="#ECOTEL" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1509">OPCÍON 1-HD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/kmgDQvT/Photo-1632873356745.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#PURUWATV"><p class="icon fas fa-play"> PURUWA TV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="#PURUWATV" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:21007">OPCIÓN 1-HD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/kJB1HZd/Photo-1632873918359.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#LANUEVATV"><p class="icon fas fa-play"> LA NUEVA TV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="#LANUEVATV" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:21678">OPCIÓN 1-HD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/wKxQFgd/Photo-1632744241127.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="WUANTV"><p class="icon fas fa-play">  Wuan+ Tv</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="WUANTV" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1504">OPCIÓN 1-HD</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:5302">OPCÍON 2-SD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/Cs23XXn/Photo-1632877155714.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#SONONDA"><p class="icon fas fa-play"> SONO ONDA TV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="SONONDA" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1507">OPCIÓN 1-SD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/MVsKcKb/Photo-1632877109704.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#USCGTV"><p class="icon fas fa-play"> USCG TV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="USCGTV" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1509">OPCIÓN 1-HD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/RjGGX8G/Photo-1632877038461.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#CCQUEVEDO"><p class="icon fas fa-play"> CC TV QUEVEDO</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="CCQUEVEDO" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:43983">OPCIÓN 1-SD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/kqGGpK5/Photo-1632877193592.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#HECHOTV"><p class="icon fas fa-play"> HECHO TV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="HECHOTV" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1510">OPCIÓN 1-HD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/3kFCQJ9/Photo-1632877233716.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#NORTVISION"><p class="icon fas fa-play"> NORTVISION</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="NORTVISION" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:62441">OPCIÓN 1-SD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="linea"></div>
+      <div class="font-effect-shadow-multiple"><b> CANALES DE COLOMBIA</b>
+      </div>
+      <div class="container">
+        <div class="container2">
+          <img src="https://i.ibb.co/0DzSbQD/Photo-1630885080414.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger center pulse" href="#modal1"><p class="icon fas fa-play">  TC TELEVISIÓN</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1432
+">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1433">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1434">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/9V6z9c0/Ecuavisa.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal2"><p class="icon fas fa-play">  ECUAVISA</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/zh7XrhD/Photo-1608014278016.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal3"><p class="icon fas fa-play">  RTS</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal3" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/5jqppfb/Photo-1630899647621.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal4"><p class="icon fas fa-play">  TELEAMAZONAS</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal4" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/YWqyjmk/Photo-1630900209551.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal5"><p class="icon fas fa-play">  CANAL UNO</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal5" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/281n5fX/Photo-1631042181302.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal6"><p class="icon fas fa-play">  GAMA TV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal6" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/9HCNhfX/Photo-1631286589664.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal7"><p class="icon fas fa-play">  TELEVICENTRO</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal7" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/4NrZcK7/Photo-1631680600822.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal8"><p class="icon fas fa-play">  OROMARTV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal8" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/9HCNhfX/Photo-1631286589664.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal9"><p class="icon fas fa-play">  TELEVICENTRO</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal9" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/9HCNhfX/Photo-1631286589664.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal10"><p class="icon fas fa-play">  TELEVICENTRO</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal10" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/9HCNhfX/Photo-1631286589664.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal11"><p class="icon fas fa-play">  TELEVICENTRO</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal11" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="linea"></div>
+      <div class="font-effect-shadow-multiple"><b>CANALES DE PERU</b>
+      </div>
+      <div class="container">
+        <div class="container2">
+          <img src="https://i.ibb.co/0DzSbQD/Photo-1630885080414.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1"><p class="icon fas fa-play">  TC TELEVISIÓN</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1432
+">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1433">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1434">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/9V6z9c0/Ecuavisa.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal2"><p class="icon fas fa-play">  ECUAVISA</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/zh7XrhD/Photo-1608014278016.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal3"><p class="icon fas fa-play">  RTS</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal3" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/5jqppfb/Photo-1630899647621.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal4"><p class="icon fas fa-play">  TELEAMAZONAS</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal4" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/YWqyjmk/Photo-1630900209551.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal5"><p class="icon fas fa-play">  CANAL UNO</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal5" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/281n5fX/Photo-1631042181302.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal6"><p class="icon fas fa-play">  GAMA TV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal6" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/9HCNhfX/Photo-1631286589664.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal7"><p class="icon fas fa-play">  TELEVICENTRO</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal7" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/4NrZcK7/Photo-1631680600822.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal8"><p class="icon fas fa-play">  OROMARTV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal8" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/9HCNhfX/Photo-1631286589664.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal9"><p class="icon fas fa-play">  TELEVICENTRO</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal9" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/9HCNhfX/Photo-1631286589664.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal10"><p class="icon fas fa-play">  TELEVICENTRO</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal10" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/9HCNhfX/Photo-1631286589664.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal11"><p class="icon fas fa-play">  TELEVICENTRO</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal11" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="linea"></div>
+      <div class="font-effect-shadow-multiple"><b>CANALES DE VENEZUELA </b>
+      </div>
+      <div class="container">
+        <div class="container2">
+          <img src="https://i.ibb.co/0DzSbQD/Photo-1630885080414.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1"><p class="icon fas fa-play">  TC TELEVISIÓN</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1432
+">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1433">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:1434">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/9V6z9c0/Ecuavisa.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal2"><p class="icon fas fa-play">  ECUAVISA</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/zh7XrhD/Photo-1608014278016.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal3"><p class="icon fas fa-play">  RTS</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal3" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/5jqppfb/Photo-1630899647621.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal4"><p class="icon fas fa-play">  TELEAMAZONAS</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal4" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/YWqyjmk/Photo-1630900209551.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal5"><p class="icon fas fa-play">  CANAL UNO</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal5" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/281n5fX/Photo-1631042181302.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal6"><p class="icon fas fa-play">  GAMA TV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal6" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/9HCNhfX/Photo-1631286589664.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal7"><p class="icon fas fa-play">  TELEVICENTRO</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal7" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/4NrZcK7/Photo-1631680600822.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal8"><p class="icon fas fa-play">  OROMARTV</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal8" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/9HCNhfX/Photo-1631286589664.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal9"><p class="icon fas fa-play">  TELEVICENTRO</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal9" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/9HCNhfX/Photo-1631286589664.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal10"><p class="icon fas fa-play">  TELEVICENTRO</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal10" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <img src="https://i.ibb.co/9HCNhfX/Photo-1631286589664.png">
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal11"><p class="icon fas fa-play">  TELEVICENTRO</p>
+          </a>
+          <!-- Modal Structure -->
+          <div id="modal11" class="modal">
+            <div class="modal-content">
+              <div class="espacio">
+                <a class="btn-large" href="go:1">OPCIÓN 1</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:2">OPCÍON 2</a>
+              </div>
+              <div class="espacio">
+                <a class="btn-large" href="go:3">OPCÍON 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="footer">
+      <a href="#" class="nav_link nav_link--active">
+        <span class="material-icons outlined">live_tv</span>
+        <span>Tv en Vivo</span>
+      </a>
+      <a href="#" class="nav_link">
+        <span class="material-icons outlined">movie</span>
+        <span class="nav_text">Series</span>
+      </a>
+      <a href="#" class="nav_link">
+        <span class="material-icons outlined">slideshow</span>
+        <span class="nav_text">Películas</span>
+      </a>
+      <a href="#" class="nav_link">
+        <span class="material-icons outlined">gamepad</span>
+        <span class="nav_text">Extras</span>
+      </a>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems,
+        );
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,715 @@
+<!DOCTYPE html><html lang="es" class=""><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style id="" media="all">/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), local('sans-serif'), url(/fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), local('sans-serif'), url(/fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), local('sans-serif'), url(/fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), local('sans-serif'), url(/fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), local('sans-serif'), url(/fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), local('sans-serif'), url(/fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), local('sans-serif'), url(/fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), local('sans-serif'), url(/fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfCRc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), local('sans-serif'), url(/fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfABc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), local('sans-serif'), url(/fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfCBc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), local('sans-serif'), url(/fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfBxc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), local('sans-serif'), url(/fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfCxc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), local('sans-serif'), url(/fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfChc4AMP6lbBP.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), local('sans-serif'), url(/fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/rubik/v19/iJWKBXyIfDnIV7nMrXyw023e1Ik.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/rubik/v19/iJWKBXyIfDnIV7nFrXyw023e1Ik.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/rubik/v19/iJWKBXyIfDnIV7nDrXyw023e1Ik.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/rubik/v19/iJWKBXyIfDnIV7nPrXyw023e1Ik.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/rubik/v19/iJWKBXyIfDnIV7nBrXyw023e.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/rubik/v19/iJWKBXyIfDnIV7nMrXyw023e1Ik.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/rubik/v19/iJWKBXyIfDnIV7nFrXyw023e1Ik.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/rubik/v19/iJWKBXyIfDnIV7nDrXyw023e1Ik.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/rubik/v19/iJWKBXyIfDnIV7nPrXyw023e1Ik.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/rubik/v19/iJWKBXyIfDnIV7nBrXyw023e.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/rubik/v19/iJWKBXyIfDnIV7nMrXyw023e1Ik.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/rubik/v19/iJWKBXyIfDnIV7nFrXyw023e1Ik.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/rubik/v19/iJWKBXyIfDnIV7nDrXyw023e1Ik.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/rubik/v19/iJWKBXyIfDnIV7nPrXyw023e1Ik.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts.gstatic.com/s/rubik/v19/iJWKBXyIfDnIV7nBrXyw023e.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<title>ver Rick y Morty online gratis - Pelisplus</title>
+<meta name="description" content="Ver Serie Rick y Morty online gratis. Comedia animada que narra las aventuras de un científico loco Rick Sánchez, que regresa después de 20 años para vivir con su hija, su marido y sus hijos">
+<link rel="canonical" href="https://www.pelisplus.lat/serie/rick-y-morty/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ver Rick y Morty online gratis - Pelisplus">
+<meta property="og:description" content="Ver Serie Rick y Morty online gratis. Comedia animada que narra las aventuras de un científico loco Rick Sánchez, que regresa después de 20 años para vivir con su hija, su marido y sus hijos">
+<meta property="og:url" content="https://www.pelisplus.lat/serie/rick-y-morty/">
+<meta property="og:site_name" content="PELISPLUS.LAT">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.pelisplus.lat/#website","url":"https://www.pelisplus.lat/","name":"PELISPLUS.LAT","description":"Pelisplus - Ver peliculas gratis, estrenos y series online","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.pelisplus.lat/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"ImageObject","@id":"https://www.pelisplus.lat/serie/rick-y-morty/#primaryimage","inLanguage":"es","url":"https://www.pelisplus.lat/wp-content/uploads/2022/01/5Yiep9EwcQgLolg013ETBVqHxuD.jpg","contentUrl":"https://www.pelisplus.lat/wp-content/uploads/2022/01/5Yiep9EwcQgLolg013ETBVqHxuD.jpg","width":500,"height":750},{"@type":"WebPage","@id":"https://www.pelisplus.lat/serie/rick-y-morty/#webpage","url":"https://www.pelisplus.lat/serie/rick-y-morty/","name":"ver Rick y Morty online gratis - Pelisplus","isPartOf":{"@id":"https://www.pelisplus.lat/#website"},"primaryImageOfPage":{"@id":"https://www.pelisplus.lat/serie/rick-y-morty/#primaryimage"},"datePublished":"2022-01-10T04:22:17+00:00","dateModified":"2022-01-10T04:22:17+00:00","description":"Ver Serie Rick y Morty online gratis. Comedia animada que narra las aventuras de un científico loco Rick Sánchez, que regresa después de 20 años para vivir con su hija, su marido y sus hijos","breadcrumb":{"@id":"https://www.pelisplus.lat/serie/rick-y-morty/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.pelisplus.lat/serie/rick-y-morty/"]}]},{"@type":"BreadcrumbList","@id":"https://www.pelisplus.lat/serie/rick-y-morty/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Series","item":"https://www.pelisplus.lat/serie/"},{"@type":"ListItem","position":2,"name":"Rick y Morty"}]}]}</script>
+
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c8;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #000000;--wp--preset--color--vivid-cyan-blue: #000000;--wp--preset--color--vivid-purple: #00000;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel="stylesheet" id="pelisplus_public_css-css" href="https://www.pelisplus.lat/wp-content/themes/pelisplus/public/css/pelisplus-public.css?ver=1648575416" type="text/css" media="all">
+<script>
+			document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );
+		</script>
+<style>
+			.no-js img.lazyload { display: none; }
+			figure.wp-block-image img.lazyloading { min-width: 150px; }
+							.lazyload, .lazyloading { opacity: 0; }
+				.lazyloaded {
+					opacity: 1;
+					transition: opacity 200ms;
+					transition-delay: 0ms;
+				}
+					</style>
+<link rel="icon" href="https://www.pelisplus.lat/wp-content/uploads/2022/03/cropped-pelisplus-favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="https://www.pelisplus.lat/wp-content/uploads/2022/03/cropped-pelisplus-favicon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.pelisplus.lat/wp-content/uploads/2022/03/cropped-pelisplus-favicon-180x180.png">
+<meta name="msapplication-TileImage" content="https://www.pelisplus.lat/wp-content/uploads/2022/03/cropped-pelisplus-favicon-270x270.png">
+<style type="text/css" id="wp-custom-css">
+			
+
+.glide__slide img{
+	max-height: 120px
+}
+.video-html {
+	text-align: center;
+}
+.video-html>img {
+	width: auto;
+	max-width:100%;
+}
+
+@media screen and (max-width: 500px){
+	.video-html{
+		height: 250px;
+	}
+}
+
+
+.Posters-link > div img{
+	display:none;
+}		</style>
+<style type="text/css">* {user-select: auto !important; -webkit-user-select: auto !important;}</style><input type="hidden" id="inject_idm_text_selection"><script async="" type="text/javascript" src="https://pelisplus-lat.disqus.com/count.js"></script><script type="text/javascript" async="" src="https://pelisplus-lat.disqus.com/embed.js"></script><link rel="prefetch" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.63860eb743c7d9d2adf0fa435788abe7.css"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.9450cde9dd2c9d366781a8fc5ff6e933.js"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.90614da243fa6052a038b5539f5086e5.js"><link rel="prefetch" as="script" href="https://disqus.com/next/config.js"></head>
+<body data-rsssl="1" class="series-template-default single single-series postid-9687 wp-custom-logo">
+<div class="app header-info side-nav-dark">
+<div class="layout">
+
+<div class="header-container">
+<div class="nav-logo">
+<a href="https://www.pelisplus.lat">
+<div class="logo logo-white" style="background-image: url('https://www.pelisplus.lat/wp-content/themes/pelisplus/public/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+
+
+
+</a>
+<ul class="dropdown-menu" style="">
+<li><a href="https://t.me/pelispluslat">Telegram</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</aside> <div class="page-container">
+<section class="main-content">
+<div class="container-fluid">
+<div class="container-fluid">
+<div class="car">
+<div class="position-absolute left-0 right-0 top-0 bottom-0" style="background: rgba(0,0,0,0.5)"></div>
+<div class="card-body">
+<div class="row m-v-30">
+<div class="col-sm-3 asr">
+<img loading="lazy" data-src="https://www.pelisplus.lat/wp-content/uploads/2022/01/5Yiep9EwcQgLolg013ETBVqHxuD-200x300.jpg" class="img-fluid d-block mx-auto m-b-30 ls-is-cached lazyloaded" src="https://www.pelisplus.lat/wp-content/uploads/2022/01/5Yiep9EwcQgLolg013ETBVqHxuD-200x300.jpg"><noscript><img class="img-fluid d-block mx-auto m-b-30" loading="lazy" src="https://www.pelisplus.lat/wp-content/uploads/2022/01/5Yiep9EwcQgLolg013ETBVqHxuD-200x300.jpg"></noscript> </div>
+<div class="col-sm-4 text-center text-sm-left">
+<h1 class="m-b-5">Rick y Morty (2013)</h1>
+<p class="text-opacity m-b-20 font-size-13">@
+Rick and Morty </p> <p class="text-dark font-size-13"><b>Sinopsis:</b>
+</p>
+<div class="text-large"><p>Comedia animada que narra las aventuras de un científico loco Rick Sánchez, que regresa después de 20 años para vivir con su hija, su marido y sus hijos Morty y Summer.</p>
+</div>
+<div class="sectionDetail mb15">
+<span style="font-weight: bold;color: #ff0066;">Año:</span> 2013 </div>
+</div>
+<div class="col-sm-4 text-center text-sm-left">
+<p class="text-dark font-size-13"><b>Otros Titulos:</b></p>
+<div class="text-large">
+<a title="Película 猫女：猎捕 Gatubela" href="javascript:void(0)">Rick and Morty</a>
+</div>
+<div class="d-flex flex-row justify-content-center justify-content-sm-start">
+<div class="p-v-20 p-h-15 text-center">
+<span class="font-size-18 text-info text-semibold ion-md-star">
+</span>
+<small class="d-block">Español Latino</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div class="card">
+<div class="VideoPlayer">
+<ul class="TbVideoNv nav nav-tabs" role="tablist">
+<li class="presentation active ">
+<a data-season="1" data-post="9687" href="#1" class="pfre nav-link active" role="tab" data-toggle="tab">TEMPORADA 1 </a>
+</li>
+<li class="presentation active ">
+<a data-season="2" data-post="9687" href="#2" class="pfre nav-link " role="tab" data-toggle="tab">TEMPORADA 2 </a>
+</li>
+<li class="presentation active ">
+<a data-season="3" data-post="9687" href="#3" class="pfre nav-link " role="tab" data-toggle="tab">TEMPORADA 3  </a>
+</li>
+<li class="presentation active ">
+<a data-season="4" data-post="9687" href="#4" class="pfre nav-link " role="tab" data-toggle="tab">TEMPORADA 4 </a>
+</li>
+<li class="presentation active ">
+<a data-season="5" data-post="9687" href="#5" class="pfre nav-link " role="tab" data-toggle="tab">TEMPORADA 5 </a>
+</li>
+</ul>
+</div>
+<br>
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane fade in active" id="1">
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-1x1/" class="btn btn btn-primary btn-block">T1 - E1: Episode 1 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-1x2/" class="btn btn btn-primary btn-block">T1 - E2: Episode 2 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-1x3/" class="btn btn btn-primary btn-block">T1 - E3: Episode 3 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-1x4/" class="btn btn btn-primary btn-block">T1 - E4: Episode 4 </a>
+ <a href="https://www.pelisplus.lat/episodio/rick-y-morty-1x5/" class="btn btn btn-primary btn-block">T1 - E5: Episode 5 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-1x6/" class="btn btn btn-primary btn-block">T1 - E6: Episode 6 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-1x7/" class="btn btn btn-primary btn-block">T1 - E7: Episode 7 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-1x8/" class="btn btn btn-primary btn-block">T1 - E8: Episode 8 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-1x9/" class="btn btn btn-primary btn-block">T1 - E9: Episode 9 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-1x10/" class="btn btn btn-primary btn-block">T1 - E10: Episode 10 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-1x11/" class="btn btn btn-primary btn-block">T1 - E11: Episode 11 </a>
+</div>
+<div role="tabpanel" class="tab-pane fade " id="2">
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-2x1/" class="btn btn btn-primary btn-block">T2 - E1: Episode 1 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-2x2/" class="btn btn btn-primary btn-block">T2 - E2: Episode 2 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-2x3/" class="btn btn btn-primary btn-block">T2 - E3: Episode 3 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-2x4/" class="btn btn btn-primary btn-block">T2 - E4: Episode 4 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-2x5/" class="btn btn btn-primary btn-block">T2 - E5: Episode 5 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-2x6/" class="btn btn btn-primary btn-block">T2 - E6: Episode 6 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-2x7/" class="btn btn btn-primary btn-block">T2 - E7: Episode 7 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-2x8/" class="btn btn btn-primary btn-block">T2 - E8: Episode 8 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-2x9/" class="btn btn btn-primary btn-block">T2 - E9: Episode 9 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-2x10/" class="btn btn btn-primary btn-block">T2 - E10: Episode 10 </a>
+</div>
+<div role="tabpanel" class="tab-pane fade " id="3">
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-3x1/" class="btn btn btn-primary btn-block">T3 - E1: Episode 1 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-3x2/" class="btn btn btn-primary btn-block">T3 - E2: Episode 2 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-3x3/" class="btn btn btn-primary btn-block">T3 - E3: Episode 3 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-3x4/" class="btn btn btn-primary btn-block">T3 - E4: Episode 4 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-3x5/" class="btn btn btn-primary btn-block">T3 - E5: Episode 5 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-3x6/" class="btn btn btn-primary btn-block">T3 - E6: Episode 6 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-3x7/" class="btn btn btn-primary btn-block">T3 - E7: Episode 7 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-3x8/" class="btn btn btn-primary btn-block">T3 - E8: Episode 8 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-3x9/" class="btn btn btn-primary btn-block">T3 - E9: Episode 9 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-3x10/" class="btn btn btn-primary btn-block">T3 - E10: Episode 10 </a>
+</div>
+<div role="tabpanel" class="tab-pane fade " id="4">
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-4x1/" class="btn btn btn-primary btn-block">T4 - E1: Episode 1 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-4x2/" class="btn btn btn-primary btn-block">T4 - E2: Episode 2 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-4x3/" class="btn btn btn-primary btn-block">T4 - E3: Episode 3 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-4x4/" class="btn btn btn-primary btn-block">T4 - E4: Episode 4 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-4x5/" class="btn btn btn-primary btn-block">T4 - E5: Episode 5 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-4x6/" class="btn btn btn-primary btn-block">T4 - E6: Episode 6 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-4x7/" class="btn btn btn-primary btn-block">T4 - E7: Episode 7 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-4x8/" class="btn btn btn-primary btn-block">T4 - E8: Episode 8 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-4x9/" class="btn btn btn-primary btn-block">T4 - E9: Episode 9 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-4x10/" class="btn btn btn-primary btn-block">T4 - E10: Episode 10 </a>
+</div>
+<div role="tabpanel" class="tab-pane fade " id="5">
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-5x1/" class="btn btn btn-primary btn-block">T5 - E1: Episode 1 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-5x2/" class="btn btn btn-primary btn-block">T5 - E2: Episode 2 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-5x3/" class="btn btn btn-primary btn-block">T5 - E3: Episode 3 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-5x4/" class="btn btn btn-primary btn-block">T5 - E4: Episode 4 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-5x5/" class="btn btn btn-primary btn-block">T5 - E5: Episode 5 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-5x6/" class="btn btn btn-primary btn-block">T5 - E6: Episode 6 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-5x7/" class="btn btn btn-primary btn-block">T5 - E7: Episode 7 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-5x8/" class="btn btn btn-primary btn-block">T5 - E8: Episode 8 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-5x9/" class="btn btn btn-primary btn-block">T5 - E9: Episode 9 </a>
+<a href="https://www.pelisplus.lat/episodio/rick-y-morty-5x10/" class="btn btn btn-primary btn-block">T5 - E10: Episode 10 </a>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="card" id="comentarios">
+
+<div class="tab-info">
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script async="" src="https://www.pelisplus.lat/wp-content/themes/pelisplus/public/js/tab.js?v=2"></script>
+<script async="" src="https://www.pelisplus.lat/wp-content/themes/pelisplus/public/js/util.js?v=2"></script>
+<script async="" src="https://www.pelisplus.lat/wp-content/themes/pelisplus/public/js/load.js?v=2"></script>
+<footer class="content-footer">
+
+<div class="copyright">
+
+
+</div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+<div class="modal anm-e" id="mdl-ads">
+<div class="mdl-cn">
+<div class="mdl-hd">
+<div class="dfc Title ra-exclamation-circle">¡PELISPLUS TE AGRADECE!</div><button class="Button mdl-close aa-mdl" id="mdl-close-modal"><i class="ra-times"></i></button>
+</div>
+<div class="mdl-bd">
+<p><span style="color: #000000"><strong>QUERIDOS USUARIOS:</strong></span></p>
+<p><strong>Ante la avalancha de caídas de varios sitios web, Pelisplus</strong> ahora cuenta con el nuevo dominio oficial: <span style="color: #0000ff"><strong>PELISPLUS.LAT</strong></span></p>
+<p>Todo esto con la idea que se debe mejorar mucho más a su versión anterior que ha dejado de funcionar, dando a los usuarios mucho más contenido de mejor calidad. <span style="color: #3366ff"><strong>Es por eso que pedimos guarden la web en sus favoritos de manera urgente ¡No pierdas la URL oficial!</strong></span></p>
+<p><strong>También es de suma importancia que ingresen al<span style="color: #00000"> <a style="color: #000000" href="https://t.me/pelispluslat" target="_blank" rel="noopener">grupo de TELEGRAM</a>.</span></strong> Donde es recomendable porque se tiene la idea de mantener un contenido EXCLUSIVO para usuarios que estén dentro del grupo, sí..... <strong>UN CONTENIDO ESPECIAL PARA LOS LOS FIELES seguidores </strong>de <span style="color: #0000ff"><strong>PELISPLUS.LAT</strong></span> <strong>y así mismo tienen información oficial<span style="color: #ff0000"> y evitamos que caigan en webs clones que suelen tener código malicioso, contenido extraño o hasta robar información confidencial de ustedes.</span></strong></p>
+</div>
+<div class="mdl-ft">
+<p><button class="Button btn-block" id="modalAds_ok">Acepto, Lo hice!</button></p>
+</div>
+</div>
+<div aria-hidden="true" class="mdl-ovr aa-mdl" data-mdl="mdl-ads"></div>
+</div>
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-166628823-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-166628823-1');
+</script>
+<script type="text/javascript" src="//ugroocuw.net/5/4973284" async="" data-cfasync="false"></script>
+<script type="text/javascript" id="disqus_count-js-extra">
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"pelisplus-lat"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.pelisplus.lat/wp-content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.0.22" id="disqus_count-js"></script>
+<script type="text/javascript" id="disqus_embed-js-extra">
+/* <![CDATA[ */
+var embedVars = {"disqusConfig":{"integration":"wordpress 3.0.22"},"disqusIdentifier":"9687 https:\/\/www.pelisplus.lat\/serie\/rick-y-morty\/","disqusShortname":"pelisplus-lat","disqusTitle":"Rick y Morty","disqusUrl":"https:\/\/www.pelisplus.lat\/serie\/rick-y-morty\/","postId":"9687"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.pelisplus.lat/wp-content/plugins/disqus-comment-system/public/js/comment_embed.js?ver=3.0.22" id="disqus_embed-js"></script>
+<script type="text/javascript" src="https://www.pelisplus.lat/wp-content/plugins/wp-smush-pro/app/assets/js/smush-lazy-load.min.js?ver=3.9.5" id="smush-lazy-load-js"></script>
+<script type="text/javascript" id="pelisplus_public_js-js-extra">
+/* <![CDATA[ */
+var pelisplus_Public = {"url":"https:\/\/www.pelisplus.lat\/wp-admin\/admin-ajax.php","nonce":"cbeef8f979","trailer":"","enable_modal":"2"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.pelisplus.lat/wp-content/themes/pelisplus/public/js/pelisplus-public.js?ver=1648842106" id="pelisplus_public_js-js"></script>
+
+
+
+
+<iframe style="display: none;"></iframe></body></html>

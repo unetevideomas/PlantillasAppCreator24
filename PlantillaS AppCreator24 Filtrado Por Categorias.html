@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial - Galería de imágenes</title>
+
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+::selection{
+  color: #fff;
+  background: red;
+}
+body{
+  padding: 0px;
+}
+.wrapper{
+  margin: 30px auto;
+  max-width: 1100px;
+}
+.wrapper nav{
+  display: flex;
+  justify-content: center;
+}
+.wrapper .items{
+  display: flex;
+  max-width: 720px;
+  width: 100%;
+  justify-content: space-between;
+}
+.items span{
+  padding: 7px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: red;
+  border: 2px solid red;
+  transition: all 0.3s ease;
+}
+.items span.active,
+.items span:hover{
+  color: #fff;
+  background: red;
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.gallery .image{
+  width: calc(100% / 4);
+  padding: 3px;
+}
+
+
+.gallery .image span{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+
+}
+.gallery .image img{
+  width: 100%;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.gallery .image:hover img{
+  transform: scale(1.1);
+}
+.gallery .image.hide{
+  display: none;
+}
+.gallery .image.show{
+  animation: animate 0.4s ease;
+}
+@keyframes animate {
+  0%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+
+
+
+@media (max-width: 1000px) {
+  .gallery .image{
+    width: calc(100% / 3);
+
+  }
+
+}
+
+@media (min-width: 1360px) {
+  .gallery {
+    margin-left: -10%;
+    margin-right: -10%;
+
+  }
+
+}
+
+@media (max-width: 800px) {
+  .gallery .image{
+    width: calc(100% / 3);
+  }
+}
+@media (max-width: 700px) {
+  .wrapper nav .items{
+    max-width: 1000px;
+  }
+  nav .items span{
+    padding: 7px 15px;
+  }
+}
+@media (max-width: 600px) {
+  .wrapper{
+    margin: 20px auto;
+  }
+  .wrapper nav .items{
+    overflow: auto;
+  }
+  nav .items span{
+    margin: 5px;
+  }
+    .gallery .image{
+        width: calc(100% / 3);
+    }
+}
+
+
+</style>
+
+</head>
+
+<body bgcolor="black">
+  <div class="wrapper">
+    <nav>
+      <div class="items">
+        <span class="item active" data-name="all">Todos</span>
+        <span class="item" data-name="accion">Acción</span>
+        <span class="item" data-name="aventura">Aventura</span>
+        <span class="item" data-name="animacion">Animación</span>
+        <span class="item" data-name="terror">Terror</span>
+      
+      </div>
+    </nav>
+    <div class="gallery">
+      <a href="go:122">
+      <div class="image" data-name="accion"><span><img src="https://www.themoviedb.org/t/p/original/TX1T3c3CDBN0y8iDNvlQbtiA5Z.jpg" alt=""></span></a></div>
+     <a href="go:122">
+      <div class="image" data-name="accion"><span><img src="https://www.themoviedb.org/t/p/original/vdRgVlkkw1eHOdgYKXbzj0qSLB0.jpg" alt=""></span></a></div>
+      <a href="go:122">
+      <div class="image" data-name="accion"><span><img src="https://www.themoviedb.org/t/p/original/szcew6yyjcDvaL0isaPBk2e3nkF.jpg" alt=""></span></a></div>
+      <a href="go:122">
+      <div class="image" data-name="aventura"><span><img src="https://www.themoviedb.org/t/p/original/ymTPj60S2T9HoQIsh4VBLu3jDM5.jpg" alt=""></span></a></div>
+      <a href="go:122">
+      <div class="image" data-name="aventura"><span><img src="https://www.themoviedb.org/t/p/original/ehVBcwjx7EdtDeLVTVeNaTpy3fS.jpg" alt=""></span></a></div>
+      <a href="go:122">
+      <div class="image" data-name="animacion"><span><img src="https://www.themoviedb.org/t/p/original/TX1T3c3CDBN0y8iDNvlQbtiA5Z.jpg" alt=""></span></a></div>
+      <a href="go:122">
+      <div class="image" data-name="terror"><span><img src="https://www.themoviedb.org/t/p/original/vdRgVlkkw1eHOdgYKXbzj0qSLB0.jpg" alt=""></span></a></div>
+       <a href="go:122">
+     <div class="image" data-name="terror"><span><img src="https://www.themoviedb.org/t/p/original/szcew6yyjcDvaL0isaPBk2e3nkF.jpg" alt=""></span></a></div>
+    </div>
+  </div>
+
+
+
+
+    <script>
+
+
+const filterItem = document.querySelector(".items");
+const filterImg = document.querySelectorAll(".gallery .image");
+
+window.onload = ()=>{ 
+    
+  filterItem.onclick = (selectedItem)=>{ 
+      
+    if(selectedItem.target.classList.contains("item")){ 
+    filterItem.querySelector(".active").classList.remove("active"); 
+        
+      selectedItem.target.classList.add("active"); 
+        
+      let filterName = selectedItem.target.getAttribute("data-name"); 
+        
+      filterImg.forEach((image) => {
+        let filterImges = image.getAttribute("data-name"); 
+          
+          
+        if((filterImges == filterName) || (filterName == "all")){
+          image.classList.remove("hide"); 
+            
+          image.classList.add("show"); 
+            
+        }else{
+          image.classList.add("hide"); 
+            
+          image.classList.remove("show"); 
+            
+        }
+      });
+    }
+  }
+  for (let i = 0; i < filterImg.length; i++) {
+    filterImg[i].setAttribute("onclick", "preview(this)"); 
+      
+  }
+}
+
+
+
+
+
+</script>
+
+</body>
+    
+    
+</html>
+
+

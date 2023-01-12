@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>Filtrando elementos por categorias</title>
+<link rel="stylesheet" href="css/estilos.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+// AGREGANDO CLASE ACTIVE AL PRIMER ENLACE ====================
+$('.category_list .category_item[category="all"]').addClass('ct_item-active');
+// FILTRANDO PRODUCTOS  ============================================
+$('.category_item').click(function(){
+var catProduct = $(this).attr('category');
+console.log(catProduct);
+// AGREGANDO CLASE ACTIVE AL ENLACE SELECCIONADO
+$('.category_item').removeClass('ct_item-active');
+$(this).addClass('ct_item-active');
+// OCULTANDO PRODUCTOS =========================
+$('.product-item').css('transform', 'scale(0)');
+function hideProduct(){
+$('.product-item').hide();
+} setTimeout(hideProduct,400);
+// MOSTRANDO PRODUCTOS =========================
+function showProduct(){
+$('.product-item[category="'+catProduct+'"]').show();
+$('.product-item[category="'+catProduct+'"]').css('transform', 'scale(1)');
+} setTimeout(showProduct,400);});
+// MOSTRANDO TODOS LOS PRODUCTOS =======================
+$('.category_item[category="all"]').click(function(){
+function showAll(){
+$('.product-item').show();
+$('.product-item').css('transform', 'scale(1)');
+} setTimeout(showAll,400);});});
+</script>
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #E0E4E5;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrap{
+	max-width: 1100px;
+	width: 90%;
+	margin: auto;
+}
+
+.wrap > h1{
+	color: #494B4D;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 15px 0px;
+}
+
+.wrap > h1:after{
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #C7C7C7;
+	margin: 20px 0;
+}
+
+.store-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.category_list{
+	display: flex;
+	flex-direction: column;
+	width: 18%;
+}
+
+.category_list .category_item{
+	display: block;
+	width: 90%;
+	padding: 15px 0;
+	margin-bottom: 20px;
+	background: #E84C3D;
+
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.category_list .ct_item-active{
+	background: #2D3E50;
+}
+
+/* PRODUCTOS ============*/
+
+.products-list{
+	width: 82%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.products-list .product-item{
+	width: 22%;
+	margin-left: 3%;
+	margin-bottom: 25px;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-start;
+
+	transition: all .4s;
+}
+
+.products-list .product-item img{
+	width: 100%;
+}
+
+.products-list .product-item a{
+	display: block;
+	width: 100%;
+	padding: 8px 0;
+	background: #2D3E50;
+
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1100px){
+	.products-list .product-item{
+		width: 30.3%;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.category_list,
+	.products-list{
+		width: 100%;
+	}
+
+	.category_list{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.category_list .category_item{
+		align-self: flex-start;
+		width: 15%;
+		font-size: 14px;
+	}
+
+	.products-list .product-item{
+		margin-left: 4.5%;
+	}
+
+	.products-list .product-item:nth-child(3n+1){
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.category_list{
+		flex-direction: column;
+	}
+	.category_list .category_item{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+	.products-list .product-item{
+		width: 47.5%;
+	}
+
+	.products-list .product-item:nth-child(3n+1){
+		margin-left: 4.5%;
+	}
+
+	.products-list .product-item:nth-child(2n+1){
+		margin-left: 0px;
+	}
+
+}
+
+@media screen and (max-width: 350px){
+	.products-list .product_item{
+		width: 100%;
+		margin-left: 0px;
+	}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Escoge un producto</h1>
+<div class="store-wrapper">
+<div class="category_list">
+<a href="#" class="category_item" category="all">Todo</a>
+<a href="#" class="category_item" category="ordenadores">Ordenadores</a>
+<a href="#" class="category_item" category="laptops">Laptops</a>
+<a href="#" class="category_item" category="smartphones">Smartphones</a>
+<a href="#" class="category_item" category="monitores">Monitores</a>
+<a href="#" class="category_item" category="audifonos">Audifonos</a>
+</div>
+<section class="products-list">
+<div class="product-item" category="laptops">
+<img src="images/laptop_hp.jpg" alt="" >
+<a href="#">Laptop Hp</a>
+</div>
+<div class="product-item" category="laptops">
+<img src="images/laptop_toshiba.jpg" alt="" >
+<a href="#">Laptop Toshiba</a>
+</div>
+<div class="product-item" category="smartphones">
+<img src="images/samsung_galaxy.jpg" alt="" >
+<a href="#">Samsung Galaxy</a>
+</div>
+<div class="product-item" category="smartphones">
+<img src="images/iphone.jpg" alt="" >
+<a href="#">Iphone 7</a>
+</div>
+<div class="product-item" category="ordenadores">
+<img src="images/pc_hp.jpg" alt="" >
+<a href="#">PC Hp</a>
+</div>
+<div class="product-item" category="ordenadores">
+<img src="images/pc_lenovo.jpg" alt="" >
+<a href="#">PC Lenovo</a>
+</div>
+<div class="product-item" category="monitores">
+<img src="images/monitor_asus.jpg" alt="" >
+<a href="#">Monitor Asus</a>
+</div>
+<div class="product-item" category="audifonos">
+<img src="images/jbl.jpg" alt="" >
+<a href="#">Audifonos JBL</a>
+</div>
+</section>
+</div></div>
+</body>
+</html>

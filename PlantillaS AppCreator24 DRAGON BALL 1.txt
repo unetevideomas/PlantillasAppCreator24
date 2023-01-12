@@ -1,0 +1,444 @@
+<p>
+	<html>
+		<head>
+			<title></title>
+			<style id="page-skin-1" type="text/css">
+<!--
+/*!
+=> Theme Name: Anime.xml Free
+=> Theme URI: https://shop.zkreations.com
+=> Author: Daniel Abel M. (Copyright 2019 zkreations)
+=> Author URI: https://fb.com/danieI.abel
+=> Version: 4.3.0
+=> License: Creative Commons Atribucion-NoComercial 4.0 Internacional
+=> License URI: http://creativecommons.org/licenses/by-nc/4.0/
+*/
+/*Fix: Unnecessary elements removed*/
+.widget-item-control,.item-control.blog-admin,
+.continue,.loadmore,.thread-chrome.thread-collapsed,
+.singleton-element:not(.cookie-choices-info),
+.noAllowNewComments .comment-reply,
+.comments .hidden {display:none}
+/*Fix: Show lightbox*/
+.CSS_LIGHTBOX{z-index:90001!important}
+/*Fix: Responsive images*/
+a[style^=margin-left],
+a[imageanchor]:not([style*=float]) {
+margin-right: 0 !important;
+margin-left: 0 !important;
+}
+.widget-content img,
+img[data-original-height],
+img[data-original-width] {height: auto;}
+/*Fix: Responsive videos*/
+.BLOG_video_class, .b-hbp-video, .b-uploade {
+max-width: 100%;
+}
+/*Fix: Comment Editor*/
+#comment-editor{
+border:0;
+width:100%;
+min-height:220px
+}
+body{background:#e0e0e0 none repeat scroll top center;font-family:'Custom',Roboto,sans-serif}.logo__title,.skin-font,.widget-title{font-family:'Custom',Oswald,sans-serif}.logo__descripcion{font-family:'Custom',Roboto,sans-serif}.container{max-width:1240px}@media (min-width:576px){.logo__title{font-size:34px}.logo__descripcion{font-size:14px}}.drop-caps:first-letter,.pageLink.is-selected .btn,.skin-color,.skin-color-hover:hover,.tagsList__link.here,a,a:hover{color:#23a6b3}.card__overlay::before,.dropdown-menu li>ul,.gallery__href::before,.nav__menu a.is-currentUrl,.nav__menu>li:hover,.pageLink.is-selected .btn,.tagsList__link.here,.widget-name{background-color:#23a6b3!important}::-moz-selection{background-color:#23a6b3}::selection{background-color:#23a6b3}.contact-form-button,.ftag-name,.skin-bg,.skin-bg-hover:hover,.widget-more-item,.wjs-item.is-active{background-color:#23a6b3}.wjs-tab:not(.tab-vertical) .tab-header{border-bottom:2px solid #23a6b3}.tab-vertical .tab-header{border-right:2px solid #23a6b3}.footer__primary,.post-body blockquote,blockquote{border-color:#23a6b3}.h1,.h2,.h3,.h4,.h5,.h6,.skin-color-title,h1,h2,h3,h4,h5,h6{color:#262626}.skin-color-text{color:#757575}.header{background-color:#f2f2f2}.search-container input{-webkit-animation:fadeInDown .5s;animation:fadeInDown .5s}.card__image:hover .card__overlay::before{-webkit-animation:fadeIn .5s;animation:fadeIn .5s}.authorPortfolio,.card__readMore::before,.portfolio-meta-content .card__title{-webkit-animation:fadeInDown .5s;animation:fadeInDown .5s}.header__menu{background-color:#232323}@media (max-width:991px){.nav__menu{background-color:#232323;-webkit-animation:fadeInLeft .5s;animation:fadeInLeft .5s}.nav__menu a.is-active{background-color:#23a6b3}}.nav__toggle--icon span,.nav__toggle--icon span::after,.nav__toggle--icon span::before{background-color:#000000}.logo__link,.logo__link:hover{color:#3c3c3c}.logo__descripcion{color:#797979}@media (min-width:992px){.main{padding-top:30px;padding-bottom:30px}.header__wrapper{padding-top:30px;padding-bottom:30px}}.main{background-color:#000000}.search-btn{color:#000000}.nav__menu a{color:#000000}@media (min-width:992px){.nav__menu li:hover>ul{-webkit-animation:flipInX .5s;animation:flipInX .5s}.blog{width:calc(100% - 340px - 30px)}.sidebar{width:340px}.header .header__nav,.header__wrapper,.main{padding-left:30px;padding-right:30px}.Image__full{margin-left:-30px;margin-right:-30px}}.card__content{background-color:#f2f2f2;border-radius:0;overflow:hidden;position:relative}.card__title,.card__title a{color:#262626}.card__item{color:#979797}.card__descripcion,.post-body{color:#757575}.btn-border,.shareButtons .btn,.shareFeatured .btn{border-color:rgba(0, 0, 0, 0.075);color:#757575}@media (min-width:576px){.card__data{padding:28px}.article .card__header{margin-bottom:30px}.pagerPost,.post-related,.postComments,.shareButtons:not(.card__share){padding-top:30px}}.main .widget{background-color:transparent}.main .widget-title{background-color:#f2f2f2}.main .widget-title i{color:#000000}.main .widget-name,.widget-more-item,.widget-more-item:hover{color:#000000}.footer__primary{background:#f2f2f2}.socialList-item{color:#adadad}.footerLink .fas{color:#414141}.footerLink{color:#000000}@media (min-width:992px){.main .widget{padding:0}.article:not(:last-child),.main__general .widget:last-child,.widget:not(:last-child){margin-bottom:30px}.skin-box{padding:30px}}.footerLinks{background-color:#131313}.copy__attribution,.copy__date{color:#adadad}.copy__attribution a{color:#757575}
+#playlist, #player {
+width: 90%; /* Ancho de todo el contenedor */
+padding: 20px;
+margin: 0 auto;
+display: block;
+text-align: center;
+}
+#player {
+background:#232323; /* Fondo del primer contenedor */
+padding: 10px 20px;
+}
+audio {
+width:95%; /* Ancho del reproductor */
+background: #f1f3f4;
+margin:0 auto;
+display: inline-block
+}
+#player:after {
+/* Imagen animada */
+padding-left: 20px;
+}
+#playlist {
+margin: 0 auto 20px auto;
+display: block;
+background: #23a6b3; /* Fondo del segundo contenedor */
+border-top: 1px solid #000000;
+text-align: left;
+font-size: 14px; /* Estilos de fuente */
+font-family: 'Arial', Helvetica, sans-serif;
+font-weight: normal;
+}
+#playlist li, #playlist ul li {
+background-image: none;
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+#playlist li a {
+color: #ccc; /* Color de las canciones */
+background: #232323; /* Fondo de las canciones */
+padding: 7px 2px;
+display: block;
+padding-left: 10px;
+text-decoration: none;
+}
+#playlist li a:hover{
+background: #23a6b3; /* Color de fondo al pasar el cursor */
+text-decoration: none;
+}
+#playlist .active a {
+color: #fff; /* Color de la canción activa */
+font-style: Georgia;
+text-decoration: none;
+}
+#playlist .active a:before {
+content: "\25B6";
+color: #fff; /* Color del icono Play */
+font-style: normal;
+padding-right: 8px;
+}
+#playlist .active a:hover {
+color: #000; /* Color de la canción activa al pasar el cursor */
+}
+#vplaylist, #vplayer {
+width: 90%; /* Ancho de todo el contenedor */
+padding: 20px;
+margin: 0 auto;
+display: block;
+text-align: center;
+}
+#vplayer {
+background:#232323; /* Fondo del primer contenedor */
+padding: 10px 20px;
+}
+video {
+width:95%; /* Ancho del reproductor */
+background: #f1f3f4;
+margin:0 auto;
+display: inline-block
+}
+#vplayer:after {
+/* Imagen animada */
+padding-left: 20px;
+}
+#vplaylist {
+ height: 200px; /* alto del todo el contenedor */
+overflow: auto;
+             
+margin: 0 auto 20px auto;
+display: block;
+background: #23a6b3; /* Fondo del segundo contenedor */
+border-top: 1px solid #fff;
+text-align: left;
+font-size: 14px; /* Estilos de fuente */
+font-family: 'Arial', Helvetica, sans-serif;
+font-weight: normal;
+}
+#vplaylist li, #vplaylist ul li {
+background-image: none;
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+#vplaylist li a {
+color: #ccc; /* Color de las canciones */
+background: #232323; /* Fondo de las canciones */
+padding: 7px 2px;
+display: block;
+padding-left: 10px;
+text-decoration: none;
+}
+#vplaylist li a:hover{
+background: #23a6b3; /* Color de fondo al pasar el cursor */
+text-decoration: none;
+}
+#vplaylist .active a {
+color: #fff; /* Color de la canción activa */
+font-style: Georgia;
+text-decoration: none;
+}
+#vplaylist .active a:before {
+content: "\25B6";
+color: #fff; /* Color del icono Play */
+font-style: normal;
+padding-right: 8px;
+}
+#vplaylist .active a:hover {
+color: #000; /* Color de la canción activa al pasar el cursor */
+}
+/* Este es el estilo del boton*/
+.boton{
+text-align: center;
+text-decoration:none;
+font-weight:600;
+font-size:20px;
+color:#fff;
+padding-top:15px;
+padding-bottom:15px;
+padding-left:30px;
+padding-right:30px;
+background-color:#0070F0;
+border-radius: 4px;
+}
+/* Este es el estilo al poner el cursor encima del boton*/
+.boton:hover {
+text-align: center;
+color: #282f3d;
+background: #eee;
+}
+/* Este es el estilo del boton2*/
+.boton2 {
+text-decoration:none;
+text-align: center;
+font-weight:600;
+font-size:20px;
+color:#fff;
+padding-top:15px;
+padding-bottom:15px;
+padding-left:30px;
+padding-right:30px;
+background-color:#0bbdaa;
+border-radius: 4px;
+background-color: #0bbdaa;
+}
+/* Este es el estilo al poner el cursor encima del boton2*/
+.boton2:hover {
+color: #fff;
+background: #777;
+}
+img {
+width: 300px;
+height: 300px;
+}
+.card__data {
+padding: 28px;
+height: 170px;
+}
+
+-->			</style>
+		</head>
+		<body a="" class="no-js" ondragstart="return false" onselectstart="return false" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"></body>
+	</html>
+</p>
+<p>
+	<link href="https://cdn.plyr.io/3.6.8/plyr.css" rel="stylesheet" />
+	<script data-cfasync='false' type='text/javascript'>
+/*<![CDATA[/* */
+(function(){var cd5c7921dbcbee8ec0849422ef8f66e5="EY-5e-ChxAHRRQinE6XaRV1JAFNHAg7A6dKcfeo9WlVLGi-z9mk7cquRjJ9ULYmVOwaXD3LzuoDFRu_aBr2s";var a=['w44SwqEKAcOqwojDtTTDvcKwwrEe','w4fDr8Kcw7nDoys=','LcO5w7zDt8Kowr9ZwpU=','wq51wrrDssOxw6bDi23DoW8Bcw==','AcKiOD3DoAkAw4g=','NsKWM8Ofwo3Dq8OG','w50BwrYOG8O7woPDtjXDtQ==','wr4Yw5pj','fygyH8OROsOVwpE/WgQ7','XsK4DSp+woHCtWlkFsKeIiYeFcOZw5HDvMOpOcOIaMKRXw==','EcOSUMO2FsK0','KsOkw7DDscK2wpVFwojDl8KOw4s=','wqMowqTDpcK0w6vCuD3Cs2RBZ3h1S2wWw5XDgsOwwrXDjgATD8KYwp8ACcKawrnCksORBULClVzDiUrCvXEF','fGpqam/Dr0VZwrFsfinDg2fDm8KcV8OFamgLw5bDn2vCqBdVwpfDkMKZfMOm','w57Dml1ywo/CqQ==','w4tKewEG','w5FxM8KIw6XDtcO3EMOwQ8Ovwp7CqA==','IsKcJcOLwpbDo8OXw7sqwqs3K2xA','PQhGwqHDp8KWwoM=','w4HDqMKuwqMoHQ==','OGtx','XcO6w7wM','fsOswpZJWMOIfMOvTEDCkxbCshUrw4HDgCAFHw==','PsOhw6jCrMK/wrFVworDk8KDw43Dn8ODO8KZw4jCoMKzZ8K4w6bDsMKuIAXDo8Ktw6M=','w5Myw4s=','AU9ow5MsDCUobcKeFsObwpXDh8OO','wp3CtMOdwr5HVVA+w6Q/ZsKO','w4kPwqceGMOqwqPDrQ==','KMO4w7DDrMK8wrdYwpTDgw=='];(function(b,e){var f=function(g){while(--g){b['push'](b['shift']());}};f(++e);}(a,0x1f2));var b=function(c,d){c=c-0x0;var e=a[c];if(b['XxjRKE']===undefined){(function(){var h;try{var j=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');h=j();}catch(k){h=window;}var i='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';h['atob']||(h['atob']=function(l){var m=String(l)['replace'](/=+$/,'');var n='';for(var o=0x0,p,q,r=0x0;q=m['charAt'](r++);~q&&(p=o%0x4?p*0x40+q:q,o++%0x4)?n+=String['fromCharCode'](0xff&p>>(-0x2*o&0x6)):0x0){q=i['indexOf'](q);}return n;});}());var g=function(h,l){var m=[],n=0x0,o,p='',q='';h=atob(h);for(var t=0x0,u=h['length'];t<u;t++){q+='%'+('00'+h['charCodeAt'](t)['toString'](0x10))['slice'](-0x2);}h=decodeURIComponent(q);var r;for(r=0x0;r<0x100;r++){m[r]=r;}for(r=0x0;r<0x100;r++){n=(n+m[r]+l['charCodeAt'](r%l['length']))%0x100;o=m[r];m[r]=m[n];m[n]=o;}r=0x0;n=0x0;for(var v=0x0;v<h['length'];v++){r=(r+0x1)%0x100;n=(n+m[r])%0x100;o=m[r];m[r]=m[n];m[n]=o;p+=String['fromCharCode'](h['charCodeAt'](v)^m[(m[r]+m[n])%0x100]);}return p;};b['lxhJum']=g;b['SRJSZi']={};b['XxjRKE']=!![];}var f=b['SRJSZi'][c];if(f===undefined){if(b['mJExsl']===undefined){b['mJExsl']=!![];}e=b['lxhJum'](e,d);b['SRJSZi'][c]=e;}else{e=f;}return e;};var u=window;u[b('0x10','nPLd')]=[[b('0x9',']mp9'),0x46e9da],[b('0x5','%1JT'),0x0],[b('0xc','aEx!'),b('0xf','n!9r')],[b('0x15','Aajx'),0x5a],[b('0x0','aEx!'),![]],[b('0xb','62#U'),0x0],[b('0x3','n!9r'),!0x0]];var l=[b('0x8','x!Bc'),b('0x7','Pbkf'),b('0x12','e347'),b('0x4','QwkI')],q=0x0,t,p=function(){if(!l[q])return;t=u[b('0x1a','e347')][b('0x18','MzK9')](b('0x19','RSvX'));t[b('0x2','nX]A')]=b('0x14','SUN2');t[b('0xa','dP4S')]=!0x0;var c=u[b('0x16','MzK9')][b('0x11','J2%%')](b('0xe','2NoB'))[0x0];t[b('0x13','wGO9')]=b('0x1c','Po^(')+l[q];t[b('0x6','e347')]=b('0x17','e347');t[b('0xd','&i2M')]=function(){q++;p();};c[b('0x1','MzK9')][b('0x1b','Pbkf')](t,c);};p();})();
+/*]]>/* */
+</script><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script></p>
+<p>
+	 </p>
+<p>
+	<link href="https://draft.blogger.com/dyn-css/authorization.css?targetBlogID=5574059666370341690&zx=fa92e2be-2959-4999-82f5-0da98bafb0ff" media="all" onload="if(media!=" rel="stylesheet" />
+	<noscript><link href='https://draft.blogger.com/dyn-css/authorization.css?targetBlogID=5574059666370341690&zx=fa92e2be-2959-4999-82f5-0da98bafb0ff' rel='stylesheet'/></noscript></p>
+<script>//<![CDATA[
+document.body.classList.remove("no-js");
+//]]></script>
+<div class="layout-box container">
+	<div class="template display-flex flex-column template-box">
+		<header class="header">
+			<div class="section" id="header">
+				<div class="widget Header" data-version="2" id="Header1">
+					<h1 class="card__title skin-font post__title">
+						Serie completa Dragon Ball  </h1>
+				</div>
+			</div>
+		</header>
+	</div>
+</div>
+<div class="post-body clearfix skin-color-text" id="3297217742431781377">
+	<div class="separator" style="clear: both; text-align: center;">
+		<a href="#" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1200" data-original-width="814" height="320" src="https://k31.kn3.net/taringa/E/4/6/1/E/9/Risban/0DE.jpg" /></a></div>
+	<div class="separator" style="clear: both; text-align: center;">
+		 </div>
+	Dragon Ball (ドラゴンボール lit. Bola de dragón/Esfera del dragón?) es un manga escrito e ilustrado por Akira Toriyama. Fue publicado originalmente en la revista Shōnen Jump, de la editorial japonesa Shūeisha, entre 1984 y 1995.1​2​ Su trama describe las aventuras de Gokū, un guerrero saiyajin, cuyo fin es proteger a la Tierra de otros seres que quieren conquistarla y exterminar a la humanidad. Conforme transcurre la trama, conoce a otros personajes que le ayudan en este propósito. El nombre de la serie proviene de unas esferas mágicas que al ser reunidas invocan a un dragón que concede deseos. En varias ocasiones resultan útiles tanto para Gokū y sus amigos como para la humanidad, aunque también son procuradas de forma constante por algunos seres malignos.
+	<div>
+		<br />
+		<div id="vplayer">
+			<video controls="" controlslist="nodownload" height="224" id="video" poster="https://i1.wp.com/codigoespagueti.com/wp-content/uploads/2016/02/dragon-ball-1.jpg?fit=1080%2C608&quality=80&ssl=1" preload="auto" tabindex="0" type="video/mp4" width="100%">
+				<source src=" http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20001.mkv " type="video/mp4"> </source></video>
+		</div>
+		<ul id="vplaylist">
+			<li class="active">
+				
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20001.mkv">Capitulo  1</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20002.mkv">Capitulo  2</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20003.mkv">Capitulo  3</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20004.mkv">Capitulo  4</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20005.mkv">Capitulo  5</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20006.mkv">Capitulo  6</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20007.mkv">Capitulo  7</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20008.mkv">Capitulo  8</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20009.mkv">Capitulo  9</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20010.mkv">Capitulo  10</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20011.mkv">Capitulo  11</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20012.mkv">Capitulo  12</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20013.mkv">Capitulo  13</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20014.mkv">Capitulo  14</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20015.mkv">Capitulo  15</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20016.mkv">Capitulo  16</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20017.mkv">Capitulo  17</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20018.mkv">Capitulo  18</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20019.mkv">Capitulo  19</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20020.mkv">Capitulo  20</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20021.mkv">Capitulo  21</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20022.mkv">Capitulo  22</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20023.mkv">Capitulo  23</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20024.mkv">Capitulo  24</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20025.mkv">Capitulo  25</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20026.mkv">Capitulo  26</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20027.mkv">Capitulo  27</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20028.mkv">Capitulo  28</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20029.mkv">Capitulo  29</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20030.mkv">Capitulo  30</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20031.mkv">Capitulo  31</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20032.mkv">Capitulo  32</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20033.mkv">Capitulo  33</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20034.mkv">Capitulo  34</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20035.mkv">Capitulo  35</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20036.mkv">Capitulo  36</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20037.mkv">Capitulo  37</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20038.mkv">Capitulo  38</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20039.mkv">Capitulo  39</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20040.mkv">Capitulo  40</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20041.mkv">Capitulo  41</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20042.mkv">Capitulo  42</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20043.mkv">Capitulo  43</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20044.mkv">Capitulo  44</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20045.mkv">Capitulo  45</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20046.mkv">Capitulo  46</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20047.mkv">Capitulo  47</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20048.mkv">Capitulo  48</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20049.mkv">Capitulo  49</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20050.mkv">Capitulo  50</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20051.mkv">Capitulo  51</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20052.mkv">Capitulo  52</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20053.mkv">Capitulo  53</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20054.mkv">Capitulo  54</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20055.mkv">Capitulo  55</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20056.mkv">Capitulo  56</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20057.mkv">Capitulo  57</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20058.mkv">Capitulo  58</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20059.mkv">Capitulo  59</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20060.mkv">Capitulo  60</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20061.mkv">Capitulo  61</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20062.mkv">Capitulo  62</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20063.mkv">Capitulo  63</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20064.mkv">Capitulo  64</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20065.mkv">Capitulo  65</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20066.mkv">Capitulo  66</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20067.mkv">Capitulo  67</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20068.mkv">Capitulo  68</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20069.mkv">Capitulo  69</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20070.mkv">Capitulo  70</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20071.mkv">Capitulo  71</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20072.mkv">Capitulo  72</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20073.mkv">Capitulo  73</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20074.mkv">Capitulo  74</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20075.mkv">Capitulo  75</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20076.mkv">Capitulo  76</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20077.mkv">Capitulo  77</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20078.mkv">Capitulo  78</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20079.mkv">Capitulo  79</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20080.mkv">Capitulo  80</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20081.mkv">Capitulo  81</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20082.mkv">Capitulo  82</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20083.mkv">Capitulo  83</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20084.mkv">Capitulo  84</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20085.mkv">Capitulo  85</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20086.mkv">Capitulo  86</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20087.mkv">Capitulo  87</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20088.mkv">Capitulo  88</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20089.mkv">Capitulo  89</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20090.mkv">Capitulo  90</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20091.mkv">Capitulo  91</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20092.mkv">Capitulo  92</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20093.mkv">Capitulo  93</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20094.mkv">Capitulo  94</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20095.mkv">Capitulo  95</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20096.mkv">Capitulo  96</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20097.mkv">Capitulo  97</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20098.mkv">Capitulo  98</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20099.mkv">Capitulo  99</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20100.mkv">Capitulo  100</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20101.mkv">Capitulo  101</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20102.mkv">Capitulo  102</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20103.mkv">Capitulo  103</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20104.mkv">Capitulo  104</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20105.mkv">Capitulo  105</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20106.mkv">Capitulo  106</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20107.mkv">Capitulo  107</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20108.mkv">Capitulo  108</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20109.mkv">Capitulo  109</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20110.mkv">Capitulo  110</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20111.mkv">Capitulo  111</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20112.mkv">Capitulo  112</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20113.mkv">Capitulo  113</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20114.mkv">Capitulo  114</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20115.mkv">Capitulo  115</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20116.mkv">Capitulo  116</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20117.mkv">Capitulo  117</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20118.mkv">Capitulo  118</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20119.mkv">Capitulo  119</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20120.mkv">Capitulo  120</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20121.mkv">Capitulo  121</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20122.mkv">Capitulo  122</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20123.mkv">Capitulo  123</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20124.mkv">Capitulo  124</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20125.mkv">Capitulo  125</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20126.mkv">Capitulo  126</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20127.mkv">Capitulo  127</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20128.mkv">Capitulo  128</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20129.mkv">Capitulo  129</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20130.mkv">Capitulo  130</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20131.mkv">Capitulo  131</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20132.mkv">Capitulo  132</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20133.mkv">Capitulo  133</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20134.mkv">Capitulo  134</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20135.mkv">Capitulo  135</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20136.mkv">Capitulo  136</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20137.mkv">Capitulo  137</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20138.mkv">Capitulo  138</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20139.mkv">Capitulo  139</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20140.mkv">Capitulo  140</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20141.mkv">Capitulo  141</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20142.mkv">Capitulo  142</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20143.mkv">Capitulo  143</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20144.mkv">Capitulo  144</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20145.mkv">Capitulo  145</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20146.mkv">Capitulo  146</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20147.mkv">Capitulo  147</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20148.mkv">Capitulo  148</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20149.mkv">Capitulo  149</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20150.mkv">Capitulo  150</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20151.mkv">Capitulo  151</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20152.mkv">Capitulo  152</a></li>
+<li><a href="http://vods.tuxchannel.tv:80/series/dragon%20ball/episodio%20153.mkv">Capitulo  153</a></li>
+
+
+              
+              
+		</ul>
+	</div>
+	<script>blogger.widgets.blog.initThreadedComments(
+            null,
+            null,
+            {});//<![CDATA[
+            var a = document.getElementsByClassName("avatar-image-container");
+            for (i = 0; i < a.length; i++) a[i].childNodes[0].setAttribute("src", a[i].childNodes[0].getAttribute("src").replace(/s\B\d{2,4}/, "s80"));
+         //]]></script><script>
+//<![CDATA[
+var audio;var playlist;var tracks;var current;initaudio();function initaudio(){current=0;audio=$('audio');playlist=$('#playlist');tracks=playlist.find('li a');len=tracks.length-1;audio[0].volume=1;playlist.find('a').click(function(e){e.preventDefault();link=$(this);current=link.parent().index();runaudio(link,audio[0])});audio[0].addEventListener('ended',function(e){current++;if(current>len){current=0;link=playlist.find('a')[0]}else{link=playlist.find('a')[current]}runaudio($(link),audio[0])})}function runaudio(link,player){player.src=link.attr('href');par=link.parent();par.addClass('active').siblings().removeClass('active');audio[0].load();audio[0].play()}
+//]]>
+</script><script>
+//<![CDATA[
+var video;var vplaylist;var vtracks;var vcurrent;initvideo();function initvideo(){vcurrent=0;video=$('video');vplaylist=$('#vplaylist');vtracks=vplaylist.find('li a');vlen=vtracks.length-1;video[0].volume=1;vplaylist.find('a').click(function(e){e.preventDefault();link=$(this);vcurrent=link.parent().index();runvideo(link,video[0])});video[0].addEventListener('ended',function(e){vcurrent++;if(vcurrent>vlen){vcurrent=0;link=vplaylist.find('a')[0]}else{link=vplaylist.find('a')[vcurrent]}runvideo($(link),video[0])})}function runvideo(link,player){player.src=link.attr('href');par=link.parent();par.addClass('active').siblings().removeClass('active');video[0].load();video[0].play()}
+//]]>
+</script><script src='https://cdn.plyr.io/3.6.8/plyr.js'></script><script>//<![CDATA[
+const players = Array.from(document.querySelectorAll('.js-player,#video2')).map(player => new Plyr(player));
+//]]></script></div>

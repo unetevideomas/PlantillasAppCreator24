@@ -1,0 +1,662 @@
+
+
+<html lang="en" class="js no-touch sb-init"><head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="jordan">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>Todas las Películas</title>
+  
+  
+  
+  
+<style>
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700");
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css);
+@import url(https://www.dl.dropboxusercontent.com/s/cbzwiqkd22eecn3/style.css);
+</style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" class="overview">
+
+
+
+  <div class="sidebar sb-left">
+    <nav class="mobile-nav">
+      <ul>
+        <li class="active"><a href="https://codepen.io/vincenzopiromalli/pen/OJNyeKN"><i class="fa fa-film"></i><span>Películas</span></a></li>
+        
+        <li><a href="/top/"><i class="fa fa-trophy"></i><span>Top</span></a></li>
+        
+        <li><a href="/genre/tv-series/"><i class="fa fa-desktop"></i><span>TV Series</span></a></li>
+        
+        
+      </ul>
+    </nav>
+  </div>
+  <div id="site-container">
+    <main id="main">
+      <header id="main-header">
+        <div class="inner-container">
+          <div class="sb-toggle-left">
+            <span class="menu-icon"></span>
+            <span class="menu-icon-text">Menú</span>
+          </div>
+          <h1><a href="https://codepen.io/vincenzopiromalli/pen/OJNyeKN" class="#">Enikop +</a></h1>
+          <ul class="header-nav">
+            <li><a href="https://facebook.com/" target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="nofollow"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </header>
+      <div id="header-secondary">
+        <div class="inner-container">
+          <nav class="filters">
+            <ul>
+              <li class="dropdown genre-filter">
+                <div class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Género<i class="fa fa-angle-down"></i></div>
+                <ul class="dropdown-menu dropdown-menu-large">
+                  <li><a href="/genre/anime/">Anime</a></li>
+                  <li><a href="/genre/animation/">Animación</a></li>
+                  <li><a href="/genre/adventure/">Aventura</a></li>
+                  <li><a href="/genre/action/">Acción/a></li>
+                  <li><a href="/genre/biography/">Biografía</a></li>
+                  <li><a href="/genre/comedy/">Comedia</a></li>
+                  <li><a href="/genre/crime/">Criminal</a></li>
+                  <li><a href="/genre/documentary/">Documental</a></li>
+                  <li><a href="/genre/drama/">Drama</a></li>
+                  <li><a href="/genre/family/">Familia</a></li>
+                  <li><a href="/genre/fantasy/">Fantasis</a></li>
+                  <li><a href="/genre/history/">Historia</a></li>
+                  <li><a href="/genre/horror/">Horror</a></li>
+                  <li><a href="/genre/mystery/">Misterio</a></li>
+                  <li><a href="/genre/music/">Musical</a></li>
+                  <li><a href="/genre/romance/">Romance</a></li>
+                  <li><a href="/genre/science-fiction/">Science Fiction</a></li>
+                  <li><a href="/genre/thriller/">Thriller</a></li>
+                  <li><a href="/genre/tv-movie/">TV Movie</a></li>
+                  <li><a href="/genre/war/">War</a></li>
+                  <li><a href="/genre/western/">Western</a></li>
+                </ul>
+              </li>
+              
+              <li class="dropdown quality-filter">
+                <div class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Pais<i class="fa fa-angle-down"></i></div>
+                <ul class="dropdown-menu">
+                  <li><a href="/country/argentina/">Argentina</a></li>
+                  <li><a href="/country/australia/">Australia </a></li>
+                  <li><a href="/country/canada/">Canada</a></li>
+                  <li><a href="/country/china/">China</a></li>
+                  <li><a href="/country/france/">France</a></li>
+                  <li><a href="/country/germany/">Germania</a></li>
+                  <li><a href="/country/india/">India</a></li>
+                  <li><a href="/country/italy/">Italia</a></li>
+                  <li><a href="/country/spain/">España</a></li>
+                  <li><a href="/country/south-korea/">Corea</a></li>
+                  <li><a href="/country/uk/">Reino Unido</a></li>
+                  <li><a href="/country/usa/">Estados Unidos</a></li>
+                
+                 <li><a href="/country/usa/">República Dominicana</a></li>
+                
+                 <li><a href="/country/usa/">México</a></li>
+                
+                 <li><a href="/country/usa/">Chile</a></li>
+                  <li><a href="/country/usa/">Perú</a></li>
+                   <li><a href="/country/usa/">Ecuador</a></li>
+                    <li><a href="/country/usa/">Colombia</a></li>
+                
+                </ul>
+              </li>
+              
+              <li class="search">
+                <form method="get" role="form" id="searchform" autocomplete="off" action="">
+                  <i class="fa fa-search"></i>
+                  <input id="search" name="s" type="search" class="search-input" value="" placeholder="Buscar...">
+                </form>
+                <div class="live-search"></div>
+              </li>
+            </ul>
+          </nav>
+          <p id="slogan">Watch Movie Online Free without Signing Up</p>
+        </div>
+      </div>
+      <section id="content" class="inner-container">
+        
+        <div class="item-container">
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/eDnHgozW8vfOaLHzfpHluf1GZCW.jpg" alt="Archive">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">Archive</h2>
+                    <p class="movie-description">2038: Prueba de Pruebas, de una prueba que fue la prueba…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="6.3">
+                        <i class="fa fa-star"></i>6.3</div>
+                      <span class="movie-date">2020</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/gfJGlDaHuWimErCr5Ql0I8x9QSy.jpg" alt="Wonder Woman">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">Wonder Woman</h2>
+                    <p class="movie-description">Prueba de Pruebas, de una prueba que fue la prueba…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="7.4">
+                        <i class="fa fa-star"></i>7.4</div>
+                      <span class="movie-date">2017</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/u6c5xkR0eIzlnxcQoMBlySH6ann.jpg" alt="Deepwater Horizon">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">Deepwater Horizon</h2>
+                    <p class="movie-description">A story set on the offshore drilling rig Deepwater Horizon, which exploded during April 2010 and cre…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="7.1">
+                        <i class="fa fa-star"></i>7.1</div>
+                      <span class="movie-date">2016</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/yf5IuMW6GHghu39kxA0oFx7Bxmj.jpg" alt="Palm Springs">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">Palm Springs</h2>
+                    <p class="movie-description">When carefree Nyles and reluctant maid of honor Sarah have a chance encounter at a Palm Springs wedd…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="7.5">
+                        <i class="fa fa-star"></i>7.5</div>
+                      <span class="movie-date">2020</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/2kNnf7BwRCEm4bcFkdiE0T4U25s.jpg" alt="Guns Akimbo">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">Guns Akimbo</h2>
+                    <p class="movie-description">An ordinary guy suddenly finds himself forced to fight a gladiator-like battle for a dark website th…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="6.3">
+                        <i class="fa fa-star"></i>6.3</div>
+                      <span class="movie-date">2019</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/5Rqfm1GT6g7sWEoHisH9syNUoZx.jpg" alt="Avengers: Endgame">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">Avengers: Endgame</h2>
+                    <p class="movie-description">After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts …</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="8.4">
+                        <i class="fa fa-star"></i>8.4</div>
+                      <span class="movie-date">2019</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/AuGiPiGMYMkSosOJ3BQjDEAiwtO.jpg" alt="1917">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">1917</h2>
+                    <p class="movie-description">At the height of the First World War, two young British soldiers must cross enemy territory and deli…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="8.3">
+                        <i class="fa fa-star"></i>8.3</div>
+                      <span class="movie-date">2019</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/4YJNp1cquIkX8JxFwkKNEFQ9tgr.jpg" alt="Just Mercy">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">Just Mercy</h2>
+                    <p class="movie-description">The powerful true story of Harvard-educated lawyer Bryan Stevenson, who goes to Alabama to defend th…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="7.5">
+                        <i class="fa fa-star"></i>7.5</div>
+                      <span class="movie-date">2019</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/77PRd9PYVavVMYdJvFxtb79gfBg.jpg" alt="The Informer">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">The Informer</h2>
+                    <p class="movie-description">In New York, former convict Pete Koslow, related to the Polish mafia, must deal with both Klimek the…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="6.5">
+                        <i class="fa fa-star"></i>6.5</div>
+                      <span class="movie-date">2019</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/uIMOFUeXkx4tcAydLrzGMLTtzRK.jpg" alt="The Grudge">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">The Grudge</h2>
+                    <p class="movie-description">After a young mother murders her family in her own house, a detective attempts to investigate the my…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="4.2">
+                        <i class="fa fa-star"></i>4.2</div>
+                      <span class="movie-date">2020</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/jyw8VKYEiM1UDzPB7NsisUgBeJ8.jpg" alt="Jumanji: The Next Level">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">Jumanji: The Next Level</h2>
+                    <p class="movie-description">As the gang return to Jumanji to rescue one of their own, they discover that nothing is as they expe…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="6.7">
+                        <i class="fa fa-star"></i>6.7</div>
+                      <span class="movie-date">2019</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="tv.html">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <span class="item-tv">TV<i></i></span><img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg" alt="Breaking Bad">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">Breaking Bad</h2>
+                    <p class="movie-description">When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a pr…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="9.5">
+                        <i class="fa fa-star"></i>9.5</div>
+                      <span class="movie-date">2008</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/ziEuG1essDuWuC5lpWUaw1uXY2O.jpg" alt="John Wick: Chapter 3 – Parabellum">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">John Wick: Chapter 3 – Parabellum</h2>
+                    <p class="movie-description">Super-assassin John Wick returns with a $14 million price tag on his head and an army of bounty-hunt…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="7.5">
+                        <i class="fa fa-star"></i>7.5</div>
+                      <span class="movie-date">2019</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/fePczipv6ZzDO2uoww4vTAu2Sq3.jpg" alt="Spenser Confidential">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">Spenser Confidential</h2>
+                    <p class="movie-description">Spenser, a former Boston patrolman who just got out from prison, teams up with Hawk, an aspiring fig…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="6.2">
+                        <i class="fa fa-star"></i>6.2</div>
+                      <span class="movie-date">2020</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/prdFM08mGvVDA6uQxKJh8n8Vek1.jpg" alt="How It Ends">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">How It Ends</h2>
+                    <p class="movie-description">A desperate father tries to return home to his pregnant wife after a mysterious apocalyptic event tu…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="5.0">
+                        <i class="fa fa-star"></i>5.0</div>
+                      <span class="movie-date">2018</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/h4VB6m0RwcicVEZvzftYZyKXs6K.jpg" alt="Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)</h2>
+                    <p class="movie-description">Harley Quinn joins forces with a singer, an assassin and a police detective to help a young girl who…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="6.2">
+                        <i class="fa fa-star"></i>6.2</div>
+                      <span class="movie-date">2020</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg" alt="Sonic the Hedgehog">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">Sonic the Hedgehog</h2>
+                    <p class="movie-description">Based on the global blockbuster videogame franchise from Sega, Sonic the Hedgehog tells the story of…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="6.6">
+                        <i class="fa fa-star"></i>6.6</div>
+                      <span class="movie-date">2020</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/pNM2VmqS2FBL92EJ0fUPLgoij8x.jpg" alt="The Occupant">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">The Occupant</h2>
+                    <p class="movie-description">An unemployed executive is forced to sell his apartment. When he discovers that he still has the key…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="6.3">
+                        <i class="fa fa-star"></i>6.3</div>
+                      <span class="movie-date">2020</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/n2C6jRK9PtPIs99RQhKtqGlsnsO.jpg" alt="My Spy">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">My Spy</h2>
+                    <p class="movie-description">A hardened CIA operative finds himself at the mercy of a precocious 9-year-old girl, having been sen…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="6.2">
+                        <i class="fa fa-star"></i>6.2</div>
+                      <span class="movie-date">2020</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" alt="Joker">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">Joker</h2>
+                    <p class="movie-description">During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="8.5">
+                        <i class="fa fa-star"></i>8.5</div>
+                      <span class="movie-date">2019</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/sm8iVzA7kRp0d4BSIsgXjsSBMKV.jpg" alt="Emma.">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">Emma.</h2>
+                    <p class="movie-description">In 1800s England, a well-meaning but selfish young woman meddles in the love lives of her friends.…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="6.8">
+                        <i class="fa fa-star"></i>6.8</div>
+                      <span class="movie-date">2020</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg" alt="Captain Marvel">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">Captain Marvel</h2>
+                    <p class="movie-description">The story follows Carol Danvers as she becomes one of the universe’s most powerful heroes when Ear…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="6.9">
+                        <i class="fa fa-star"></i>6.9</div>
+                      <span class="movie-date">2019</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/pjeMs3yqRmFL3giJy4PMXWZTTPa.jpg" alt="Frozen II">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">Frozen II</h2>
+                    <p class="movie-description">Elsa, Anna, Kristoff and Olaf head far into the forest to learn the truth about an ancient mystery o…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="7.0">
+                        <i class="fa fa-star"></i>7.0</div>
+                      <span class="movie-date">2019</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item" style="opacity: 1; transform: scale(1);">
+            <a href="https://codepen.io/vincenzopiromalli/pen/LYNpBgq">
+              <div class="item-flip">
+                <div class="item-inner">
+                  <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/wUggWBMN8xUNVasYsroyUUPmaKa.jpg" alt="Blue Story">
+                </div>
+                <div class="item-details">
+                  <div class="item-details-inner">
+                    <h2 class="movie-title">Blue Story</h2>
+                    <p class="movie-description">Blue Story is a tragic tale of a friendship between Timmy and Marco, two young boys from opposing po…</p>
+                    <div class="watch-btn">
+                      <div class="imdb-rating" data-content="5.5">
+                        <i class="fa fa-star"></i>5.5</div>
+                      <span class="movie-date">2019</span>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="pagination" style="opacity: 1; transform: scale(1);">
+            <span class="current">1</span><a href="/page/2/" class="inactive">2</a>
+            <a href="/page/3/" class="inactive">3</a>
+          </div>
+          <div class="resppages" style="opacity: 1; transform: scale(1);">
+            <a href="/page/2/"><span class="fa fa-caret-right"></span>
+            </a></div>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <script src="https://www.dl.dropboxusercontent.com/s/dcrmxqwfo0zokbp/jquery.min.js"></script>
+  
+      <script src="https://www.dl.dropboxusercontent.com/s/ca6i400nyiu1qi3/popper.min.js"></script>
+
+ 
+</body>
+</html>

@@ -1,0 +1,204 @@
+<html>
+ <head> 
+  <link rel="stylesheet" id="TOROFILM_Theme-css" href="https://pelisforte.co/wp-content/themes/torofilm/public/css/torofilm-public.css" type="text/css" media="all"> 
+  <script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-139941527-1', 'auto');
+ga('send', 'pageview');
+</script> 
+  <link rel=" icon" =""="" href="https://pelisforte.co/wp-content/uploads/2019/05/favicon.png" sizes="32x32"> 
+  <link rel="icon" href="https://pelisforte.co/wp-content/uploads/2019/05/favicon.png" sizes="192x192"> 
+  <link rel="apple-touch-icon" href="https://pelisforte.co/wp-content/uploads/2019/05/favicon.png"> 
+  <meta name="msapplication-TileImage" content="https://pelisforte.co/wp-content/uploads/2019/05/favicon.png"> 
+  <style id="tp_style_css" type="text/css">
+            
+            :root {
+              --body:#0b0c0c;
+              --text:#bfc1c3;
+              --link:#fff;
+              --link-hover:#ffbf47;
+              --primary:#ffbf47;
+              --secondary:#6f777b;
+              --tertiary:#666;
+              --dark:#000;
+              --light:#fff;
+              --gray:#1f2222;
+              --gray-light:#151717;
+              --gray-dark:#3c4143;
+            }
+        
+        </style> 
+ </head> 
+ <body> 
+  <div id="aa-wp" class="cont"> 
+   <ul class="menu dfxc dv or-1"> 
+    <li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-20"></li> 
+    <li id="menu-item-7051" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7051"></li> 
+   </ul> 
+   <div class="aa-cn" id="aa-movies"> 
+    <div id="movies-a" class="aa-tb hdd on"> 
+     <ul class="post-lst rw sm rcl2 rcl3a rcl4b rcl3c rcl4d rcl6e">
+       <!--Seccion de pelicula 1-->
+      <li id="post-13946" class="post-13946 movies type-movies status-publish has-post-thumbnail hentry category-western idiomas-castellano idiomas-espanol-latino country-united-states-of-america annee-31575 directors-g-a-aguilar directors-jeymes-samuel directors-kate-hennessy directors-ricky-r-weaver cast-andria-b-langston cast-angie-jenkins cast-bonita-king cast-chanel-mack cast-damon-wayans-jr cast-danielle-deadwyler cast-david-hight cast-delroy-lindo cast-deon-cole cast-dylan-kenin cast-dyniesha-lysette-whitfield cast-edi-gathegi cast-ernest-marsh cast-howard-ferguson-jr cast-idris-elba cast-ivan-lee-holmes cast-j-nathan-simmons cast-jacobi-howard cast-jonathan-majors cast-julio-cedillo cast-lakeith-stanfield cast-manny-rubio cast-marissa-freeman cast-michael-e-stogner cast-mickey-dolan cast-nicholas-g-sims cast-ntare-guma-mbaho-mwine cast-peyton-jackson cast-regina-king cast-rj-cyler cast-sadiqua-bynum cast-stephanie-hill cast-steve-corona cast-tait-fletcher cast-terrence-clowe cast-tracy-obonna cast-vic-browder cast-woody-mcclain cast-zacciah-hanson cast-zazie-beetz"> 
+       <article class="post dfx fcl movies"> 
+        <header class="entry-header"> 
+         <h2 class="entry-title">AMUNDSEN</h2> 
+         <div class="entry-meta"> 
+          <span class="vote"><span>PRECIO</span> GRATIS</span> 
+         </div>
+        </header> 
+        <div class="post-thumbnail or-1"> 
+         <figure> 
+           <!--PORTADA-->
+          <img width="193" height="288" src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/k8xu1BZywZMktdewQK5N8scLvoT.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy"> 
+         </figure> 
+         <span class="post-ql"> </span> 
+         <span class="watch btn sm">Ver pelicula</span> 
+         <span class="play fa-play"></span> 
+        </div> 
+        <!--LINK DE PELICULA O REFERENCIA go:luca-->
+        <a href="https://repositoriopelasapp.blogspot.com/2022/06/prueba-repro.html" class="lnk-blk" target="_blank"></a> 
+       </article> 
+        <a href="go:tienda"><span><button>comprar</button></span></a>
+      </li> 
+       <!--Seccion de pelicula 2-->
+       <li id="post-13946" class="post-13946 movies type-movies status-publish has-post-thumbnail hentry category-western idiomas-castellano idiomas-espanol-latino country-united-states-of-america annee-31575 directors-g-a-aguilar directors-jeymes-samuel directors-kate-hennessy directors-ricky-r-weaver cast-andria-b-langston cast-angie-jenkins cast-bonita-king cast-chanel-mack cast-damon-wayans-jr cast-danielle-deadwyler cast-david-hight cast-delroy-lindo cast-deon-cole cast-dylan-kenin cast-dyniesha-lysette-whitfield cast-edi-gathegi cast-ernest-marsh cast-howard-ferguson-jr cast-idris-elba cast-ivan-lee-holmes cast-j-nathan-simmons cast-jacobi-howard cast-jonathan-majors cast-julio-cedillo cast-lakeith-stanfield cast-manny-rubio cast-marissa-freeman cast-michael-e-stogner cast-mickey-dolan cast-nicholas-g-sims cast-ntare-guma-mbaho-mwine cast-peyton-jackson cast-regina-king cast-rj-cyler cast-sadiqua-bynum cast-stephanie-hill cast-steve-corona cast-tait-fletcher cast-terrence-clowe cast-tracy-obonna cast-vic-browder cast-woody-mcclain cast-zacciah-hanson cast-zazie-beetz"> 
+       <article class="post dfx fcl movies"> 
+        <header class="entry-header"> 
+         <h2 class="entry-title">Dragon Ball Z: La resurrección de Freezer</h2> 
+         <div class="entry-meta"> 
+          <span class="vote"><span>PRECIO</span> GRATIS</span> 
+         </div>
+        </header> 
+        <div class="post-thumbnail or-1"> 
+         <figure> 
+           <!--PORTADA-->
+          <img width="193" height="288" src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/mbgpEDDQFFFQz2Q7T8bXpbeUkY9.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy"> 
+         </figure> 
+         <span class="post-ql"> </span> 
+         <span class="watch btn sm">Ver pelicula</span> 
+         <span class="play fa-play"></span> 
+        </div> 
+        <!--LINK DE PELICULA O REFERENCIA go:luca-->
+        <a href="https://repositoriopelasapp.blogspot.com/2022/06/dragon-ball-z-la-resurreccion-de-freezer.html" class="lnk-blk" target="_blank"></a> 
+       </article> 
+        <a href="go:tienda"><span><button>comprar</button></span></a>
+      </li> 
+        <!--Seccion de pelicula 3-->
+        <li id="post-13946" class="post-13946 movies type-movies status-publish has-post-thumbnail hentry category-western idiomas-castellano idiomas-espanol-latino country-united-states-of-america annee-31575 directors-g-a-aguilar directors-jeymes-samuel directors-kate-hennessy directors-ricky-r-weaver cast-andria-b-langston cast-angie-jenkins cast-bonita-king cast-chanel-mack cast-damon-wayans-jr cast-danielle-deadwyler cast-david-hight cast-delroy-lindo cast-deon-cole cast-dylan-kenin cast-dyniesha-lysette-whitfield cast-edi-gathegi cast-ernest-marsh cast-howard-ferguson-jr cast-idris-elba cast-ivan-lee-holmes cast-j-nathan-simmons cast-jacobi-howard cast-jonathan-majors cast-julio-cedillo cast-lakeith-stanfield cast-manny-rubio cast-marissa-freeman cast-michael-e-stogner cast-mickey-dolan cast-nicholas-g-sims cast-ntare-guma-mbaho-mwine cast-peyton-jackson cast-regina-king cast-rj-cyler cast-sadiqua-bynum cast-stephanie-hill cast-steve-corona cast-tait-fletcher cast-terrence-clowe cast-tracy-obonna cast-vic-browder cast-woody-mcclain cast-zacciah-hanson cast-zazie-beetz"> 
+       <article class="post dfx fcl movies"> 
+        <header class="entry-header"> 
+         <h2 class="entry-title">Dragon Ball Super: Broly</h2> 
+         <div class="entry-meta"> 
+          <span class="vote"><span>PRECIO</span> GRATIS</span> 
+         </div>
+        </header> 
+        <div class="post-thumbnail or-1"> 
+         <figure> 
+           <!--PORTADA-->
+          <img width="193" height="288" src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/qIqXrTKCKkfrmTakvTsjlya7OWw.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy"> 
+         </figure> 
+         <span class="post-ql"> </span> 
+         <span class="watch btn sm">Ver pelicula</span> 
+         <span class="play fa-play"></span> 
+        </div> 
+        <!--LINK DE PELICULA O REFERENCIA go:luca-->
+        <a href="https://repositoriopelasapp.blogspot.com/2022/06/dragon-ball-super-broly.html" class="lnk-blk" target="_blank"></a> 
+       </article> 
+        <a href="go:tienda"><span><button>comprar</button></span></a>
+        </li>
+        <!--Seccion de pelicula 4-->
+        <li id="post-13946" class="post-13946 movies type-movies status-publish has-post-thumbnail hentry category-western idiomas-castellano idiomas-espanol-latino country-united-states-of-america annee-31575 directors-g-a-aguilar directors-jeymes-samuel directors-kate-hennessy directors-ricky-r-weaver cast-andria-b-langston cast-angie-jenkins cast-bonita-king cast-chanel-mack cast-damon-wayans-jr cast-danielle-deadwyler cast-david-hight cast-delroy-lindo cast-deon-cole cast-dylan-kenin cast-dyniesha-lysette-whitfield cast-edi-gathegi cast-ernest-marsh cast-howard-ferguson-jr cast-idris-elba cast-ivan-lee-holmes cast-j-nathan-simmons cast-jacobi-howard cast-jonathan-majors cast-julio-cedillo cast-lakeith-stanfield cast-manny-rubio cast-marissa-freeman cast-michael-e-stogner cast-mickey-dolan cast-nicholas-g-sims cast-ntare-guma-mbaho-mwine cast-peyton-jackson cast-regina-king cast-rj-cyler cast-sadiqua-bynum cast-stephanie-hill cast-steve-corona cast-tait-fletcher cast-terrence-clowe cast-tracy-obonna cast-vic-browder cast-woody-mcclain cast-zacciah-hanson cast-zazie-beetz"> 
+          <article class="post dfx fcl movies"> 
+           <header class="entry-header"> 
+            <h2 class="entry-title">GARRA</h2> 
+            <div class="entry-meta"> 
+             <span class="vote"><span>PRECIO</span> GRATIS</span> 
+            </div>
+           </header> 
+           <div class="post-thumbnail or-1"> 
+            <figure> 
+              <!--PORTADA-->
+             <img width="193" height="288" src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/An8C3wAxdB2Oo3fOG70PZ10PxTN.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy"> 
+            </figure> 
+            <span class="post-ql"> </span> 
+            <span class="watch btn sm">Ver pelicula</span> 
+            <span class="play fa-play"></span> 
+           </div> 
+           <!--LINK DE PELICULA O REFERENCIA go:luca-->
+           <a href="https://repositoriopelasapp.blogspot.com/2022/06/garra.html" class="lnk-blk" target="_blank"></a> 
+          </article> 
+           <a href="go:tienda"><span><button>comprar</button></span></a>
+         </li>
+
+        <!--Seccion de pelicula 5-->
+        <li id="post-13946" class="post-13946 movies type-movies status-publish has-post-thumbnail hentry category-western idiomas-castellano idiomas-espanol-latino country-united-states-of-america annee-31575 directors-g-a-aguilar directors-jeymes-samuel directors-kate-hennessy directors-ricky-r-weaver cast-andria-b-langston cast-angie-jenkins cast-bonita-king cast-chanel-mack cast-damon-wayans-jr cast-danielle-deadwyler cast-david-hight cast-delroy-lindo cast-deon-cole cast-dylan-kenin cast-dyniesha-lysette-whitfield cast-edi-gathegi cast-ernest-marsh cast-howard-ferguson-jr cast-idris-elba cast-ivan-lee-holmes cast-j-nathan-simmons cast-jacobi-howard cast-jonathan-majors cast-julio-cedillo cast-lakeith-stanfield cast-manny-rubio cast-marissa-freeman cast-michael-e-stogner cast-mickey-dolan cast-nicholas-g-sims cast-ntare-guma-mbaho-mwine cast-peyton-jackson cast-regina-king cast-rj-cyler cast-sadiqua-bynum cast-stephanie-hill cast-steve-corona cast-tait-fletcher cast-terrence-clowe cast-tracy-obonna cast-vic-browder cast-woody-mcclain cast-zacciah-hanson cast-zazie-beetz"> 
+          <article class="post dfx fcl movies"> 
+           <header class="entry-header"> 
+            <h2 class="entry-title">Capitán Carver</h2> 
+            <div class="entry-meta"> 
+             <span class="vote"><span>PRECIO</span> GRATIS</span> 
+            </div>
+           </header> 
+           <div class="post-thumbnail or-1"> 
+            <figure> 
+              <!--PORTADA-->
+             <img width="193" height="288" src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/up0fm0GmK8LbEmw4OBBFDEC65uu.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy"> 
+            </figure> 
+            <span class="post-ql"> </span> 
+            <span class="watch btn sm">Ver pelicula</span> 
+            <span class="play fa-play"></span> 
+           </div> 
+           <!--LINK DE PELICULA O REFERENCIA go:luca-->
+           <a href="https://repositoriopelasapp.blogspot.com/2022/06/capitan-carver.html" class="lnk-blk" target="_blank"></a> 
+          </article> 
+           <a href="go:tienda"><span><button>comprar</button></span></a>
+         </li>
+
+
+        <!--Seccion de pelicula 6-->
+        <li id="post-13946" class="post-13946 movies type-movies status-publish has-post-thumbnail hentry category-western idiomas-castellano idiomas-espanol-latino country-united-states-of-america annee-31575 directors-g-a-aguilar directors-jeymes-samuel directors-kate-hennessy directors-ricky-r-weaver cast-andria-b-langston cast-angie-jenkins cast-bonita-king cast-chanel-mack cast-damon-wayans-jr cast-danielle-deadwyler cast-david-hight cast-delroy-lindo cast-deon-cole cast-dylan-kenin cast-dyniesha-lysette-whitfield cast-edi-gathegi cast-ernest-marsh cast-howard-ferguson-jr cast-idris-elba cast-ivan-lee-holmes cast-j-nathan-simmons cast-jacobi-howard cast-jonathan-majors cast-julio-cedillo cast-lakeith-stanfield cast-manny-rubio cast-marissa-freeman cast-michael-e-stogner cast-mickey-dolan cast-nicholas-g-sims cast-ntare-guma-mbaho-mwine cast-peyton-jackson cast-regina-king cast-rj-cyler cast-sadiqua-bynum cast-stephanie-hill cast-steve-corona cast-tait-fletcher cast-terrence-clowe cast-tracy-obonna cast-vic-browder cast-woody-mcclain cast-zacciah-hanson cast-zazie-beetz"> 
+            <article class="post dfx fcl movies"> 
+             <header class="entry-header"> 
+              <h2 class="entry-title">Lightyear</h2> 
+              <div class="entry-meta"> 
+               <span class="vote"><span>PRECIO</span> GRATIS</span> 
+              </div>
+             </header> 
+             <div class="post-thumbnail or-1"> 
+              <figure> 
+                <!--PORTADA-->
+               <img width="193" height="288" src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/bPIm1SXYp5RQ3c4wP91JQRewIb8.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy"> 
+              </figure> 
+              <span class="post-ql"> </span> 
+              <span class="watch btn sm">Ver pelicula</span> 
+              <span class="play fa-play"></span> 
+             </div> 
+             <!--LINK DE PELICULA O REFERENCIA go:luca-->
+             <a href="https://repositoriopelasapp.blogspot.com/2022/06/lightyear.html" class="lnk-blk" target="_blank"></a> 
+            </article> 
+             <a href="go:tienda"><span><button>comprar</button></span></a>
+           </li>
+
+
+
+
+
+
+
+
+
+
+        <!--Seccion de pelicula 7-->
+
+
+
+
+       
+     </ul> 
+    </div> 
+    
+   </div> 
+  </div> 
+ </body>
+</html>

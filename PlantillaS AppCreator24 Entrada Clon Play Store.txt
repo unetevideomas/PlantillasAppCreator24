@@ -1,0 +1,128 @@
+<div id="w-movie">
+<div id="w-img">
+<a href="#"><img src="https://play-lh.googleusercontent.com/UrY7BAZ-XfXGpfkeWg0zCCeo-7ras4DCoRalC_WXXWTK9q5b0Iw7B0YQMsVxZaNB7DM=s200-rw"></a></div>
+<div id="wm-details">
+<div>Spotify: reproducir música y escuchar canciones</div>
+<div style="font-weight:bold;color:lime;">Spotify Ltd.</div>
+</div></div></div>
+</div></div>
+<br>
+<play>
+<i></i><i></i>
+<center>
+<div class="plus">
+<a href="ecv">
+<img src="https://dl.dropbox.com/s/a4io8rxvu3s8d2z/a.png" width="40px" height="40px">
+</a>
+<p style="color:#fff">Contiene Anuncios</p>     
+</div></center><center>
+<div class="plus">
+<a href="eee">
+<img src="data:image/png;base64,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" width="40px" height="40px" style="background:red;color:white">
+</a>
+<p style="color:#fff;">27 MB</p>     
+</div></center><center>
+<div class="plus">
+<a href="ecv">
+<img src="https://dl.dropbox.com/s/n5g340gbak3k5pv/e.png" width="40px" height="40px">
+</a>
+<p style="color:#fff">Entretenimiento</p>     
+</div></center>
+<i></i><i></i>
+</play>
+<br>
+<center><a href="ttt"><button class="bt1">Instalar</button></a></center>
+</center>
+<br>
+<div>
+<div class="firstfield"></div>
+<div align="center" class="poster">
+<img class="poster" src="https://play-lh.googleusercontent.com/7xGE6GSo4vYeH_hs4SpwSARQTIr9dXAP2Wexi_-qiW0JDbRX2AuK-9n3TnPjjKaM5I8=w360-h220-rw" style="border-radius: 5px;" width="140px" height="200px">
+<img class="poster" src="https://play-lh.googleusercontent.com/wIQUj3pqrEfeVRFpGPX8-Tuy2eIP0CSLkQGJxCNYlBySBOgb-BcjDSuA9qZZ5eMXXdg=w360-h220-rw" style="border-radius: 5px;" width="140px" height="200px">
+<img class="poster" src="https://play-lh.googleusercontent.com/_DLQ6Zj-YQpHX3FAPcEe-FqXOEm8pBiTrBoNi-JF99uqbM4wEe5hH0qlTXtegO35uJA=w360-h220-rw" style="border-radius: 5px;" width="140px" height="200px">
+<img class="poster" src="https://play-lh.googleusercontent.com/Z6ceEQlE8uoyddh1KOnE24lJolQOsmOnSMk--AD5aHcQlSo-2WV6Jfa550Hg0sQwQq0=w360-h220-rw" style="border-radius: 5px;" width="140px" height="200px">
+<img class="poster" src="https://play-lh.googleusercontent.com/xh1bIhIu4NiC7kZal4jjNYf_ohXdbfvXRgXpHc-f0uR1eEgXlP45zDAZSUdZVupid2o=w360-h220-rw" style="border-radius: 5px;" width="140px" height="200px">
+<img class="poster" src="https://play-lh.googleusercontent.com/praNBplp7Zjmj70O2M47I0WpcTIAp81gCY7gkVx9DZG3aV97gRL2NTACUvTk573CT1E=w360-h220-rw" style="border-radius: 5px;" width="140px" height="200px">
+</div>
+<br>
+<p style="color:#eee;font-size:20px;">Info. de la app
+</p><br>
+<p style="color:#eee;font-size:15px;">
+Versión: 8.6.60.1126
+</p>
+<p style="color:#eee;font-size:15px;">
+Fecha de actualización: 7 sept 2021
+</p>
+<p style="color:#eee;font-size:15px;">
+Ofrecida por: Spotify Ltd.
+</p>
+<br>
+
+<style type="text/css">
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Raleway';}
+body{background:#000;}
+play{
+  left:0;
+  right:0;
+  height:3.5em;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;}
+div .poster{
+overflow-x: scroll;
+overflow-y: hidden;
+white-space: nowrap;
+margin:1px;}
+body .buttons {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 286px;
+  padding: 0 0.5rem;
+}
+body .buttons .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .buttons .info p {
+  margin-top: 0.5rem;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 0.5rem;}
+.bt1{color:#000;
+font-size:20px;
+background:#008f39;
+border:0px solid red;
+border-radius:9px;
+font-weight:bold;
+width:50%;
+padding:6;}
+#w-movie{
+margin-top:4px;
+display:flex;
+width:100%;
+height:120px;
+color:white;
+background:#000;
+border: 0px solid #ddd;
+border-radius: 4px;}
+#w-movie #w-img{
+height:90px;
+width:140px;
+background:transparent;}
+#w-img img{
+height:130px;
+width:130px;}
+#w-movie #wm-details{
+padding:4px 28px;}
+</style>
